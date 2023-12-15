@@ -1,0 +1,36 @@
+baseURL = 'https://codeka.io/'
+languageCode = 'en-us'
+title = 'Julien Wittouck'
+theme = "poison"
+
+[permalinks]
+  [permalinks.page]
+    posts = '/:year/:month/:day/:slug'
+
+[params]
+  brand = "Julien Wittouck"
+  description = "freelance solution & software architect 🏗 - containers 🐋 & linux 🐧 ❤️ - teacher & trainer 🎓 @ univ-lille.fr - speaker 🎙"
+  front_page_content = ["posts", "projects"]
+
+
+  menu = [
+    {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+    {Name = "Talks", URL = "/talks/"},
+    {Name = "Projects", URL = "/projects/"}
+  ]
+
+  email_url = "mailto://julien.wittouck@gmail.com"
+  github_url = "https://github.com/juwit"
+  linkedin_url = "https://www.linkedin.com/in/julien-wittouck"
+  twitter_url = "https://www.twitter.com/CodeKaio"
+
+
+  # Hex colors for your sidebar.
+  moon_sun_background_color = "#515151"   # default is #515151
+  moon_sun_color = "#FFF"                 # default is #FFF
+  sidebar_a_color = "#FFF"                # default is #FFF
+  sidebar_bg_color = "#5ea4e2"            # default is #202020
+  sidebar_h1_color = "#FFF"               # default is #FFF
+  sidebar_img_border_color = "#515151"    # default is #515151
+  sidebar_p_color = "#111111"             # default is #909090
+  sidebar_socials_color = "#FFF"          # default is #FFF
