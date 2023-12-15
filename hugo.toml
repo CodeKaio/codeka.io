@@ -13,6 +13,9 @@ theme = "poison"
   description = "freelance solution & software architect 🏗 - containers 🐋 & linux 🐧 ❤️ - teacher & trainer 🎓 @ univ-lille.fr - speaker 🎙"
   front_page_content = ["posts", "projects"]
 
+  plausible = true
+  plausible_domain = "codeka.io"
+  plausible_script = "https://plausible.io/js/script.js"
 
   menu = [
     {Name = "Latests Posts", URL = "/posts/", HasChildren = true, Limit = 5},
