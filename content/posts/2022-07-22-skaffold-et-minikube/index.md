@@ -14,7 +14,6 @@ title: Exécuter une application localement sur minikube avec skaffold
 slug: skaffold-et-minikube
 ---
 
-# Exécuter une application localement sur minikube avec skaffold
 Lors du développement d'une application pour Kubernetes, le développeur est souvent lié à une boucle de feedback assez longue:
 1. Développement
 2. Contruction de l'image Docker (quelques secondes/minutes)
