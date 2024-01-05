@@ -10,7 +10,6 @@ title: direnv pour booster votre shell
 slug: direnv-pour-votre-shell
 ---
 
-# direnv pour booster votre shell
 ## Le problème
 Je suis le genre de développeur qui travaille toujours avec un terminal ouvert sur le côté, en plus de mon IDE.
 Je lance souvent des commandes `mvn` pour m'assurer que mon projet compile et que mes tests s'exécutent correctement. C'est un vieux réflexe qui date de l'époque où les IDE n'avaient qu'un support limité de *Maven*. Lancer ces commandes hors-IDE m'aide souvent à valider que tout fonctionnera bien dans un environnement de CI par exemple.

@@ -12,8 +12,6 @@ title: Créer un site web de documentation statique avec MkDocs
 slug: mkdocs-material
 ---
 
-# Créer un site web de documentation statique avec MkDocs
-
 Que ce soit pour un projet d'entreprise ou un projet open-source, la documentation utilisateur et technique est cruciale.
 Dans une documentation d'usage, les utilisateurs doivent pouvoir retrouver les instructions leur permettant d'accomplir les gestes métier de tous les jours.
 Pour la documentation technique, les administrateurs, opérateurs et développeurs doivent pouvoir retrouver les opérations d'installation, de mise à jour, ou encore de développement du produit.
