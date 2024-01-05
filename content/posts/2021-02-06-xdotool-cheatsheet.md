@@ -2,7 +2,7 @@
 created: "2021-02-06"
 date: "2021-02-06T00:00:00Z"
 language: en
-modified: "2022-04-15"
+modified: "2024-01-05"
 tags:
 - Tools
 title: xdotool cheatsheet
@@ -27,7 +27,7 @@ Below are the commands I found useful during my research.
 
 ## get window classes
 
-```
+```shell
 xprop | grep 'CLASS'
 ```
 
@@ -37,31 +37,31 @@ More details about classes on this thread: [xdotool: what are "class" and "class
 
 ## find active window
 
-```
+```shell
 xdotool getactivewindow
 ```
 
 ## find a window by class
 
-```
+```shell
 xdotool search --onlyvisible --limit 1 --class "Firefox"
 ```
 
 ## focus a window
 
-```
+```shell
 xdotool windowactivate 123456
 ```
 
 ## send a key
 
-```
+```shell
 xdotool search --onlyvisible --limit 1 --class "Firefox" key ctrl+t
 ```
 
 ## send a key to firefox (by changing active window and come back)
 
-```
+```shell
 ACTIVE_WINDOW=$(xdotool getactivewindow)
 FIREFOX_WINDOW=$(xdotool search --onlyvisible --limit 1 --class "Firefox")
 xdotool windowactivate $FIREFOX_WINDOW
@@ -71,6 +71,6 @@ xdotool windowactivate $ACTIVE_WINDOW
 
 ## change a window size
 
-```
+```shell
 xdotool search --onlyvisible --limit 1 --class "Firefox" windowsize 800 600 
 ```
