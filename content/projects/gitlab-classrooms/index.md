@@ -7,8 +7,6 @@ title: GitLab Classrooms
 featuredImage: logo-with-text.png
 description: '**GitLab Classroom** is a modest clone of [Github Classroom](https://classroom.github.com/), aimed at GitLab.'
 ---
-**GitLab Classroom** is a modest clone of [Github Classroom](https://classroom.github.com/), aimed at GitLab.
-
 ## Features
 
 **GitLab Classrooms** helps _Teachers_ to:
