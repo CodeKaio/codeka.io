@@ -1,0 +1,14 @@
+ul.certifications {
+    display: flex;
+    padding: 0;
+}
+
+.certifications li {
+    list-style-type: none;
+}
+
+.certifications img {
+    width: 96px;
+    height: 96px;
+    border: 2px solid white;
+}
