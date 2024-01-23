@@ -12,12 +12,11 @@
     </ul>
     {{ end }}
     
-    {{ $Site := .Site }}
-    
     {{ if .Params.featuredImage }}
-    <p>
+    <a href="{{ .Permalink }}">
         <img style="max-height: 5rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
-    </p>
+    </a>
+    {{end}}
 
     <p>{{ .Params.description | markdownify }}</p>
 
@@ -55,7 +54,5 @@
         </li>
         {{ end }}
     </ul>
-    {{ end }}
-
     {{ end }}
 </div>
