@@ -6,6 +6,16 @@ tags:
 title: GitLab Classrooms
 featuredImage: logo-with-text.png
 description: '**GitLab Classroom** is a modest clone of [Github Classroom](https://classroom.github.com/), aimed at GitLab.'
+links:
+  github:
+    repo: juwit/gitlab--classrooms
+    url: https://github.com/juwit/gitlab-classrooms
+  gitlab:
+    repo: gitlab--classrooms
+    url: https://gitlab.univ-lille.fr/gitlab-classrooms/gitlab-classrooms
+  documentation: https://gitlab-classrooms.gitlabpages.univ-lille.fr/gitlab-classrooms
+  sonar: https://sonarcloud.io/project/overview?id=gitlab-classrooms_gitlab-classrooms
+  uptime: https://stats.uptimerobot.com/MqRx3tx6xn
 ---
 ## Features
 

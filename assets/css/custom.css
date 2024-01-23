@@ -12,3 +12,27 @@ ul.certifications {
     height: 96px;
     border: 2px solid white;
 }
+
+/* links style for projects list view in home page */
+.projects .info {
+    margin-bottom: 4em;
+}
+
+.projects .info .links {
+    float: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 0;
+}
+
+.projects .info .links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects .info .links li a img {
+    margin: 0;
+}

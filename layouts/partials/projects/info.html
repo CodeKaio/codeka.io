@@ -21,5 +21,41 @@
 
     <p>{{ .Params.description | markdownify }}</p>
 
+    {{ if .Params.links }}
+    <ul class="links">
+        {{ if .Params.links.github }}
+        <li>
+            <a href="{{ .Params.links.github.url }}" target="_blank">
+                <img src="https://img.shields.io/badge/Github-{{ .Params.links.github.repo }}-blue?style=for-the-badge&logo=github"/>
+            </a>
+        </li>
+        {{ end }}
+
+        {{ if .Params.links.gitlab }}
+        <li>
+            <a href="{{ .Params.links.gitlab.url }}" target="_blank">
+                <img src="https://img.shields.io/badge/GitLab-{{ .Params.links.gitlab.repo }}-blue?style=for-the-badge&logo=gitlab"/>
+            </a>
+        </li>
+        {{ end }}
+
+        {{ if .Params.links.documentation }}
+        <li>
+            <a href="{{ .Params.links.documentation }}" target="_blank">
+                <img src="https://img.shields.io/badge/📚 Documentation-grey?style=for-the-badge"/>
+            </a>
+        </li>
+        {{ end }}
+
+        {{ if .Params.links.sonar }}
+        <li>
+            <a href="{{ .Params.links.sonar }}" target="_blank">
+                <img src="https://img.shields.io/badge/📈 sonar-grey?style=for-the-badge"/>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
     {{ end }}
 </div>

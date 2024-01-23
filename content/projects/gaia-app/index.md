@@ -6,14 +6,13 @@ tags:
 title: Gaia
 featuredImage: gaia_logo_with_title.png
 description: 'Gaia is a Terraform UI for your Terraform modules, and self-service infrastructure.'
+
+links:
+  github:
+    repo: gaia--app/gaia
+    url: https://github.com/gaia-app/gaia
+  documentation: https://docs.gaia-app.io
 ---
-
-<p align="center">
-  <img width="500" src="https://github.com/gaia-app/gaia/raw/main/assets/gaia_logo_with_title.png">
-</p>
-
-Gaia is a Terraform UI for your Terraform modules, and self-service infrastructure.
-
 ## What is it?
 
 Gaia is a web application to import and run your Terraform modules.
