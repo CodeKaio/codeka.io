@@ -1,0 +1,28 @@
+{{ define "main" -}}
+<h1>Projects</h1>
+<div class="projects">
+    {{ range (where .Site.RegularPages "Type" "projects").ByDate.Reverse }}
+        {{ partial "projects/info.html" . }}
+    {{ end }}
+</div>
+<hr/>
+<h1>Posts</h1>
+<div class="posts">
+    {{ range (.Paginate (where .Site.RegularPages "Type" "in" "posts")).Pages }}
+    <article class="post">
+        {{ partial "post/info.html" . }}
+        {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
+        {{ .Content }}
+        {{ else }}
+        {{ .Summary }}
+        {{ if .Truncated }}
+        <div class="read-more-link">
+            <a href="{{ .RelPermalink }}">Read More…</a>
+        </div>
+        {{ end }}
+        {{ end }}
+    </article>
+    {{- end }}
+</div>
+{{ partial "pagination.html" . }}
+{{- end }}

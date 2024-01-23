@@ -1,0 +1,20 @@
+{{ define "main" -}}
+{{ if .Site.Params.light_dark }}
+    {{ partial "light_dark.html" . }}
+{{ end }}
+<h1 class="title">{{ .Title }}</h1>
+<div class="posts">
+    {{ range .Paginator.Pages }}
+        <div class="project">
+            <a href="{{ .RelPermalink }}">
+                {{ if .Params.featuredImage }}
+                <img style="max-height: 5rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
+                {{ end }}
+                <h2>{{ .Title }}</h2>
+            </a>
+            <p>{{ .Params.description | markdownify }}</p>
+        </div>
+        <hr/>
+    {{ end }}
+</div>
+{{ end }}

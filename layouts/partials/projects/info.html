@@ -1,0 +1,25 @@
+<div class="info">
+    <h2 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h1>
+    {{ if .Params.tags }}
+    <ul class="tags">
+        {{ range .Params.tags }}
+        <li class="tag-{{ . }}">
+            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    
+    {{ $Site := .Site }}
+    
+    {{ if .Params.featuredImage }}
+    <p>
+        <img style="max-height: 5rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
+    </p>
+
+    <p>{{ .Params.description | markdownify }}</p>
+
+    {{ end }}
+</div>
