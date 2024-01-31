@@ -8,7 +8,8 @@ tags:
 events: 
   - name: JetDev
     date: 2024-01-25
-slides: bbl-preparer-et-passer-la-certification-terraform.pdf
+    youtube: Zb-M1fTRTXc
+    slides: bbl-preparer-et-passer-la-certification-terraform.pdf
 ---
 Passer une certification n'est jamais un exercice évident.
 
