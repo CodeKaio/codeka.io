@@ -506,6 +506,10 @@ Latency distribution:
 Le temps moyen d'exécution est de 3,1&nbsp;millisecondes, et 99&nbsp;% des réponses ont été données en moins de 9&nbsp;millisecondes.
 On a une amélioration des performances de près de 10&nbsp;% pour une simple Servlet&nbsp;!
 
+{{< figure src="simple-servlet-requests-by-second.svg" title="Nombre de requêtes par seconde" caption="Le plus élevé est le meilleur">}}
+
+{{< figure src="simple-servlet-mean-response-time.svg" title="Temps de réponse moyen" caption="Le plus petit est le meilleur">}}
+
 On peut facilement interpréter cette amélioration. Les performances accrues sont probablement liées au fait que le système d'exploitation ne doit pas _switcher_ entre l'exécution de 200&nbsp;_Threads_ en paralèlle dans le cas de Tomcat&nbsp;11, ce qui occasionne donc plus de temps disponible, et donc des meilleurs temps de réponse.
 
 ### Performances avec une Servlet effectuant un appel bloquant
@@ -816,6 +820,8 @@ Latency distribution:
 ```
 
 Les temps de réponse sont autour de 50&nbsp;millisecondes, pour un débit d'un peu moins de 8&nbsp;000&nbsp;requêtes par seconde, et 99&nbsp;% des requêtes obtiennent une réponse en moins de 53&nbsp;millisecondes&nbsp;!
+
+{{< figure src="requests-by-second.svg" title="Nombre de requêtes par seconde" caption="Le plus élevé est le meilleur">}}
 
 ## Conclusion
 
