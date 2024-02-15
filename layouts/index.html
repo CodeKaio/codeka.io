@@ -1,4 +1,9 @@
 {{ define "main" -}}
+
+{{ $pag := .Paginate (where .Site.RegularPages "Type" "in" "posts") }}
+
+{{/* only display projects on first page */}}
+{{ if eq $pag.PageNumber 1 }}
 <h1>Projects</h1>
 <div class="projects">
     {{ range (where .Site.RegularPages "Type" "projects").ByDate.Reverse }}
@@ -6,9 +11,11 @@
     {{ end }}
 </div>
 <hr/>
+{{ end }}
+
 <h1>Posts</h1>
 <div class="posts">
-    {{ range (.Paginate (where .Site.RegularPages "Type" "in" "posts")).Pages }}
+    {{ range $pag.Pages }}
     <article class="post">
         {{ partial "post/info.html" . }}
         {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
