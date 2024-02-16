@@ -10,7 +10,7 @@ theme = "poison"
 [params]
   brand = "Julien Wittouck"
   brand_image = '/images/avatar-225.png'
-  description = "freelance solution & software architect 🏗 - containers 🐋 & linux 🐧 ❤️ - teacher & trainer 🎓 @ univ-lille.fr - speaker 🎙"
+  description = "freelance solution & software architect 🏗 - containers 🐋 & linux 🐧 ❤️ - teacher & trainer 🎓 @ univ-lille.fr - speaker 🎙 - Team @Cloud_Nord"
   front_page_content = ["posts", "projects"]
 
   certifications = [
