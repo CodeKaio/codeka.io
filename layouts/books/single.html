@@ -1,0 +1,31 @@
+{{ define "main" -}}
+<div class="projects">
+  <div class="info">
+    <h2 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h1>
+    {{ if .Params.tags }}
+    <ul class="tags">
+        {{ range .Params.tags }}
+        <li class="tag-{{ . }}">
+            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+    
+    {{ if .Params.featuredImage }}
+    <a href="{{ .Permalink }}">
+        <img style="max-height: 50%;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
+    </a>
+    {{end}}
+  
+    {{ if .Params.links }}
+        {{ partial "books/links.html" . }}
+    {{ end }}
+  </div>
+  
+
+  {{ .Content }}
+</div>
+{{- end }}

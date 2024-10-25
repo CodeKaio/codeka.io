@@ -36,3 +36,28 @@ ul.certifications {
 .projects .info .links li a img {
     margin: 0;
 }
+
+
+/* links style for books list view in home page */
+.books .info {
+    margin-bottom: 4em;
+}
+
+.books .info .links {
+    float: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 0;
+}
+
+.books .info .links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.books .info .links li a img {
+    margin: 0;
+}

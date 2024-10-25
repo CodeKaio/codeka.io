@@ -11,7 +11,7 @@ theme = "poison"
   brand = "Julien Wittouck"
   brand_image = '/images/avatar-225.png'
   description = "freelance solution & software architect 🏗 - containers 🐋 & linux 🐧 ❤️ - teacher & trainer 🎓 @ univ-lille.fr - speaker 🎙 - Team @Cloud_Nord"
-  front_page_content = ["posts", "projects"]
+  front_page_content = ["posts", "projects", "books"]
 
   certifications = [
     {Name = "CKAD: Certified Kubernetes Application Developer", Issuer= "The Linux Foundation", Issued= "2023-12", Expires= "2026-12", Credentials= "https://www.credly.com/badges/cdd863d0-5136-44e1-a393-8fa2dd736fa2/public_url", Logo= "/ckad-certified-kubernetes-application-developer.png"},
@@ -23,8 +23,8 @@ theme = "poison"
   plausible_script = "https://plausible.io/js/script.js"
 
   menu = [
-    {Name = "Latests Posts", URL = "/posts/", HasChildren = true, Limit = 5},
-    {Name = "Talks", URL = "/talks/", HasChildren = true, Limit = 5 },
+    {Name = "Latests Posts", URL = "/posts/", HasChildren = true, Limit = 3},
+    {Name = "Talks", URL = "/talks/", HasChildren = true, Limit = 3 },
     {Name = "Projects", URL = "/projects/"}
   ]
 
