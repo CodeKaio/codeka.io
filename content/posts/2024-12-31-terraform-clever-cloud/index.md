@@ -12,20 +12,20 @@ title: Terraform et Clever Cloud
 
 Pour les besoins des cours que je donne à l'Université de Lille, j'ai eu besoin de configurer des bases de données PostgreSQL et un serveur Vault sur Clever Cloud (l'installation et la configuration d'un Vault sur Clever Cloud feront l'objet d'un article consacré).
 
-Étant aussi un grand utilisateur de _Terraform_ ([qui l'eut crû]({{< ref "/books/iac-avec-terraform" >}})), j'en ai profité pour automatiser tout ça avec mon outil préféré.
+Étant aussi un grand utilisateur de Terraform ([qui l'eut crû ?]({{< ref "/books/iac-avec-terraform" >}})), j'en ai profité pour automatiser tout ça avec mon outil préféré.
 
-Cet article décrit comment utiliser le provider _Terraform_ de Clever Cloud pour instancier une base de données et récupérer ses accès.
-La première étape consistera à configurer un backend pour y stocker le _state_ de Terraform, la seconde étape consistera à créer la base de données en elle-même.
+Cet article décrit comment utiliser le provider Terraform de Clever Cloud pour instancier une base de données et récupérer ses accès.
+La première étape consistera à configurer un backend pour y stocker le fichier d'état de Terraform (state), la seconde étape consistera à créer la base de données en elle-même.
 
 Pour pouvoir reproduire le contenu de cet article, vous aurez besoin d'un compte sur [Clever Cloud](https://www.clever-cloud.com/), ainsi que des CLI Clever Cloud et Terraform (ou OpenTofu) installés sur votre machine.
 
-Le code de cet article est aussi disponible sur GitHub : https://github.com/juwit/terraform-clevercloud-playground
+Le code de cet article est aussi disponible sur GitHub : https://github.com/juwit/terraform-clevercloud-playground.
 
 Cet article a été écrit avec des commandes Terraform, mais fonctionne également avec les commandes OpenTofu équivalentes.
 
 ## Création d'un bucket avec Terraform
 
-La création d'un bucket se fait en 2 étapes, la création de l'add-on Cellar, puis la création du bucket en lui-même.
+La création d'un bucket se fait en 2 étapes, la création de l'_add-on_ Cellar, puis la création du bucket en lui-même.
 
 Nous écrivons alors un premier _root-module_ Terraform, qui contiendra le code correspondant à la création de notre bucket.
 
@@ -198,7 +198,7 @@ Dans un nouveau _root-module_, nous créons comme précédemment un fichier `pro
 
 ### Configuration du backend
 
-Les buckets Clever Cloud peuvent être utilisés comme backend pour le state Terraform.
+Les buckets Clever Cloud peuvent être utilisés comme backend pour le _state_ Terraform.
 
 Il faut alors utiliser le backend `s3` et adapter un peu sa configuration, dans un fichier `backend.tf` :
 
@@ -351,7 +351,7 @@ Pendant l'écriture de cet article, j'ai rencontré quelques points d'améliorat
 
 * la documentation du provider Clever Cloud manque clairement d'exemples fonctionnels de code pour pouvoir démarrer rapidement
 * la documentation de Clever Cloud ne mentionne aucun cas d'usage de leur provider Terraform
-* l'utilisation de Cellar comme backend m'a nécessité plusieures expérimentations avant de trouver le bon paramétrage, cette utilisation mériteraît une documentation en bon et dûe forme
+* l'utilisation de Cellar comme backend m'a nécessité plusieurs expérimentations avant de trouver le bon paramétrage, cette utilisation mériterait une documentation en bon et dûe forme
 * l'argument `organisation` du bloc provider est obligatoire, ce qui va à l'encontre de son utilisation avec une variable d'environnement
 * les attributs de la ressource `clevercloud_postgresql` pourraient être marqués `sensitive`, en particulier le `user` et `password`
 
