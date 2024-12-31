@@ -5,6 +5,8 @@ language: fr
 tags:
 - DevOps
 - Terraform
+- OpenTofu
+- Clever Cloud
 title: Terraform et Clever Cloud
 ---
 
@@ -13,11 +15,13 @@ Pour les besoins des cours que je donne à l'Université de Lille, j'ai eu besoi
 Étant aussi un grand utilisateur de _Terraform_ ([qui l'eut crû]({{< ref "/books/iac-avec-terraform" >}})), j'en ai profité pour automatiser tout ça avec mon outil préféré.
 
 Cet article décrit comment utiliser le provider _Terraform_ de Clever Cloud pour instancier une base de données et récupérer ses accès.
-La première étape consistera à configurer un backend pour y stocker le _state_ de Terraform.
+La première étape consistera à configurer un backend pour y stocker le _state_ de Terraform, la seconde étape consistera à créer la base de données en elle-même.
 
-Pour pouvoir reproduire le contenu de cet article, vous aurez besoin d'un compte sur [Clever Cloud](https://www.clever-cloud.com/), ainsi que des CLI Clever Cloud et Terraform installés sur votre machine.
+Pour pouvoir reproduire le contenu de cet article, vous aurez besoin d'un compte sur [Clever Cloud](https://www.clever-cloud.com/), ainsi que des CLI Clever Cloud et Terraform (ou OpenTofu) installés sur votre machine.
 
-Le code de cet article est disponible sur GitHub : https://github.com/juwit/terraform-clevercloud-playground
+Le code de cet article est aussi disponible sur GitHub : https://github.com/juwit/terraform-clevercloud-playground
+
+Cet article a été écrit avec des commandes Terraform, mais fonctionne également avec les commandes OpenTofu équivalentes.
 
 ## Création d'un bucket avec Terraform
 
@@ -346,6 +350,22 @@ Le provider Terraform Clever Cloud permet une utilisation basique des services e
 Pendant l'écriture de cet article, j'ai rencontré quelques points d'amélioration sur le provider, auxquels je vais probablement contribuer :
 
 * la documentation du provider Clever Cloud manque clairement d'exemples fonctionnels de code pour pouvoir démarrer rapidement
+* la documentation de Clever Cloud ne mentionne aucun cas d'usage de leur provider Terraform
 * l'utilisation de Cellar comme backend m'a nécessité plusieures expérimentations avant de trouver le bon paramétrage, cette utilisation mériteraît une documentation en bon et dûe forme
 * l'argument `organisation` du bloc provider est obligatoire, ce qui va à l'encontre de son utilisation avec une variable d'environnement
 * les attributs de la ressource `clevercloud_postgresql` pourraient être marqués `sensitive`, en particulier le `user` et `password`
+
+Le prochain article traitera de l'installation et de la configuration d'un serveur Vault sur Clever Cloud !
+
+## Liens et références
+
+* Exemples de code de cet article sur [GitHub](https://github.com/juwit/terraform-clevercloud-playground)
+* Page d'accueil de [Clever Cloud](https://www.clever-cloud.com/)
+* Installation du [CLI Clever Cloud](https://www.clever-cloud.com/developers/doc/cli/getting_started/)
+* Installation du [CLI Terraform](https://developer.hashicorp.com/terraform/install)
+* Installation du [CLI OpenTofu](https://opentofu.org/docs/intro/install/)
+* Documentation du provider [Terraform Clever Cloud](https://registry.terraform.io/providers/CleverCloud/clevercloud/latest):
+  * Ressource [`clevercloud_cellar`](https://registry.terraform.io/providers/CleverCloud/clevercloud/latest/docs/resources/cellar)
+  * Ressource [`clevercloud_cellarbucket`](https://registry.terraform.io/providers/CleverCloud/clevercloud/latest/docs/resources/cellar_bucket)
+  * Ressource [`clevercloud_postgresql`](https://registry.terraform.io/providers/CleverCloud/clevercloud/latest/docs/resources/postgresql)
+* Documentation du backend Terraform [S3](https://developer.hashicorp.com/terraform/language/backend/s3)
