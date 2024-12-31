@@ -5,7 +5,7 @@ language: fr
 tags:
 - DevOps
 - Terraform
-title: Configurer Terraform pour Clever Cloud
+title: Terraform et Clever Cloud
 ---
 
 Pour les besoins des cours que je donne à l'Université de Lille, j'ai eu besoin de configurer des bases de données PostgreSQL et un serveur Vault sur Clever Cloud (l'installation et la configuration d'un Vault sur Clever Cloud feront l'objet d'un article consacré).
