@@ -7,6 +7,12 @@ theme = "poison"
   [permalinks.page]
     posts = '/:year/:month/:day/:slug'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+
 [params]
   brand = "Julien Wittouck"
   brand_image = '/images/avatar-225.png'
