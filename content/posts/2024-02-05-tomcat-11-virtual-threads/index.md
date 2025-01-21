@@ -9,8 +9,6 @@ tags:
 title: Tomcat 11 & Virtual Threads 🧵
 ---
 
-![](tomcat.jpg)
-
 Apache Tomcat est le plus célèbre des conteneurs de Servlets Java.
 Les versions se succèdent au fil des années. Avec Spring Boot, et son utilisation de la version &laquo;embedded&raquo;, son usage en tant que serveur &laquo;installé&raquo; a diminué, mais il reste encore au cœur de la majorité de nos micro-services, parfois sans que les développeurs s'en rendent compte.
 

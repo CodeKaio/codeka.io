@@ -9,8 +9,6 @@ title: Anatomie d'une requête HTTP
 slug: anatomie-requete-http
 ---
 
-![](http-anatomy.jpg)
-
 HTTP, pour _Hypertext Transfer Protocol_, est le protocole principal pour les échanges internet. Il est utilisé aussi bien par le navigateur que vous utilisez pour lire cet article, que pour faire communiquer des applications.
 Il s'appuie sur un éhange de requête et réponse, entre un client et un serveur, au format texte. L'avantage du format texte est qu'il est facile à implémenter dans tous les langages de programmation.
 Le protocole HTTP est spécifié par la [RFC 2616](https://www.rfc-editor.org/rfc/rfc2616), protocole dont la toute première version d'HTTP date de 1990.
