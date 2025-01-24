@@ -31,13 +31,14 @@ theme = "poison"
   menu = [
     {Name = "Latests Posts", URL = "/posts/", HasChildren = true, Limit = 3},
     {Name = "Talks", URL = "/talks/", HasChildren = true, Limit = 3 },
-    {Name = "Projects", URL = "/projects/"}
+    {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3}
   ]
 
-  email_url = "mailto://julien.wittouck@gmail.com"
+  email_url = "mailto:julien.wittouck@gmail.com"
   github_url = "https://github.com/juwit"
   linkedin_url = "https://www.linkedin.com/in/julien-wittouck"
   twitter_url = "https://www.twitter.com/CodeKaio"
+  bluesky_url = "https://bsky.app/profile/codekaio.bsky.social"
 
 
   # Hex colors for your sidebar.
