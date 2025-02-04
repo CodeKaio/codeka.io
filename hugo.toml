@@ -5,6 +5,7 @@ theme = "poison"
 
 [taxonomies]
   series = 'series'
+  tags   = 'tags'
 
 [permalinks]
   [permalinks.page]
