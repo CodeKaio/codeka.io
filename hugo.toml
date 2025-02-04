@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Julien Wittouck'
 theme = "poison"
 
+[taxonomies]
+  series = 'series'
+
 [permalinks]
   [permalinks.page]
     posts = '/:year/:month/:day/:slug'
