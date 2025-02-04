@@ -7,6 +7,8 @@ tags:
 - Vault
 - Clever Cloud
 title: Vault sur Clever Cloud
+series: Terraform et Clever Cloud
+draft: true
 ---
 
 Pour les besoins des cours que je donne à l'Université de Lille, j'ai eu besoin de configurer un serveur Vault sur Clever Cloud.
