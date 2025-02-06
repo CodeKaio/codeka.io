@@ -29,7 +29,7 @@ Cet article a été écrit avec des commandes Terraform, mais fonctionne égalem
 
 La création d'un _bucket_ se fait en 2 étapes, la création de l'_add-on_ Cellar, puis la création du _bucket_ en lui-même.
 
-Nous écrivons alors un premier _root-module_ Terraform, qui contiendra le code correspondant à la création de notre _bucket_.
+Nous écrivons alors un premier _root-module_  Terraform, qui contiendra le code correspondant à la création de notre _bucket_.
 
 ### Configurer le provider Clever Cloud
 
@@ -194,6 +194,17 @@ $ terraform output cellar_keys
 
 Ces informations nous permettront de configurer le _backend_ pour notre second _root-module_.
 
+Voici la structure qui a donc été créée pour cette étape : 
+
+```text
+.
+└── backend
+    ├── main.tf
+    ├── outputs.tf
+    ├── provider.tf
+    └── versions.tf
+```
+
 ## Création d'une base de données PostgreSQL
 
 Dans un nouveau _root-module_, nous créons comme précédemment un fichier `provider.tf` et `versions.tf` pour déclarer l'utilisation du _provider_ Clever Cloud.
@@ -345,14 +356,31 @@ postgresql_credentials = {
 }
 ```
 
+Après cette dernière étape, nous avons la structure de code suivante (que vous pouvez retrouver en intégralité sur le _repository_ GitHub [terraform-clevercloud-playground](https://github.com/juwit/terraform-clevercloud-playground)) :
+
+```text
+.
+├── backend
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── provider.tf
+│   └── versions.tf
+└── postgresql
+    ├── backend.tf
+    ├── main.tf
+    ├── outputs.tf
+    ├── provider.tf
+    └── versions.tf
+```
+
 ## En conclusion
 
 Le _provider_ Terraform Clever Cloud permet une utilisation basique des services et il est plutôt simple à utiliser. Il est maintenu à jour par les équipes de Clever Cloud, ce qui est un bel effort de leur part, bravo à eux !
 
 Pendant l'écriture de cet article, j'ai rencontré quelques points d'amélioration sur le _provider_, auxquels je vais probablement contribuer avec quelques _pull-requests_ sur GitHub :
 
-* la documentation du _provider_ Clever Cloud manque clairement d'exemples fonctionnels de code pour pouvoir démarrer rapidement ;
-* la documentation de Clever Cloud ne mentionne aucun cas d'usage de leur _provider_ Terraform ;
+* la documentation du _provider_ Clever Cloud manque de quelques exemples fonctionnels de code pour pouvoir démarrer rapidement ;
+* la documentation de Clever Cloud ne mentionne aucun cas d'usage de leur _provider_ Terraform, c'est dommage car cela ne rend pas visible que Clever Cloud propose aussi une approche d'_infrastructure as code_ ;
 * l'utilisation de Cellar comme _backend_ a nécessité plusieurs expérimentations avant de trouver le bon paramétrage, cette utilisation mériterait une documentation en bonne et due forme ;
 * l'argument `organisation` du bloc _provider_ est obligatoire, ce qui va à l'encontre de son utilisation avec une variable d'environnement ;
 * les attributs de la ressource `clevercloud_postgresql` pourraient être marqués `sensitive`, en particulier le `user` et `password` .
