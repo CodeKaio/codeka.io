@@ -29,6 +29,16 @@
     {{ range $pag.Pages }}
     <article class="post">
         {{ partial "post/info.html" . }}
+
+        {{ with .Resources }}
+            {{ with .GetMatch "{cover.*}" }}
+                {{ $cover := .Fill "820x240" }}
+                {{ with $cover }}
+                    <img src="{{ .Permalink }}"/>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+
         {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
         {{ .Content }}
         {{ else }}
