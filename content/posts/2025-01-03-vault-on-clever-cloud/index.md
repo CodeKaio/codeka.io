@@ -9,14 +9,13 @@ tags:
 - Clever Cloud
 title: Vault sur Clever Cloud
 series: Terraform et Clever Cloud
-draft: true
 ---
 
 Pour les besoins des cours que je donne à l'Université de Lille, j'ai dû configurer un serveur Vault sur Clever Cloud.
 
 Et [bien entendu]({{< ref "/books/iac-avec-terraform" >}}), j'ai fait tout ça avec Terraform.
 
-Cet article décrit comment utiliser le provider Terraform de Clever Cloud pour déployer un serveur Vault, le configurer pour l'authentification OIDC avec GitLab et y stocker quelques secrets à titre d'exemple.
+Cet article décrit comment utiliser le provider Terraform de Clever Cloud pour déployer un serveur Vault. Un article suivant décrira comment le configurer pour l'authentification OIDC avec GitLab et y stocker quelques secrets à titre d'exemple.
 
 Le code de cet article est aussi disponible sur GitHub : https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault.
 
@@ -281,13 +280,22 @@ La console de Vault est maintenant disponible :
 
 Vault est maintenant initialisé, déverrouillé et prêt à être utilisé !
 
-L'article suivant traitera de la configuration de Vault pour utiliser l'authentification OIDC de GitLab.
+L'article suivant traitera de la configuration de Vault pour utiliser l'authentification OIDC de GitLab, et finaliser cette architecture.
 
 ## En conclusion
 
 Cet article a présenté comment mettre en œuvre l'installation et la configuration d'un serveur Vault sur Clever Cloud.
 
-Cette architecture n'est pas parfaite, mais permet de facilement déployer un Vault pour des cas d'usage simples ou un environnement de dev.
+C'est cette infrastructure qui m'a permis de pouvoir mettre à disposition rapidement un serveur Vault pour mes étudiants, afin de les former à la récupération de secrets depuis une application Spring Boot.
+
+Pour exécuter l'infrastructure proposée dans cet article, il vous en coûtera environ 16 €/mois avec les plans utilisés :
+
+| article          | prix/mois |
+|------------------|-----------|
+| PostgreSQL - Dev | 0&nbsp;€  |
+| Docker - Plan XS | 16&nbsp;€ |
+
+Cette architecture n'est pas parfaite, mais permet de facilement déployer un Vault pour des cas d'usage simples ou un environnement de dev. Il faudrait bien entendu la revoir (en particulier les plans utilisés) pour un environnement de production.
 
 ## Liens et références
 
