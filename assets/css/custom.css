@@ -1,3 +1,7 @@
+.lead {
+    font-size: 1rem;
+}
+
 ul.certifications {
     display: flex;
     padding: 0;
