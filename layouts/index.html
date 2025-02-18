@@ -13,8 +13,7 @@
 <hr/>
 {{ end }}
 
-{{/* only display projects on first page */}}
-{{ if eq $pag.PageNumber 1 }}
+{{ if false }}
 <h1>{{ i18n "projects" }}</h1>
 <div class="projects">
     {{ range (where .Site.RegularPages "Type" "projects").ByDate.Reverse }}
