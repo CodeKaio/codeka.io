@@ -39,7 +39,7 @@ This example will pull a repository contents at 9 AM tomorrow !
 
 `at` supports a lot of time specifications.
 
-Here is an extract of its man page:
+Here is an extract of its [man](https://manpages.org/at) page:
 
 > At  allows  fairly  complex time specifications, extending the POSIX.2 standard.  It accepts times of the form
 > HH:MM to run a job at a specific time of day.  (If that time is already past, the next day is  assumed.)   You
