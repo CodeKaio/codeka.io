@@ -2,3 +2,7 @@ projects: Projets
 posts: Posts
 publications: Publications
 readMore: Suite de l'article…
+readingTime:
+  one: '1 minute de lecture'
+  other: '{{ . }} minutes de lecture'
+series: Serie d'articles
