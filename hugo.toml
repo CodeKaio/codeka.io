@@ -1,7 +1,16 @@
 baseURL = 'https://codeka.io/'
-languageCode = 'en-us'
 title = 'Julien Wittouck'
 theme = "poison"
+
+defaultContentLanguage = 'fr'
+
+[languages]
+  [languages.fr]
+    languageCode = 'fr-FR'
+    languageName = 'Français'
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
 
 [taxonomies]
   series = 'series'
