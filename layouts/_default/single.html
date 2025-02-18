@@ -2,6 +2,8 @@
 <div class="post">
   {{ partial "post/info.html" . }}
 
+  {{ partial "post/i18nlist.html" . }}
+
   {{ with .Resources }}
     {{ with .GetMatch "{cover.*}" }}
          {{ $cover := .Resize "820x" }}
