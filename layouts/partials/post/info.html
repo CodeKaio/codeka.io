@@ -12,7 +12,7 @@
       {{ end }}
       <span> - </span>
       <span class="reading-time">
-        <span>{{ T "readingTime" .ReadingTime }}</span>
+        <span>{{ i18n "readingTime" .ReadingTime }}</span>
       </span>
     </div>
 
@@ -30,7 +30,7 @@
   {{ $Site := .Site }}
   {{ if .Params.series }}
   <p class="seriesname">
-    {{ T "series-title" }}<a href="{{ $Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
+    {{ i18n "series-title" }}<a href="{{ $Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
   </p>
   {{ end }}
 

@@ -4,7 +4,7 @@
 
 {{/* only display books on first page */}}
 {{ if eq $pag.PageNumber 1 }}
-<h1>{{ T "publications" }}</h1>
+<h1>{{ i18n "publications" }}</h1>
 <div class="books">
     {{ range (where .Site.RegularPages "Type" "books") }}
         {{ partial "books/info.html" . }}
@@ -15,7 +15,7 @@
 
 {{/* only display projects on first page */}}
 {{ if eq $pag.PageNumber 1 }}
-<h1>{{ T "projects" }}</h1>
+<h1>{{ i18n "projects" }}</h1>
 <div class="projects">
     {{ range (where .Site.RegularPages "Type" "projects").ByDate.Reverse }}
         {{ partial "projects/info.html" . }}
@@ -24,7 +24,7 @@
 <hr/>
 {{ end }}
 
-<h1>{{ T "posts" }}</h1>
+<h1>{{ i18n "posts" }}</h1>
 <div class="posts">
     {{ range $pag.Pages }}
     <article class="post">
@@ -45,7 +45,7 @@
         {{ .Summary }}
         {{ if .Truncated }}
         <div class="read-more-link">
-            <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
+            <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
         </div>
         {{ end }}
         {{ end }}
