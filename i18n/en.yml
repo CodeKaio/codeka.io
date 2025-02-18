@@ -5,4 +5,9 @@ readMore: Read More…
 readingTime:
   one: '1 min read'
   other: '{{ . }} mins read'
-series: Article Series
+series-description: 'This is a post in the series '
+series-title: 'Article Series: '
+series-other: 'Other posts in this series: '
+
+previous: « Previous
+next: Next »

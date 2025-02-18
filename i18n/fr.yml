@@ -5,4 +5,9 @@ readMore: Suite de l'article…
 readingTime:
   one: '1 minute de lecture'
   other: '{{ . }} minutes de lecture'
-series: Serie d'articles
+series-description: "Ce post fait partie de la série d'articles "
+series-title: "Série d'articles : "
+series-other: "Autres posts de cette série : "
+
+previous: « Précédent
+next: Suivant »
