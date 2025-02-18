@@ -1,5 +1,7 @@
+#!/usr/bin/env just --justfile
+
 serve:
-    hugo server --openBrowser
+    hugo server --openBrowser --printI18nWarnings
 
 draft:
     hugo server --buildDrafts --openBrowser
