@@ -42,7 +42,7 @@ defaultContentLanguage = 'fr'
   plausible_script = "https://plausible.io/js/script.js"
 
   menu = [
-    {Name = "Latests Posts", URL = "/posts/", HasChildren = true, Limit = 3},
+    {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
     {Name = "Talks", URL = "/talks/", HasChildren = true, Limit = 3 },
     {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3}
   ]
