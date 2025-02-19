@@ -14,15 +14,6 @@
     </ul>
     {{ end }}
     
-    {{ if .Params.featuredImage }}
-    <a href="{{ .Permalink }}">
-        <img style="max-height: 50%;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
-    </a>
-    {{end}}
-  
-    {{ if .Params.links }}
-        {{ partial "books/links.html" . }}
-    {{ end }}
   </div>
   
 

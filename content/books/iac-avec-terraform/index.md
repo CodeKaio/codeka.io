@@ -14,6 +14,9 @@ links:
   fnac: https://fliz.ly/EPp5q_w
   cultura: https://fliz.ly/6z4Bg_w
 ---
+
+<affilizz-rendering-component loading="lazy" publication-content-id="67b58a698d59475792a2263a"></affilizz-rendering-component>
+
 Ce livre sur Terraform s’adresse aussi bien aux « Devs » qu’aux « Ops », débutants ou disposant déjà de notions de base, qui souhaitent maîtriser le développement d’une infrastructure sur le cloud. Le lecteur y trouvera des cas d’usage illustrés par des exemples de code variés lui permettant d’être à l’aise avec son langage, son utilisation et son écosystème.
 
 Dans les premiers chapitres du livre, l’auteur présente les fondamentaux de Terraform, de la présentation des notions générales de l’infrastructure as code, à l’architecture de Terraform avec le fonctionnement du CLI, du registry, du state et des providers, en passant par le langage Terraform (HCL) expliqué en détail pour permettre la lecture et l’écriture de code simple. Au travers de 7 cas d’usage, le lecteur peut ensuite découvrir des utilisations différentes de Terraform sur des plateformes variées : Google Cloud Platform, AWS, MongoDB, OVH, Scaleway, GitHub et GitLab.
