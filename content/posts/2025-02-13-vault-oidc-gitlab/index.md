@@ -291,3 +291,4 @@ Néanmoins, si votre instance GitLab est auto-gérée, il peut être intéressan
   * Ressource [`vault_kv_secret_v2`](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/kv_secret_v2)
 * GitLab :
   * [Configure GitLab as an OAuth 2.0 authentication identity provider](https://docs.gitlab.com/ee/integration/oauth_provider.html)
+* Photo de couverture par [Ray Hennessy](https://unsplash.com/@rayhennessy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/brown-fox-on-snow-field-xUUZcpQlqpM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
