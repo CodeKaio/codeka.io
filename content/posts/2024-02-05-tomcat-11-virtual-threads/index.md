@@ -847,3 +847,4 @@ On peut déjà bénéficier de ces améliorations de performances avec Spring Bo
 - [Programmation Concurrente et Asynchrone&nbsp;: Loom en Java&nbsp;20 et 21](https://www.youtube.com/watch?v=v7DzKOniNh0) - José Paumard
 - [JMH](https://github.com/openjdk/jmh)&nbsp;: Java Microbenchmark Harness
 - [hey](https://github.com/rakyll/hey)&nbsp;: HTTP load generator, ApacheBench (ab) replacement
+- Photo de couverture par [Ache Dipro](https://unsplash.com/@achedipro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/a-close-up-of-a-cat-in-a-box-Eel_-6mI6as?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
