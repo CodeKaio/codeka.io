@@ -418,4 +418,8 @@ Pour exécuter l'infrastructure proposée dans cet article, il vous en coûtera 
 
 À titre de comparaison, un container de 4&nbsp;CPU et 4&nbsp;Go de RAM sur GCP Cloud Run coûte 174&nbsp;€/mois, avec l'option _CPU always allocated_ requise par _SonarQube_ pour exécuter ses traitements en arrière-plan. Cela fait de _Clever Cloud_ un excellent choix économique&nbsp;!
 
-Les scripts de cet article sont disponibles sur [Github](https://github.com/juwit/sonarqube-clever-cloud).
+
+# Liens et références
+
+* Les scripts de cet article sur [Github](https://github.com/juwit/sonarqube-clever-cloud).
+* Photo de couverture par [Stephan Widua](https://unsplash.com/@stewi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/white-satellite-dish-under-blue-sky-during-night-time-3YAIvBNlZM4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
