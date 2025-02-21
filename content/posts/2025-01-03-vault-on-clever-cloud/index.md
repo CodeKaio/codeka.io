@@ -315,3 +315,4 @@ Cette architecture n'est pas parfaite, mais permet de facilement déployer un Va
   * Manpage de l'appel système [mlock](https://www.man7.org/linux/man-pages/man2/mlock.2.html)
   * Un article [Vault and mlock()](https://support.hashicorp.com/hc/en-us/articles/115012787688-Vault-and-mlock) dans le help center de HashiCorp
   * Le paramètre [`disable_mlock` dans la configuration de Vault](https://developer.hashicorp.com/vault/docs/configuration#disable_mlock)
+* Photo de couverture par [Jason Dent](https://unsplash.com/@jdent?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/black-and-silver-door-knob-3wPJxh-piRw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
