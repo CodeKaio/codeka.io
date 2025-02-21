@@ -96,7 +96,37 @@ hvs.rHfvBm3fVdXzedYefPQZwFtYotDMByf3iNh2qGnvnLACfpuhMT2GpE3hyzwAH2gGuV7EhQHbVDkZ
 
 > Encore un faux _token_ pour l'exemple ici 🏴‍☠️
 
+Le code de cette première partie est disponible dans le sous-répertoire [03-terraform-token](https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault/03-terraform-token) du _repository_ GitHub.
+
 ## Initialisation de la configuration OIDC avec GitLab
+
+Pour cette deuxième partie, le code Terraform que nous allons produire sera dans un nouveau _root module_.
+Le code est disponible dans le sous-répertoire [04-oidc-configuration](https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault/04-oidc-configuration) du _repository_ GitHub. 
+
+La configuration du _provider_ Vault est similaire en tout point à celle de l'étape précédente :
+
+```terraform
+terraform {
+  required_providers {
+    vault = {
+      source  = "hashicorp/vault"
+      version = "4.5.0"
+    }
+  }
+}
+
+provider "vault" {
+}
+```
+
+Les variables d'environnement à utiliser sont l'URL de Vault, ainsi que le token issu de l'étape précédente : 
+
+```shell
+export VAULT_ADDR=https://vault-instance.cleverapps.io
+
+# root token
+export VAULT_TOKEN=hvs.rHfvBm3fVdXzedYefPQZwFtYotDMByf3iNh2qGnvnLACfpuhMT2GpE3hyzwAH2gGuV7EhQHbVDkZ9coPRG2Aa3aXFJv
+```
 
 Maintenant que Vault est configuré pour être utilisé avec Terraform, on peut configurer l'authentification OIDC avec GitLab.
 
@@ -237,12 +267,15 @@ Une fois l'authentification terminée, l'utilisateur a accès aux secrets :
 
 Cet article a présenté comment mettre en œuvre un serveur Vault pour configurer l'authentification _via_ un _provider_ OIDC, en l'occurrence GitLab.
 
-Cette configuration n'est malheureusement pas automatisable entièrement à l'heure de l'écriture de ces lignes, car aucune API ne permet de créer les applications au niveau d'un groupe ou d'un utilisateur, mais uniquement au niveau de l'instance GitLab en elle-même (cf. la documentation [Applications API](https://docs.gitlab.com/ee/api/applications.html)), ce qui restreint l'usage de cette API aux administrateurs de GitLab.
+Cette configuration n'est malheureusement pas automatisable entièrement à l'heure de l'écriture de ces lignes.
+En effet, bien qu'il existe un _provider_ Terraform pour GitLab, aucune API ne permet de créer les applications OIDC au niveau d'un groupe ou d'un utilisateur, mais uniquement au niveau de l'instance GitLab en elle-même (cf. la documentation [Applications API](https://docs.gitlab.com/ee/api/applications.html)), ce qui restreint l'usage de cette API aux administrateurs de GitLab.
 Néanmoins, si votre instance GitLab est auto-gérée, il peut être intéressant d'envisager l'utilisation de la ressource Terraform [`gitlab_application`](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/application).
 
 ## Liens et références
 
 * Exemples de code de cet article sur [GitHub](https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault)
+  * [Génération de la policy et du token Terraform](https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault/03-terraform-token)
+  * [Configuration Gitlab OIDC](https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault/04-oidc-configuration)
 * Installation du [CLI Terraform](https://developer.hashicorp.com/terraform/install)
 * Installation du [CLI OpenTofu](https://opentofu.org/docs/intro/install/)
 * Documentation de [Vault](https://developer.hashicorp.com/vault/docs) :
