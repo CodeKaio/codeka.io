@@ -1,17 +1,15 @@
 ---
-date: "2025-02-13"
+date: "2025-02-20"
 language: fr
 tags:
 - DevOps
 - Terraform
 - Vault
-- Clever Cloud
 title: GitLab OIDC & Vault
 series: Terraform et Clever Cloud
-draft: true
 ---
 
-Cet article décrit comment utiliser Terraform et le provider Vault pour configurer l'authentification OIDC avec GitLab et y stocker quelques secrets à titre d'exemple.
+Cet article décrit comment utiliser Terraform et le provider Vault pour configurer l'authentification OIDC avec GitLab. À titre d'exemple, quelques secrets seront aussi stockés dans le Vault.
 
 Le code de cet article est aussi disponible sur GitHub : https://github.com/juwit/terraform-clevercloud-playground/tree/main/vault.
 
@@ -21,7 +19,9 @@ L'installation et la configuration initiale d'un Vault sur Clever Cloud est déc
 
 ## Création d'une policy puis un token pour Terraform
 
-Après avoir positionné les variables d'environnement `VAULT_ADDR` et `VAULT_TOKEN` :
+Lors de l'initialisation de Vault, on récupère un token `root`. Utiliser ce token pour effectuer l'ensemble des opérations sur notre Vault n'est pas raisonnable. La première étape va alors consister à utiliser ce token `root`, pour créer un token qui sera consacré à Terraform. Ce token disposera de droits élevés, mais pourra être plus facilement invalidé en cas de fuite de données. Et tout ça, nous le faisons en Terraform !
+
+Après avoir positionné les variables d'environnement `VAULT_ADDR` et `VAULT_TOKEN` (avec le token `root` de Vault) :
 
 ```shell
 export VAULT_ADDR=https://vault-instance.cleverapps.io
