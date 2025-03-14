@@ -5,6 +5,7 @@ language: fr
 tags:
 - IA
 title: "AI Manifesto"
+draft: true
 ---
 
 # AI Manifesto
