@@ -2,7 +2,7 @@
 
 default: serve
 
-common_options:= "--openBrowser --printI18nWarnings"
+common_options:= "--openBrowser --printI18nWarnings --cleanDestinationDir"
 
 serve:
     hugo server {{common_options}}
