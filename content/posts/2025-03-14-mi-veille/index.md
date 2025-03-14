@@ -6,7 +6,7 @@ tags:
 - Java
 - Kubernetes
 - Internet
-- Sécurité
+- Security
 - Linux
 title: La veille de Wittouck - Début Mars 2025
 series: La veille de Wittouck
