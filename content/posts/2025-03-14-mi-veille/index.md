@@ -9,6 +9,7 @@ tags:
 - Sécurité
 - Linux
 title: La veille de Wittouck - Début Mars 2025
+series: La veille de Wittouck
 ---
 
 Je vais essayer dans les prochaines semaines de publier les liens que je découvre lors de ma veille techno courante, dans le cadre de mon boulot ou depuis mon canap' 🛋️
@@ -64,6 +65,7 @@ Parmi les liens que vous allez retrouver (mais pas que) :
   * [Java 1.8](https://www.linkedin.com/posts/guillaume-dufr%C3%AAne-90179410_ruby-rails-prestashop-activity-7305516664895262720-5wM9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAnJockBYMCZmKvFfK2Ytyqf-fRZDwyzaKc)
 
 > Ça rappelle des souvenirs, et le contexte remet un peu les fonctionnalités du langage dans l'histoire, et explique le succès de Java au fur et à mesure des années !
+> J'ajouterai les liens suivants lors de la prochaine publication.
 
 ## 🏷️ Releases
 
