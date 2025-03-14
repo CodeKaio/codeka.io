@@ -7,7 +7,7 @@ tags:
 - DevOps
 - Terraform
 - OpenTofu
-- Clever Cloud
+- CleverCloud
 title: Terraform et Clever Cloud
 series: Terraform et Clever Cloud
 ---

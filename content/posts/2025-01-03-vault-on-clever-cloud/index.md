@@ -6,7 +6,7 @@ tags:
 - DevOps
 - Terraform
 - Vault
-- Clever Cloud
+- CleverCloud
 title: Vault sur Clever Cloud
 series: Terraform et Clever Cloud
 ---

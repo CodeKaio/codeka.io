@@ -5,7 +5,7 @@ language: fr
 modified: "2023-11-09"
 slug: "deploy-sonarqube-on-clever-cloud"
 tags:
-- Clever Cloud
+- CleverCloud
 - SonarQube
 - Tutorial
 title: Déployer une instance de SonarQube sur Clever Cloud
