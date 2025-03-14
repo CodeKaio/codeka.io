@@ -7,8 +7,11 @@
     {{ if .Params.tags }}
     <ul class="tags">
         {{ range .Params.tags }}
+
+        {{ $tagPage := site.GetPage "tags" . }}
+
         <li class="tag-{{ . }}">
-            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
+            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{$tagPage.Params.emoji}} {{ . }}</a>
         </li>
         {{ end }}
     </ul>
