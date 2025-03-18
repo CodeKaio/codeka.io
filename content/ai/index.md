@@ -1,14 +1,15 @@
 ---
 created: "2025-03-07"
-date: "2025-03-07T14:30:00+01:00"
-published: "2025-03-18"
+date: "2025-03-18"
 language: fr
+aliases:
+  - ai
+  - ai-manifesto
+type: post
 tags:
 - IA
 title: "AI Manifesto"
 ---
-
-# AI Manifesto
 
 **Aucun** _post_, **aucune** page de ce blog n'est écrit avec une IA.
 
