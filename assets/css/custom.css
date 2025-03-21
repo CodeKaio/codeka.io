@@ -19,6 +19,42 @@ ul.certifications {
     border: 2px solid white;
 }
 
+@media (max-width: 48em) {
+    .sidebar {
+        padding: 1rem;
+        .certifications {
+            display: none;
+        }
+        .light-dark {
+            display: none;
+        }
+        .sidebar-nav {
+            display: none;
+        }
+        .social {
+            display: none;
+        }
+        .footnote {
+            display: none;
+        }
+        .lead {
+            margin-bottom: 0;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+
+            img {
+                width: 80px;
+                height: 80px;
+                margin: 0;
+            }
+        }
+    }
+}
+
 /* links style for projects list view in home page */
 .projects .info {
     margin-bottom: 4em;
