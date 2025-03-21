@@ -15,8 +15,6 @@
     {{ with .Site.Params.description }}{{. | safeHTML}}{{end}}
     </p>
 
-    <hr/>
-
     <ul class="certifications">
     {{ range .Site.Params.certifications }}
         <li>
@@ -28,5 +26,4 @@
     {{ end }}
     </ul>
 
-    <hr/>
 </div>

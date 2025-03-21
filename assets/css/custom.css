@@ -4,7 +4,9 @@
 
 ul.certifications {
     display: flex;
-    padding: 0;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    padding: 1rem 0 1rem 0;
 }
 
 .certifications li {
