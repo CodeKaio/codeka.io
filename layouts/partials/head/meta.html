@@ -19,6 +19,7 @@
 {{ end }}
 
 {{ if .IsPage }}
+  {{ .Scratch.Add "title" " - " }}
   {{ .Scratch.Add "title" .LinkTitle }}
 {{ end }}
 
