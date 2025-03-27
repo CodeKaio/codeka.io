@@ -1,5 +1,5 @@
 ---
-date: "2025-03-28"
+date: "2025-03-27"
 language: fr
 tags:
   - Java
@@ -9,28 +9,12 @@ tags:
   - Docker
 title: La veille de Wittouck - Fin Mars 2025
 series: La veille de Wittouck
-draft: true
 ---
 
-## 🛜 Internet
+Avec la sortie récente de Java 24, cette deuxième édition de _La veille de Wittouck_ rassemble tout d'abord quelques lectures indispensables autour de la toute nouvelle version de mon langage préféré.
+Quelques articles généralistes également, dont un très bien illustré sur les technologies de stockage. Enfin, parmi les nouveautés, l'outil _kaniuse_ référence la compatibilité des API Kubernetes (très pratique), et Docker Compose supporte maintenant la publication des fichiers `compose.yml` dans un registry OCI.
 
-* [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
-
-> J'ai découvert cet outil qui permet de voir à quoi va ressembler la "carte" générée par LinkedIn pour les liens qui y sont postés. Ça va bien me servir 😅
-
-* [How Core Git Developers Configure Git](https://blog.gitbutler.com/how-git-core-devs-configure-git/) par [Scott Chacon](https://bsky.app/profile/scottchacon.com) _via_ [RudeOps](https://www.rudeops.com/)
-
-> J'avais déjà lu cet article il y a quelque temps, et je suis retombé dessus via l'excellente newsletter de RudOps. Pour faire simple, le TLDR est un bon point de départ. Tous les paramètres sont expliqués et détaillées, c'est un article très complet. 
-
-* [IO devices and latency](https://planetscale.com/blog/io-devices-and-latency?utm_source=pocket_shared) _via_ [La veille des ours](https://www.linkedin.com/newsletters/la-veille-des-ours-7100088441966575616/)
-
-> Un article qui reprend en détail les différentes technologies de stockage, depuis le stockage sur bande, jusqu'aux disques réseau, en passant par les disques rotatifs et SSD. Les technologies sont illustrées par des animations interactives. C'est très bien écrit et très intéressant pour se rendre compte de l'évolution des technologies au fil des années.
-
-## 🤖 IA
-
-* [ChatGPT : le mythe de la productivité](https://framablog.org/2025/03/09/chatgpt-le-mythe-de-la-productivite/?utm_source=pocket_shared) par [Hubert Guillaud](https://hubertguillaud.wordpress.com/) _via_ [Framablog](https://framablog.org)
-
-> Ce _post_ fait écho avec le sentiment que j'ai aujourd'hui autour de l'usage des IA génératives et l'impact ressenti, que j'ai un peu développé dans mon [AI Manifesto]({{< relref "/ai" >}}). C'est une lecture indispensable !
+Bonne lecture !
 
 ## ☕ Java
 
@@ -52,6 +36,26 @@ draft: true
 
 > Une 3ᵉ façon d'enregistrer des beans dans le contexte Spring (en plus de `@Bean` dans une classe `@Configuration` et `@Component`). L'approche va permettre de simplifier des cas d'usage de `@Conditional` et se veut compatible avec les approches d'AOT.
 
+## 🛜 Internet
+
+* [How Core Git Developers Configure Git](https://blog.gitbutler.com/how-git-core-devs-configure-git/) par [Scott Chacon](https://bsky.app/profile/scottchacon.com) _via_ [RudeOps](https://www.rudeops.com/)
+
+> J'avais déjà lu cet article il y a quelque temps, et je suis retombé dessus via l'excellente newsletter de RudOps. Pour faire simple, le TLDR est un bon point de départ. Tous les paramètres sont expliqués et détaillées, c'est un article très complet. 
+
+* [IO devices and latency](https://planetscale.com/blog/io-devices-and-latency?utm_source=pocket_shared) _via_ [La veille des ours](https://www.linkedin.com/newsletters/la-veille-des-ours-7100088441966575616/)
+
+> Un article qui reprend en détail les différentes technologies de stockage, depuis le stockage sur bande, jusqu'aux disques réseau, en passant par les disques rotatifs et SSD. Les technologies sont illustrées par des animations interactives. C'est très bien écrit et très intéressant pour se rendre compte de l'évolution des technologies au fil des années.
+
+* [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+
+> J'ai découvert cet outil qui permet de voir à quoi va ressembler la "carte" générée par LinkedIn pour les liens qui y sont postés. Ça va bien me servir 😅
+
+## 🤖 IA
+
+* [ChatGPT : le mythe de la productivité](https://framablog.org/2025/03/09/chatgpt-le-mythe-de-la-productivite/?utm_source=pocket_shared) par [Hubert Guillaud](https://hubertguillaud.wordpress.com/) _via_ [Framablog](https://framablog.org)
+
+> Ce _post_ fait écho avec le sentiment que j'ai aujourd'hui autour de l'usage des IA génératives et l'impact ressenti, que j'ai un peu développé dans mon [AI Manifesto]({{< relref "/ai" >}}). C'est une lecture indispensable !
+
 ## ☸️ Kubernetes
 
 * [kaniuse](https://kaniuse.gerome.dev/) par [Gérôme Grignon](https://www.linkedin.com/in/gerome-grignon/)
@@ -63,10 +67,6 @@ draft: true
 * [Using Docker Compose with OCI artifacts](https://docs.docker.com/compose/how-tos/oci-artifact/) _via_ [Guillaume Lours](https://www.linkedin.com/in/guillaumelours/) sur [LinkedIn](https://www.linkedin.com/posts/guillaumelours_docker-compose-activity-7306423870838747136-SvCl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAnJockBYMCZmKvFfK2Ytyqf-fRZDwyzaKc)
 
 > Une nouvelle feature de `docker compose` qui permet de partager facilement des compositions en tant qu'artifacts OCI. C'est une belle avancée pour pouvoir partager des stacks prêtes à l'emploi.
-
-## 🎫 Évènements
-
-Ma sélection de talks pour DevOxx 2025:
 
 ---
 
