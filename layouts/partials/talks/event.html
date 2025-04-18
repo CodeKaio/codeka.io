@@ -4,13 +4,9 @@
 <h2>Slides </h2>
 <embed src="{{ .slides }}" type="application/pdf" width="100%" height="500px">
 
+{{ if .youtube }}
 <h2>Video</h2>
 <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {{ end }}
 {{ end }}
-
-{{ if (.Params.slides) }}
-<h1>Slides </h2>
-<embed src="{{ .Params.slides }}" type="application/pdf" width="100%" height="500px">
-
 {{ end }}
