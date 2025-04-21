@@ -3,17 +3,16 @@ date: "2025-04-18"
 language: fr
 title: La veille de Wittouck - Début Avril 2025
 series: La veille de Wittouck
-draft: true
 tags:
-  - internet
-  - kubernetes
+  - Internet
+  - Kubernetes
 ---
 
-En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane]({{< relref "/talks/talk-rebase-crane">}}).
+En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane]({{< relref "/talks/talk-rebase-crane">}}), donc forcément, ma veille a été un peu plus light que d'habitude.
 
-Néanmoins, j'ai quelques liens sympa à partager.
+Néanmoins, j'ai quelques liens sympas à partager.
 
-Je vais aussi publier en début de semaine prochaine mes impressions sur cette édition de DevOxx 2025, avec les talks auxquels j'ai eu la chance d'assister. Et j'amenderai ce futur article avec les liens vers les vidéos quand elles seront disponibles ! 
+Je vais aussi publier en prochainement mes impressions sur cette édition de DevOxx 2025, avec les talks auxquels j'ai eu la chance d'assister. Et j'amenderai ce futur article avec les liens vers les vidéos quand elles seront disponibles ! 
 
 ## 🛜 Internet
 
@@ -29,7 +28,7 @@ Je vais aussi publier en début de semaine prochaine mes impressions sur cette �
 
 > Un court thread qui donne des éléments d'histoire sur le choix de la taille de 8 bits pour représenter une unité de données numériques.
 
-[My 2025 Stack: A Modern and Optimized Setup](https://medium.com/@a-lebailly/my-2025-stack-a-modern-and-optimized-setup-06533ba67bc9) par Alexandre Lebailly
+* [My 2025 Stack: A Modern and Optimized Setup](https://medium.com/@a-lebailly/my-2025-stack-a-modern-and-optimized-setup-06533ba67bc9) par Alexandre Lebailly
 
 > J'aime bien découvrir les stacks d'autres développeurs, il y a toujours des outils intéressants à tester. Là, c'est [Hyprland](https://hyprland.org/) qui m'attire particulièrement (même si le setup pourrait être compliqué), et l'outil [Better Commits](https://github.com/Everduin94/better-commits) semble chouette, je testerai dans les semaines qui viennent.
 
@@ -42,3 +41,5 @@ Je vais aussi publier en début de semaine prochaine mes impressions sur cette �
 ---
 
 La prochaine publication est prévue autour du 2 mai 🗓️
+
+Photo de couverture par [Oğuzhan Akdoğan](https://unsplash.com/@jeffgry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/man-using-computer-inside-room-qYMkkREOHa4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
