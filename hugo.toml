@@ -28,6 +28,9 @@ defaultContentLanguage = 'fr'
       [markup.goldmark.parser.attribute]
         block = true
 
+[outputs]
+  home = ['html', 'rss', 'json']
+
 [params]
   brand = "Julien Wittouck"
   brand_image = 'pp_ekite_itvw.png'

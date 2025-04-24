@@ -26,4 +26,9 @@
     {{ end }}
     </ul>
 
+    <form action="{{ "search" | absURL }}">
+        <input type="search" id="search" name="s" placeholder="Rechercher"/>
+        <button type="submit">🔎</button>
+    </form>
+
 </div>
