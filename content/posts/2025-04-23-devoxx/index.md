@@ -76,6 +76,10 @@ Cela s'est plutôt bien passé de mon point de vue. J'ai même eu le temps de jo
 
 L'abstract et les slides sont dispo ici : [Rebase d'images Docker/OCI avec crane]({{< relref "/talks/talk-rebase-crane">}}).
 
+Je n'ai pas eu énormément de feedbacks sur l'appli, mais ils sont tous positifs !
+
+{{< img-resized src=ratings.png >}}
+
 ### Un p'tit tour sur les stands
 
 J'ai pas mal discuté avec les potes de Clever Cloud, des nouveautés à venir, et du sursaut de souveraineté récent qu'ont certains de leurs clients. Cela montre une prise de conscience qui sera intéressante à creuser. Ils m'ont aussi offert leur nouveau t-shirt, qui est d'une qualité incroyable comme c'est le cas tous les ans.
