@@ -104,6 +104,18 @@ ul.certifications {
     margin: 0;
 }
 
+/* article headline style */
+.headline {
+    gap: 1rem;
+    align-items: start;
+}
+.headline > div {
+    flex: 1 0 auto;
+}
+.headline > .tags {
+    flex: 0 1 auto;
+}
+
 /* search box style */
 :root {
     --rad: .5rem;
