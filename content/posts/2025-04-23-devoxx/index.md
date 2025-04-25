@@ -53,7 +53,7 @@ Dans ce lunch talk (15 minutes, ça va vite !), mon pote Loïc a présenté Kest
 
 > J'ai apprécié re-découvrir ces éléments, même si 15 minutes sur ce sujet, c'est un peu court ! J'ai eu l'occasion de rediscuter du fonctionnement de Kestra avec Loïc, au détour d'un couloir, donc ma curiosité a été satisfaite 😃
 
-### BullShit IT Awards : Célébrons les erreurs des équipes Tech !
+### BullShit IT Awards : Célébrons les erreurs des équipes Tech ! - Romain Rozewicz
 
 {{< img-resized src=rrz-bullshit.jpg >}}
 
