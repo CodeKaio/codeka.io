@@ -69,7 +69,7 @@ Jérôme nous explique comment fonctionne OpenRewrite, et comment écrire notre 
 
 ### Rebase d'image Docker/OCI avec crane - Julien Wittouck
 
-{{< img-resized src=crane.jpg >}}
+{{< img-resized src=cover.jpg >}}
 
 Je ne pouvais pas manquer mon propre talk 😅
 Cela s'est plutôt bien passé de mon point de vue. J'ai même eu le temps de jouer une démo que je m'étais gardé sur le côté au cas où.
