@@ -7,20 +7,31 @@ tags:
   - Internet
   - Java
   - Security
+  - IA
+  - DevOps
 ---
 
 En ce fin avril, il fait beau, donc on n'a pas très envie de passer du temps sur son ordi à scroller pour faire sa veille.
-Donc on lit la veille de Wittouck !
+Alors on lit la veille de Wittouck !
 
-> Sur quelques liens, j'ai oublié de noter les sources qui m'ont permis de les découvrir (oups).
+> Sur pas mal de liens, j'ai oublié de noter les sources qui m'ont permis de les découvrir (oups), je vais faire attention à ce point pour la prochaine édition.
 
-La playlist de Devoxx France 2025 se remplit avec des vidéos masquées, donc la publication devrait bientôt être faite 🤞
+<!--more-->
 
 ## 🛜 Internet
+
+* [DevOxx France 2025](https://www.youtube.com/playlist?list=PLTbQvx84FrATiYy0se8yoHJHicXtmDbB-) sur Youtube
+
+> La playlist de Devoxx France 2025 se remplit avec des vidéos masquées, donc la publication devrait bientôt être faite 🤞
+> ![](devoxx-playlist.png)
 
 * [Professeur Fabrizio Bucella](https://www.youtube.com/@FabrizioBucella/shorts) sur Youtube.
 
 > J'ai découvert les _shorts_ de ce professeur belge par hasard. Il nous explique des principes de physique en quelques minutes, principalement avec un tableau noir et une craie. C'est incroyable de pédagogie, plein d'humour et de bel accent belge 🇧🇪. Salukes.
+
+* [Thoughts on Bluesky Verification](https://steveklabnik.com/writing/thoughts-on-bluesky-verification/?utm_source=pocket_list) par [Steve Klabnik](https://bsky.app/profile/steveklabnik.com) sur [Bluesky](https://bsky.app/profile/steveklabnik.com/post/3lne4frl43s2d)
+
+> Un article intéressant qui détaille quelques éléments du protocole AT implémenté par BlueSky et en particulier les enregistrements qui permettent la vérification (coche bleue).
 
 ## 🔒 Sécurité
 
@@ -49,22 +60,32 @@ Enfin, il serait peut-être intéressant de creuser l'alternative européenne : 
 
 * [EUVD](https://euvd.enisa.europa.eu/homepage) : La page d'accueil de la base de données _EUVD_, portée par l'_ENISA_ (_European Union Agency For CyberSecurity_)
 
-> Je pense que cette base de données pourrait devenir une alternative fiable à la NVD américaine. À voir si des outils comme OWASP DC ou OWASP DT sont forkés / paramétrables pour se brancher sur ces données. Je n'ai pas trouver comment télécharger le JSON avec les EUVD 😅
+> Je pense que cette base de données pourrait devenir une alternative fiable à la NVD américaine. À voir si des outils comme OWASP DC ou OWASP DT sont forkés / paramétrables pour se brancher sur ces données. Je n'ai pas trouvé comment télécharger le JSON avec les EUVD 😅
 
 ## ☕ Java
 
 * [What's new in Maven 4?](https://maven.apache.org/whatsnewinmaven4.html)
 
-> Maven 4 n'est pas encore sorti, mais dévoile une partie de ses fonctionnalités : Java 17 par défaut (en replacement de Java 5 ?), Des modification sur le format du pom avec la séparation du pom de _build_ du pom de consommation. Et aussi l'officialisation du type `bom` comme type de package. `mvnd` reste un projet à part. Un guide de migration est aussi déjà disponible.
+> Maven 4 n'est pas encore sorti, mais dévoile une partie de ses fonctionnalités : Java 17 par défaut (en replacement de Java 5 ?), Des modifications sur le format du pom avec la séparation du pom de _build_ du pom de consommation. Et aussi l'officialisation du type `bom` comme type de package. `mvnd` reste un projet à part. Un guide de migration est aussi déjà disponible.
+
+* [javac on WebAssembly](https://graalvm.github.io/graalvm-demos/native-image/wasm-javac/)
+
+> Cette info a été _teasée_ par Alina Yurenko à DevOxx France 2025. GraalVM développe la capacité à compiler du code en WebAssembly (l'exécution de WebAssembly est déjà implémentée par GraalVM Polyglot). Cela ouvre de nouvelles possibilités : exécuter du code Java dans un browser, sans avoir besoin de runtime particulier !
 
 ## ☕ IA
 
 * [AI 2027](https://ai-2027.com)
 
-> Un article qui imagine l'évolution de l'IA dans les années à venir. L'article prend beaucoup en compte le contexte géopolitique actuel comme inspiration. On frise la science-fiction  (surtout sur la fin, qu'on peut choisir entre 2 scenarios). À lire absolument.
+> Un article qui imagine l'évolution de l'IA dans les années à venir. L'article prend beaucoup en compte le contexte géopolitique actuel comme inspiration. On frise la science-fiction (surtout sur la fin, qu'on peut choisir entre deux scenarios). À lire absolument.
+
+## 👷 DevOps
+
+* [OpenTofu Joins CNCF](https://thenewstack.io/opentofu-joins-cncf-new-home-for-open-source-iac-project/?utm_source=pocket_list) _via_ [TheNewStack](https://thenewstack.io)
+
+> La CNCF a accepté l'intégration de OpenTofu en tant que projet _sandbox_. C'est une belle étape de franchie pour ce fork de Terraform, qui s'inscrit donc bien dans la durée.
 
 ---
 
 La prochaine publication est prévue autour du 16 mai 🗓️
 
-[//]: # (Photo de couverture par [Oğuzhan Akdoğan]&#40;https://unsplash.com/@jeffgry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash&#41; sur [Unsplash]&#40;https://unsplash.com/photos/man-using-computer-inside-room-qYMkkREOHa4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash&#41;)
+Photo de couverture par [Michiel Leunens](https://unsplash.com/@leunesmedia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/white-ceramic-mug-on-white-ceramic-saucer-beside-bread-on-white-ceramic-plate-0wIHsm2_1fc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
