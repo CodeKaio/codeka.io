@@ -11,7 +11,7 @@ tags:
   - DevOps
 ---
 
-En ce fin avril, il fait beau, donc on n'a pas très envie de passer du temps sur son ordi à scroller pour faire sa veille.
+En ce début de mois de mai, il fait beau, donc on n'a pas très envie de passer du temps sur son ordi à scroller pour faire sa veille.
 Alors on lit la veille de Wittouck !
 
 > Sur pas mal de liens, j'ai oublié de noter les sources qui m'ont permis de les découvrir (oups), je vais faire attention à ce point pour la prochaine édition.
