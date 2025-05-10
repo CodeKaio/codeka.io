@@ -7,7 +7,7 @@ tags:
   - DevOps
 #  - Docker
 #  - Git
-#  - IA
+  - IA
   - Internet
   - Java
 #  - Kubernetes
@@ -58,7 +58,11 @@ stabilité financière et pérennité, tout en rassurant l’entité qui le dép
 
 > Dans cette intervention enregistrée au Ch'ti JUG, mon pote Guillaume présente l'histoire de Java, depuis la version 1.0, jusqu'à la version 24, dans la lignée des [posts qu'il avait partagés]({{< relref "/posts/2025-03-14-mi-veille#-java">}}) il y a quelques mois. Il présente ensuite le futur de Java avec les prochaines JEP qui lui semblent intéressantes. Une vidéo immanquable !
 
-[//]: # (## ☕ IA)
+## 🧠 IA
+
+* [The hidden cost of AI coding](https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/) par [Matheus Lima](https://terriblesoftware.org/) _via_ [Julien Cartigny](https://www.linkedin.com/in/julien-cartigny-gcp-finops/) sur [LinkedIn](https://www.linkedin.com/posts/julien-cartigny-gcp-finops_the-hidden-cost-of-ai-coding-activity-7321060271093932032-FnuL)
+
+> Cet article met en avant un impact insoupçonné de l'utilisation de l'IA pour coder : _lack of joy_. Les parties intéressantes et fun de notre métier pourraient maintenant être faites par l'IA. Ce fameux _éclair de génie_ qui survient lorsqu'on résout un problème. Au delà du côté réflexion et conception, coder en appuyant sur <TAB> ou saisissant un prompt n'est probablement pas ce qui va me rendre heureux au travail 😅
 
 ## 👷 DevOps
 
