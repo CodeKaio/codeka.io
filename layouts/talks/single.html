@@ -4,6 +4,8 @@
 
   {{ .Content }}
 
+  {{ partial "talks/slides.html" . }}
+
   {{ partial "talks/event.html" . }}
 
   {{ if (.Site.Params.listmonk) }}
