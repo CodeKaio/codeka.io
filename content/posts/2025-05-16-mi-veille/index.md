@@ -14,7 +14,6 @@ tags:
 #  - Linux
   - Security
 #  - Tools
-draft: true
 ---
 
 En ce début mai, entre 2 jours fériés, l'actu tech n'est pas très chargée. Voici les liens de quelques articles et vidéos qui m'ont quand même marqué en ce début de mois, avec quelques pépites trouvées sur Reddit.
@@ -87,6 +86,7 @@ stabilité financière et pérennité, tout en rassurant l’entité qui le dép
 ---
 
 La prochaine publication est prévue autour du 30 mai 🗓️
+Elle sera principalement axée autour des vidéos de DevOxx France, qui ont été publiées ce 13 mai.
 
 Photo de couverture par [Anastasiia Dudka](https://unsplash.com/@anastasiiad?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/white-flowers-on-black-computer-keyboard-wm9QFiZhSf8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
       
