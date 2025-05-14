@@ -40,7 +40,7 @@ Bonne lecture !
 
 * [Is This Tech Dead ?](https://www.isthistechdead.com/) par [Youssef El Behi](https://github.com/jobehi) _via_ [Reddit](https://www.reddit.com/r/developpeurs/comments/1kffcq3/isthistechdeadcom_est_maintenant_open_source/)
 
-> Ce site plein d'humour collecte des métriques sur plusieurs sources (GitHub, Google Jobs, Reddit, Stackoverflow, Hacker new) pour calculer un _Deaditude Score_. Ce score permet alors de savoir si la techno est _Dead_. C'est rigolo, et intelligent. A utiliser pour alimenter vos tech-radars 😅
+> Ce site plein d'humour collecte des métriques sur plusieurs sources (GitHub, Google Jobs, Reddit, Stackoverflow, Hacker new) pour calculer un _Deaditude Score_. Ce score permet alors de savoir si la techno est _Dead_. C'est rigolo, et intelligent. À utiliser pour alimenter vos tech-radar 😅
 
 ## 🔒 Sécurité
 
@@ -61,13 +61,13 @@ stabilité financière et pérennité, tout en rassurant l’entité qui le dép
 
 * [The hidden cost of AI coding](https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/) par [Matheus Lima](https://terriblesoftware.org/) _via_ [Julien Cartigny](https://www.linkedin.com/in/julien-cartigny-gcp-finops/) sur [LinkedIn](https://www.linkedin.com/posts/julien-cartigny-gcp-finops_the-hidden-cost-of-ai-coding-activity-7321060271093932032-FnuL)
 
-> Cet article met en avant un impact insoupçonné de l'utilisation de l'IA pour coder : _lack of joy_. Les parties intéressantes et fun de notre métier pourraient maintenant être faites par l'IA. Ce fameux _éclair de génie_ qui survient lorsqu'on résout un problème. Au delà du côté réflexion et conception, coder en appuyant sur <TAB> ou saisissant un prompt n'est probablement pas ce qui va me rendre heureux au travail 😅
+> Cet article met en avant un impact insoupçonné de l'utilisation de l'IA pour coder : _lack of joy_. Les parties intéressantes et fun de notre métier pourraient maintenant être faites par l'IA. Ce fameux _éclair de génie_ qui survient lorsqu'on résout un problème. Au-delà du côté réflexion et conception, coder en appuyant sur <TAB> ou saisissant un prompt n'est probablement pas ce qui va me rendre heureux au travail 😅
 
 ## 👷 DevOps
 
 * [Every developer needs to self-host](https://dev.to/code42cate/every-developer-needs-to-self-host-43mm) _via_ [Lady Julie](https://bsky.app/profile/louhde.tech) sur [BlueSky](https://bsky.app/profile/louhde.tech/post/3lo6szy26ps2o)
 
-> Cet article met en avant tout ce qu'on apprend en self-hostant quelques outils : comment installer les logiciels, les bases de réseau, les bases de sécurité, les bases de DevOps. Bref, tout ce qu'on peut apprendre en bidouillant et qui pourra s'avérer utile plus tard. Indispensable pour les profils les plus juniors, et les devs n'ayant jamais touché à l'infra ou au Cloud.
+> Cet article met en avant tout ce qu'on apprend en _self hostant_ quelques outils : comment installer les logiciels, les bases de réseau, les bases de sécurité, les bases de DevOps. Bref, tout ce qu'on peut apprendre en bidouillant et qui pourra s'avérer utile plus tard. Indispensable pour les profils les plus juniors, et les devs n'ayant jamais touché à l'infra ou au Cloud.
 
 [//]: # (## ☸️ Kubernetes)
 
@@ -86,7 +86,7 @@ stabilité financière et pérennité, tout en rassurant l’entité qui le dép
 ---
 
 La prochaine publication est prévue autour du 30 mai 🗓️
+
 Elle sera principalement axée autour des vidéos de DevOxx France, qui ont été publiées ce 13 mai.
 
 Photo de couverture par [Anastasiia Dudka](https://unsplash.com/@anastasiiad?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) sur [Unsplash](https://unsplash.com/photos/white-flowers-on-black-computer-keyboard-wm9QFiZhSf8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
-      
