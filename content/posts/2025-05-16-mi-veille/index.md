@@ -19,7 +19,7 @@ draft: true
 
 En ce début mai, entre 2 jours fériés, l'actu tech n'est pas très chargée. Voici les liens de quelques articles et vidéos qui m'ont quand même marqué en ce début de mois, avec quelques pépites trouvées sur Reddit.
 
-Pour celles et ceux qui me suivent déjà sur [LinkedIn](https://www.linkedin.com/in/julien-wittouck) ou [Bluesky](https://bsky.app/profile/codekaio.bsky.social), je vais aussi essayer de poster les liens les plus importants dans mon feed, un peu au fil de l'eau.
+Pour celles et ceux qui me suivent déjà sur [LinkedIn](https://www.linkedin.com/in/julien-wittouck) ou [Bluesky](https://bsky.app/profile/codeka.io), je vais aussi essayer de poster les liens les plus importants dans mon feed, un peu au fil de l'eau.
 
 Bonne lecture !
 

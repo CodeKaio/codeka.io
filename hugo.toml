@@ -57,7 +57,7 @@ defaultContentLanguage = 'fr'
   github_url = "https://github.com/juwit"
   linkedin_url = "https://www.linkedin.com/in/julien-wittouck"
   twitter_url = "https://www.twitter.com/CodeKaio"
-  bluesky_url = "https://bsky.app/profile/codekaio.bsky.social"
+  bluesky_url = "https://bsky.app/profile/codeka.io"
   rss_icon = true
 
   # Hex colors for your sidebar.
