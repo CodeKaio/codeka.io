@@ -12,3 +12,6 @@ draft:
 
 non-breakable-spaces:
     sed -i '/^---$/,/^---$/b;s/ \([;?:!]\)/\ \1/g' content/posts/**/*.md
+
+new date title:
+    hugo new content posts/{{date}}-{{title}} -k veille
