@@ -183,3 +183,34 @@ label {
 mark {
     background: #5ea4e280;
 }
+
+/* Blockquote styling with transparent quote character */
+blockquote {
+    position: relative;
+    padding: 1.5rem 1rem 1rem 2rem;
+    margin: 1.5rem 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    font-size: 9rem;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.05));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: rotate(-5deg);
+    line-height: 1;
+    z-index: 0;
+}
+
+blockquote p {
+    position: relative;
+    z-index: 1;
+}
