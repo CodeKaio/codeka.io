@@ -1,15 +1,11 @@
 <div class="sidebar-about">
     <h1 class="brand">
         <a href="{{ .Site.BaseURL }}">
-        {{ $brand_image := resources.Get .Site.Params.brand_image }}
-        {{ $brand_image := $brand_image.Fill "180x180 Center"}}
-        <img src="{{ $brand_image.Permalink }}" alt="brand image">
+            {{ $brand_image := resources.Get .Site.Params.brand_image }}
+            {{ $brand_image := $brand_image.Fill "180x180 Center"}}
+            <img src="{{ $brand_image.Permalink }}" alt="brand image">
+            <h1>{{ .Site.Params.brand }}</h1>
         </a>
-        {{ if .Site.Params.brand }}
-            <a href="{{ .Site.BaseURL }}">
-                <h1>{{ .Site.Params.brand }}</h1>
-            </a>
-        {{ end }}
     </h1>
     <p class="lead">
     {{ with .Site.Params.description }}{{. | safeHTML}}{{end}}
