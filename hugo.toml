@@ -69,3 +69,7 @@ defaultContentLanguage = 'fr'
   sidebar_img_border_color = "#515151"    # default is #515151
   sidebar_p_color = "#111111"             # default is #909090
   sidebar_socials_color = "#FFF"          # default is #FFF
+
+[privacy]
+  [privacy.youTube]
+    privacyEnhanced = true
