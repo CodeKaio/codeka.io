@@ -4,6 +4,19 @@
 
   {{ partial "post/i18nlist.html" . }}
 
+  {{ $postDate := .Date }}
+  {{ $twoYearsAgo := now.AddDate -2 0 0 }}
+  {{ if lt $postDate $twoYearsAgo }}
+  <blockquote class="alert alert-warning">
+    <p class="alert-heading">
+      ⚠️ Warning
+    </p>
+    <p class="alert-content">
+      {{ i18n "old-post" }}
+    </p>
+  </blockquote>
+  {{ end }}
+
   {{ with .Resources }}
     {{ with .GetMatch "{cover.*}" }}
          {{ $cover := .Resize "820x" }}

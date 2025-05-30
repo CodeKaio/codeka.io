@@ -218,3 +218,30 @@ blockquote p {
     position: relative;
     z-index: 1;
 }
+
+/* Alert blockquotes */
+blockquote.alert {
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+blockquote.alert::before{
+    content:"";
+}
+blockquote.alert-warning {
+    border-color: #cb8e38;
+}
+.alert > .alert-heading {
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 0;
+    font-weight: bolder;
+    color: #cb8e38;
+}
+.alert > .alert-content {
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 0;
+    color: black;
+}
+.alert-warning > .alert-heading {
+    background-color: #fbf4ea;
+}
