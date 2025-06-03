@@ -14,22 +14,21 @@ tags:
   - Linux
   - Security
   - Tools
-draft: true
 params:
-    watchedVideos: 25
+    watchedVideos: 35
 ---
 
-J'ai regardé pas loin de {{% param watchedVideos %}} videos de la [playlist de Devoxx France 2025](https://www.youtube.com/playlist?list=PLTbQvx84FrATiYy0se8yoHJHicXtmDbB-).
+J'ai regardé pas loin de {{% param watchedVideos %}} videos de la [playlist de Devoxx France 2025](https://www.youtube.com/playlist?list=PLTbQvx84FrATiYy0se8yoHJHicXtmDbB-) pour vous faire cette sélection.
 Mon astuce (pour ne pas y passer 300 heures) : je regarde les vidéos en x2, et je ralentis sur les morceaux intéressants 😅
 
 Cette édition spéciale de "La veille de Wittouck" liste donc les vidéos qui m'ont le plus intéressé.
-Je les ai classées selon les tags que j'utilise d'habitude. Il ne sont pas triés dans un ordre précis.
+Je les ai classées selon les tags que j'utilise d'habitude, elles ne sont pas triés dans un ordre précis.
 
 Je n'ai aussi pas listé les talks que j'avais déjà mentionné dans mon article précédent, je vous propose de les retrouver dans l'article [DevOxx 2025 - Bilan]({{< relref "/posts/2025-04-23-devoxx" >}}), que j'ai mis à jour avec les liens des vidéos.
 
 <!--more-->
 
-## 🛜 Internet
+## 🛜 Internet et Divers
 
 * [Retourner le cerveau de sa Gameboy et les attraper (vraiment) tous 💪](https://www.youtube.com/watch?v=7f-zajwDuNk) : Présentation par : Audren Burlot (Max Digital Services)
 
@@ -56,6 +55,18 @@ La conférence est hyper bien réalisée, avec des démos dans le jeu !
 
 > "L'architecture, c'est le boulot de tout le monde". Les speakers donnent quelques clés d'architecture à destination des devs. Quelques tips simples comme "énoncer clairement les problèmes" à résoudre, et quels sont les quality attributes à mesurer dans une bonne architecture : disponibilité, performance, etc. Ils présentent aussi quelques points autour architecture monolithiques, modulaires, et des tradeoffs associés. Enfin, quelques points comme les ADR, les tests d'architecture et les principes de couplage et de cohésion.
 
+* [Ne perdez plus vos photos de vacances 🔥🏠🔥 (ou tout autre fichier important)](https://www.youtube.com/watch?v=FsItkp58sP0) : Présentation par : Denis Germain (Lucca)
+
+{{< youtube FsItkp58sP0 >}}
+
+> "On se rend compte de la valeur de ses données personnelles le jour où on les perd". Denis donne quelques billes pour estimer un risque, et la stratégie "3-2-1", et implémenter cette stratégie avec un NAS (_Network Attached Storage_) et quelques services et logiciels.
+
+* [À la découverte d’un Ledger, une BDD atypique !](https://www.youtube.com/watch?v=spPEbLHUsTE) : Présentation par : Erwan GEREEC (Doctolib)
+
+{{< youtube spPEbLHUsTE >}}
+
+> Un Ledger implémente le stockage de comptes et de transactions. On retrouve les principes liés aux block-chains et cryptos, en particulier l'immutabilité des transactions. Le speaker présente quelques cas concrets d'implémentation chez Doctolib sur la gestion des factures.
+
 ## 🔒 Sécurité
 
 * [Pragmatic OpenID Connect - Guillaume Chervet (AXA France)](https://www.youtube.com/watch?v=6coBmM5GO6o) : Présentation par : Guillaume Chervet (AXA France)
@@ -63,6 +74,13 @@ La conférence est hyper bien réalisée, avec des démos dans le jeu !
 {{< youtube 6coBmM5GO6o >}}
 
 > Le speaker présente le fonctionnement de OIDC, les différents types de tokens, les scopes, et les flow clients et serveur, avec des démos live. C'est à voir pour tous les devs, front ou back !
+
+* [Top 3 des outils de l'OWASP](https://www.youtube.com/watch?v=tEWUXWFs5HM)
+
+{{< youtube tEWUXWFs5HM >}}
+
+> On ne présente plus l'OWASP (Open Worldwide Application Security Project) qui propose le 'Top 10' avec le listing des 10 risques de sécurité les plus critiques. Le speaker présente rapidement _Dependency Track_, _Zed Attack Proxy_ et _ModSecurity_.
+
 
 ## ☕ Java
 
@@ -91,13 +109,27 @@ La killer feature est la possibilité de capturer les changements effectués sur
 
 > La légende JM Doudoux présente 34 formes de _Hello World_ en Java, du fameux `System.out.println("Hello World")` dans une méthode `main` à des moyens plus fous comme des blocs statiques, ou l'API Class-File pour générer dynamiquement du code.
 
+* [L'API Gatherer : l'outil qui manquait à vos Streams](https://www.youtube.com/watch?v=__piR-N9pXA) : Présentation par : José Paumard (Oracle)
+
+{{< youtube __piR-N9pXA >}}
+
+> L'API Gatherer vient compléter l'API Stream au niveau des opérations intermédiaires, de la même manière que l'API Collector complète les opérations terminales. José présente en détail le fonctionnement de l'API, et comment implémenter son propre Gatherer, avec quelques exemples concrets.
+
 ## ☕ IA
+
+* [L’Intelligence Artificielle n’existe pas](https://www.youtube.com/watch?v=JdxjGZBtp_k) : Présentation par : Luc Julia
+* [Luc Julia sans filtre: l'IA, la tech et les idées reçues](https://www.youtube.com/watch?v=1BTsjznpUMU)
+
+{{< youtube nL5L6KqGAxw >}}
+{{< youtube 1BTsjznpUMU >}}
+
+> Une des keynotes que j'ai manqué sur cette édition. Dans la présentation et la séance de question/réponses, Luc déconstruit certains mythes de l'IA : les véhicules autonomes de niveau 5 n'existeront jamais, tout comme les AGI (_artificial general intelligence_), les LLM sont l'évolution du DeepLearning, les IA sont des outils spécialisés. Ses points de vue sont très tranchés et clairs, bien argumentés, même démontrés et illustrés.
 
 * [IA Générative, TDD et Architecture Hexagonale : Une Synergie Révolutionnaire ?](https://www.youtube.com/watch?v=nL5L6KqGAxw) : Présentation par : Clément Virieux (Ippon), Florine Chevrier (Ippon)
 
 {{< youtube nL5L6KqGAxw >}}
 
-> Des stratégies concrètes pour imposer à une IA des standards de qualité issus du _craftmanship_. Ça passe par une approche de TDD, de test d'architecture et de maquettage, ces trois éléments étant passés au niveau du prompt de l'IA. L'approche semble efficace. Le plugin _CLine_ qui est présenté affiche aussi le coût financier de chaque requête. 
+> Des stratégies concrètes pour imposer à une IA des standards de qualité issus du _craftmanship_. Ça passe par une approche de TDD, de test d'architecture et de maquettage, ces trois éléments étant passés au niveau du prompt de l'IA. L'approche semble efficace. Le plugin _CLine_ qui est présenté affiche aussi le coût financier de chaque requête.
 
 ## 👷 DevOps
 
@@ -125,6 +157,12 @@ La killer feature est la possibilité de capturer les changements effectués sur
 
 > Le speaker présente le _Deterministic Simulation Testing_. Cela passe par du property-based testing, l'injection de chaos avec des mocks qui ajoutent des temps de latence aléatoires. Un test est associé à une seed qui permettra de rejouer les tests. C'est intéressant sur le principe, mais ça manque d'exemples concrets à mon sens.
 
+* [Burrito est un TACoS: une alternative an open-source à Terraform Cloud](https://www.youtube.com/watch?v=DSuSCgPQlso) : Presentation by: Lucas Marques (Theodo Cloud), Luca Corrieri (Theodo Cloud)
+
+{{< youtube DSuSCgPQlso >}}
+
+> Burrito est un opérateur Kubernetes qui exécute des modules Terraform et s'intègre avec ArgoCD dans une approche GitOps. Il permet de réconcilier en continu des modules, corriger le drift, et fournit une interface pour suivre les déploiements. C'est plutôt intéressant, j'ai eu une approche similaire quand j'ai développé [Gaia]({{< relref "projects/gaia-app">}}) il y a quelques années.
+
 ## ☸️ Kubernetes
 
 * [J'ai perdu du poids sur Kubernetes avec SlimFaas](https://www.youtube.com/watch?v=sBvBvoB-Cbs) : Présentation par : Guillaume Chervet (AXA France)
@@ -140,6 +178,12 @@ La killer feature est la possibilité de capturer les changements effectués sur
 {{< youtube ZAucjf1mKOw >}}
 
 > Un talk interactif ! Le format est original ! Après chaque question, les speakeuses donnent une petite explication, avec une démo. On découvre des détails autour du fonctionnement des images et registries, des architectures, des SBOM
+
+* [Les super-pouvoirs méconnus de Docker Desktop](https://www.youtube.com/watch?v=IxAm4X0_JY8) : Présentation par : Guillaume Lours (Docker), Philippe Charrière (Docker)
+
+{{< youtube IxAm4X0_JY8 >}}
+
+> On découvre les fonctionnalités de Docker Desktop. La vue du détail des images et des vulnérabilités est plutôt pratique, ainsi que l'historique des builds et l'exploration du filesystem d'un container. Les speakeurs présentent aussi quelques nouveautés de Docker Compose, l'option `--watch` est intéressante, ainsi que le push/pull de compose files sur les registries OCI.
 
 ## 🐧 Linux
 
