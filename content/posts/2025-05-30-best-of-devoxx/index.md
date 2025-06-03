@@ -6,25 +6,26 @@ series: La veille de Wittouck
 tags:
   - DevOps
   - Docker
-  - Git
   - IA
   - Internet
   - Java
   - Kubernetes
   - Linux
   - Security
-  - Tools
 params:
-    watchedVideos: 35
+    watchedVideos: 26
 ---
 
-J'ai regardé pas loin de {{% param watchedVideos %}} videos de la [playlist de Devoxx France 2025](https://www.youtube.com/playlist?list=PLTbQvx84FrATiYy0se8yoHJHicXtmDbB-) pour vous faire cette sélection.
+Cette édition spéciale de "La veille de Wittouck" liste les vidéos de *Devoxx France 2025* qui m'ont le plus intéressé.
+
+Parmi les vidéos de la [playlist](https://www.youtube.com/playlist?list=PLTbQvx84FrATiYy0se8yoHJHicXtmDbB-), je vous ai concocté une sélection de {{% param watchedVideos %}} vidéos que j'ai trouvées particulièrement intéressantes.
 Mon astuce (pour ne pas y passer 300 heures) : je regarde les vidéos en x2, et je ralentis sur les morceaux intéressants 😅
 
-Cette édition spéciale de "La veille de Wittouck" liste donc les vidéos qui m'ont le plus intéressé.
 Je les ai classées selon les tags que j'utilise d'habitude, elles ne sont pas triés dans un ordre précis.
 
 Je n'ai aussi pas listé les talks que j'avais déjà mentionné dans mon article précédent, je vous propose de les retrouver dans l'article [DevOxx 2025 - Bilan]({{< relref "/posts/2025-04-23-devoxx" >}}), que j'ai mis à jour avec les liens des vidéos.
+
+Bon visionnage !
 
 <!--more-->
 
@@ -204,5 +205,3 @@ On y découvre aussi les challenges rencontrés en production dans le volet REX.
 ---
 
 La prochaine publication est prévue autour du  🗓️ 13 juin 2025
-
-Photo de couverture par sur 
