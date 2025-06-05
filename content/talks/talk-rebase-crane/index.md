@@ -8,8 +8,11 @@ tags:
 events: 
   - name: DevOxx 2025
     date: 2025-04-16
-    slides: slides.pdf
+    slides: slides-devoxx.pdf
     youtube: AMWXJqePDsg
+  - name: DevLille 2025
+    date: 2025-06-13
+    slides: slides-devlille.pdf
 ---
 Les images Docker ou OCI sont aujourd'hui un standard pour exécuter du code. Le fonctionnement des images en layers permet de pouvoir partager des environnements communs entre les applications. Beaucoup d'entreprises utilisent des images de base comme celles fournies par `alpine`, `ubuntu`, ou `eclipse-temurin`. Certaines construisent même leur propres images de base, pour y intégrer les outils dont elles ont besoin (j'ai construit et maintenu de telles images par le passé).
 
