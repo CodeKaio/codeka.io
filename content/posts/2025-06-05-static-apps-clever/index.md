@@ -1,7 +1,10 @@
 ---
 date: 2025-06-05
 language: fr
-title: Déployer des applications statiques sur Clever Cloud 
+title: Déployer des applications statiques sur Clever Cloud
+tags:
+  - DevOps
+  - CleverCloud
 ---
 
 Il y a quelques jours, je suis tombé sur ce post de David Legrand sur Bluesky :
@@ -169,7 +172,7 @@ Vous êtes donc en train de lire cet article depuis un site static déployé sur
 
 Le temps de build est tout à fait correct.
 
-Mon site n'est pas des plus gros (une centaine de pages). Le build de mon site se fait en une quinzaine de secondes, et le démarrage également. Le temps total d'un déploiement est d'environ une minute. C'est le même ordre de grandeur que les déploiements que je faisais sur GitHub Pages par le passé.
+Mon site n'est pas des plus gros (une centaine de pages). Le build de mon site se fait en une quinzaine de secondes, et le démarrage également. Le temps total d'un déploiement est d'un peu plus d'une minute, pour l'intégralité de l'exécution de la commande `clever deploy`. C'est le même ordre de grandeur que les déploiements que je faisais sur GitHub Pages par le passé.
 
 ### Requêtes et débit
 
