@@ -33,7 +33,7 @@
             {{ with .GetMatch "{cover.*}" }}
                 {{ $cover := .Fill "820x240 webp" }}
                 {{ with $cover }}
-                    <img src="{{ .Permalink }}"/>
+                    <img loading="lazy" alt="Cover image for the article" src="{{ .Permalink }}"/>
                 {{ end }}
             {{ end }}
         {{ end }}
