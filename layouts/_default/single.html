@@ -19,7 +19,7 @@
 
   {{ with .Resources }}
     {{ with .GetMatch "{cover.*}" }}
-         {{ $cover := .Resize "820x" }}
+         {{ $cover := .Resize "820x webp" }}
          {{ with $cover }}
               <img src="{{ .Permalink }}"/>      
          {{ end }}
