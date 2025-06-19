@@ -14,8 +14,10 @@
     <ul class="certifications">
     {{ range .Site.Params.certifications }}
         <li>
-            <a href="{{.Credentials}}" target="_blank">
-                <img src="{{ .Logo }}" alt="{{.Name}}" max-width="50%"/>
+            {{ $cred_logo := resources.Get .Logo }}
+            {{ $cred_logo := $cred_logo.Resize "96x96 webp"}}
+            <a href="{{.Credentials }}" target="_blank">
+                <img src="{{ $cred_logo.Permalink }}" alt="{{.Name}}" max-width="50%"/>
                 {{ .Name}}
             </a>
         </li>
