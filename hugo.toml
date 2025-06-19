@@ -38,8 +38,8 @@ defaultContentLanguage = 'fr'
   front_page_content = ["posts", "projects", "books"]
 
   certifications = [
-    {Name = "CKAD: Certified Kubernetes Application Developer", Issuer= "The Linux Foundation", Issued= "2023-12", Expires= "2026-12", Credentials= "https://www.credly.com/badges/cdd863d0-5136-44e1-a393-8fa2dd736fa2/public_url", Logo= "/ckad-certified-kubernetes-application-developer.webp"},
-    {Name = "HashiCorp Certified: Terraform Associate (003)", Issuer= "HashiCorp", Issued= "2023-11", Expires= "2025-11", Credentials= "https://www.credly.com/badges/c8e35084-2c3d-443f-96fd-76a46b237360/public_url", Logo= "/hashicorp-certified-terraform-associate-003.webp"}
+    {Name = "CKAD: Certified Kubernetes Application Developer", Issuer= "The Linux Foundation", Issued= "2023-12", Expires= "2026-12", Credentials= "https://www.credly.com/badges/cdd863d0-5136-44e1-a393-8fa2dd736fa2/public_url", Logo= "/credentials/ckad-certified-kubernetes-application-developer.png"},
+    {Name = "HashiCorp Certified: Terraform Associate (003)", Issuer= "HashiCorp", Issued= "2023-11", Expires= "2025-11", Credentials= "https://www.credly.com/badges/c8e35084-2c3d-443f-96fd-76a46b237360/public_url", Logo= "/credentials/hashicorp-certified-terraform-associate-003.png"}
   ]
 
   plausible = true
