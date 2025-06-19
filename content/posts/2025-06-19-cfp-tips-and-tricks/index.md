@@ -4,6 +4,7 @@ language: fr
 title: Leeloo Dallas Multipass - Répondre aux 5 élements d'un CFP
 tags:
   - internet
+draft: true
 ---
 
 Les conférences sont un lieu important de partage et de veille, y participer en tant que speaker ou assister à des conférences permet d'enrichir votre réseau et de partager vos expériences.
