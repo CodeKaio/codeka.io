@@ -3,8 +3,8 @@ title: Talk - Let's play Factorio
 language: fr
 date: 2025-06-01
 tags:
-  - DevOps
-  - Docker
+  - Internet
+  - Basics
 events:
   - name: Sunny Tech 2025
     date: 2025-06-27
