@@ -1,7 +1,7 @@
 ---
 title: Talk - Let's play Factorio
 language: fr
-date: 2025-06-27
+date: 2025-06-01
 tags:
   - DevOps
   - Docker
@@ -25,6 +25,20 @@ On peut retrouver tous ces concepts dans le jeu.
 Ce talk, intégralement réalisé dans le jeu, reprend et illustre ces différents concepts qui sont au coeur de nos métiers. Pour les débutants, ce sera l'occasion de comprendre ces concepts fondamentaux. Pour les plus expérimentés, ce sera l'occasion de les voir illustrés en dehors d'un schéma d'architecture ennuyeux.
 
 The Factory Must Grow.
+
+## Liste des mods utilisés
+
+Pour réaliser ce talk, j'ai utilisé quelques mods, voici la liste :
+
+* [Editor Extensions](https://mods.factorio.com/mod/EditorExtensions)
+* [Even More Text Plates](https://mods.factorio.com/mod/even-more-text-plates-2_0)
+* [InfiniZoom](https://mods.factorio.com/mod/Infinizoom)
+* [Rate Calculator](https://mods.factorio.com/mod/RateCalculator)
+* [Switch Button](https://mods.factorio.com/mod/switch-button)
+
+## Sauvegarde
+
+Je met à disposition mon fichier de sauvegarde à télécharger ici : [sunny-tech-2025.zip](sunny-tech-2025.zip)
 
 ## Liens
 
