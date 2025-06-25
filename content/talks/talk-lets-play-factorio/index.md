@@ -7,7 +7,7 @@ tags:
   - Docker
 events:
   - name: Sunny Tech 2025
-    date: 2025-06-25
+    date: 2025-06-27
 ---
 
 Factorio est un jeu vidéo d'automatisation hautement addictif (croyez-en mes 300h de jeu).
