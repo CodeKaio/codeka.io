@@ -43,5 +43,5 @@ Je met à disposition mon fichier de sauvegarde à télécharger ici : [sunny-te
 ## Liens
 
 * [Site officiel de Factorio](https://www.factorio.com/)
-* Les excellentes vidéos de Nilaus sur le jeu :[https://youtube.com/playlist?list=PLV3rF--heRVtEiOK1dCD912g9Jn8pG-QA&feature=shared](Nilaus - Factorio SPACE AGE ⚙️)
+* Les excellentes vidéos de Nilaus sur le jeu : [Nilaus - Factorio SPACE AGE ⚙️](https://youtube.com/playlist?list=PLV3rF--heRVtEiOK1dCD912g9Jn8pG-QA&feature=shared)
 * La vidéo qui a inspiré ce talk : [Factorio teaches you software engineering, seriously.](https://www.youtube.com/watch?v=vPdUjLqC15Q)
