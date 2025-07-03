@@ -286,3 +286,9 @@ blockquote.alert-warning {
     font-style: italic;
     font-size: 0.9rem;
 }
+
+/* background color of mermaid diagrams */
+.content pre.mermaid{
+    color: var(--code-block-color);
+    background-color: var(--bkg-color) !important;
+}
