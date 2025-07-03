@@ -9,6 +9,7 @@ events:
   - name: Sunny Tech 2025
     date: 2025-06-27
     youtube: TnDRFGkeiwU
+    pictures: pictures-sunny-tech-2025
 ---
 
 _Factorio_ est un jeu vidéo d'automatisation hautement addictif (croyez-en mes 300h de jeu).
