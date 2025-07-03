@@ -32,11 +32,11 @@ The Factory Must Grow.
 
 Pour réaliser ce talk, j'ai utilisé quelques mods, voici la liste :
 
-* [Editor Extensions](https://mods.factorio.com/mod/EditorExtensions)
-* [Even More Text Plates](https://mods.factorio.com/mod/even-more-text-plates-2_0)
-* [InfiniZoom](https://mods.factorio.com/mod/Infinizoom)
-* [Rate Calculator](https://mods.factorio.com/mod/RateCalculator)
-* [Switch Button](https://mods.factorio.com/mod/switch-button)
+* [Editor Extensions](https://mods.factorio.com/mod/EditorExtensions) : pour pouvoir tricher et avoir des ressources infinies
+* [Even More Text Plates](https://mods.factorio.com/mod/even-more-text-plates-2_0) : pour afficher du texte dans le jeu
+* [InfiniZoom](https://mods.factorio.com/mod/Infinizoom) : pour pouvoir gérer un zoom infini
+* [Rate Calculator](https://mods.factorio.com/mod/RateCalculator) : pour calculer les ratios pendant la préparation du talk
+* [Switch Button](https://mods.factorio.com/mod/switch-button) : pour pouvoir déclencher des actions dans le jeu au click
 
 ## Sauvegarde
 
