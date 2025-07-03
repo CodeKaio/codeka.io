@@ -20,11 +20,51 @@
 
   {{ $images := $pageResources.Match (printf "%s/*" $picturesDir) }}
 
-  {{ range $index, $image := $images }}
-    {{ $resized := $image.Resize "800x webp" }}
+  {{ $totalImages := len $images }}
+
+  {{ $remainingImages := len $images }}
+
+  <!-- first line, 3 images, always -->
+  <div class="gallery-row">
+    {{ range $image := first 3 $images }}
+    {{ $resized := $image.Resize "900x webp" }}
     <img src="{{ $resized.RelPermalink }}" alt="{{ $image.Name }}" loading="lazy">
+
+    {{ $remainingImages = sub $remainingImages 1 }}
+
+    {{ end }}
+  </div>
+
+  {{ if lt $remainingImages 3 }}
+    <!-- show all remaining images on the last line-->
+    <div class="gallery-row">
+      {{ range $index, $image := last $remainingImages $images }}
+        {{ $resized := $image.Resize "900x webp" }}
+          <img src="{{ $resized.RelPermalink }}" alt="{{ $image.Name }}" loading="lazy">
+      {{ end }}
+    </div>
+  {{ else }}
+    <!-- show a single image -->
+    <div class="gallery-row">
+      {{ range $index, $image := slice (index $images 3) }}
+        {{ $resized := $image.Resize "900x webp" }}
+        <div class="gallery-item">
+          <img src="{{ $resized.RelPermalink }}" alt="{{ $image.Name }}" loading="lazy">
+        </div>
+      {{ end }}
+      {{ $remainingImages = sub $remainingImages 1 }}
+    </div>
+    <!-- show all remaining images on the last line-->
+    <div class="gallery-row">
+      {{ range $index, $image := after 4 $images }}
+        {{ $resized := $image.Resize "900x webp" }}
+        <div class="gallery-item">
+          <img src="{{ $resized.RelPermalink }}" alt="{{ $image.Name }}" loading="lazy">
+        </div>
+      {{ end }}
+    </div>
   {{ end }}
-</div>
+  </div>
 {{ end }}
 {{ end }}
 {{ end }}
