@@ -8,9 +8,10 @@ tags:
 events:
   - name: Sunny Tech 2025
     date: 2025-06-27
+    youtube: TnDRFGkeiwU
 ---
 
-Factorio est un jeu vidéo d'automatisation hautement addictif (croyez-en mes 300h de jeu).
+_Factorio_ est un jeu vidéo d'automatisation hautement addictif (croyez-en mes 300h de jeu).
 
 Le but est simple : le vaisseau spatial du joueur est échoué sur une planète extra-terrestre, il faut construire une fusée pour s'échapper, en utilisant toutes les ressources disponibles sur la planète.
 
@@ -22,7 +23,7 @@ Architectures de code spaghetti, lasagna, refactoring. Urbanisation, ESB et micr
 
 On peut retrouver tous ces concepts dans le jeu.
 
-Ce talk, intégralement réalisé dans le jeu, reprend et illustre ces différents concepts qui sont au coeur de nos métiers. Pour les débutants, ce sera l'occasion de comprendre ces concepts fondamentaux. Pour les plus expérimentés, ce sera l'occasion de les voir illustrés en dehors d'un schéma d'architecture ennuyeux.
+Ce talk, intégralement réalisé dans le jeu, reprend et illustre ces différents concepts qui sont au cœur de nos métiers. Pour les débutants, ce sera l'occasion de comprendre ces concepts fondamentaux. Pour les plus expérimentés, ce sera l'occasion de les voir illustrés en dehors d'un schéma d'architecture ennuyeux.
 
 The Factory Must Grow.
 
@@ -38,7 +39,7 @@ Pour réaliser ce talk, j'ai utilisé quelques mods, voici la liste :
 
 ## Sauvegarde
 
-Je met à disposition mon fichier de sauvegarde à télécharger ici : [sunny-tech-2025.zip](sunny-tech-2025.zip)
+Je mets à disposition mon fichier de sauvegarde à télécharger ici : [sunny-tech-2025.zip](sunny-tech-2025.zip)
 
 ## Liens
 
