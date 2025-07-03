@@ -1,5 +1,5 @@
 {{ range .Params.events }}
-{{ if (or (.slides) (.youtube)) }}
+{{ if (or (.slides) (.youtube) (.pictures)) }}
 <h1>{{ .name }} - {{ .date | time.Format ":date_medium" }}</h1>
 
 {{ if .slides }}
@@ -10,6 +10,21 @@
 {{ if .youtube }}
 <h2>Video</h2>
 <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{ end }}
+
+{{ if .pictures }}
+<h2>Photos</h2>
+<div class="photo-gallery">
+  {{ $pageResources := $.Page.Resources }}
+  {{ $picturesDir := .pictures }}
+
+  {{ $images := $pageResources.Match (printf "%s/*" $picturesDir) }}
+
+  {{ range $index, $image := $images }}
+    {{ $resized := $image.Resize "800x webp" }}
+    <img src="{{ $resized.RelPermalink }}" alt="{{ $image.Name }}" loading="lazy">
+  {{ end }}
+</div>
 {{ end }}
 {{ end }}
 {{ end }}
