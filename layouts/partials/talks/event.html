@@ -1,8 +1,11 @@
 {{ range .Params.events }}
 {{ if (or (.slides) (.youtube)) }}
 <h1>{{ .name }} - {{ .date | time.Format ":date_medium" }}</h1>
+
+{{ if .slides }}
 <h2>Slides </h2>
 <embed src="{{ .slides }}" type="application/pdf" width="100%" height="500px">
+{{ end }}
 
 {{ if .youtube }}
 <h2>Video</h2>
