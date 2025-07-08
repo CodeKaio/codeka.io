@@ -72,3 +72,6 @@ defaultContentLanguage = 'fr'
 [privacy]
   [privacy.youTube]
     privacyEnhanced = true
+
+[frontmatter]
+  lastmod = ['lastmod', 'modified']
