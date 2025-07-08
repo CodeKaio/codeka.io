@@ -1,6 +1,6 @@
 ---
 date: "2025-01-17"
-updated: "2025-02-12"
+lastmod: "2025-02-12"
 language: fr
 tags:
 - DevOps

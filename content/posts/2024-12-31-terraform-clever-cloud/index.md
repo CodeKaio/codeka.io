@@ -1,6 +1,6 @@
 ---
 created: "2024-12-31"
-updated: "2025-02-04"
+lastmod: "2025-02-04"
 date: "2024-12-31T00:00:00Z"
 language: fr
 tags:
