@@ -228,14 +228,10 @@ blockquote.alert {
 blockquote.alert::before{
     content:"";
 }
-blockquote.alert-warning {
-    border-color: #cb8e38;
-}
 .alert > .alert-heading {
     padding: 1rem 1rem 0.5rem 1rem;
     margin: 0;
     font-weight: bolder;
-    color: #cb8e38;
 }
 .alert > .alert-content {
     padding: 1rem 1rem 0.5rem 1rem;
@@ -244,6 +240,22 @@ blockquote.alert-warning {
 }
 .alert-warning > .alert-heading {
     background-color: #fbf4ea;
+    color: #cb8e38;
+}
+
+.alert-warning {
+    border-color: #cb8e38;
+    color: #cb8e38;
+}
+
+.alert-info {
+    border-color: #2858e2;
+    color: #2858e2;
+}
+
+.alert-info > .alert-heading {
+    background-color: #e9effd;
+    color: #2858e2;
 }
 
 /* Talks list styling */
