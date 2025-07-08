@@ -4,7 +4,7 @@
 <ul class="entries">
     {{ range .Pages.GroupByDate "2006" }}
         <h3 style="text-align: center;">{{ .Key }}</h3>
-        {{ range .Pages }}
+        {{ range where .Pages "Params.updated" "eq" nil }}
             <li>
                 <span class="title">
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>

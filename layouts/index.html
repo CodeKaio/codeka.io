@@ -1,6 +1,8 @@
 {{ define "main" -}}
 
-{{ $pag := .Paginate (where .Site.RegularPages "Type" "in" "posts") }}
+{{ $posts := where .Site.RegularPages "Type" "in" "posts" }}
+{{ $nonUpdatedPosts := where $posts "Params.updated" "eq" nil }}
+{{ $pag := .Paginate $nonUpdatedPosts }}
 
 {{/* only display books on first page */}}
 {{ if eq $pag.PageNumber 1 }}
