@@ -17,6 +17,33 @@
   </blockquote>
   {{ end }}
 
+  {{ if .Params.original }}
+  <blockquote class="alert alert-info">
+    <p class="alert-heading">
+      ℹ️ Info
+    </p>
+    {{ $original := .Page.GetPage .Params.original }}
+    <p class="alert-content">
+      {{ $lastmodDate := .Lastmod | time.Format ":date_medium" }}
+      {{ i18n "lastmod.oldlink" (dict "date" $lastmodDate "link" $original.Permalink ) | .RenderString}}
+    </p>
+  </blockquote>
+  {{ end }}
+
+  {{ if .Params.updated }}
+  <blockquote class="alert alert-warning">
+    <p class="alert-heading">
+      ⚠️ Warning
+    </p>
+    {{ $updated := .Page.GetPage .Params.updated }}
+    <p class="alert-content">
+      {{ $lastmodDate := .Lastmod | time.Format ":date_medium" }}
+      {{ i18n "lastmod.newlink" (dict "date" $lastmodDate "link" $updated.Permalink ) | .RenderString }}
+    </p>
+  </blockquote>
+  {{ end }}
+
+
   {{ with .Resources }}
     {{ with .GetMatch "{cover.*}" }}
          {{ $cover := .Resize "820x webp" }}
