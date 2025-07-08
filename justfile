@@ -2,7 +2,11 @@
 
 default: serve
 
-common_options:= "--openBrowser --printI18nWarnings --cleanDestinationDir"
+build_options:="--printI18nWarnings --printPathWarnings --cleanDestinationDir --logLevel debug"
+common_options:= "--openBrowser --printI18nWarnings --printPathWarnings --cleanDestinationDir --logLevel debug"
+
+build:
+    hugo build {{build_options}}
 
 serve:
     hugo server {{common_options}}
@@ -15,3 +19,10 @@ non-breakable-spaces:
 
 new date title:
     hugo new content posts/{{date}}-{{title}} -k veille
+
+clever-preview:
+    clever deploy --alias preview
+    clever open --alias preview
+
+clever-deploy:
+    clever deploy --alias codeka.io
