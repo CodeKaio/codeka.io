@@ -18,4 +18,6 @@ next: Next »
 
 toc: Contents
 
-lastmod: Updated on
+lastmod: Mis à jour le
+lastmod.newlink: This article was updated on {{ .date }}. The updated version is available [here]({{ .link }}).
+lastmod.oldlink: This article was updated on {{ .date }}. The original version is available [here]({{ .link }}).

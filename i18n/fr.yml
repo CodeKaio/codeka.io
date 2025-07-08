@@ -19,3 +19,5 @@ next: Suivant »
 toc: Sommaire
 
 lastmod: Mis à jour le
+lastmod.newlink: Cet article a été mis à jour le {{ .date }}. La version mise à jour est disponible [ici]({{ .link }}).
+lastmod.oldlink: Cet article a été mis à jour le {{ .date }}. La version originale est disponible [ici]({{ .link }}).
