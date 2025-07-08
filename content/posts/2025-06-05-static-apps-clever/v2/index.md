@@ -102,7 +102,7 @@ $ clever open
 Opening the application in your browser
 ```
 
-Mon site est alors publié et disponible !
+Mon site est alors publié et disponible, sans aucune configuration !
 
 ![img.png](clever-site-dispo.png)
 
@@ -112,8 +112,13 @@ Quand hugo génère le contenu du site, il dépose ses fichiers par défaut dans
 
 Il est aussi possible de préciser la version de hugo avec `CC_HUGO_VERSION` et de modifier les commandes avec `CC_BUILD_COMMAND`, si on veut mentionner des paramètres (comme `--buildDrafts` ou `--buildFuture` quand on effectue des previews).
 
+Si on précise une variable `CC_BUILD_COMMAND`, il faut également préciser `CC_WEBROOT` (l'auto-détection ne fonctionnera plus).
+
 ```shell
-$ clever env set CC_BUILD_COMMAND "hugo --buildDrafts --buildFutures"
+$ clever env set CC_BUILD_COMMAND "hugo --buildDrafts --gc --minify"
+Your environment variable has been successfully saved
+
+$ clever env set CC_WEBROOT "public"
 Your environment variable has been successfully saved
 ```
 
