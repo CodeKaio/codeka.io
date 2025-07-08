@@ -30,7 +30,7 @@ eval "$(direnv hook zsh)"
 Les procédures de configuration pour les autres shells sont détaillées [sur le site de direnv](https://direnv.net/docs/hook.html) et sont du même ordre que la procédure ci-dessus.
 ## Utilisation basique
 L'utilisation de `direnv` se fait au travers d'un fichier `.envrc` à positionner dans le répertoire souhaité.
-Ce fichier peut contenir :
+Ce fichier peut contenir :
 * des commandes `export` pour déclarer des variables d'environnement
 * des appels de fonction de la stdlib `direnv` 
 * des appels de fonction customisés
@@ -68,7 +68,7 @@ Si on quitte le répertoire, les variables sont déchargées:
 ~/workspaces/demo-direnv > cd ..
 direnv: unloading
 ~/workspaces > echo $JAVA_HOME
-# rien ici !
+# rien ici !
 ```
 ## Modification du PATH
 Pour nous simplifier la vie, `direnv` propose des fonctions qui permettent de manipuler le `PATH` facilement. La fonction `PATH_add` permet d'ajouter simplement une nouvelle valeur au `PATH`. En voici un exemple dans mon fichier `.envrc` précédent:
@@ -165,7 +165,7 @@ prefix = ["/home/jwittouck/workspaces"]
 ### Fonction customisées
 Pour améliorer l'exemple plus haut concernant la gestion de la variable `JAVA_HOME`, il est aussi possible d'enrichir les fonctions disponibles de `direnv`.
 Pour cela, il faut les ajouter au fichier `~/.config/direnv/direnvrc`.
-Pour mon usage, j'ai créé cette fonction :
+Pour mon usage, j'ai créé cette fonction :
 ```shell
 function use_java(){
     echo "Using Java version $1"
@@ -181,7 +181,7 @@ use_java 17
 # ou
 # use_java 11
 ```
-et voici ce que loggue `direnv` à l'entrée du répertoire :
+et voici ce que loggue `direnv` à l'entrée du répertoire :
 ```shell
 ~/workspaces > cd demo-direnv
 direnv: loading ~/workspaces/demo-direnv/.envrc

@@ -77,7 +77,7 @@ GET /elgato/lights
 }
 ```
 
-Nous avons donc 3 champs intéressants :
+Nous avons donc 3 champs intéressants :
 * `on` indique si la KeyLight est allumée (1) ou éteinte (0)
 * `brightness` indique la puissance de la luminausité (de 0 à 100)
 * `temperature` indique la température de la lumière (valeurs de 143 à 344) pour une couleur entre 2900 et 7000 kelvin
@@ -146,7 +146,7 @@ J'ai choisi pour m'amuser de développer un CLI en Kotlin, avec compilation nati
 
 Ce n'est probablement pas le setup le plus pratique, mais cela permet de mettre en place la compilation native avec GraalVM.
 
-Le CLI devra supporter les commandes suivantes :
+Le CLI devra supporter les commandes suivantes :
 
 ```shell
 keylight on
@@ -159,11 +159,11 @@ keylight color <Y>
 
 L'installation de GraalVM est plutôt simple (comme un JDK habituel).
 
-J'ai téléchargé le `.tar.gz` sur Github ici : https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-21.0.0.2
+J'ai téléchargé le `.tar.gz` sur Github ici : https://github.com/graalvm/graalvm-ce-builds/releases/tag/vm-21.0.0.2
 
 J'ai décompressé le tar dans mon répertoire `/opt`
 
-J'ai aussi fait pointer ma variable `JAVA_HOME` au bon endroit :
+J'ai aussi fait pointer ma variable `JAVA_HOME` au bon endroit :
 
 ```shell
 ~ > echo $JAVA_HOME
@@ -175,11 +175,11 @@ J'ai aussi fait pointer ma variable `JAVA_HOME` au bon endroit :
 Dans IntelliJ, j'ai créé un nouveau projet Kotlin/Maven.
 Je récupère donc un squelette de projet composé d'un `pom.xml`, et d'un `main.kt`.
 
-Il n'y a plus qu'a combler les trous !
+Il n'y a plus qu'a combler les trous !
 
 ### Configuration de la compilation native GraalVM
 
-Il faut tout d'abord installer l'outil `native-image` :
+Il faut tout d'abord installer l'outil `native-image` :
 
 ```shell
 /opt/graalvm-ce-java11-21.0.0.2/bin > sudo ./gu install native-image
@@ -219,11 +219,11 @@ On ajoute le bloc de configuration dans notre `pom.xml`:
 </plugin>
 ```
 
-Les paramètres importants sont :
-* imageName : le nom du binaire produit
-* mainClass : le nom de la classe Java "point d'entrée" de notre application. Ici, notre fichier main.kt qui contient la fonction kotlin `main` sera transformé à la compilation en classe Java `MainKt`.
-* --no-fallback : permet d'empêcher de produire un simple jar si la compilation native échoue
-* --enable-https : permet d'activer le mode HTTPS (même si on ne l'utilise pas, le client Java HTTPClient instancie le mode par défaut)
+Les paramètres importants sont :
+* imageName : le nom du binaire produit
+* mainClass : le nom de la classe Java "point d'entrée" de notre application. Ici, notre fichier main.kt qui contient la fonction kotlin `main` sera transformé à la compilation en classe Java `MainKt`.
+* --no-fallback : permet d'empêcher de produire un simple jar si la compilation native échoue
+* --enable-https : permet d'activer le mode HTTPS (même si on ne l'utilise pas, le client Java HTTPClient instancie le mode par défaut)
 
 La doc complète du plugin est ici https://www.graalvm.org/reference-manual/native-image/NativeImageMavenPlugin/
 
@@ -233,7 +233,7 @@ L'implémentation du code est très basique, j'ai choisi d'utiliser la librairie
 
 Le code est disponible sur Github dans le repository [juwit/keylight-cli](https://github.com/juwit/keylight-cli/).
 
-J'ai aussi configuré `picocli` pour la compilation native avec un l'annotation processor `picocli-codegen`, en m'inspirant de leur documentation [Picocli on GraalVM](https://picocli.info/picocli-on-graalvm.html) : 
+J'ai aussi configuré `picocli` pour la compilation native avec un l'annotation processor `picocli-codegen`, en m'inspirant de leur documentation [Picocli on GraalVM](https://picocli.info/picocli-on-graalvm.html) :
 
 ```xml
  <plugin>
@@ -268,7 +268,7 @@ J'ai aussi configuré `picocli` pour la compilation native avec un l'annotation 
 Ce petit projet m'a permis:
 
 * d'outiller mon Keylight d'Elgato avec un CLI sous Linux (que je vais pouvoir cabler avec mon Streamdeck)
-* de découvrir le protocole mDNS !
+* de découvrir le protocole mDNS !
 * et de tester `picocli` et la compilation native de `GraalVM`
 
-Rien de très compliqué, mais de bout en bout, j'y ai bien passé 8 à 10 heures. Le résultat est plutôt cool, et je me sert du CLI presque tous les jours !
+Rien de très compliqué, mais de bout en bout, j'y ai bien passé 8 à 10 heures. Le résultat est plutôt cool, et je me sert du CLI presque tous les jours !

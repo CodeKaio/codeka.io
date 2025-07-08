@@ -22,7 +22,7 @@ Cela dit, vous devriez toujours configurer un fichier `.gitignore` dans vos proj
 
 Sur les systèmes Linux, l'emplacement par défaut pour un fichier `.gitignore` global est `~/.config/git/ignore`.
 
-Créez ce fichier s'il n'existe pas, et mettez-y votre contenu :
+Créez ce fichier s'il n'existe pas, et mettez-y votre contenu :
 
 ```shell
 # create the directory if it doesn't exists
@@ -45,4 +45,4 @@ target/
 EXCL
 ```
 
-Et c'est tout !
+Et c'est tout !

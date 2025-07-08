@@ -11,13 +11,13 @@ slug: xdotool-cheatsheet
 
 J'ai beaucoup joué ces jours-ci avec xdotool, pour essayer d'automatiser certaines choses pour mon Elgato Streamdeck.
 
-Voici les choses que j'essaie de faire :
+Voici les choses que j'essaie de faire :
 
 * Sélectionner une fenêtre, et envoyer une séquence clavier (comme CTRL+B pour couper ou rétablir le son d'un appel Teams)
 * Taper des emojis dans la fenêtre active 😅
 * Déplacer une fenêtre ou la redimensionner
 
-Voici quelques liens que j'ai trouvés à propos de `xdotool` :
+Voici quelques liens que j'ai trouvés à propos de `xdotool` :
 
 * [Xdotool - Window Stack](https://www.linux.org/threads/xdotool-%E2%80%93-window-stack.10687/)
 * [Xdotool - Examples](https://www.linux.org/threads/xdotool-examples.10705/#post-36275)
@@ -32,7 +32,7 @@ xprop | grep 'CLASS'
 
 Cliquez ensuite sur la fenêtre que vous voulez analyser.
 
-Plus de détails sur les classes dans ce fil de discussion : [xdotool : what are « class » and « classname » for a window ?](https://askubuntu.com/questions/1060170/xdotool-what-are-class-and-classname-for-a-window)
+Plus de détails sur les classes dans ce fil de discussion : [xdotool : what are « class » and « classname » for a window ?](https://askubuntu.com/questions/1060170/xdotool-what-are-class-and-classname-for-a-window)
 
 ## trouver la fenêtre active
 

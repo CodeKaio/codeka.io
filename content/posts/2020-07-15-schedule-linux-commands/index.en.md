@@ -35,7 +35,7 @@ at> <EOT>
 job 1 at Sat Apr 16 09:00:00 2022
 ```
 
-This example will pull a repository contents at 9 AM tomorrow !
+This example will pull a repository contents at 9 AM tomorrow!
 
 `at` supports a lot of time specifications.
 

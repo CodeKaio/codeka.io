@@ -14,15 +14,15 @@ series: La veille de Wittouck
 Avec la sortie récente de Java 24, cette deuxième édition de _La veille de Wittouck_ rassemble tout d'abord quelques lectures indispensables autour de la toute nouvelle version de mon langage préféré.
 Quelques articles généralistes également, dont un très bien illustré sur les technologies de stockage. Enfin, parmi les nouveautés, l'outil _kaniuse_ référence la compatibilité des API Kubernetes (très pratique), et Docker Compose supporte maintenant la publication des fichiers `compose.yml` dans un registry OCI.
 
-Bonne lecture !
+Bonne lecture !
 
 ## ☕ Java
 
-* [Java 24 : Quoi de neuf ?](https://www.loicmathieu.fr/wordpress/informatique/java-24-quoi-de-neuf/?utm_source=pocket_saves) par [Loïc Mathieu](https://www.loicmathieu.fr)
+* [Java 24 : Quoi de neuf ?](https://www.loicmathieu.fr/wordpress/informatique/java-24-quoi-de-neuf/?utm_source=pocket_saves) par [Loïc Mathieu](https://www.loicmathieu.fr)
 > Java 24 est sorti ce mercredi 18 mars. L'occasion de revoir les fonctionnalités de cette version sur le blog du pote Loïc. Les 2 nouveautés les plus importantes à mon avis sont la _JEP 483: Ahead-of-Time Class Loading & Linking_ pour optimiser le démarrage d'une application et _JEP 491: Synchronize Virtual Threads without Pinning_ pour booster les perfs des _threads_ virtuels. Les _Stream Gathereres_ passent aussi en version standard.
 
 * [Welcome, GraalVM for JDK 24!🚀](https://medium.com/graalvm/welcome-graalvm-for-jdk-24-7c829fe98ea1) par [Alina Yurenko](https://www.linkedin.com/in/alinayurenko/)
-> Avec la sortie de Java 24, s'accompagne la sortie de GraalVM pour JDK 24. Quelques nouveautés importantes et attendues : des exécutables natives un peu plus petits (~5%), de meilleures performances attendues pour les workloads de type IA, l'export facile de SBOM (Software Bill Of Material), et la génération de rapports HTML qui fournissent des détails sur le build des images.
+> Avec la sortie de Java 24, s'accompagne la sortie de GraalVM pour JDK 24. Quelques nouveautés importantes et attendues : des exécutables natives un peu plus petits (~5%), de meilleures performances attendues pour les workloads de type IA, l'export facile de SBOM (Software Bill Of Material), et la génération de rapports HTML qui fournissent des détails sur le build des images.
 
 * Mon pote Guillaume Dufrêne retrace l'histoire de Java sur LinkedIn, avec le contexte historique IT associé :
   * [Java 9](https://www.linkedin.com/posts/guillaume-dufr%C3%AAne-90179410_springboot-kubernetes-alphago-activity-7305879062458126338-mTDe)
@@ -52,9 +52,9 @@ Bonne lecture !
 
 ## 🤖 IA
 
-* [ChatGPT : le mythe de la productivité](https://framablog.org/2025/03/09/chatgpt-le-mythe-de-la-productivite/?utm_source=pocket_shared) par [Hubert Guillaud](https://hubertguillaud.wordpress.com/) _via_ [Framablog](https://framablog.org)
+* [ChatGPT : le mythe de la productivité](https://framablog.org/2025/03/09/chatgpt-le-mythe-de-la-productivite/?utm_source=pocket_shared) par [Hubert Guillaud](https://hubertguillaud.wordpress.com/) _via_ [Framablog](https://framablog.org)
 
-> Ce _post_ fait écho avec le sentiment que j'ai aujourd'hui autour de l'usage des IA génératives et l'impact ressenti, que j'ai un peu développé dans mon [AI Manifesto]({{< relref "/ai" >}}). C'est une lecture indispensable !
+> Ce _post_ fait écho avec le sentiment que j'ai aujourd'hui autour de l'usage des IA génératives et l'impact ressenti, que j'ai un peu développé dans mon [AI Manifesto]({{< relref "/ai" >}}). C'est une lecture indispensable !
 
 ## ☸️ Kubernetes
 

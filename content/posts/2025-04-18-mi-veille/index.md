@@ -8,11 +8,11 @@ tags:
   - Kubernetes
 ---
 
-En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane]({{< relref "/talks/talk-rebase-crane">}}), donc forcément, ma veille a été un peu plus light que d'habitude.
+En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane]({{< relref "/talks/talk-rebase-crane">}}), donc forcément, ma veille a été un peu plus light que d'habitude.
 
 Néanmoins, j'ai quelques liens sympas à partager.
 
-Je vais aussi publier en prochainement mes impressions sur cette édition de DevOxx 2025, avec les talks auxquels j'ai eu la chance d'assister. Et j'amenderai ce futur article avec les liens vers les vidéos quand elles seront disponibles ! 
+Je vais aussi publier en prochainement mes impressions sur cette édition de DevOxx 2025, avec les talks auxquels j'ai eu la chance d'assister. Et j'amenderai ce futur article avec les liens vers les vidéos quand elles seront disponibles ! 
 
 ## 🛜 Internet
 
@@ -22,7 +22,7 @@ Je vais aussi publier en prochainement mes impressions sur cette édition de Dev
 
 * [Celebrate 50 years of Microsoft with the company' original source code](https://www.gatesnotes.com/home/home-page-topic/reader/microsoft-original-source-code), par [Bill Gates](https://www.gatesnotes.com), _via_ [CNET](https://www.cnet.com/tech/computing/bill-gates-publishes-original-microsoft-source-code-in-a-blog-post?utm_source=pocket_shared)
 
-> C'est intéressant de se plonger dans ce morceau d'histoire. Ne vous attendez pas à voir du code source de Windows : le code partagé est un interpréteur BASIC. Bill Gates raconte ici surtout la création de Microsoft et le contexte du développement du premier bout de code qu'il a vendu !
+> C'est intéressant de se plonger dans ce morceau d'histoire. Ne vous attendez pas à voir du code source de Windows : le code partagé est un interpréteur BASIC. Bill Gates raconte ici surtout la création de Microsoft et le contexte du développement du premier bout de code qu'il a vendu !
 
 * [Le standard 8 bits est clairement arbitraire](https://bsky.app/profile/lauriewired.bsky.social/post/3llhqmublmk24) par [LaurieWired](https://bsky.app/profile/lauriewired.bsky.social), _via_ [LéaLinux](https://bsky.app/profile/lea-linux.org/post/3llhxqokmnc2m?utm_source=pocket_shared) sur BlueSky
 
@@ -36,7 +36,7 @@ Je vais aussi publier en prochainement mes impressions sur cette édition de Dev
 
 * [Ingress NGINX Project Status Update](https://github.com/kubernetes/ingress-nginx/issues/13002) _via_ [Pierre-Gilles Mialon](https://www.linkedin.com/in/pierre-gilles-mialon) sur [LinkedIn](https://www.linkedin.com/posts/pierre-gilles-mialon_apr%C3%A8s-de-nombreuses-ann%C3%A9es-de-bons-et-loyaux-activity-7313243849538101248-y5gk/?rcm=ACoAAAnJockBYMCZmKvFfK2Ytyqf-fRZDwyzaKc&utm_source=pocket_saves)
 
-> L'Ingress Controller NGINX, massivement utilisé, annonce que le projet va passer en mode _maintenance_ dans les mois qui viennent, pour être remplacé par le projet _InGate_, qui implémente les nouvelles Gateway API. Il va falloir commencer à réfléchir sérieusement à migrer !
+> L'Ingress Controller NGINX, massivement utilisé, annonce que le projet va passer en mode _maintenance_ dans les mois qui viennent, pour être remplacé par le projet _InGate_, qui implémente les nouvelles Gateway API. Il va falloir commencer à réfléchir sérieusement à migrer !
 
 ---
 

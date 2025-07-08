@@ -266,7 +266,7 @@ Its simplicity and expressiveness have been the key to its success since the 90s
 
 ## Références
 
-* [RFC 2616](https://www.rfc-editor.org/rfc/rfc2616)&nbsp;: Hypertext Transfer Protocol -- HTTP/1.1
-* [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986)&nbsp;: Uniform Resource Identifier (URI) : Generic Syntax
-* [RFC 7540](https://www.rfc-editor.org/rfc/rfc7540)&nbsp;: Hypertext Transfer Protocol Version 2 (HTTP/2)
+* [RFC 2616](https://www.rfc-editor.org/rfc/rfc2616): Hypertext Transfer Protocol -- HTTP/1.1
+* [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986): Uniform Resource Identifier (URI): Generic Syntax
+* [RFC 7540](https://www.rfc-editor.org/rfc/rfc7540): Hypertext Transfer Protocol Version 2 (HTTP/2)
 * Cover photo by [Jordan Harrison](https://unsplash.com/@jouwdan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/blue-utp-cord-40XgDxBfYXM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)

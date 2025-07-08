@@ -88,7 +88,7 @@ La commande `clever create` génère un fichier `.clever.json` dans notre réper
 Ce fichier peut être archivé dans _repository_ Git&nbsp;:
 
 ```bash
-$ git add .clever.json && git commit -m "👷 : add .clever.json"
+$ git add .clever.json && git commit -m "👷 : add .clever.json"
 ```
 
 ## Dimensionnement de l'instance
@@ -146,7 +146,7 @@ FROM sonarqube:10-community
 Puis nous déployons l'application en créant un _commit_, et en faisant un `clever deploy`&nbsp;:
 
 ```bash
-$ git add Dockerfile && git commit -m "🐋 : init Dockerfile"
+$ git add Dockerfile && git commit -m "🐋 : init Dockerfile"
 $ clever deploy
 
 App is brand new, no commits on remote yet
@@ -396,7 +396,7 @@ Un `git commit` suivi d'un `clever deploy` nous permettent de mettre à jour not
 ```bash
 $ git add Dockerfile clever-entrypoint.sh
 
-$ git commit -m "🔧 : add custom entrypoint for Clever Cloud"
+$ git commit -m "🔧 : add custom entrypoint for Clever Cloud"
 
 $ clever deploy
 ```

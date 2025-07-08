@@ -25,23 +25,23 @@ Cette boucle est généralement implémentée par des pipelines de CI/CD. Ces pi
 ![la page d'accueil de skaffold](skaffold.png)
 
 `skaffold` implémente un *pipeline* qui se déroule en plusieurs étapes:
-1. *build* : construction des images docker avec:
+1. *build* : construction des images docker avec:
 	* Docker (sur base d'un `Dockerfile`)
 	* Buildpacks
 	* Jib
-2. *tag* de l'image docker en utilisant différentes stratégies :
+2. *tag* de l'image docker en utilisant différentes stratégies :
 	* l'identifiant du commit git (par défaut)
 	* une date
 	* des variables d'environnement
 	* un hash des fichiers source
   * push de l'image sur un registry
   * chargement direct de l'image dans un cluster Kubernetes
-3. *deploy* : déploiement de l'application sur Kubernetes (local ou distant) en utilisant:
+3. *deploy* : déploiement de l'application sur Kubernetes (local ou distant) en utilisant:
 	* `kubectl` et des fichiers yaml
 	* `kustomize`
 	* `helm`
-4. *tail logs & port forward* : affiche les logs de l'application et redirige un port local
-5. *status check* : attend la fin du bon déploiement de application
+4. *tail logs & port forward* : affiche les logs de l'application et redirige un port local
+5. *status check* : attend la fin du bon déploiement de application
 
 `skaffold` a besoin d'un code à déployer, ainsi qu'un accès à un cluster Kubernetes. L'accès au cluster se configure de la même manière que pour `kubectl`, à travers un fichier `~/.kube/config`. Pour la suite de cet article, j'utilise un cluster `minikube` que j'installe sur mon poste pour l'occasion.
 
@@ -51,7 +51,7 @@ Pour ce faire, le plus pratique est de suivre les étapes d'installation de l'ou
 
 ![installation de minikube](minikube-install.png)
 
-Voici les commandes que j'ai exécuté pour installer `minikube` sur mon poste Linux :
+Voici les commandes que j'ai exécuté pour installer `minikube` sur mon poste Linux :
 ```shell
 $ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
@@ -144,7 +144,7 @@ J'ai pris pour exemple un projet Micronaut avec lequel je suis en train d'expér
 La configuration initiale du projet se fait en utilisant la commande `skaffold init` . Cette commande propose différentes options ([documentation](https://skaffold.dev/docs/pipeline-stages/init/)) en interactif pour créer son fichier de configuration. Cette étape est plus simple qu'écrire le fichier à la main.
 Comme je n'ai pas encore écrit de fichiers manifest Kubernetes pour mon application, `skaffold` a une option pour les générer: `--generate-manifests`.
 
-La première étape consiste à configurer la phase de *build* de l'application, à savoir la construction de l'image docker. Plusieurs options seront proposées, en fonction de ce qui est déjà disponible dans le code : `Dockerfile`, configuration de `jib`, ou manifests Kubernetes.
+La première étape consiste à configurer la phase de *build* de l'application, à savoir la construction de l'image docker. Plusieurs options seront proposées, en fonction de ce qui est déjà disponible dans le code : `Dockerfile`, configuration de `jib`, ou manifests Kubernetes.
 Mon projet Micronaut a déjà une configuration pour `jib` dans son `pom.xml`:
 ```xml
 <build>

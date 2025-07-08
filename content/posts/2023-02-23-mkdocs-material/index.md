@@ -285,7 +285,7 @@ Le rendu est le suivant:
 
 ![](create-docs-website-content-page.png)
 
-Notez que :
+Notez que :
 
 * le titre de la page est celui du premier header Markdown `#`
 * dans la navigation de gauche, le titre utilisé est celui du bloc de description de la page *Front Matter*.
@@ -379,7 +379,7 @@ jobs:
 
 Le fichier final complet est disponible sur [le repository _Github_](https://github.com/ekit3/mkdocs-website-sample/blob/main/.github/workflows/publish.yml) contenant le code source de cet article.
 
-À noter que le déploiement avec _Github Pages_ doit être activé dans le repository _Github_, et que le repository doit être public :
+À noter que le déploiement avec _Github Pages_ doit être activé dans le repository _Github_, et que le repository doit être public :
 
 ![](create-docs-website-github-pages.png)
 
@@ -406,7 +406,7 @@ Cela en fait l'outil idéal pour documenter un projet open-source ou interne.
 * [Documentation](https://squidfunk.github.io/mkdocs-material/) de _Material for MkDocs_
 * [La customisation](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) de _Material for MkDocs_ (couleurs, fonts, icônes)
 * L'icône _Death Star_ utilisée pour le site généré sur [pngrepo.com](https://www.pngrepo.com/svg/275952/death-star-star-wars)
-* Les actions Github utilisées :
+* Les actions Github utilisées :
   * [upload-pages-artifact](https://github.com/actions/upload-pages-artifact)
   * [deploy-pages](https://github.com/actions/deploy-pages)
 * Le [code source](https://github.com/ekit3/mkdocs-website-sample) associé à cet article
