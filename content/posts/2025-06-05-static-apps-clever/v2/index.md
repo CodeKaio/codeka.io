@@ -1,6 +1,6 @@
 ---
 date: 2025-06-05
-lastmod: 2025-07-08
+lastmod: 2025-07-10
 language: fr
 title: Déployer des applications statiques sur Clever Cloud
 params:
@@ -234,3 +234,9 @@ Les performances sont clairement au rendez-vous, en tout cas largement suffisant
 ## Conclusion
 
 Pour 4.5 € euros / mois, et pour la simplicité d'utilisation, ce nouveau type d'application Clever Cloud vaut vraiment le coup. Avec les accès aux logs, la customization des instances possibles et l'hébergement en France 🇫🇷, je dis bye-bye GitHub Pages 👋
+
+## Liens et références
+
+* Documentation du [runtime `static`](https://www.clever-cloud.com/developers/doc/applications/static/)
+* Discussion autour de runtime sur [CleverCloud/Community](https://github.com/CleverCloud/Community/discussions/66)
+* [Zwindler réessaye les sites statiques chez Clever Cloud](https://blog.zwindler.fr/2025/07/07/je-reessaye-les-sites-statiques-chez-clever/)

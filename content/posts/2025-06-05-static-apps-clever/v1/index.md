@@ -1,6 +1,6 @@
 ---
 date: 2025-06-05
-lastmod: 2025-07-08
+lastmod: 2025-07-10
 language: fr
 title: Déployer des applications statiques sur Clever Cloud
 url: '/:year/:month/:day/:slug/v1'
