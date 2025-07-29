@@ -22,14 +22,11 @@
       </span>
     </div>
 
-    {{ if .Params.tags }}
+    {{ with .GetTerms "tags" }}
     <ul class="tags">
-      {{ range .Params.tags }}
-
-      {{ $tagPage := site.GetPage "tags" . }}
-
+      {{ range . }}
       <li class="tag-{{ . }}">
-        <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{$tagPage.Params.emoji}} {{ . }}</a>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
       </li>
       {{ end }}
     </ul>
