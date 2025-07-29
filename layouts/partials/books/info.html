@@ -1,7 +1,7 @@
 <div class="info">
     <h2 class="post-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h1>
+    </h2>
     {{ with .GetTerms "tags" }}
     <ul class="tags">
         {{ range . }}
@@ -14,7 +14,7 @@
     
     {{ if .Params.featuredImage }}
     <a href="{{ .Permalink }}">
-        <img style="max-height: 10rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
+        <img alt="Couverture du livre {{ .Title }}" style="max-height: 10rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
     </a>
     {{end}}
 
