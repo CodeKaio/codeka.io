@@ -20,6 +20,8 @@ C'est la première fois que je fais ce genre d'exercice. C'est l'occasion de pre
 
 Mine de rien, l'année était quand même bien chargée.
 
+<!--more-->
+
 ## Conférences et talks
 
 Cette saison, j'ai eu le plaisir d'assister à pas mal de conférences :
