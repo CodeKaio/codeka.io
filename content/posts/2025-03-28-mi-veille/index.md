@@ -50,7 +50,7 @@ Bonne lecture !
 
 > J'ai découvert cet outil qui permet de voir à quoi va ressembler la "carte" générée par LinkedIn pour les liens qui y sont postés. Ça va bien me servir 😅
 
-## 🤖 IA
+## 🧠 IA
 
 * [ChatGPT : le mythe de la productivité](https://framablog.org/2025/03/09/chatgpt-le-mythe-de-la-productivite/?utm_source=pocket_shared) par [Hubert Guillaud](https://hubertguillaud.wordpress.com/) _via_ [Framablog](https://framablog.org)
 

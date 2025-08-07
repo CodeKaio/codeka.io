@@ -37,7 +37,7 @@ Parmi les liens que vous allez retrouver (mais pas que) :
 
 > Un article qui retrace le lien particulier avec l'informatique des gens de ma génération. Les perspectives, couplées au succès des IA génératives, sont quand même assez inquiétantes.
 
-## 🤖 IA
+## 🧠 IA
 
 * [L'extension Firefox & Chrome de Next.ink permet de détecter les médias générés par IA](https://next.ink/171509/alerte-genia-notre-extension-debarque-sur-firefox-android-et-identifie-2-000-sites/) _via_ [next.ink](https://next.ink/)
 
