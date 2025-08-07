@@ -72,7 +72,7 @@ Enfin, il serait peut-être intéressant de creuser l'alternative européenne :
 
 > Cette info a été _teasée_ par Alina Yurenko à DevOxx France 2025. GraalVM développe la capacité à compiler du code en WebAssembly (l'exécution de WebAssembly est déjà implémentée par GraalVM Polyglot). Cela ouvre de nouvelles possibilités : exécuter du code Java dans un browser, sans avoir besoin de runtime particulier !
 
-## ☕ IA
+## 🧠 IA
 
 * [AI 2027](https://ai-2027.com)
 
