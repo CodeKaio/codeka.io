@@ -26,7 +26,7 @@ draft: true
 
 ## ☕ Java
 
-## ☕ IA
+## 🧠 IA
 
 ## 👷 DevOps
 
