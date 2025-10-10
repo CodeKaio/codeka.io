@@ -28,7 +28,7 @@ Ce talk, intégralement réalisé dans le jeu, reprend et illustre ces différen
 
 The Factory Must Grow.
 
-## Liste des mods utilisés
+## Liste des mods et outils utilisés
 
 Pour réaliser ce talk, j'ai utilisé quelques mods, voici la liste :
 
@@ -37,6 +37,11 @@ Pour réaliser ce talk, j'ai utilisé quelques mods, voici la liste :
 * [InfiniZoom](https://mods.factorio.com/mod/Infinizoom) : pour pouvoir gérer un zoom infini
 * [Rate Calculator](https://mods.factorio.com/mod/RateCalculator) : pour calculer les ratios pendant la préparation du talk
 * [Switch Button](https://mods.factorio.com/mod/switch-button) : pour pouvoir déclencher des actions dans le jeu au click
+
+J'ai aussi utilisé quelques outils :
+
+* [Factorio QR Code Blueprint Generator](https://kater-iam.github.io/factorio-qrcode-maker/) : Pour générer le QR Code à la fin de la présentation
+* [Factorio Space Age Blueprints](https://www.patreon.com/posts/factorio-space-114408706) : Les blueprints de Nilaus pour construire l'usine de démo
 
 ## Sauvegarde
 
