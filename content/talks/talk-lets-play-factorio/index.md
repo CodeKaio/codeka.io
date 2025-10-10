@@ -10,6 +10,10 @@ events:
     date: 2025-06-27
     youtube: TnDRFGkeiwU
     pictures: pictures-sunny-tech-2025
+    feedbacks_snapshot: feedbacks-sunnytech-2025
+    feedbacks_url: https://openfeedback.io/sunnytech2025/2025-06-27/cm5qwizju00lmqy3m7y2warn5
+  - name: DevFest Nantes 2025
+    date: 2025-10-16
 ---
 
 _Factorio_ est un jeu vidéo d'automatisation hautement addictif (croyez-en mes 300h de jeu).
