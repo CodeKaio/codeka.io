@@ -12,6 +12,11 @@
 <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ .youtube }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {{ end }}
 
+{{ if .feedbacks_url }}
+<h2>Feedbacks</h2>
+<iframe loading="lazy" width="800" height="330" src="{{ .feedbacks_url }}?hideHeader=true&forceColorScheme=light" title="Feedbacks"></iframe>
+{{ end }}
+
 {{ if .pictures }}
 <h2>Photos</h2>
 <div class="photo-gallery">
