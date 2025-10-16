@@ -14,6 +14,7 @@ events:
     feedbacks_url: https://openfeedback.io/sunnytech2025/2025-06-27/cm5qwizju00lmqy3m7y2warn5
   - name: DevFest Nantes 2025
     date: 2025-10-16
+    feedbacks_url: https://openfeedback.io/devfestnantes2025/2025-10-16/letsplayfactorio
 ---
 
 _Factorio_ est un jeu vidéo d'automatisation hautement addictif (croyez-en mes 300h de jeu).
@@ -49,7 +50,9 @@ J'ai aussi utilisé quelques outils :
 
 ## Sauvegarde
 
-Je mets à disposition mon fichier de sauvegarde à télécharger ici : [sunny-tech-2025.zip](sunny-tech-2025.zip)
+Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
+* Sauvegarde de la session de SunnyTech 2025 : [sunny-tech-2025.zip](sunny-tech-2025.zip)
+* Sauvegarde de la session du DevFest Nantes 2025 : [devfest-nantes-2025.zip](devfest-nantes-2025.zip)
 
 ## Liens
 
