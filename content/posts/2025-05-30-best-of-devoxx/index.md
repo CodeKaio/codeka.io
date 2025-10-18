@@ -12,6 +12,7 @@ tags:
   - Kubernetes
   - Linux
   - Security
+  - Events
 params:
     watchedVideos: 26
 ---
