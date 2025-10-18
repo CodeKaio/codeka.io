@@ -21,7 +21,7 @@ new date title:
     hugo new content posts/{{date}}-{{title}} -k veille
 
 clever-preview:
-    clever deploy --alias preview
+    clever deploy --alias preview --force
     clever open --alias preview
 
 clever-deploy:
