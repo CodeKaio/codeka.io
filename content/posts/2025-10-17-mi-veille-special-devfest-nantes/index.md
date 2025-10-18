@@ -14,7 +14,7 @@ Cette semaine, j'avais la chance d'être au DevFest de Nantes 2025, pour y prés
 
 C'était mon premier DevFest, et c'était un réel plaisir de croiser speakers, participants, et orgas. J'ai bien profité des deux jours de la conférence, à travers les conférences des autres speakers, les rencontres, et les attentions apportées particulièrement aux speakers.
 
-Cette édition spéciale de ["La veille de Wittouck"]({{< relref "/series/la-veille-de-wittouck">}}) liste les différents talks auxquels j'ai pu assister, et mon feedback général sur cette conférence très particulière. Comme je l'ai fait pour l'article consacré à DevOxx 2025, j'amenderai cet article dans quelques semaines pour y mettre les liens des replay vidéos lorsqu'ils seront disponibles.
+Cette édition spéciale de ["La veille de Wittouck"]({{< relref "/series/la-veille-de-wittouck">}}) liste les différents talks auxquels j'ai pu assister, et mon feedback général sur cette conférence très particulière. Comme je l'ai fait pour l'article consacré à [DevOxx 2025]({{< relref "/posts/2025-05-30-best-of-devoxx" >}}), j'amenderai cet article dans quelques semaines pour y mettre les liens des replay vidéos lorsqu'ils seront disponibles.
 
 <!--more-->
 
