@@ -3,6 +3,8 @@ theme = "poison"
 
 defaultContentLanguage = 'fr'
 
+baseUrl = 'https://codeka.io'
+
 [languages]
   [languages.fr]
     languageCode = 'fr-FR'
