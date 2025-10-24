@@ -10,6 +10,7 @@ events:
     date: 2025-06-13
     slides: slides-devlille.pdf
     youtube: 8069CA0DA4c
+    feedbacks_url: https://openfeedback.io/devlille-2025/2025-06-12/Azvg4JsZUg4fO5NXAUph
   - name: DevOxx 2025
     date: 2025-04-16
     slides: slides-devoxx.pdf
