@@ -59,6 +59,7 @@ baseUrl = 'https://codeka.io'
   linkedin_url = "https://www.linkedin.com/in/julien-wittouck"
   twitter_url = "https://www.twitter.com/CodeKaio"
   bluesky_url = "https://bsky.app/profile/codeka.io"
+  mastodon_url = "https://mas.to/@codekaio"
   rss_icon = true
 
   # Hex colors for your sidebar.
