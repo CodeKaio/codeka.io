@@ -34,6 +34,7 @@ baseUrl = 'https://codeka.io'
 
 [params]
   brand = "Julien Wittouck"
+  author_name = "Julien Wittouck"
   brand_image = 'pp_ekite_itvw.png'
   og_image = 'pp_ekite_itvw.png'
   description = "freelance solution & software architect 🏗 - containers 🐋 & linux 🐧 ❤️ - teacher & trainer 🎓 @ univ-lille.fr - speaker 🎙 - Team @Cloud_Nord"
