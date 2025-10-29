@@ -33,11 +33,12 @@
     {{ end }}
   </div>
 
-  {{ $Site := .Site }}
-  {{ if .Params.series }}
+  {{ with .GetTerms "series" }}
+    {{ range . }}
   <p class="seriesname">
-    {{ i18n "series-title" }}<a href="{{ $Site.BaseURL }}series/{{ .Params.series | urlize }}">{{ .Params.series }}</a>
+    {{ i18n "series-title" }}<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
   </p>
+    {{ end }}
   {{ end }}
 
   {{ if .Params.featuredImage }}
