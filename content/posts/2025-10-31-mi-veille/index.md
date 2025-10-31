@@ -11,9 +11,7 @@ tags:
   - Linux
 ---
 
-Après deux semaines bien chargées, principalement autour de l'organisation de [Cloud Nord](https://cloudnord.fr), et pour ne pas finir comme une citrouille enfumée, on lit "La Veille de Wittouck", en se gavant de bonbecs (non).
-
-
+Après deux semaines bien chargées, principalement autour de l'organisation de [Cloud Nord](https://cloudnord.fr), et pour ne pas finir comme une citrouille enfumée, on lit ["La veille de Wittouck"]({{< relref "/series/la-veille-de-wittouck">}}), en se gavant de bonbecs (non).
 
 <!--more-->
 
