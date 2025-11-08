@@ -256,7 +256,7 @@ J'ai passé environ une quinzaine d'heures (sur 2 jours) pour tout faire. Je vou
 
 Les vidéos sont disponibles sur Youtube : https://www.youtube.com/playlist?list=PLVQhat0Bx0WB-fhbbQ0bQkhfTLAZIU2IU
 
-![Screenshot de la playlist youtube de Cloud Nord 2025](img.png)
+![Screenshot de la playlist youtube de Cloud Nord 2025](playlist-youtube.png)
 
 Je pense que pour une captation faite à l'arrache par des amateurs, le résultat est quand même pas si mal.
 On fera probablement mieux l'année prochaine, mais c'est mieux que rien pour cette édition "lite".
