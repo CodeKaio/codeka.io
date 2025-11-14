@@ -30,7 +30,7 @@ baseUrl = 'https://codeka.io'
         block = true
 
 [outputs]
-  home = ['html', 'rss', 'json']
+  home = ['html', 'rss']
 
 [params]
   brand = "Julien Wittouck"
