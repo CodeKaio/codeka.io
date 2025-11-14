@@ -1,5 +1,6 @@
 ---
 date: 2025-11-14
+lastmod: 2025-11-14
 language: fr
 title: La veille de Wittouck - Début novembre 2025
 series: La veille de Wittouck
@@ -12,6 +13,7 @@ tags:
   - Docker
   - Linux
   - Events
+  - CleverCloud
 ---
 
 En cette mi-novembre, la sortie de Spring Boot 4 se profile et la saison des conférences continue.
@@ -29,6 +31,10 @@ Voici ma sélection d'articles de veille en attendant le prochain DevFest (Lyon 
 > C'est surtout un bon exercice, et ça peut valider un apprentissage le plus souvent théorique. Bref, je ne vais pas refaire un article ici, je vous laisse vous forger votre propre avis.
 
 ## ☁️ Cloud
+
+* [Clever Cloud Academy](https://academy.clever.cloud/)
+
+> Ça y est, Clever Cloud lance son programme de formations certifiantes. La première certification est nommée "Cloud Concepts 101" et parle des concepts généraux du Cloud et de la plateforme Clever Cloud (console et CLI). Et c'est gratuit ! Ce serait dommage de s'en priver.
 
 * [Comment Bedrock Streaming optimise ses coûts AWS](https://aws.amazon.com/fr/blogs/france/comment-bedrock-streaming-optimise-ses-couts-aws/)
 
