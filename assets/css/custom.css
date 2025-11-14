@@ -120,6 +120,31 @@ ul.certifications {
     flex: 0 1 auto;
 }
 
+.post-date {
+    margin-bottom: 0;
+}
+
+.info ul li {
+    margin-left: 0;
+}
+
+/* On small screens, stack metadata and show tags on a separate line */
+@media (max-width: 48em) {
+    .headline {
+        align-items: flex-start;
+    }
+    /* Ensure the tags block drops below the date/reading-time */
+    .headline > .tags {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    /* Override theme float so the tags don't stay on the right */
+    .headline .tags {
+        float: none;
+        display: block;
+    }
+}
+
 /* search box style */
 :root {
     --rad: .5rem;
