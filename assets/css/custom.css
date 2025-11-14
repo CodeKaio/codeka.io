@@ -125,7 +125,7 @@ ul.certifications {
 
 /* article headline style */
 .headline {
-    gap: 1rem;
+    flex-direction: column;
     align-items: start;
 }
 .headline > div {
