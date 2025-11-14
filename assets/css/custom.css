@@ -29,7 +29,22 @@ ul.certifications {
             display: none;
         }
         .sidebar-nav {
-            display: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1rem;
+            .heading {
+                text-decoration-line: underline;
+                text-decoration-style: dotted;
+                text-decoration-thickness: 1%;
+            }
+            .sub-heading {
+                display: none;
+            }
+            .bullet {
+                display: none;
+            }
         }
         .social {
             display: none;
