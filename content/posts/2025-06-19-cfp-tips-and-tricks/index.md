@@ -1,9 +1,11 @@
 ---
 date: 2025-07-04
+lastmod: 2025-11-14
 language: fr
 title: Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP
 tags:
   - internet
+  - events
 ---
 
 Les conférences sont un lieu important de partage et de veille, y participer en tant que speaker ou assister à des conférences permet d'enrichir votre réseau et de partager vos expériences.
@@ -253,3 +255,4 @@ Le CFP de Cloud Nord est déjà ouvert, donc n'hésitez pas à soumettre vos suj
 * [Préparez et donnez votre première conférence (quand ce n’est pas votre métier)](https://votre-premiere-conference.fr/) : ce livre de Pascal Martin donne beaucoup de très bon conseils. L'envoi de la proposition à un CFP fait l'objet d'un chapitre complet.
 * [Proposer une conférence – la réponse au CFP](https://devfesttoulouse.fr/2025/03/18/proposer-une-conference-le-cfp/) : un chouette billet de blog écrit par Sylvain Wallez ; on y retrouve des conseils similaires.
 * [Comment écrire un CFP que les conférences tech ne peuvent pas refuser !](https://youtu.be/bKuVZYQnnX4) : une vidéo intéressante avec des tips supplémentaires, et des conseils assez concrets
+* [Comment être refusé à coup sûr à un CFP ?](https://www.webofmars.com/blog/2025-10-29_comment-etre-refuser-a-un-cfp/) : une jolie liste de pièges à éviter.
