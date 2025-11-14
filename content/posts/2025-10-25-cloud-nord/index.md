@@ -3,7 +3,7 @@ date: 2025-11-07
 language: fr
 title: Je suis orga d'un événement tech
 tags:
-  - Events
+  - events
 ---
 
 Le 23 octobre dernier, c'était la 6ème édition de [Cloud Nord](https://cloudnord.fr).

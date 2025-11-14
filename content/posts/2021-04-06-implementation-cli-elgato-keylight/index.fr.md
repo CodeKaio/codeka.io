@@ -2,9 +2,9 @@
 created: "2021-04-06"
 date: "2021-04-06T00:00:00Z"
 language: fr
-modified: "2022-04-15"
+lastmod: "2022-04-15"
 tags:
-- Go
+- go
 title: Implémentation d'un CLI pour la Elgato KeyLight
 slug: implementation-cli-elgato-keylight
 ---

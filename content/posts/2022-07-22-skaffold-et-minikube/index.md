@@ -2,12 +2,12 @@
 created: "2022-07-22"
 date: "2022-07-22T00:00:00Z"
 language: fr
-modified: "2022-07-29"
+lastmod: "2022-07-29"
 tags:
-- DevOps
-- Kubernetes
-- Docker
-- Tutorial
+- devops
+- kubernetes
+- docker
+- tutorial
 title: Exécuter une application localement sur minikube avec skaffold
 slug: skaffold-et-minikube
 ---

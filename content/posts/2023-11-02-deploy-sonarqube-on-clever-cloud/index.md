@@ -2,12 +2,14 @@
 created: "2023-11-02"
 date: "2023-11-02T00:00:00Z"
 language: fr
-modified: "2023-11-09"
+lastmod: "2023-11-09"
 slug: "deploy-sonarqube-on-clever-cloud"
 tags:
-- CleverCloud
-- SonarQube
-- Tutorial
+- clevercloud
+- sonarqube
+- tutorial
+- docker
+- databases
 title: Déployer une instance de SonarQube sur Clever Cloud
 ---
 

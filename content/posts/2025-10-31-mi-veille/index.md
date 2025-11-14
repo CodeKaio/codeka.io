@@ -4,11 +4,11 @@ language: fr
 title: La veille de Wittouck - Fin octobre 2025
 series: La veille de Wittouck
 tags:
-  - IA
-  - Databases
-  - Internet
-  - Java
-  - Linux
+  - ia
+  - databases
+  - internet
+  - java
+  - linux
 ---
 
 Après deux semaines bien chargées, principalement autour de l'organisation de [Cloud Nord](https://cloudnord.fr), et pour ne pas finir comme une citrouille enfumée, on lit ["La veille de Wittouck"]({{< relref "/series/la-veille-de-wittouck">}}), en se gavant de bonbecs (non).

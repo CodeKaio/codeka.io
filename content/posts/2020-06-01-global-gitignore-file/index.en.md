@@ -4,8 +4,8 @@ date: "2020-06-01T00:00:00Z"
 language: en
 modified: "2022-06-17"
 tags:
-- DevOps
-- Git
+- devops
+- git
 title: "Configure a Global Gitignore \U0001F648"
 slug: global-gitignore-file
 ---

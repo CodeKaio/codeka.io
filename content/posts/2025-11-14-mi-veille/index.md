@@ -5,15 +5,15 @@ language: fr
 title: La veille de Wittouck - Début novembre 2025
 series: La veille de Wittouck
 tags:
-  - Internet
-  - Cloud
-  - Git
-  - Security
-  - Java
-  - Docker
-  - Linux
-  - Events
-  - CleverCloud
+  - internet
+  - cloud
+  - git
+  - security
+  - java
+  - docker
+  - linux
+  - events
+  - clevercloud
 ---
 
 En cette mi-novembre, la sortie de Spring Boot 4 se profile et la saison des conférences continue.

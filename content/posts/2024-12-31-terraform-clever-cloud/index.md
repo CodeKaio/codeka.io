@@ -4,10 +4,10 @@ lastmod: "2025-02-04"
 date: "2024-12-31T00:00:00Z"
 language: fr
 tags:
-- DevOps
-- Terraform
-- OpenTofu
-- CleverCloud
+- devops
+- terraform
+- opentofu
+- clevercloud
 title: Terraform et Clever Cloud
 series: Terraform et Clever Cloud
 ---

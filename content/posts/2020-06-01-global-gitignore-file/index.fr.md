@@ -2,10 +2,10 @@
 created: "2020-04-16"
 date: "2020-06-01T00:00:00Z"
 language: fr
-modified: "2022-06-17"
+lastmod: "2022-06-17"
 tags:
-- DevOps
-- Git
+- devops
+- git
 title: "Configurer un .gitignore global \U0001F648"
 slug: global-gitignore-file
 ---

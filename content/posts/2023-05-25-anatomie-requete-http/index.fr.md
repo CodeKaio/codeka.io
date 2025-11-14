@@ -4,7 +4,7 @@ date: "2023-05-25T00:00:00Z"
 language: fr
 modified: "2023-07-01"
 tags:
-- Basics
+- basics
 title: Anatomie d'une requête HTTP
 slug: anatomie-requete-http
 ---

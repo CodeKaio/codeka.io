@@ -2,12 +2,12 @@
 created: "2023-02-23"
 date: "2023-02-23T00:00:00Z"
 language: fr
-modified: "2023-03-09"
+lastmod: "2023-03-09"
 tags:
-- Git
-- Tools
-- Docs
-- Tutorial
+- git
+- tools
+- docs
+- tutorial
 title: Créer un site web de documentation statique avec MkDocs
 slug: mkdocs-material
 ---

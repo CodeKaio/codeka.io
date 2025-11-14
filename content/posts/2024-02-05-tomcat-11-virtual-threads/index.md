@@ -4,8 +4,8 @@ modified: "2024-02-15"
 date: "2024-02-05"
 language: fr
 tags:
-  - Java
-  - Tomcat
+  - java
+  - tomcat
 title: Tomcat 11 & Virtual Threads 🧵
 ---
 

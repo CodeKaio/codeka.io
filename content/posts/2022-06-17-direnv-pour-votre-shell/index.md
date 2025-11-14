@@ -2,10 +2,10 @@
 created: "2022-06-17"
 date: "2022-06-17T00:00:00Z"
 language: fr
-modified: "2022-08-05"
+lastmod: "2022-08-05"
 tags:
-- DevOps
-- Shell
+- devops
+- shell
 title: direnv pour booster votre shell
 slug: direnv-pour-votre-shell
 ---

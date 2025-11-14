@@ -2,10 +2,10 @@
 created: "2021-03-26"
 date: "2021-03-26T00:00:00Z"
 language: fr
-modified: "2022-04-22"
+lastmod: "2022-04-22"
 tags:
-- DevOps
-- Git
+- devops
+- git
 title: Réécrire une branche git
 slug: rewrite-git-history
 ---

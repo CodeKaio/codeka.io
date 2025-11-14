@@ -3,14 +3,15 @@ date: "2025-04-24"
 language: fr
 title: DevOxx 2025 - Bilan
 tags:
-  - Internet
-  - Security
-  - Kubernetes
-  - Docker
-  - IA
-  - Java
-  - Spring Boot
-  - Tools
+  - internet
+  - security
+  - kubernetes
+  - docker
+  - ia
+  - java
+  - spring-boot
+  - tools
+  - events
 ---
 
 Pour la deuxième année consécutive, j'ai la chance d'être speaker à DevOxx France.

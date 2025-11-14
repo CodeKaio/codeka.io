@@ -3,10 +3,10 @@ date: "2025-01-17"
 lastmod: "2025-02-12"
 language: fr
 tags:
-- DevOps
-- Terraform
-- Vault
-- CleverCloud
+- devops
+- terraform
+- vault
+- clevercloud
 title: Vault sur Clever Cloud
 series: Terraform et Clever Cloud
 ---
@@ -123,14 +123,14 @@ resource "clevercloud_docker" "vault_instance" {
   environment = {
     VAULT_LOCAL_CONFIG = jsonencode(
       {
-        "storage" : {
-          "postgresql" : {
-            "connection_url" : "postgres://${clevercloud_postgresql.vault_storage.user}:${clevercloud_postgresql.vault_storage.password}@${clevercloud_postgresql.vault_storage.host}:${clevercloud_postgresql.vault_storage.port}/${clevercloud_postgresql.vault_storage.database}"
+        "storage": {
+          "postgresql": {
+            "connection_url": "postgres://${clevercloud_postgresql.vault_storage.user}:${clevercloud_postgresql.vault_storage.password}@${clevercloud_postgresql.vault_storage.host}:${clevercloud_postgresql.vault_storage.port}/${clevercloud_postgresql.vault_storage.database}"
           }
         },
-        "listener" : [{ "tcp" : { "address" : "0.0.0.0:8080", "tls_disable" : true } }],
-        "disable_mlock" : true,
-        "ui" : true
+        "listener": [{ "tcp": { "address": "0.0.0.0:8080", "tls_disable": true } }],
+        "disable_mlock": true,
+        "ui": true
       })
   }
 }

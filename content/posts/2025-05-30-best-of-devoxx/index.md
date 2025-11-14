@@ -4,15 +4,15 @@ language: fr
 title: La veille de Wittouck - Fin mai 2025 - Best-Of Devoxx 2025
 series: La veille de Wittouck
 tags:
-  - DevOps
-  - Docker
-  - IA
-  - Internet
-  - Java
-  - Kubernetes
-  - Linux
-  - Security
-  - Events
+  - devops
+  - docker
+  - ia
+  - internet
+  - java
+  - kubernetes
+  - linux
+  - security
+  - events
 params:
     watchedVideos: 26
 ---

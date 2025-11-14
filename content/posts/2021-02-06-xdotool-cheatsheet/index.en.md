@@ -2,9 +2,11 @@
 created: "2021-02-06"
 date: "2021-02-06T00:00:00Z"
 language: en
-modified: "2024-01-05"
+lastmod: "2024-01-05"
 tags:
-- Tools
+- tools
+- linux
+- shell
 title: xdotool cheatsheet
 slug: xdotool-cheatsheet
 ---

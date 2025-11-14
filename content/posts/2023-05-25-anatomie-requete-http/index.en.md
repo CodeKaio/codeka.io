@@ -2,9 +2,9 @@
 created: "2023-05-25"
 date: "2023-05-25T00:00:00Z"
 language: fr
-modified: "2023-07-01"
+lastmod: "2023-07-01"
 tags:
-- Basics
+- basics
 title: Anatomy of an HTTP request
 slug: anatomie-requete-http
 ---

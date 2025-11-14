@@ -2,9 +2,10 @@
 date: "2025-02-20"
 language: fr
 tags:
-- DevOps
-- Terraform
-- Vault
+- devops
+- terraform
+- vault
+- gitlab
 title: GitLab OIDC & Vault
 series: Terraform et Clever Cloud
 ---

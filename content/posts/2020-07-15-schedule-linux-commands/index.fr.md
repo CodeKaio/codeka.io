@@ -2,9 +2,11 @@
 created: "2020-07-15"
 date: "2020-07-15T00:00:00Z"
 language: en
-modified: "2022-06-17"
+lastmod: "2022-06-17"
 tags:
-- DevOps
+- devops
+- linux
+- shell
 title: Planifier des commandes Linux avec `at`
 slug: schedule-linux-commands
 ---
