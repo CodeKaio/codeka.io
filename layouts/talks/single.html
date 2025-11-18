@@ -2,6 +2,15 @@
 <div class="post">
   {{ partial "post/info.html" . }}
 
+  {{ with .Resources }}
+    {{ with .GetMatch "{cover.*}" }}
+      {{ $cover := .Resize "820x webp" }}
+      {{ with $cover }}
+  <img src="{{ .Permalink }}"/>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   {{ .Content }}
 
   {{ partial "talks/slides.html" . }}
