@@ -6,6 +6,9 @@ tags:
   - Internet
   - Basics
 events:
+  - name: DevFest Lyon 2025
+    date: 2025-11-28
+    feedbacks_url: https://openfeedback.io/6UvvOdJnjaGGkwaSUKC1/2025-11-28/6Ivti5gj9LN0TqLY5w11
   - name: DevFest Nantes 2025
     date: 2025-10-16
     feedbacks_url: https://openfeedback.io/devfestnantes2025/2025-10-16/letsplayfactorio
@@ -54,6 +57,7 @@ J'ai aussi utilisé quelques outils :
 Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
 * Sauvegarde de la session de SunnyTech 2025 : [sunny-tech-2025.zip](sunny-tech-2025.zip)
 * Sauvegarde de la session du DevFest Nantes 2025 : [devfest-nantes-2025.zip](devfest-nantes-2025.zip)
+* Sauvegarde de la session du DevFest Lyon 2025 : [devfest-lyon-2025.zip](devfest-lyon-2025.zip)
 
 ## Liens
 
