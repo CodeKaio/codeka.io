@@ -1,5 +1,4 @@
 {{ range .Params.events }}
-{{ if (or (.slides) (.youtube) (.pictures)) }}
 <h1>{{ .name }} - {{ .date | time.Format ":date_medium" }}</h1>
 
 {{ if .slides }}
@@ -70,6 +69,5 @@
     </div>
   {{ end }}
   </div>
-{{ end }}
 {{ end }}
 {{ end }}
