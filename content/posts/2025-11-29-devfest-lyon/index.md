@@ -16,6 +16,8 @@ Et c'était bien chouette.
 
 Comme l'on dit les orgas de ce tout nouvel événement au mot d'ouverture (Mickaël Alves et Margaux Pirat sur scène, Olivier Perez, Anthony Donnet et Michaël Da Silva en coulisses), jusqu'à hier, Lyon n'avait pas son DevFest.
 
+![Photo de Mickaël et Margaux pour l'ouverture de la journée](ouverture.jpg)
+
 C'est maintenant le cas, et quel DevFest !
 
 Sold-out plus d'un mois à l'avance, 314 propositions reçues au CFP pour 16 créneaux de talk, on voit que le public Lyonnais était en attente de cet événement.
@@ -32,6 +34,8 @@ La soirée des speakers est toujours un moment privilégié (et traditionnel). J
 Pour le jour J, une salle speakers nous a été mise à disposition, avec boissons, bonbons, brioche à la praline (miam).
 Nous avons également eu le droit à un shooting photo personnel (hâte de recevoir ma future photo de profil 💙) ainsi qu'à un petit cadeau pour nous tenir chaud dans les soirées d'hiver qui approchent : un joli plaid brandé "DevFest Lyon".
 
+![Le plaid DevFest Lyon](./plaid.jpg)
+
 Ce sont toutes ces petites attentions qui font de ces événements un réel plaisir pour les speakeuses et les speakers. Merci à toute l'équipe pour cet accueil chaleureux.
 
 ## La barre est mise très haute
@@ -41,6 +45,10 @@ Concernant le jour J, un seul mot : Bravo.
 De mon point de vue, l'organisation est impeccable. L'équipe a pensé à tout.
 
 L'accueil est chaleureux dès la remise des badges. Badges qui contiennent le programme de la journée, ainsi que les QR Codes à scanner vers les pages du site et des feedbacks. C'est une bonne idée et c'est plutôt pratique (j'avais déjà vu ça au DevFest de Nantes).
+
+![Le badge](./badge.jpg)
+
+L'accent est mis sur le côté "collector" de certains goodies, comme le sticker "J'étais au 1er DevFest Lyon", et sur le tour de cou du badge. C'est très rigolo, et ça fonctionne plutôt bien.
 
 Les orgas sont attentifs, disponibles et s'assurent que tout se passe bien. On voit bien la quantité de travail qui a été investie dans la préparation de la journée. En plus de l'équipe principale, les bénévoles venus aider sont aussi des habitués des conférences, je pense que ces atouts précieux ont dû aussi bien aider à ne rien oublier à la préparation en amont.
 
@@ -76,3 +84,5 @@ Bravo à toute l'équipe, aux MC et aux bénévoles, et aux sponsors pour leur s
 Bravo aux speakeuses et aux speakers pour vos talks, et merci pour les échanges que j'ai pu avoir avec certains d'entre vous, j'ai hâte de vous recroiser à d'autres événements !
 
 Merci pour l'accueil incroyable à Lyon, et à l'année prochaine 💙
+
+![La cathédrale Saint Jean la nuit tombée](./saint-jean.jpg)
