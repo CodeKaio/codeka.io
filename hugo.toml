@@ -52,7 +52,9 @@ baseUrl = 'https://codeka.io'
   menu = [
     {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 3},
     {Name = "Talks", URL = "/talks/", HasChildren = true, Limit = 3 },
-    {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3}
+    {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3},
+    {Name = "AI Manifesto", Page = "/ai/"},
+    {Name = "now", Page = "/now/"}
   ]
 
   email_url = "mailto:julien.wittouck@gmail.com"
