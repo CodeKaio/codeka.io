@@ -1,7 +1,7 @@
 [
   {
     "page": "/",
-    "visits": 737
+    "visits": 739
   },
   {
     "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/",
@@ -21,7 +21,7 @@
   },
   {
     "page": "/2024/02/05/tomcat-11-virtual-threads/",
-    "visits": 208
+    "visits": 209
   },
   {
     "page": "/talks/talk-lets-play-factorio/",
@@ -36,6 +36,10 @@
     "visits": 160
   },
   {
+    "page": "/2025/12/12/montée-de-version-spring-boot-4-avec-openrewrite/",
+    "visits": 155
+  },
+  {
     "page": "/2025/07/04/leeloo-dallas-multipass-répondre-aux-5-éléments-dun-cfp/",
     "visits": 154
   },
@@ -48,12 +52,8 @@
     "visits": 149
   },
   {
-    "page": "/2025/12/12/montée-de-version-spring-boot-4-avec-openrewrite/",
-    "visits": 147
-  },
-  {
     "page": "/2025/07/18/markdown-et-pandoc/",
-    "visits": 144
+    "visits": 146
   },
   {
     "page": "/2024/12/31/terraform-et-clever-cloud/",
@@ -65,7 +65,7 @@
   },
   {
     "page": "/2025/11/22/kubernetes-50-solutions-pour-les-postes-de-dev-et-les-clusters-de-prod/",
-    "visits": 130
+    "visits": 131
   },
   {
     "page": "/2025/04/24/devoxx-2025-bilan/",
@@ -105,7 +105,7 @@
   },
   {
     "page": "/2025/11/14/la-veille-de-wittouck-début-novembre-2025/",
-    "visits": 69
+    "visits": 71
   },
   {
     "page": "/2025/10/17/la-veille-de-wittouck-édition-spéciale-devfest-de-nantes-2025/",
@@ -161,7 +161,7 @@
   },
   {
     "page": "/2025/12/02/la-veille-de-wittouck-fin-novembre-2025/",
-    "visits": 35
+    "visits": 36
   },
   {
     "page": "/2022/06/17/direnv-pour-votre-shell/",
@@ -173,7 +173,7 @@
   },
   {
     "page": "/2025/12/12/la-veille-de-wittouck-début-décembre-2025/",
-    "visits": 29
+    "visits": 30
   },
   {
     "page": "/talks/bbl-preparer-et-passer-la-certification-terraform/",
@@ -204,15 +204,15 @@
     "visits": 16
   },
   {
-    "page": "/projects/",
-    "visits": 14
-  },
-  {
     "page": "/2020/07/15/schedule-linux-commands/",
     "visits": 14
   },
   {
     "page": "/talks/talk-service-accounts/",
+    "visits": 14
+  },
+  {
+    "page": "/projects/",
     "visits": 14
   },
   {
@@ -240,11 +240,11 @@
     "visits": 6
   },
   {
-    "page": "/tags/devops/",
+    "page": "/2021/04/06/implementation-cli-elgato-keylight/",
     "visits": 5
   },
   {
-    "page": "/2021/04/06/implementation-cli-elgato-keylight/",
+    "page": "/tags/devops/",
     "visits": 5
   },
   {
@@ -256,35 +256,7 @@
     "visits": 4
   },
   {
-    "page": "/tags/internet/",
-    "visits": 3
-  },
-  {
-    "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/v1/",
-    "visits": 3
-  },
-  {
     "page": "/categories/",
-    "visits": 3
-  },
-  {
-    "page": "/en/2020/07/15/schedule-linux-commands/",
-    "visits": 3
-  },
-  {
-    "page": "/tags/tomcat/",
-    "visits": 3
-  },
-  {
-    "page": "/tags/gitlab/",
-    "visits": 3
-  },
-  {
-    "page": "/tags/terraform/",
-    "visits": 3
-  },
-  {
-    "page": "/projects/gitlab-classrooms/LICENSE",
     "visits": 3
   },
   {
@@ -292,11 +264,39 @@
     "visits": 3
   },
   {
+    "page": "/tags/internet/",
+    "visits": 3
+  },
+  {
     "page": "/tags/clever-cloud/",
     "visits": 3
   },
   {
-    "page": "/tags/minikube/",
+    "page": "/tags/gitlab/",
+    "visits": 3
+  },
+  {
+    "page": "/en/2020/07/15/schedule-linux-commands/",
+    "visits": 3
+  },
+  {
+    "page": "/tags/terraform/",
+    "visits": 3
+  },
+  {
+    "page": "/tags/tomcat/",
+    "visits": 3
+  },
+  {
+    "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/v1/",
+    "visits": 3
+  },
+  {
+    "page": "/projects/gitlab-classrooms/LICENSE",
+    "visits": 3
+  },
+  {
+    "page": "/tags/java/",
     "visits": 2
   },
   {
@@ -304,7 +304,11 @@
     "visits": 2
   },
   {
-    "page": "/tags/java/",
+    "page": "/tags/events/",
+    "visits": 2
+  },
+  {
+    "page": "/tags/minikube/",
     "visits": 2
   },
   {
@@ -312,11 +316,7 @@
     "visits": 2
   },
   {
-    "page": "/tags/events/",
-    "visits": 2
-  },
-  {
-    "page": "/page/4/",
+    "page": "/tags/tools/",
     "visits": 1
   },
   {
@@ -328,7 +328,15 @@
     "visits": 1
   },
   {
-    "page": "/tags/tools/",
+    "page": "/page/4/",
+    "visits": 1
+  },
+  {
+    "page": "/tags/docs/",
+    "visits": 1
+  },
+  {
+    "page": "/2025/07/04/leeloo-dallas-multipass-r%u00e9pondre-aux-5-%u00e9l%u00e9ments-dun-cfp/",
     "visits": 1
   },
   {
@@ -340,15 +348,7 @@
     "visits": 1
   },
   {
-    "page": "/2025/07/04/leeloo-dallas-multipass-r%u00e9pondre-aux-5-%u00e9l%u00e9ments-dun-cfp/",
-    "visits": 1
-  },
-  {
     "page": "/en/tags/git/",
-    "visits": 1
-  },
-  {
-    "page": "/tags/docs/",
     "visits": 1
   },
   {
