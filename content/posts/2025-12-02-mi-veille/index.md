@@ -21,10 +21,10 @@ Avant de pouvoir ouvrir les premières case de son calendrier de l'avent, on lit
 * [How Did I Get Here](https://how-did-i-get-here.net/) _via_ [Siegfried Ehret](https://ehret.me/news-from-last-month/202512-developer/)
 
 > Une implémentation amusante de _traceroute_ sur une page web.
-> En plus des détails du chemin emprunté entre le navigateur web qui ouvre cette page et le serveur qui la génère, l'article propose des explications de quelques protocoles réseau bas-niveau : ICMP, WHOIS, BGP.
+> En plus des détails du chemin emprunté entre le navigateur web qui ouvre cette page et le serveur qui la génère, l'article propose des explications de quelques protocoles réseau bas-niveau : ICMP, WHOIS, BGP.
 > On a aussi le droit à une introduction aux AS (pour _Autonomous System_) qui constituent le squelette d'internet.
 
-* [Ces logiciels libres qui changent ma vie !](https://nirinarabeson.fr/posts/semaine-du-libre-2025) par [Nirina Rabeson](https://nirinarabeson.fr/) sur [Bluesky](https://bsky.app/profile/nirinarabeson.fr/post/3m6i6lfnjas2l)
+* [Ces logiciels libres qui changent ma vie !](https://nirinarabeson.fr/posts/semaine-du-libre-2025) par [Nirina Rabeson](https://nirinarabeson.fr/) sur [Bluesky](https://bsky.app/profile/nirinarabeson.fr/post/3m6i6lfnjas2l)
 
 > Nirina nous raconte son histoire, en toute simplicité, et en particulier sa découverte du monde du libre et de Linux.
 > La lecture de cet article a pas mal résonné avec ma propre histoire.
@@ -60,7 +60,7 @@ Avant de pouvoir ouvrir les premières case de son calendrier de l'avent, on lit
 
 ## 🧠 IA
 
-* [Entre la chaise et le clavier #1 : Éviter la bêtise artificielle avec Anne Alombert](https://next.ink/podcast/entre-la-chaise-et-le-clavier-1-eviter-la-betise-artificielle-avec-anne-alombert/) sur [Next.ink](https://next.ink)
+* [Entre la chaise et le clavier #1 : Éviter la bêtise artificielle avec Anne Alombert](https://next.ink/podcast/entre-la-chaise-et-le-clavier-1-eviter-la-betise-artificielle-avec-anne-alombert/) sur [Next.ink](https://next.ink)
 
 > Le premier podcast d'une nouvelle série portée par le media indépendant Next.ink.
 > Pendant plus d'une heure, Anne Alombert explique le fonctionnement des IA génératives, leurs usages observés, et les impacts concrets qu'elles ont sur le fonctionnement de notre cerveau.

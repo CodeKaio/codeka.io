@@ -30,7 +30,7 @@ Plusieurs vidéos et podcasts intéressants en ce début de mois, l'interview de
 
 * [Devstral2 Mistral Vibe CLI](https://mistral.ai/fr/news/devstral-2-vibe-cli) _via_ [Frédéric Camblor (@fred.camblor.fr)](https://bsky.app/profile/fred.camblor.fr/post/3m7q2tkzefc23)
 
-> Mistral tape très fort avec son nouveau modèle consacré au dev : Devstral2, et avec son CLI Vibe. Le modèle Devstrall Small 2 est conçu pour tourner localement. De quoi pouvoir s'abstraire des abonnements ?
+> Mistral tape très fort avec son nouveau modèle consacré au dev : Devstral2, et avec son CLI Vibe. Le modèle Devstrall Small 2 est conçu pour tourner localement. De quoi pouvoir s'abstraire des abonnements ?
 > Si Vibe permet à terme de pouvoir se brancher sur un modèle local, c'est la mort de Claude Code assurée.
 
 * [RSL 1.0 - L'heure de passer à la caisse a sonné pour les IA](https://korben.info/rsl-web-ia-payer-scraping.html) par [Korben](https://korben.info)
@@ -44,7 +44,7 @@ Plusieurs vidéos et podcasts intéressants en ce début de mois, l'interview de
 
 * [Conventions dans l'industrie logicielle](https://www.reddit.com/r/developpeurs/s/vzcN2X7WKH) _via_ [r/developpeurs](https://www.reddit.com/r/developpeurs)
 
-> Un post reddit qui liste quelques conventions dans notre industrie : commits, versionning, gestions de branches, styles, etc. C'est loin d'être exhaustif mais on retrouve les outils qu'on connait déjà.
+> Un post reddit qui liste quelques conventions dans notre industrie : commits, versionning, gestions de branches, styles, etc. C'est loin d'être exhaustif mais on retrouve les outils qu'on connait déjà.
 > 
 > J'ai d'ailleurs découvert le site https://keepachangelog.com (même si j'écrivais déjà des CHANGELOG.md)
 
@@ -58,7 +58,7 @@ Plusieurs vidéos et podcasts intéressants en ce début de mois, l'interview de
 
 > On entend de plus en plus parler du web libre, avec le [Fediverse](https://fr.wikipedia.org/wiki/Fediverse) ou les approches comme celles du [IndieWeb](https://indieweb.org/) et de l'auto hébergement. Dans ce podcast, Elena nous explique comment elle a quitté Twitter suite au rachat par Elon Musk, et son usage du Fediverse, en particulier sur Mastodon et PeerTube.
 > 
-> Elena maintient d'ailleurs un blog sur le sujet, avec pas mal d'articles abordables : [blog.elenarossini.com](https://blog.elenarossini.com/tag/the-future-is-federated/)
+> Elena maintient d'ailleurs un blog sur le sujet, avec pas mal d'articles abordables : [blog.elenarossini.com](https://blog.elenarossini.com/tag/the-future-is-federated/)
 
 ## ☕ Java
 

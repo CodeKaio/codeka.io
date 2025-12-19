@@ -23,7 +23,7 @@ Après deux semaines bien chargées, principalement autour de l'organisation de 
 > Drawscape dessine des schémas avec un bras robotisé et des feutres (un Pen Plotter). Ils font de chouettes blueprints, principalement d'avions ou de voitures.
 > Le truc dingue, ils ont mis sur [Github](https://github.com/drawscape-labs/drawscape-factorio) leur script qui convertit une map du jeu en SVG pour leur outil.
 
-* [is it really FOSS ?](https://isitreallyfoss.com/) _via_ [Rémi Verchère](https://bsky.app/profile/r.verchere.fr) sur [Bluesky](https://bsky.app/profile/r.verchere.fr/post/3m4ak6lpkhc2x).
+* [is it really FOSS ?](https://isitreallyfoss.com/) _via_ [Rémi Verchère](https://bsky.app/profile/r.verchere.fr) sur [Bluesky](https://bsky.app/profile/r.verchere.fr/post/3m4ak6lpkhc2x).
 
 > Il est parfois difficile de s'y retrouver dans les licenses open-source, et surtout de savoir si le logiciel qu'on utilise est réellement open-source ou pas. Ce site répond à cette question. C'est loin d'être exhaustif, mais il y a déjà pas mal de projets référencés.
 
@@ -54,12 +54,12 @@ Après deux semaines bien chargées, principalement autour de l'organisation de 
 
 * [It's insulting to read your AI-generated blog post](https://enocc.com/ai/2025/10/24/insulting-ai-writing.html) par [Pablo Enoc](https://enocc.com/about) _via_ [Emile Heitor](https://bsky.app/profile/imil.net) sur [Bluesky](https://bsky.app/profile/imil.net/post/3m46u5i7pbs2l).
 
-> Ce coup de gueule me parle bien. Si vous n'écrivez pas vous-même votre contenu, pourquoi je devrai prendre le temps de le lire ?
+> Ce coup de gueule me parle bien. Si vous n'écrivez pas vous-même votre contenu, pourquoi je devrai prendre le temps de le lire ?
 > Ça résonne avec ce que j'avais moi même écrit sur mon [AI Manifesto]({{< relref "/ai">}}).
 
-* [Microsoft force un bouton de partage Copilot directement dans la barre des tâches !](https://www.generation-nt.com/actualites/windows-11-copilot-microsoft-ia-taskbar-vision-2062756) sur [Generation NT](https://www.generation-nt.com/)
+* [Microsoft force un bouton de partage Copilot directement dans la barre des tâches !](https://www.generation-nt.com/actualites/windows-11-copilot-microsoft-ia-taskbar-vision-2062756) sur [Generation NT](https://www.generation-nt.com/)
 
-> Une des raisons qui fait que je *déteste* Microsoft et Windows : on ne possède pas et on ne contrôle pas le système d'exploitation de nos machines sous Windows.
+> Une des raisons qui fait que je *déteste* Microsoft et Windows : on ne possède pas et on ne contrôle pas le système d'exploitation de nos machines sous Windows.
 > 
 > #WittouckPasContent On a maintenant le droit à du Copilot partout. En plus des boutons physiques sur les claviers (!), maintenant un système Windows qui vient avec un compte Microsoft en ligne obligatoire, probablement pour vendre encore plus d'IA que personne ne veut ou n'a demandé.
 

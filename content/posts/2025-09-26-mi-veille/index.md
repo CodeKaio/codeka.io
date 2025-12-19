@@ -10,7 +10,7 @@ tags:
   - Java
 ---
 
-Enfin ! La version 25 de Java, LTS tant attendue par les fans (moi le premier 😅), est arrivée.
+Enfin ! La version 25 de Java, LTS tant attendue par les fans (moi le premier 😅), est arrivée.
 PostgreSQL 18 est également sorti cette semaine, donc [La veille de Wittouck]({{< relref "/series/la-veille-de-wittouck">}}) s'attarde particulièrement sur ces deux événements.
 
 <!--more-->
@@ -28,14 +28,14 @@ PostgreSQL 18 est également sorti cette semaine, donc [La veille de Wittouck]({
 
 ## ☕ Java
 
-* [Java 25 : Quoi de neuf ?](https://www.loicmathieu.fr/wordpress/fr/informatique/java-25-quoi-de-neuf/)
+* [Java 25 : Quoi de neuf ?](https://www.loicmathieu.fr/wordpress/fr/informatique/java-25-quoi-de-neuf/)
 
 > Mon pote Loïc Mathieu publie un excellent billet de blog accompagnant chaque release de Java.
 > C'est donc l'occasion cette semaine d'aller (re)lire son analyse sur les fonctionnalités de cette nouvelle version, avec ce qui va particulièrement intéresser les développeurs.
 
 * [OpenJDK JDK 25 General-Availability Release](https://jdk.java.net/25/)
 
-> Java 25 est officiellement disponible depuis le 16 septembre !
+> Java 25 est officiellement disponible depuis le 16 septembre !
 > La [release note](https://jdk.java.net/25/release-notes) liste l'ensemble des JEP embarquées, mais allez plutôt lire l'article de Loïc 😊
 
 * [GraalVM 25](https://www.graalvm.org/downloads/)
@@ -59,7 +59,7 @@ PostgreSQL 18 est également sorti cette semaine, donc [La veille de Wittouck]({
 
 * [Git worktrees for fun and profit](https://blog.safia.rocks/2025/09/03/git-worktrees/) par [Safia Abdalla](https://blog.safia.rocks/) _via_ [Bluesky](https://bsky.app/profile/captainsafia.com/post/3lxxc2jdjlc2z)
 
-> Une approche originale permettant de travailler sur de multiples branches en parallèle. On en apprend tous les jours sur Git !
+> Une approche originale permettant de travailler sur de multiples branches en parallèle. On en apprend tous les jours sur Git !
 
 ## 💾 Databases
 
@@ -75,14 +75,14 @@ PostgreSQL 18 est également sorti cette semaine, donc [La veille de Wittouck]({
 
 > Caching, OLAP, JSON, on savait déjà que PostgreSQL avait de multiples capacités.
 > Cette page liste tout ce que peut faire notre base de données préf. Il y a des cas d'usage très surprenants, comme l'indexation de documents PDF ou la manipulation de SVG.
-> J'ai aussi découvert un build WASM nommé [PGlite](https://github.com/electric-sql/pglite), qui peut donc s'exécuter dans un browser !
+> J'ai aussi découvert un build WASM nommé [PGlite](https://github.com/electric-sql/pglite), qui peut donc s'exécuter dans un browser !
 
 ## 🎫 Évènements
 
 * [DevFest Nantes 2025](https://devfest.gdgnantes.com/)
 
 > Le plus grand DevFest de France revient cette année avec 2 jours de confs, pas moins de 108 speakers pour 76 talks et ateliers.
-> Mon préf : [Let's play Factorio](https://devfest.gdgnantes.com/sessions/let_s_play_factorio) (🫣)
+> Mon préf : [Let's play Factorio](https://devfest.gdgnantes.com/sessions/let_s_play_factorio) (🫣)
 
 ---
 

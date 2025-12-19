@@ -23,8 +23,8 @@ Voici ma sélection d'articles de veille en attendant le prochain DevFest (Lyon 
 
 ## 🛜 Internet
 
-* [Pourquoi je passe des certifs ?](https://blog.antoinemayer.fr/2025/11/10/pourquoi-je-passe-des-certifs/) par [Antoine Mayer](https://blog.antoinemayer.fr/)
-* [À quoi ça sert, des certifs en 2025 ?](https://blog.zwindler.fr/2025/11/04/a-quoi-ca-sert-des-certifs-en-2025/) par [Denis Germain](https://blog.zwindler.fr/)
+* [Pourquoi je passe des certifs ?](https://blog.antoinemayer.fr/2025/11/10/pourquoi-je-passe-des-certifs/) par [Antoine Mayer](https://blog.antoinemayer.fr/)
+* [À quoi ça sert, des certifs en 2025 ?](https://blog.zwindler.fr/2025/11/04/a-quoi-ca-sert-des-certifs-en-2025/) par [Denis Germain](https://blog.zwindler.fr/)
 
 > Deux points de vue sur l'exercice des certifications. Ce sujet fait toujours débat dans notre milieu, donc c'est intéressant d'avoir des avis un peu éclairés.
 > Je pense que toutes les certifications ne se valent pas, et qu'il est quand même assez rare qu'une certif soit nécessaire (sauf pour bosser chez les Clouds Américains).
@@ -34,7 +34,7 @@ Voici ma sélection d'articles de veille en attendant le prochain DevFest (Lyon 
 
 * [Clever Cloud Academy](https://academy.clever.cloud/)
 
-> Ça y est, Clever Cloud lance son programme de formations certifiantes. La première certification est nommée "Cloud Concepts 101" et parle des concepts généraux du Cloud et de la plateforme Clever Cloud (console et CLI). Et c'est gratuit ! Ce serait dommage de s'en priver.
+> Ça y est, Clever Cloud lance son programme de formations certifiantes. La première certification est nommée "Cloud Concepts 101" et parle des concepts généraux du Cloud et de la plateforme Clever Cloud (console et CLI). Et c'est gratuit ! Ce serait dommage de s'en priver.
 
 * [Comment Bedrock Streaming optimise ses coûts AWS](https://aws.amazon.com/fr/blogs/france/comment-bedrock-streaming-optimise-ses-couts-aws/)
 
@@ -71,7 +71,7 @@ Voici ma sélection d'articles de veille en attendant le prochain DevFest (Lyon 
 
 ## 🎫 Évènements
 
-* [Comment être refusé à coup sûr à un CFP ?](https://www.webofmars.com/blog/2025-10-29_comment-etre-refuser-a-un-cfp/) par [Frédéric Léger](https://bsky.app/profile/webofmars.com) sur [Bluesky](https://bsky.app/profile/webofmars.com/post/3m4g65oilpq22)
+* [Comment être refusé à coup sûr à un CFP ?](https://www.webofmars.com/blog/2025-10-29_comment-etre-refuser-a-un-cfp/) par [Frédéric Léger](https://bsky.app/profile/webofmars.com) sur [Bluesky](https://bsky.app/profile/webofmars.com/post/3m4g65oilpq22)
 > Encore un article qui parle des conférences et des CFP, avec cette fois-ci les erreurs à éviter.
 > Cette liste complète bien ce que j'avais déjà écrit dans mon article [« Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP »]({{< relref "/posts/2025-06-19-cfp-tips-and-tricks" >}}), je l'ai ajouté comme lien complémentaire.
 

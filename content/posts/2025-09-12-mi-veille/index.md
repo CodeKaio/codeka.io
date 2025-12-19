@@ -13,7 +13,7 @@ tags:
   - Linux
 ---
 
-C'est la rentrée de la Veille de Wittouck !
+C'est la rentrée de la Veille de Wittouck !
 
 J'espère que vous avez passé une bonne rentrée.
 J'ai une belle liste de liens à dépiler que j'ai accumulé pendant l'été.
@@ -60,12 +60,12 @@ L'article conclu par l'implémentation d'un serveur MCP. C'est une super introdu
 
 * [Problèmes et dangers de l'IA générative sous l'angle du développement informatique](https://bsky.app/profile/nathe.xyz/post/3luue6mgwcc2w) par [Anathexyz](https://bsky.app/profile/nathe.xyz/) sur [Bluesky](https://bsky.app/)
 
-> Cet excellent thread porte des sujets de réflexion sur l'usage de l'IA dans nos métiers. Les grands thèmes abordés sont les problématiques de sécurité, les coûts, les gains de productivité, et le sujet qui me tient le plus à cœur : le déterminisme.
+> Cet excellent thread porte des sujets de réflexion sur l'usage de l'IA dans nos métiers. Les grands thèmes abordés sont les problématiques de sécurité, les coûts, les gains de productivité, et le sujet qui me tient le plus à cœur : le déterminisme.
 > C'est très bien écrit, et je pense que c'est compréhensible par des gens qui bossent dans notre secteur, sans être des experts en IA ni même des techs.
 
 * [Titles matter](https://joshcollinsworth.com/blog/titles-matter) par [Josh Collinsworth](https://joshcollinsworth.com) sur [Bluesky](https://bsky.app/profile/collinsworth.dev/post/3lxcwd4lzvc2v)
 
-> Une réflexion qu'on pourrait résumer en "quelqu'un qui a vibe-codé une application peut-il se dire développeur ?".
+> Une réflexion qu'on pourrait résumer en "quelqu'un qui a vibe-codé une application peut-il se dire développeur ?".
 > L'article se veut plutôt constructif et honnête, sans chercher à faire du _gatekeeping_ ni à dénigrer les utilisateurs des IA Gen.
 
 * [Charte du bon usage des IA génératives à l’Université de Toulouse](https://www.univ-tlse3.fr/medias/fichier/charte-du-bon-usage-des-ia-generatives-a-l-universite_1755517998722-pdf)
@@ -96,7 +96,7 @@ L'article conclu par l'implémentation d'un serveur MCP. C'est une super introdu
 * [Git clean local branches](https://alsohelp.com/blog/git-clean-local-branches) par [David Boureau](https://alsohelp.com/) _via_ [Yannick TRONCAL](https://about.me/ytroncal) sur [Bluesky](https://bsky.app/profile/ytroncal.bsky.social/post/3lq7i7pyn322q)
 
 > Un joli petit bout de script pour faire le ménage dans les branches locales Git.
-> Peut-être à regrouper avec un alias ?
+> Peut-être à regrouper avec un alias ?
 
 * [Git Notes: git's coolest, most unloved feature](https://tylercipriani.com/blog/2022/11/19/git-notes-gits-coolest-most-unloved-feature/) par [Tyler Cipriani](https://tylercipriani.com/) _via_ [Lea Linux](https://bsky.app/profile/lea-linux.org/post/3lsa2ayugck2b)
 
