@@ -202,7 +202,9 @@ blockquote.alert::before{
     margin: 0;
     font-weight: bolder;
 }
-.alert > .alert-content {
+.alert > .alert-content,
+.alert > p
+{
     padding: 1rem 1rem 0.5rem 1rem;
     margin: 0;
     color: black;
