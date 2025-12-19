@@ -20,6 +20,7 @@
       <span class="reading-time">
         <span>{{ i18n "readingTime" .ReadingTime }}</span>
       </span>
+      {{ partial "post/visits.html" . }}
     </div>
 
     {{ with .GetTerms "tags" }}

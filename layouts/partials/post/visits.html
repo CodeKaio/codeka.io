@@ -1,0 +1,32 @@
+{{/* Renders a visits counter for the current page using data/plausible-stats/visits.json */}}
+{{ $visits := 0 }}
+{{ $data := index .Site.Data "plausible-stats" }}
+{{ if $data }}
+  {{ $pages := $data.visits }}
+  {{ if $pages }}
+    {{ $rel := .RelPermalink }}
+    {{/* Data contains decoded UTF-8 paths. Normalize data side by encoding with urlize, then compare to the raw RelPermalink. */}}
+    {{/* Try exact match against raw permalink first */}}
+    {{ $candidate1 := $rel }}
+    {{/* Also try without leading language prefix like /fr or /en */}}
+    {{ $candidate2 := replaceRE "^/(fr|en)" "" $candidate1 }}
+    {{/* Build a temporary slice of pages where we compare urlized data paths to the permalink */}}
+    {{ $encodedPages := slice }}
+    {{ range $pages }}
+      {{ $p := .page }}
+      {{ $pUrlized := urlize $p }}
+      {{ $encodedPages = $encodedPages | append (dict "page" $pUrlized "visits" .visits) }}
+    {{ end }}
+    {{ $match := where $encodedPages "page" $candidate1 }}
+    {{ if not (gt (len $match) 0) }}
+      {{ $match = where $encodedPages "page" $candidate2 }}
+    {{ end }}
+    {{ with index $match 0 }}
+      {{ $visits = .visits }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if gt $visits 0 }}
+ - <span class="visits-counter" title="Page views">👀 {{ $visits }}</span>
+{{ end }}
