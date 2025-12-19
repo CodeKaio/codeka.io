@@ -1,5 +1,5 @@
 [tools]
-hugo = "0.152"
+hugo-extended = "0.152"
 
 [env]
 HUGO_OPTIONS = "--printI18nWarnings --printPathWarnings --cleanDestinationDir --logLevel debug"
