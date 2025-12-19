@@ -1,0 +1,50 @@
+[tools]
+hugo = "0.152"
+
+[env]
+HUGO_OPTIONS = "--printI18nWarnings --printPathWarnings --cleanDestinationDir --logLevel debug"
+
+[tasks]
+
+[tasks.fetch-views-data]
+description = 'Fetch data from plausible'
+dir = "scripts"
+run = "go run plausible_fetch.go -site codeka.io -range all -out ../data/plausible-stats/visits.json"
+
+[tasks.build]
+description = "Build le site avec Hugo"
+depends = ['fetch-views-data']
+run = "hugo build $HUGO_OPTIONS"
+
+[tasks.serve]
+description = "Lance le serveur de développement Hugo"
+depends = ['fetch-views-data']
+run = "hugo server --openBrowser $HUGO_OPTIONS"
+
+[tasks.draft]
+description = "Serve Hugo en incluant les brouillons et futures publications"
+depends = ['fetch-views-data']
+run = "hugo server --openBrowser $HUGO_OPTIONS --buildDrafts --buildFuture"
+
+[tasks.nbsp]
+description = "Insère des espaces insécables avant ;?:! dans les posts"
+run = '''
+    sed -i '/^---$/,/^---$/b;s/ \([;?:!]\)/\ \1/g' content/posts/**/*.md
+'''
+
+[tasks."new-tech-watch-post"]
+description = "Crée un nouveau post de veille"
+usage = '''
+arg "<date>" help="Date de publication du post"
+'''
+run = "hugo new content posts/${usage_date}-mi-veille -k veille"
+
+[tasks."clever:preview"]
+description = "Déploie une preview Clever Cloud et ouvre l'URL"
+depends = ['fetch-views-data']
+run = "clever deploy --alias preview --force && clever open --alias preview"
+
+[tasks."clever:deploy"]
+description = "Déploie sur l'alias Clever Cloud principal"
+depends = ['fetch-views-data']
+run = "clever deploy --alias codeka.io"
