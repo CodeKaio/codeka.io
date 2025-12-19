@@ -1,10 +1,13 @@
 ---
 date: 2025-12-12
+lastmod: 2025-12-19
 language: fr
 title: Montée de version Spring Boot 4 avec OpenRewrite
 tags:
   - java
   - spring-boot
+params:
+  original: "v1.md"
 ---
 
 Un des projets que je maintiens activement est [GitLab Classrooms](projects/gitlab-classrooms).
@@ -36,13 +39,16 @@ En parcourant le code de la recette sur [Github](https://github.com/openrewrite/
 * la migration vers Spring Framework et Spring Security 7
 * la mise à jour des properties dépréciées
 * la mise à jour vers testcontainers 2
+* la migration vers les starters modulaires
+
+> [!INFO]
+> La recette évolue régulièrement, donc peut-être qu'elle fait encore plus de choses au moment où vous lisez cet article.
 
 La recette prend la forme d'un fichier YAML, et elle est accompagnée de code qui implémente les différentes transformations :
 
 > Je ne rentre pas dans les détails du fonctionnement d'OpenRewrite, allez voir le talk de Jérôme Tama indiqué plus haut pour plus d'informations.
 
 ```yaml
----
 type: specs.openrewrite.org/v1beta/recipe
 name: org.openrewrite.java.spring.boot4.UpgradeSpringBoot_4_0
 displayName: Migrate to Spring Boot 4.0
@@ -61,6 +67,7 @@ recipeList:
   - org.openrewrite.java.spring.boot4.ReplaceMockBeanAndSpyBean
   - org.openrewrite.hibernate.MigrateToHibernate71
   - org.openrewrite.java.testing.testcontainers.Testcontainers2Migration
+  - org.openrewrite.java.spring.boot4.MigrateToModularStarters
   - org.openrewrite.java.dependencies.UpgradeDependencyVersion:
       groupId: org.springframework.boot
       artifactId: "*"
@@ -105,6 +112,15 @@ recipeList:
       oldGroupId: org.springframework.boot
       oldArtifactId: spring-boot-starter-web-services
       newArtifactId: spring-boot-starter-webservices
+  # https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#aop-starter-pom
+  - org.openrewrite.java.dependencies.RemoveDependency:
+      groupId: org.springframework.boot
+      artifactId: spring-boot-starter-aop
+      unlessUsing: org.aspectj.lang.annotation.*
+  - org.openrewrite.java.dependencies.ChangeDependency:
+      oldGroupId: org.springframework.boot
+      oldArtifactId: spring-boot-starter-aop
+      newArtifactId: spring-boot-starter-aspectj
 ```
 
 La doc d'OpenRewrite indique qu'on peut utiliser une simple commande _Maven_ pour effectuer la migration :
@@ -118,7 +134,7 @@ mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
 
 > Plutôt pratique, car je n'aurai pas à modifier mon `pom.xml`, ni ajouter de fichier de configuration dans mon projet pour pouvoir effectuer cette migration en one-shot.
 
-L'exécution de la commande prend quelques secondes et affiche les opérations effectuées (j'ai beaucoup peu nettoyé les logs pour que ce soit plus lisible) :
+L'exécution de la commande prend quelques secondes et affiche les opérations effectuées (j'ai beaucoup nettoyé les logs pour que ce soit plus lisible) :
 
 ```shell
 [INFO] --- rewrite:6.25.0:run (default-cli) @ gitlab-classrooms ---
@@ -129,13 +145,19 @@ L'exécution de la commande prend quelques secondes et affiche les opérations e
 [INFO] Project [gitlab-classrooms] Parsing source files
 [INFO] Running recipe(s)...
 [INFO] Printing available datatables to: target/rewrite/datatables/2025-12-12_17-33-51-247
+
 [WARNING] Changes have been made to pom.xml by:
-[WARNING]     org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_5
-[WARNING]         org.openrewrite.maven.UpgradeParentVersion: {groupId=org.springframework.boot, artifactId=spring-boot-starter-parent, newVersion=3.5.x}
-[WARNING]         org.openrewrite.java.testing.testcontainers.Testcontainers2Migration
+[WARNING]     org.openrewrite.java.spring.boot4.MigrateToModularStarters
+[WARNING]     org.openrewrite.maven.UpgradeParentVersion: {groupId=org.springframework.boot, artifactId=spring-boot-starter-parent, newVersion=4.0.x}
+[WARNING]     org.openrewrite.java.testing.testcontainers.Testcontainers2Migration
+
 [WARNING] Changes have been made to src/main/resources/application-local.properties by:
+[WARNING]     org.openrewrite.text.FindAndReplace: {find=javax., replace=jakarta., filePattern=**/*.js;**/*.ts;**/*.properties}
+
 [WARNING] Changes have been made to src/test/java/fr/univ_lille/gitlab/classrooms/adapters/jpa/PostgresqlJPAAdaptersTest.java by:
 [WARNING]     org.openrewrite.java.testing.testcontainers.Testcontainers2Migration
+[WARNING]     org.openrewrite.java.spring.boot4.MigrateToModularStarters
+
 [WARNING] Changes have been made to src/test/java/fr/univ_lille/gitlab/classrooms/mvc/ExportControllerMVCTest.java by:
 [WARNING]     org.openrewrite.java.spring.boot4.ReplaceMockBeanAndSpyBean
 [WARNING]         org.openrewrite.java.ChangeType: {oldFullyQualifiedTypeName=org.springframework.boot.test.mock.mockito.MockBean, newFullyQualifiedTypeName=org.springframework.test.context.bean.override.mockito.MockitoBean}
@@ -220,7 +242,28 @@ git diff pom.xml
 -            <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
 +            <artifactId>spring-boot-starter-security-oauth2-resource-server</artifactId>
          </dependency>
-
+         
+@@ -91,8 +91,8 @@
+         <dependency>
+-            <groupId>org.flywaydb</groupId>
+-            <artifactId>flyway-core</artifactId>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-flyway</artifactId>
+         </dependency>
+         
+@@ -127,22 +127,32 @@
++    <dependency>
++      <groupId>org.springframework.boot</groupId>
++      <artifactId>spring-boot-starter-webmvc-test</artifactId>
++      <scope>test</scope>
++    </dependency>
++
++    <dependency>
++      <groupId>org.springframework.boot</groupId>
++      <artifactId>spring-boot-starter-data-jpa-test</artifactId>
++      <scope>test</scope>
++    </dependency>
+ 
 @@ -136,7 +136,7 @@
  
          <dependency>
@@ -229,9 +272,19 @@ git diff pom.xml
 +            <artifactId>testcontainers-postgresql</artifactId>
              <scope>test</scope>
          </dependency>
+         
+         <dependency>
+-            <groupId>org.springframework.security</groupId>
+-            <artifactId>spring-security-test</artifactId>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-security-test</artifactId>
+             <scope>test</scope>
+         </dependency>
 ```
 
 Au niveau du `pom.xml`, tout s'est bien passé, l'ensemble des modifications attendues ont bien été appliquées.
+
+La nouvelle architecture modulaire de Spring Boot 4 a bien été traitée.
 
 Le code de tests a aussi bien été nettoyé des anciens `@MockBean` dépréciés :
 
@@ -277,50 +330,6 @@ car cette classe a été déplacée dans un autre package :
 import org.springframework.boot.security.autoconfigure.actuate.web.servlet.EndpointRequest;
 ```
 
-Au niveau des tests, l'annotation `@AutoConfigureMockMvc` a aussi été déplacée avec la modularisation de Spring Boot 4.
-
-```java
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-```
-
-Je dois donc ajouter à la main la nouvelle dépendance de tests et corriger l'import :
-
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-webmvc-test</artifactId>
-    <scope>test</scope>
-</dependency>
-```
-
-```java
-import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
-```
-
-Même chose avec les annotations spécialisées `@DataJpaTest`, qui nécessitent maintenant la dépendance de tests associée :
-
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-jpa-test</artifactId>
-    <scope>test</scope>
-</dependency>
-```
-
-et la correction de l'import :
-
-```java
-- import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-+ import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
-```
-
-et pour `@WebMvcTest` les imports changent également :
-
-```java
-- import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-+ import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
-```
-
 Une fois ces petits ajustements faits, je lance mes tests unitaires.
 
 Cette fois-ci, j'obtiens un message d'erreur lié à Spring Security au démarrage :
@@ -331,21 +340,6 @@ Caused by: java.lang.IllegalArgumentException: pattern must start with a /
 
 Je n'avais pas fait attention à cette modification dans les guides de migration, donc je suis peut-être passé à travers. Quoi qu'il en soit, ce n'est pas une modification très compliquée, je l'ai facilement appliquée.
 
-Certains de mes tests utilisaient flyway (en particulier pour valider que Hibernate mappe bien les entités sur le schéma que Flyway maintient), j'ai aussi dû adapter cette partie :
-
-
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-flyway</artifactId>
-</dependency>
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-flyway-test</artifactId>
-    <scope>test</scope>
-</dependency>
-```
-
 Une fois ces derniers ajustements faits, les tests passent correctement 🎉 :
 
 ![Screenshot de mes tests unitaires qui passent !](tests.png)
@@ -354,11 +348,9 @@ Une fois ces derniers ajustements faits, les tests passent correctement 🎉 :
 
 Cela m'a pris environ 1h pour migrer mon projet de Spring Boot 3.5 vers Spring Boot 4.0.
 
-OpenRewrite m'a clairement facilité le travail, il a modifié la majorité des dépendances, et migré les annotations dépréciées (ce qui aurait été fastidieux).
+OpenRewrite m'a clairement facilité le travail, il a modifié toutes mes dépendances, et migré les annotations dépréciées (ce qui aurait été fastidieux).
 J'ai quand même dû finaliser la migration à la main, et je n'ai pas pu me passer de la lecture du [Spring Boot 4.0 Migration Guide](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide).
 
-Je pense que le support de Spring Boot 4 dans OpenRewrite n'en est qu'à ses débuts (la version qui introduit le support a été publiée le 5 décembre 2025), donc il n'est pas impossible que les opérations que j'ai dû faire manuellement soient automatisées dans le futur.
-
-Il semble aussi qu'il y ait une recette ["Migrate to Spring Boot 4.0 modular starters"](https://docs.openrewrite.org/recipes/java/spring/boot4/migratetomodularstarters), recette qui fait peut-être déjà le travail, mais elle n'est disponible que pour _via_ la plateforme propriétaire de l'éditeur, [Moderne](https://www.moderne.ai/).
+Je pense que le support de Spring Boot 4 dans OpenRewrite n'en est qu'à ses débuts (la version qui introduit le support a été publiée le 5 décembre 2025, et la mise à jour pour l'architecture modulaire a été publiée le 16 décembre), donc il n'est pas impossible que les opérations que j'ai dû faire manuellement soient automatisées dans le futur.
 
 Quoi qu'il en soit, 1h de travail pour migrer un projet d'environ 3 000 lignes de code, je pense que c'est plutôt efficace.
