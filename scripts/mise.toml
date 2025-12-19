@@ -1,0 +1,7 @@
+[tools]
+go = { version = "1.21" }
+
+[tasks.fetch]
+description = 'Fetch data from plausible'
+run = "go run plausible_fetch.go -site codeka.io -range all -out ../data/plausible-stats/visits.json"
+
