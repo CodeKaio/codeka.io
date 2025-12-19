@@ -96,7 +96,7 @@ Il est aussi possible de définir un fichier `mise.toml` à la racine du `$HOME`
 
 ### Une stack java
 
-Déclarer une stack Java est très simple avec un fichier `mise.toml` :
+Déclarer une stack Java est très simple avec un fichier `mise.toml` :
 
 ```toml
 [tools]
@@ -104,7 +104,7 @@ java = "temurin-25"
 maven = "3"
 ```
 
-Une fois le fichier crée, au chargement du répertoire, `mise` affichera une erreur, car il ne souhaite par exécuter les fichiers par défaut (par mesure de sécurité) :
+Une fois le fichier crée, au chargement du répertoire, `mise` affichera une erreur, car il ne souhaite par exécuter les fichiers par défaut (par mesure de sécurité) :
 
 ```shell
 $ cd workspaces/gitlab-classrooms
@@ -114,7 +114,7 @@ Trust them with `mise trust`. See https://mise.jdx.dev/cli/trust.html for more i
 mise ERROR Run with --verbose or MISE_VERBOSE=1 for more information
 ```
 
-La commande `mise trust` permet donc d'activer le fichier de configuration donné :
+La commande `mise trust` permet donc d'activer le fichier de configuration donné :
 
 ```shell
 $ mise trust
@@ -122,20 +122,20 @@ mise trusted /home/jwittouck/workspaces/gitlab-classrooms
 mise WARN  missing: java@temurin-25.0.1+8.0.LTS maven@3.9.12
 ```
 
-Il est aussi possible de configurer `mise` pour truster des répertoires complets dans le fichier `.config/mise/config.toml` :
+Il est aussi possible de configurer `mise` pour truster des répertoires complets dans le fichier `.config/mise/config.toml` :
 
 ```toml
 [settings]
 trusted_config_paths = ["~/workspaces"]
 ```
 
-Une fois le fichier créé et trusté, `mise` affichera les outils manquants s'il y en a avec un warning :
+Une fois le fichier créé et trusté, `mise` affichera les outils manquants s'il y en a avec un warning :
 
 ```shell
 mise WARN  missing: java@temurin-25.0.1+8.0.LTS maven@3.9.12
 ```
 
-Pour installer les outils manquants, il suffit alors d'exécuter la commande `mise install` : 
+Pour installer les outils manquants, il suffit alors d'exécuter la commande `mise install` : 
 
 ```shell
 $ mise install
@@ -143,7 +143,7 @@ mise maven@3.9.12 download apache-maven-3.9.12-bin.tar.gz                       
 mise java@temurin-25.0.1+8.0.LTS download OpenJDK25U-jdk_x64_linux_hotspot_25.0.1_8.tar.gz     128.19 MiB/134.21 MiB (0s) ███████████████████░  2s
 ```
 
-Une fois les outils installés, ils sont ajoutés au `$PATH` et peuvent être utilisés immédiatement :
+Une fois les outils installés, ils sont ajoutés au `$PATH` et peuvent être utilisés immédiatement :
 
 ```shell
 $ echo $PATH
@@ -163,7 +163,7 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "6.17.12-1-manjaro", arch: "amd64", family: "unix"
 ```
 
-Si je veux utiliser une autre version de Java, rien de plus simple, je peux simplement modifier le fichier `mise.toml`, ou exécuter la commande `mise use` (qui va aussi modifier le fichier `mise.toml`) :
+Si je veux utiliser une autre version de Java, rien de plus simple, je peux simplement modifier le fichier `mise.toml`, ou exécuter la commande `mise use` (qui va aussi modifier le fichier `mise.toml`) :
 
 ```shell
 $ mise use graalvm@25
@@ -187,7 +187,7 @@ OS name: "linux", version: "6.17.12-1-manjaro", arch: "amd64", family: "unix"
 
 C'est pratique, flexible et bluffant.
 
-Les packages sont installés par défaut dans le répertoire `~/.local/share/mise/installs/`, et utilisent des liens symboliques pour relier les différentes version et alias de versions : 
+Les packages sont installés par défaut dans le répertoire `~/.local/share/mise/installs/`, et utilisent des liens symboliques pour relier les différentes version et alias de versions : 
 
 ```shell
 $ tree -L 2 ~/.local/share/mise/installs/
@@ -219,7 +219,7 @@ Mon site (ce site) est buildé avec [_Hugo_](https://gohugo.io).
 
 Bien qu'installer Hugo est plutôt facile, autant essayer de basculer le maximum de choses avec `mise` pour ce test.
 
-Hugo est disponible dans le registry de `mise` :
+Hugo est disponible dans le registry de `mise` :
 
 ```shell
 $ mise registry | grep hugo
@@ -228,7 +228,7 @@ hugo-extended   aqua:gohugoio/hugo/hugo-extended
 ```
 
 Plutôt que d'intialiser directement le fichier `mise.toml` avec la configuration de l'outil,
-il est possible d'utiliser la commande `mise use`, qui va générer le fichier pour nous et installer l'outil directement, qui sera immédiatement utilisable :
+il est possible d'utiliser la commande `mise use`, qui va générer le fichier pour nous et installer l'outil directement, qui sera immédiatement utilisable :
 
 ```shell
 $ mise use hugo
@@ -238,7 +238,7 @@ $ hugo version
 hugo v0.152.2+extended+withdeploy linux/amd64 BuildDate=unknown
 ```
 
-Le fichier généré est alors le suivant :
+Le fichier généré est alors le suivant :
 
 ```toml
 [tools]
@@ -247,7 +247,7 @@ hugo = "latest"
 
 Utiliser une version "latest" est bien entendu déconseillé, mais cela permet de tester rapidement la nouvelle version de l'outil.
 
-Et encore une fois, tout fonctionne parfaitement :
+Et encore une fois, tout fonctionne parfaitement :
 
 ```shell
 hugo serve
@@ -277,14 +277,14 @@ Press Ctrl+C to stop
 
 ## Utiliser des variables d'environnement
 
-`mise` permet de déclarer des variables d'environnement dans le fichier `mise.toml` avec le bloc `[env]` :
+`mise` permet de déclarer des variables d'environnement dans le fichier `mise.toml` avec le bloc `[env]` :
 
 ```toml
 [env]
 SPRING_PROFILES_ACTIVE = 'local'
 ```
 
-Il est aussi possible de charger un fichier `.env` avec [une directive](https://mise.jdx.dev/environments/#env-directives) :
+Il est aussi possible de charger un fichier `.env` avec [une directive](https://mise.jdx.dev/environments/#env-directives) :
 
 ```toml
 [env]
@@ -310,7 +310,7 @@ $ mise set --age-encrypt --prompt GITLAB_CLIENT_SECRET
 Enter value for GITLAB_CLIENT_SECRET ************
 ```
 
-Les valeurs chiffrées sont stockées dans le fichier `mise.toml`, qui peut alors être poussé sur un repo git en toute sécurité :
+Les valeurs chiffrées sont stockées dans le fichier `mise.toml`, qui peut alors être poussé sur un repo git en toute sécurité :
 
 ```toml
 [env]
@@ -318,7 +318,7 @@ GITLAB_CLIENT_ID = { age = { value = "KLUv/QBYDR0AukFwDj0ANfCYs5DmZabA2Mi9YcrEQI
 GITLAB_CLIENT_SECRET = { age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IHNzaC1yc2EgYWM5WlV3Cmpsa0EweTlISnFLQmJ4NHBRQTRDVGRBd21NM3JWbVo1b3NFZHQ3dXcvZHZaQmFYMkEyWjViWmpJWCtLT0R1aVkKckNsUW1qVHZ1NlBEelYzQm9nNkk1SEp3REJsNzZvdmJuTkdYd2tLV3VCRFBRUXlCYjhhVzNvSnBib0dDcUFXTwpydW1INWIyMWtjaCt2WnlGeEx5dXM5Q205NUJBdmlycjUzdE41ejFFOW9PZ1YzaXczM292bXlsSkpPWW5hVldQCkJOUUZ3ditlbGFJbzRWZU5TeTBaSitoUk1TeDh4RVJqUjRaVkV5MGJrOXhJeitsbjBKcEQ0TkZla1V4bnNybUoKWVBjeSttUkFMVkd2Q2t1dDJVUWxjMk9vcER3cWFZcjNBRHNTZVJqMGZNc01xQ1VZd3pHU2hQazJWczFRbjd6OAowSHRqS0tCeE1HL2MrVG5FaUhaVndvWm9xNzNrME41VjJDRzlzbEFGRzdvQ040elNSeVAxcVdGMVlSK2NsQlM3ClJFbGZtV2pVOUh3VmF2RXlhNE5pekpIcnVpSzF2WWs5YWMvSTRqYnBQMnBMUFpValNTajI2WVp2YXRSTWgxd1AKTGVZektqdWxjRENjMVJaZy9aVEhvQkgzNXdyT01PY1NKT2t0MHB2VW9RK1hCSmxkbk5aWElGVndKeTRZRi90VApXMDhnWFlCVGRZeTFZcHRKSUdRbHkrRXlidXdKY0lCUVNjYy8vR21LbTk5eG5UTFp3L1RUM3JFbldRNldkTkJFCmVsZ2VqWXc3c3Q0eERtb0YxSDhNZjlrOUdJdmp4QjhEVW16UlRGY0xrbGtBZXkwcVkvZ1MrWVRKYXdqTm9QYjkKcUJzNS9MdUR4UENvU05iRHo5cGVEaGpvTDVwdU0xMUsrUGRBQkNaUFZaVQotPiB0LWdyZWFzZSA5KklKaXIgWlcyCjJzUlRqRXo3ZnJ6ZVZndk92UVE5QllNejhNZGZqVjYxMWN5U0JjbzhUbTJhCi0tLSBmRXEwQnh0Ykc4NWtIdk1nd200LzI2aEZtVEJqZ2x6QWp3ZCs0TlJjYThBCrPsAPxQrwsNRNctYosJQ7GQM8+Zc4bdoMoTbSehN6Fyf/5AvfJ2ko3Gm5FJ9L2qnW0ZGW+QTLMsR4vLInmecojm/eu4LKC5EqBB/3oFCAJJNZAdOtYiJnwUCWml5WY" }
 ```
 
-Et les valeurs sont automatiquement déchiffrées pour être disponibles dans le shell en variable d'environnement : 
+Et les valeurs sont automatiquement déchiffrées pour être disponibles dans le shell en variable d'environnement : 
 
 ```shell
 $ env | grep GITLAB
@@ -336,7 +336,7 @@ L'avantage est que tout s'intègre parfaitement avec `mise`, il est facile d'uti
 
 Et on peut aller assez loin dans la configuration, avec des dépendances entre les tâches ou conditionner l'exécution à la mise à jour d'un fichier par exemple.
 
-Pour mon site, j'avais un `justfile` qui contenait quelques commandes, je l'ai rapidement migré, et en voici le résultat :
+Pour mon site, j'avais un `justfile` qui contenait quelques commandes, je l'ai rapidement migré, et en voici le résultat :
 
 ```toml
 [tools]
@@ -398,11 +398,11 @@ Adieu `direnv`, `asdf`, `task` et `just`, et tous mes scripts custom, vous m'ave
 
 ## Liens et références
 
-* Le blog post de Siegfried Erhet : https://sieg.fr/ied/avent-2025/04-mise/
+* Le blog post de Siegfried Erhet : https://sieg.fr/ied/avent-2025/04-mise/
 * Mon [article sur mon usage de `direnv`](/2022/06/17/direnv-pour-votre-shell)
-* La documentation officielle de `mise` : https://mise.jdx.dev
-  * L'installation de `mise` : https://mise.jdx.dev/installing-mise.html
-  * L'utilisation des DevTools : https://mise.jdx.dev/dev-tools/
-  * La liste des outils disponibles : https://mise.jdx.dev/registry.html#tools
-  * L'utilisation des variables d'environnement : https://mise.jdx.dev/environments/
-  * Utilisation de tâches : https://mise.jdx.dev/tasks/
+* La documentation officielle de `mise` : https://mise.jdx.dev
+  * L'installation de `mise` : https://mise.jdx.dev/installing-mise.html
+  * L'utilisation des DevTools : https://mise.jdx.dev/dev-tools/
+  * La liste des outils disponibles : https://mise.jdx.dev/registry.html#tools
+  * L'utilisation des variables d'environnement : https://mise.jdx.dev/environments/
+  * Utilisation de tâches : https://mise.jdx.dev/tasks/
