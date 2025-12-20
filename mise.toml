@@ -9,6 +9,7 @@ HUGO_OPTIONS = "--printI18nWarnings --printPathWarnings --cleanDestinationDir --
 [tasks.fetch-views-data]
 description = 'Fetch data from plausible'
 dir = "scripts"
+tools.go = "1.21"
 run = "go run plausible_fetch.go -site codeka.io -range all -out ../data/plausible-stats/visits.json"
 
 [tasks.build]
