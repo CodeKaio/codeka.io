@@ -21,6 +21,7 @@
         <span>{{ i18n "readingTime" .ReadingTime }}</span>
       </span>
       {{ partial "post/visits.html" . }}
+      {{ partial "post/bluesky.html" . }}
     </div>
 
     {{ with .GetTerms "tags" }}

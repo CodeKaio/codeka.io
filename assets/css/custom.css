@@ -321,3 +321,19 @@ blockquote.alert::before{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
+
+.bluesky-likes {
+    text-decoration: none;
+    border: 1px solid #0085ff;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.8rem;
+    color: #0085ff;
+    transition: all 0.2s ease;
+}
+
+.bluesky-likes:hover {
+    background-color: #0085ff;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,7 @@
+{{ with .Resources.Get "bluesky-stats.json" }}
+  {{ $stats := . | transform.Unmarshal }}
+  <span> - </span>
+  <a href="{{ $.Params.bluesky }}" class="bluesky-likes" title="See on Bluesky">
+    🦋 {{ $stats.likes }}
+  </a>
+{{ end }}
