@@ -25,7 +25,7 @@ run = "go run bluesky_stats.go"
 
 [tasks.build]
 description = "Build le site avec Hugo"
-depends = ['fetch-views-data']
+depends = ['fetch-views-data', 'fetch-bluesky-stats']
 run = "hugo build $HUGO_OPTIONS"
 
 [tasks.serve]
