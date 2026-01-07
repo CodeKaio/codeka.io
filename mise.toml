@@ -17,6 +17,12 @@ dir = "scripts"
 tools.go = "1.21"
 run = "go run plausible_fetch.go -site codeka.io -range all -out ../data/plausible-stats/visits.json"
 
+[tasks.fetch-bluesky-stats]
+description = 'Fetch data from bluesky'
+dir = "scripts"
+tools.go = "1.21"
+run = "go run bluesky_stats.go"
+
 [tasks.build]
 description = "Build le site avec Hugo"
 depends = ['fetch-views-data']
