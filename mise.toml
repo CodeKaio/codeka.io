@@ -59,6 +59,6 @@ run = "clever deploy --alias preview --force && clever open --alias preview"
 [tasks."clever:deploy"]
 description = "Déploie sur l'alias Clever Cloud de production"
 run = '''
-clever link $PROD_APP_ID --alias codeka.io
+clever link $PROD_APP_ID --alias codeka.io || true
 clever deploy --alias codeka.io
 '''
