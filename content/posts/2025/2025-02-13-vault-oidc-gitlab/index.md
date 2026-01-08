@@ -16,7 +16,7 @@ Le code de cet article est aussi disponible sur GitHub : https://github.com/juw
 
 > Cet article a été écrit avec des commandes Terraform, mais fonctionne également avec les commandes OpenTofu équivalentes.
 
-L'installation et la configuration initiale d'un Vault sur Clever Cloud est décrite dans l'article [Vault sur Clever Cloud]({{< relref "/posts/2025-01-03-vault-on-clever-cloud" >}}).
+L'installation et la configuration initiale d'un Vault sur Clever Cloud est décrite dans l'article [Vault sur Clever Cloud](/posts/2025-01-03-vault-on-clever-cloud).
 
 ## Création d'une policy puis un token pour Terraform
 

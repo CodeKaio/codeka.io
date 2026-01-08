@@ -54,7 +54,7 @@ Bonne lecture !
 
 * [ChatGPT : le mythe de la productivité](https://framablog.org/2025/03/09/chatgpt-le-mythe-de-la-productivite/?utm_source=pocket_shared) par [Hubert Guillaud](https://hubertguillaud.wordpress.com/) _via_ [Framablog](https://framablog.org)
 
-> Ce _post_ fait écho avec le sentiment que j'ai aujourd'hui autour de l'usage des IA génératives et l'impact ressenti, que j'ai un peu développé dans mon [AI Manifesto]({{< relref "/ai" >}}). C'est une lecture indispensable !
+> Ce _post_ fait écho avec le sentiment que j'ai aujourd'hui autour de l'usage des IA génératives et l'impact ressenti, que j'ai un peu développé dans mon [AI Manifesto](/ai). C'est une lecture indispensable !
 
 ## ☸️ Kubernetes
 

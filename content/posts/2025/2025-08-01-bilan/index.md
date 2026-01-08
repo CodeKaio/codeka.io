@@ -45,8 +45,8 @@ Pour 2025-2026, je vais essayer de garder au moins le même rythme.
 Pour la saison, j'avais travaillé trois sujets de talk :
 
 * "OpenTofu - 2 ans après" : pour dresser le bilan après le _drama_ et le _fork_ ;
-* ["Rebase d'image Docker/OCI avec crane"]({{<relref "talks/talk-rebase-crane">}}) : une démo technique d'un concept qui me travaillait depuis près de deux ans ;
-* "[Let's play Factorio]({{<relref "talks/talk-lets-play-factorio">}})" : un talk de vulgarisation fun, dans un de mes jeux préférés.
+* ["Rebase d'image Docker/OCI avec crane"](talks/talk-rebase-crane) : une démo technique d'un concept qui me travaillait depuis près de deux ans ;
+* ["Let's play Factorio"](talks/talk-lets-play-factorio) : un talk de vulgarisation fun, dans un de mes jeux préférés.
 
 J'ai soumis ces talks un peu partout, et j'ai eu la chance de pouvoir donner 3 sessions :
 
@@ -140,15 +140,15 @@ Pour la période du 1er septembre au 1er août, 1800 personnes ont visité [code
 
 {{< img-resized src=stats-plausible-visites.png >}}
 
-L'article ayant eu le plus de succès est [Déployer des applications statiques sur Clever Cloud]({{< relref "/posts/2025-06-05-static-apps-clever/v2">}}).
+L'article ayant eu le plus de succès est [Déployer des applications statiques sur Clever Cloud]({{< relref "/posts/2025/2025-06-05-static-apps-clever/v2">}}).
 Je pense que cela s'explique par le fait que Clever Cloud ait repartagé cet article, ainsi que le pote [Denis Germain](https://blog.zwindler.fr/).
 C'est aussi un des articles les plus récents, peut-être que mon audience se construit petit à petit.
 
 {{< img-resized src=stats-plausible-pages.png >}}
 
 Parmi les pages les plus visitées, il y a également trois "anomalies".
-La page [xdotool cheatsheet]({{< relref "/posts/2021-02-06-xdotool-cheatsheet">}}) est visitée presque exclusivement depuis la Russie. Je suppose qu'elle est bien référencée chez Yandex. C'est aussi une des rares pages que j'avais traduite en anglais.
-Les deux autres anomalies sont les pages [Créer un site web de documentation statique avec MkDocs]({{< relref "/posts/2023-02-23-mkdocs-material">}}) et [Anatomie d'une requête HTTP]({{< relref "/posts/2023-05-25-anatomie-requete-http">}}).
+La page [xdotool cheatsheet]({{< relref "/posts/2021/2021-02-06-xdotool-cheatsheet">}}) est visitée presque exclusivement depuis la Russie. Je suppose qu'elle est bien référencée chez Yandex. C'est aussi une des rares pages que j'avais traduite en anglais.
+Les deux autres anomalies sont les pages [Créer un site web de documentation statique avec MkDocs]({{< relref "/posts/2023/2023-02-23-mkdocs-material">}}) et [Anatomie d'une requête HTTP]({{< relref "/posts/2023/2023-05-25-anatomie-requete-http">}}).
 Ces deux pages sont plutôt bien référencés sur Google et Bing, et reçoivent un flux de visites constant. Vu que leur contenu date un peu, ça m'a poussé à ajouter un warning sur l'entête des pages ayant plus de deux ans pour éviter que les lecteurs ne soient induits en erreur.
 
 Ce site est développé avec [Hugo](https://gohugo.io/), le code source du site est d'ailleurs disponible sur [GitHub](https://github.com/CodeKaio/codeka.io).

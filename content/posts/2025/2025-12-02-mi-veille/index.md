@@ -70,7 +70,7 @@ Avant de pouvoir ouvrir les premières case de son calendrier de l'avent, on lit
 
 * [Ingress NGINX Retirement: What You Need to Know](https://www.kubernetes.dev/blog/2025/11/12/ingress-nginx-retirement/)
 
-> Comme annoncé [il y a quelques mois](https://github.com/kubernetes/ingress-nginx/issues/13002) par l'équipe de devs (et relayé [ici]({{< relref "/posts/2025-04-18-mi-veille" >}})), le projet ingress-nginx tire sa révérence.
+> Comme annoncé [il y a quelques mois](https://github.com/kubernetes/ingress-nginx/issues/13002) par l'équipe de devs (et relayé [ici]({{< relref "/posts/2025/2025-04-18-mi-veille" >}})), le projet ingress-nginx tire sa révérence.
 > On a maintenant une date de fin de vie prévue pour Mars 2026. Bien que les systèmes installés avant cette date continueront à fonctionner, il va falloir migrer vers un autre controller.
 > [Cette page](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) liste les implémentations d'Ingress, en attendant de [migrer vers Gateway API](https://gateway-api.sigs.k8s.io/guides/) qui est la cible à terme.
 > 
@@ -79,7 +79,7 @@ Avant de pouvoir ouvrir les premières case de son calendrier de l'avent, on lit
 
 * [DevFest Lyon 2025](https://devfest.gdglyon.com/)
 
-> Ce 28 novembre dernier, j'étais au DevFest Lyon, et c'était bien bien chouette. Mon feedback est [ici]({{< relref "/posts/2025-11-29-devfest-lyon" >}}) en attendant les photos officielles.
+> Ce 28 novembre dernier, j'étais au DevFest Lyon, et c'était bien bien chouette. Mon feedback est [ici]({{< relref "/posts/2025/2025-11-29-devfest-lyon" >}}) en attendant les photos officielles.
 
 ---
 

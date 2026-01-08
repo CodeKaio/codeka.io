@@ -51,7 +51,7 @@ En cours :
 Fini récemment :
 
 * Bolchoi Arena (tomes 1 à 3) de Aseyn et Boulet
-* [Kubernetes : 50 solutions pour les postes de développement et les clusters de production]({{< relref "/posts/2025-11-22-50ndk-livre-denis-germain" >}}) 
+* [Kubernetes : 50 solutions pour les postes de développement et les clusters de production]({{< relref "/posts/2025/2025-11-22-50ndk-livre-denis-germain" >}}) 
 
 Ma pile :
 

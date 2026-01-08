@@ -73,7 +73,7 @@ Voici ma sélection d'articles de veille en attendant le prochain DevFest (Lyon 
 
 * [Comment être refusé à coup sûr à un CFP ?](https://www.webofmars.com/blog/2025-10-29_comment-etre-refuser-a-un-cfp/) par [Frédéric Léger](https://bsky.app/profile/webofmars.com) sur [Bluesky](https://bsky.app/profile/webofmars.com/post/3m4g65oilpq22)
 > Encore un article qui parle des conférences et des CFP, avec cette fois-ci les erreurs à éviter.
-> Cette liste complète bien ce que j'avais déjà écrit dans mon article [« Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP »]({{< relref "/posts/2025-06-19-cfp-tips-and-tricks" >}}), je l'ai ajouté comme lien complémentaire.
+> Cette liste complète bien ce que j'avais déjà écrit dans mon article [« Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP »]({{< relref "/posts/2025/2025-06-19-cfp-tips-and-tricks" >}}), je l'ai ajouté comme lien complémentaire.
 
 * [200 heures de préparation pour 45 minutes de présentation](https://contretemps.azeau.com/post/200-heures-de-preparation-pour-45-minutes-de-presentation/) par [Olivier Azeau](https://contretemps.azeau.com) _via_ [Bluesky](https://bsky.app/profile/oaz.bsky.social/post/3m5ejv5augs2l)
 > Je parle souvent des conférences et de ma propre implication en tant qu'orga ou speaker. Habituellement, je sais que je passe à peu près une heure de préparation pour une heure de présentation en conf (donc plutôt 45 à 50 heures). Mais les formats originaux sont plus lourds à préparer, et je ne suis pas surpris du travail qu'Olivier a investi dans son talk. Je l'ai déjà dit, mais j'ai environ 100 heures de préparation sur mon talk "[Let's play Factorio]({{<relref "talks/talk-lets-play-factorio">}})". Hâte de voir le replay de cette conf.

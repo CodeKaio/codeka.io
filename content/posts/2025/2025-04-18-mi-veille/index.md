@@ -8,7 +8,7 @@ tags:
   - Kubernetes
 ---
 
-En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane]({{< relref "/talks/talk-rebase-crane">}}), donc forcément, ma veille a été un peu plus light que d'habitude.
+En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane](/talks/talk-rebase-crane), donc forcément, ma veille a été un peu plus light que d'habitude.
 
 Néanmoins, j'ai quelques liens sympas à partager.
 

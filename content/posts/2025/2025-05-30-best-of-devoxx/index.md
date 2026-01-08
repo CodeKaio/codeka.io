@@ -24,7 +24,7 @@ Mon astuce (pour ne pas y passer 300 heures) : je regarde les vidéos en x2, et
 
 Je les ai classées selon les tags que j'utilise d'habitude, elles ne sont pas triés dans un ordre précis.
 
-Je n'ai aussi pas listé les talks que j'avais déjà mentionné dans mon article précédent, je vous propose de les retrouver dans l'article [DevOxx 2025 - Bilan]({{< relref "/posts/2025-04-23-devoxx" >}}), que j'ai mis à jour avec les liens des vidéos.
+Je n'ai aussi pas listé les talks que j'avais déjà mentionné dans mon article précédent, je vous propose de les retrouver dans l'article [DevOxx 2025 - Bilan](/posts/2025-04-23-devoxx), que j'ai mis à jour avec les liens des vidéos.
 
 Bon visionnage !
 
@@ -163,7 +163,7 @@ La killer feature est la possibilité de capturer les changements effectués sur
 
 {{< youtube DSuSCgPQlso >}}
 
-> Burrito est un opérateur Kubernetes qui exécute des modules Terraform et s'intègre avec ArgoCD dans une approche GitOps. Il permet de réconcilier en continu des modules, corriger le drift, et fournit une interface pour suivre les déploiements. C'est plutôt intéressant, j'ai eu une approche similaire quand j'ai développé [Gaia]({{< relref "projects/gaia-app">}}) il y a quelques années.
+> Burrito est un opérateur Kubernetes qui exécute des modules Terraform et s'intègre avec ArgoCD dans une approche GitOps. Il permet de réconcilier en continu des modules, corriger le drift, et fournit une interface pour suivre les déploiements. C'est plutôt intéressant, j'ai eu une approche similaire quand j'ai développé [Gaia](projects/gaia-app) il y a quelques années.
 
 ## ☸️ Kubernetes
 

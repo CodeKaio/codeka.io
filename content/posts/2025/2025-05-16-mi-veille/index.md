@@ -55,7 +55,7 @@ stabilité financière et pérennité, tout en rassurant l’entité qui le dép
 
 * [Ce que Java nous réserve encore après 30 ans](https://youtu.be/B9SUCiSLEM0) par [Guillaume Dufrêne](https://www.linkedin.com/in/guillaume-dufr%C3%AAne-90179410/) sur Youtube.
 
-> Dans cette intervention enregistrée au Ch'ti JUG, mon pote Guillaume présente l'histoire de Java, depuis la version 1.0, jusqu'à la version 24, dans la lignée des [posts qu'il avait partagés]({{< relref "/posts/2025-03-14-mi-veille#-java">}}) il y a quelques mois. Il présente ensuite le futur de Java avec les prochaines JEP qui lui semblent intéressantes. Une vidéo immanquable !
+> Dans cette intervention enregistrée au Ch'ti JUG, mon pote Guillaume présente l'histoire de Java, depuis la version 1.0, jusqu'à la version 24, dans la lignée des [posts qu'il avait partagés](/posts/2025-03-14-mi-veille#-java) il y a quelques mois. Il présente ensuite le futur de Java avec les prochaines JEP qui lui semblent intéressantes. Une vidéo immanquable !
 
 ## 🧠 IA
 

@@ -194,7 +194,7 @@ J'en ai déjà parlé, mais à Cloud Nord, même si nous avons laissé une large
 
 Re-clarifier notre ligne éditoriale fait partie de ma TODO list pour l'année prochaine, afin de mieux guider les candidates et candidats speakers, et aussi les reviewers du CFP. Cette ligne éditoriale sera publiée sur notre site, en amont de l'ouverture du CFP.
 
-Mon article [« Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP »]({{< relref "/posts/2025-06-19-cfp-tips-and-tricks" >}}) servira probablement de point de départ comme instructions pour les speakers. J'irai aussi collecter les excellents articles que j'ai pu voir sur d'autres conférences pour m'inspirer.
+Mon article [« Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP »]({{< relref "/posts/2025/2025-06-19-cfp-tips-and-tricks" >}}) servira probablement de point de départ comme instructions pour les speakers. J'irai aussi collecter les excellents articles que j'ai pu voir sur d'autres conférences pour m'inspirer.
 
 ### Le grand jour
 
