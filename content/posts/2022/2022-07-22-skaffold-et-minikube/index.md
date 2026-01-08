@@ -333,7 +333,7 @@ Watching for changes...
 [backend] 14:15:41.202 [main] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [k8s, cloud]
 [backend] 14:15:41.557 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 803ms. Server Running: http://demo-skaffold-5bfb47c8fc-cvld4:8080
 ```
-![](./localhost.png)
+![](localhost.png)
 
 En quelques minutes, mon application est démarré sur mon cluster `minikube` local.
 Je peux voir avec une commande `kubectl get all` que mes manifests ont bien été déployés et que mon application tourne:
