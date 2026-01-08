@@ -14,7 +14,7 @@ series: Terraform et Clever Cloud
 
 Pour les besoins des cours que je donne à l'Université de Lille, j'ai dû configurer des bases de données PostgreSQL et un serveur Vault sur Clever Cloud (l'installation et la configuration d'un Vault sur Clever Cloud feront l'objet d'un article consacré).
 
-Étant aussi un grand utilisateur de Terraform ([qui l'eût cru ?]({{< ref "/books/iac-avec-terraform" >}})), j'en ai profité pour automatiser tout ça avec mon outil préféré.
+Étant aussi un grand utilisateur de Terraform ([qui l'eût cru ?](/books/iac-avec-terraform)), j'en ai profité pour automatiser tout ça avec mon outil préféré.
 
 Cet article décrit comment utiliser le _provider_ Terraform de Clever Cloud pour instancier une base de données et récupérer ses accès.
 La première étape consistera à configurer un _backend_ pour y stocker le fichier d'état de Terraform (_state_), la seconde étape consistera à créer la base de données en elle-même.
