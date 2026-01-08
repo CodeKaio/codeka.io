@@ -4,7 +4,8 @@ language: fr
 title: Introduction au logging en Java 
 series: Logging en Java
 tags:
-  - Java
+  - java
+  - observability
 draft: true
 ---
 
