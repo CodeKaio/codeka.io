@@ -1,5 +1,6 @@
 [tools]
 hugo-extended = "0.152"
+node = "latest"
 "npm:clever-tools" = "latest"
 
 [env]
