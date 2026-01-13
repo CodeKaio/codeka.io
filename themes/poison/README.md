@@ -26,7 +26,6 @@ Check out our demo site's [analytics](https://plausible.lukeorth.com/poison.luke
     - [Analytics](#analytics)
     - [Email newsletters](#email-newsletters)
     - [Series](#series)
-    - [KaTeX](#katex)
     - [Tabs](#tabs)
     - [Mermaid diagrams](#mermaid-diagrams)
     - [PlantUML diagrams](#plantuml-diagrams)
@@ -166,17 +165,6 @@ tags: ["Hugo"]
 ---
 ```
 
-### KaTeX
-Make your mathematical notations pop.
-
-For notations that should appear on their own line, use the block quotes `$$ ... $$`
-    
-$$ 5 \times 5 = 25 $$
-
-For notations that should appear on the same line, use the inline quotes `$ ... $`
-
-**Note**: *Enabling KaTeX will add external dependencies.*
-    
 ### Tabs
 Some content is just better viewed in tabs.  Luckily we have a shortcode for that.
 <p float="left">

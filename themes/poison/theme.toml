@@ -11,7 +11,7 @@ homepage = "https://github.com/lukeorth/poison"
 demosite = "https://poison.lukeorth.com"
 
 tags = ["blog", "personal", "dark", "dark-mode", "light", "minimal"]
-features = ["blog", "katex", "table-of-contents", "tabs", "dark-mode", "series"]
+features = ["blog", "table-of-contents", "tabs", "dark-mode", "series"]
 
 [author]
     name = "Luke Orth"
