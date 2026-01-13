@@ -107,7 +107,7 @@ App rescaled successfuly
 
 Une fois la commande exécutée, la modification est visible dans l'onglet _Scalability_ de l'application&nbsp;:
 
-![L'application avec la taille d'instance M](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/clever-scale.png)
+![L'application avec la taille d'instance M](clever-scale.png)
 
 ## Configuration des variables d'environnement
 
@@ -133,7 +133,7 @@ Your environment variable has been successfully saved
 
 Les variables d'environnement configurées sont visibles sur la console _Clever Cloud_, dans l'onglet _Environment Variables_&nbsp;:
 
-![Les variables d'environnement configurées sur la console _Clever Cloud_](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/clever-env.png)
+![Les variables d'environnement configurées sur la console _Clever Cloud_](clever-env.png)
 
 ## Déploiement de l'image _Docker_
 
@@ -183,16 +183,16 @@ Opening the application in your browser
 
 La page de démarrage de _SonarQube_ s'ouvre&nbsp;:
 
-![La page de démarrage de _SonarQube_](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/clever-open-starting.png)
+![La page de démarrage de _SonarQube_](clever-open-starting.png)
 
 Quelques instants plus tard, une fois que l'instance _SonarQube_ est complètement démarrée, la page de _login_ s'affiche&nbsp;:
 
-![La page de login de _SonarQube_](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/sonarqube-login.png)
+![La page de login de _SonarQube_](sonarqube-login.png)
 
 Nous nous loguons avec les identifiants par défaut `admin` / `admin`, puis nous changeons le mot de passe du compte `admin`.
 Une fois ces étapes effectuées, la page d'accueil de notre instance _SonarQube_ s'affiche&nbsp;:
 
-![Notre instance de _SonarQube_ fonctionnelle](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/sonarqube-empty.png)
+![Notre instance de _SonarQube_ fonctionnelle](sonarqube-empty.png)
 
 Le message affiché en bas de page nous indique que notre déploiement est, certes, fonctionnel, mais non adapté à un usage en production. Nous allons donc maintenant utiliser une base de données externalisée.
 
@@ -288,7 +288,7 @@ Addon sonarqube-db (id: addon_2cc8bfaf-8800-43ef-87a0-4f162be73f2e) successfully
 
 Une fois la commande exécutée, notre base de données apparaît dans la console&nbsp;:
 
-![La base de données créée](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/clever-addon-create.png)
+![La base de données créée](clever-addon-create.png)
 
 Nous pouvons ensuite lier notre base de données avec notre application. Ce lien va permettre de partager des variables d'environnement entre la base de données et notre application&nbsp;:
 
@@ -300,7 +300,7 @@ Addon sonarqube-db successfully linked
 
 Une fois l'application liée à la base de données, les variables d'environnement de la base de données apparaissent dans l'onglet _Environment Variables_ de notre application&nbsp;:
 
-![Les variables d'environnement de notre application](/assets/2023-11-02-deploy-sonarqube-on-clever-cloud/clever-service-link-addon.png)
+![Les variables d'environnement de notre application](clever-service-link-addon.png)
 
 ## Reconfigurer notre instance _SonarQube_
 
