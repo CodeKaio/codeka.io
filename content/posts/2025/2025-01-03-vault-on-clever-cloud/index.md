@@ -31,7 +31,7 @@ Clever Cloud propose de déployer des applications dans de [nombreux langages](h
 
 Par défault, Vault propose l'utilisation du _backend_ de stockage _Integrated storage_ pour le stockage des données. Étant donné la nature du déploiement avec une instance Docker sur un seul nœud et le fait que Clever Cloud ne supporte pas le stockage persistant pour ce type d'instance, il m'a semblé judicieux d'utiliser un _backend_ de stockage externalisé. Parmi les options proposées par Vault, 3 options sont envisageables sur Clever Cloud : les bases de données MySQL ou PostgreSQL, ou S3 _via_ l'implémentation _Cellar_ fournie par Clever Cloud.
 
-Le stockage externalisé sur S3 ne supporte pas la haute disponibilité et pourrait s'avérer incompatible avec l'implémentation _Cellar_ (cf. [les adaptations requises par le _backend_ Terraform S3 pour _Cellar_](/posts/2024-12-31-terraform-clever-cloud#configuration-du-backend)), donc je l'ai directement écarté et j'ai privilégié l'implémentation avec PostgreSQL.
+Le stockage externalisé sur S3 ne supporte pas la haute disponibilité et pourrait s'avérer incompatible avec l'implémentation _Cellar_ (cf. [les adaptations requises par le _backend_ Terraform S3 pour _Cellar_](/posts/2024/2024-12-31-terraform-clever-cloud#configuration-du-backend)), donc je l'ai directement écarté et j'ai privilégié l'implémentation avec PostgreSQL.
 
 L'authentification _via_ GitLab permet à mes étudiants d'utiliser leur compte GitLab existant, en exploitant l'instance GitLab fournie par l'Université de Lille. C'est donc très pratique pour eux (pas besoin d'avoir un compte ailleurs) et pour moi (pas besoin de créer et de fournir des comptes).
 J'aurais aussi pu utiliser une instance KeyCloak pour implémenter l'authentification, mais cela aurait complexifié inutilement l'implémentation.
@@ -40,7 +40,7 @@ J'aurais aussi pu utiliser une instance KeyCloak pour implémenter l'authentific
 
 ## SetUp de Terraform
 
-Dans un article précédent, j'ai déjà expliqué comment configurer [Terraform pour Clever Cloud](/posts/2024-12-31-terraform-clever-cloud#configurer-le-provider-clever-cloud), ainsi que comment [configurer un _backend_ _via_ un _bucket_ _Cellar_](/posts/2024-12-31-terraform-clever-cloud#configuration-du-backend).
+Dans un article précédent, j'ai déjà expliqué comment configurer [Terraform pour Clever Cloud](/posts/2024/2024-12-31-terraform-clever-cloud#configurer-le-provider-clever-cloud), ainsi que comment [configurer un _backend_ _via_ un _bucket_ _Cellar_](/posts/2024/2024-12-31-terraform-clever-cloud#configuration-du-backend).
 Ces étapes ne sont pas décrites ici pour ne pas alourdir cet article, mais sont bien nécessaires.
 
 ## Création de la base de données avec Terraform

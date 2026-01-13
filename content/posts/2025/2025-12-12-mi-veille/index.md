@@ -84,7 +84,7 @@ Plusieurs vidéos et podcasts intéressants en ce début de mois, l'interview de
 
 * [CWE - 2025 CWE Top 25 Most Dangerous Software Weaknesses](https://cwe.mitre.org/top25/archive/2025/2025_cwe_top25.html) _via_ [Catalin Cimpanu (@campuscodi.risky.biz)](https://bsky.app/profile/campuscodi.risky.biz/post/3m7qekq3pec2x)
 
-> MITRE (oui ça existe encore cf [La veille de Wittouck - Fin Avril 2025](/posts/2025-05-02-mi-veille/#-sécurité)) a publié la liste des 25 CWE (pour _Common Weakness Enumeration_) les plus dangereuses. On y retrouve les mêmes CWE qui composent l'OWASP Top 10, mais ici, on est à jour sur une vision 2025 inspirée des CVE observées sur l'année.
+> MITRE (oui ça existe encore cf [La veille de Wittouck - Fin Avril 2025](/posts/2025/2025-05-02-mi-veille/#-sécurité)) a publié la liste des 25 CWE (pour _Common Weakness Enumeration_) les plus dangereuses. On y retrouve les mêmes CWE qui composent l'OWASP Top 10, mais ici, on est à jour sur une vision 2025 inspirée des CVE observées sur l'année.
 
 ---
 

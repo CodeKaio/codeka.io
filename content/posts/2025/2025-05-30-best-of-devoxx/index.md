@@ -24,7 +24,7 @@ Mon astuce (pour ne pas y passer 300 heures) : je regarde les vidéos en x2, et
 
 Je les ai classées selon les tags que j'utilise d'habitude, elles ne sont pas triés dans un ordre précis.
 
-Je n'ai aussi pas listé les talks que j'avais déjà mentionné dans mon article précédent, je vous propose de les retrouver dans l'article [DevOxx 2025 - Bilan](/posts/2025-04-23-devoxx), que j'ai mis à jour avec les liens des vidéos.
+Je n'ai aussi pas listé les talks que j'avais déjà mentionné dans mon article précédent, je vous propose de les retrouver dans l'article [DevOxx 2025 - Bilan](/posts/2025/2025-04-23-devoxx), que j'ai mis à jour avec les liens des vidéos.
 
 Bon visionnage !
 
