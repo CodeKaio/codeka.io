@@ -1,15 +1,15 @@
 [
   {
     "page": "/",
-    "visits": 810
+    "visits": 832
   },
   {
     "page": "/2025/12/19/adieu-direnv-bonjour-mise/",
-    "visits": 786
+    "visits": 803
   },
   {
     "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/",
-    "visits": 370
+    "visits": 371
   },
   {
     "page": "/2025/11/07/je-suis-orga-dun-événement-tech/",
@@ -17,11 +17,11 @@
   },
   {
     "page": "/2025/12/12/montée-de-version-spring-boot-4-avec-openrewrite/",
-    "visits": 282
+    "visits": 293
   },
   {
     "page": "/2023/02/23/mkdocs-material/",
-    "visits": 241
+    "visits": 246
   },
   {
     "page": "/2023/05/25/anatomie-requete-http/",
@@ -29,7 +29,7 @@
   },
   {
     "page": "/talks/talk-lets-play-factorio/",
-    "visits": 220
+    "visits": 222
   },
   {
     "page": "/2024/02/05/tomcat-11-virtual-threads/",
@@ -37,23 +37,23 @@
   },
   {
     "page": "/books/iac-avec-terraform/",
-    "visits": 190
+    "visits": 191
   },
   {
     "page": "/2025/07/18/markdown-et-pandoc/",
-    "visits": 173
+    "visits": 183
   },
   {
     "page": "/ai/",
-    "visits": 171
+    "visits": 176
   },
   {
     "page": "/projects/gitlab-classrooms/",
-    "visits": 168
+    "visits": 172
   },
   {
     "page": "/2025/07/25/montage-dun-clavier-mécanique/",
-    "visits": 165
+    "visits": 168
   },
   {
     "page": "/2025/07/04/leeloo-dallas-multipass-répondre-aux-5-éléments-dun-cfp/",
@@ -61,11 +61,11 @@
   },
   {
     "page": "/2024/12/31/terraform-et-clever-cloud/",
-    "visits": 142
+    "visits": 144
   },
   {
     "page": "/2021/02/06/xdotool-cheatsheet/",
-    "visits": 142
+    "visits": 143
   },
   {
     "page": "/2025/11/22/kubernetes-50-solutions-pour-les-postes-de-dev-et-les-clusters-de-prod/",
@@ -92,6 +92,10 @@
     "visits": 85
   },
   {
+    "page": "/2025/12/31/la-veille-de-wittouck-fin-décembre-2025/",
+    "visits": 81
+  },
+  {
     "page": "/2025/04/18/la-veille-de-wittouck-début-avril-2025/",
     "visits": 78
   },
@@ -101,10 +105,6 @@
   },
   {
     "page": "/2025/07/25/bilan-saison-2024-2025/",
-    "visits": 74
-  },
-  {
-    "page": "/2025/12/31/la-veille-de-wittouck-fin-décembre-2025/",
     "visits": 74
   },
   {
@@ -120,6 +120,10 @@
     "visits": 71
   },
   {
+    "page": "/posts/",
+    "visits": 69
+  },
+  {
     "page": "/talks/talk-laissez-tomber-vos-dockerfile-adoptez-un-buildpack/",
     "visits": 68
   },
@@ -128,19 +132,19 @@
     "visits": 68
   },
   {
-    "page": "/posts/",
-    "visits": 64
+    "page": "/2026/01/16/la-veille-de-wittouck-début-janvier-2026/",
+    "visits": 65
   },
   {
     "page": "/2025/02/20/gitlab-oidc-vault/",
     "visits": 63
   },
   {
-    "page": "/talks/talk-rebase-crane/",
+    "page": "/2025/01/17/vault-sur-clever-cloud/",
     "visits": 56
   },
   {
-    "page": "/2025/01/17/vault-sur-clever-cloud/",
+    "page": "/talks/talk-rebase-crane/",
     "visits": 56
   },
   {
@@ -149,7 +153,7 @@
   },
   {
     "page": "/2025/12/12/la-veille-de-wittouck-début-décembre-2025/",
-    "visits": 49
+    "visits": 51
   },
   {
     "page": "/2022/06/17/direnv-pour-votre-shell/",
@@ -180,32 +184,32 @@
     "visits": 41
   },
   {
+    "page": "/talks/",
+    "visits": 33
+  },
+  {
+    "page": "/series/la-veille-de-wittouck/",
+    "visits": 32
+  },
+  {
     "page": "/2025/03/27/la-veille-de-wittouck-fin-mars-2025/",
     "visits": 32
   },
   {
-    "page": "/series/la-veille-de-wittouck/",
-    "visits": 30
-  },
-  {
     "page": "/projects/gaia-app/",
-    "visits": 27
+    "visits": 28
   },
   {
     "page": "/talks/bbl-preparer-et-passer-la-certification-terraform/",
-    "visits": 27
+    "visits": 28
   },
   {
     "page": "/talks/bbl-spring-boot-and-containers-dos-donts/",
-    "visits": 26
-  },
-  {
-    "page": "/talks/",
-    "visits": 25
+    "visits": 27
   },
   {
     "page": "/projects/",
-    "visits": 20
+    "visits": 23
   },
   {
     "page": "/2020/06/01/global-gitignore-file/",
@@ -216,11 +220,15 @@
     "visits": 16
   },
   {
-    "page": "/talks/talk-service-accounts/",
-    "visits": 14
+    "page": "/2020/07/15/schedule-linux-commands/",
+    "visits": 16
   },
   {
-    "page": "/2020/07/15/schedule-linux-commands/",
+    "page": "/now/",
+    "visits": 15
+  },
+  {
+    "page": "/talks/talk-service-accounts/",
     "visits": 14
   },
   {
@@ -238,10 +246,6 @@
   {
     "page": "/en/2023/05/25/anatomie-requete-http/",
     "visits": 11
-  },
-  {
-    "page": "/now/",
-    "visits": 10
   },
   {
     "page": "/en/",
@@ -268,19 +272,19 @@
     "visits": 5
   },
   {
+    "page": "/en/2020/07/15/schedule-linux-commands/",
+    "visits": 4
+  },
+  {
     "page": "/tags/skaffold/",
     "visits": 4
   },
   {
-    "page": "/categories/",
+    "page": "/tags/terraform/",
     "visits": 3
   },
   {
-    "page": "/tags/internet/",
-    "visits": 3
-  },
-  {
-    "page": "/en/2020/07/15/schedule-linux-commands/",
+    "page": "/talks/talk-self-service-infrastructure-gcp-terraform-gitlab/",
     "visits": 3
   },
   {
@@ -296,6 +300,10 @@
     "visits": 3
   },
   {
+    "page": "/categories/",
+    "visits": 3
+  },
+  {
     "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/v1/",
     "visits": 3
   },
@@ -304,15 +312,19 @@
     "visits": 3
   },
   {
-    "page": "/tags/terraform/",
+    "page": "/tags/internet/",
     "visits": 3
   },
   {
-    "page": "/tags/minikube/",
+    "page": "/tags/events/",
     "visits": 2
   },
   {
     "page": "/tags/tutorial/",
+    "visits": 2
+  },
+  {
+    "page": "/tags/minikube/",
     "visits": 2
   },
   {
@@ -324,22 +336,6 @@
     "visits": 2
   },
   {
-    "page": "/talks/talk-self-service-infrastructure-gcp-terraform-gitlab/",
-    "visits": 2
-  },
-  {
-    "page": "/tags/events/",
-    "visits": 2
-  },
-  {
-    "page": "/2025/01/17/vault-sur-clever-cloud/️",
-    "visits": 1
-  },
-  {
-    "page": "/2023/02/23/mkdocs-material/\nhttps://squidfunk.github.io/mkdocs-material/getting-started/\nhttps://heia-fr.github.io/mkdocs-edu-howto/theme/",
-    "visits": 1
-  },
-  {
     "page": "/tags/go/",
     "visits": 1
   },
@@ -348,15 +344,19 @@
     "visits": 1
   },
   {
+    "page": "/2025/01/17/vault-sur-clever-cloud/️",
+    "visits": 1
+  },
+  {
     "page": "/articles/http-anatomy/http-request-response.svg",
     "visits": 1
   },
   {
-    "page": "/tags/tools/",
+    "page": "/en/tags/basics/",
     "visits": 1
   },
   {
-    "page": "/tags/docs/",
+    "page": "/tags/tools/",
     "visits": 1
   },
   {
@@ -377,6 +377,14 @@
   },
   {
     "page": "/rss.xml",
+    "visits": 1
+  },
+  {
+    "page": "/tags/docs/",
+    "visits": 1
+  },
+  {
+    "page": "/2023/02/23/mkdocs-material/\nhttps://squidfunk.github.io/mkdocs-material/getting-started/\nhttps://heia-fr.github.io/mkdocs-edu-howto/theme/",
     "visits": 1
   }
 ]
