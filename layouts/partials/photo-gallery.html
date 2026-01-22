@@ -1,0 +1,40 @@
+{{/*
+Partial: photo-gallery
+Usage: {{ partial "photo-gallery" (dict "page" . "directory" "images" "id" "my-gallery") }}
+Usage shortcode: {{< photo-gallery directory="images" id="my-gallery" >}} ou {{< photo-gallery "images" "my-gallery" >}}
+- page: (obligatoire pour ressources de page) le contexte de la page (.)
+- directory: (optionnel) répertoire des images relatif à assets/ ou aux ressources de la page
+- id: (optionnel) ID HTML pour la galerie
+*/}}
+<div class="photo-gallery pswp-gallery" id="{{ with .id }}{{ . }}{{ else }}gallery{{ end }}">
+    {{ $images := slice }}
+    {{ if .directory }}
+        {{ $path := .directory }}
+        {{/* On essaie d'abord via resources.Match (pour les fichiers dans assets/) */}}
+        {{ $images = (resources.Match (printf "%s/*" $path)) }}
+        
+        {{/* Si on ne trouve rien et qu'on a un objet .page, on cherche dans les Page Resources */}}
+        {{ if and (not $images) .page }}
+            {{ $images = .page.Resources.Match (printf "%s/*" $path) }}
+        {{ end }}
+    {{ else if .page }}
+        {{ $images = .page.Resources.ByType "image" }}
+    {{ end }}
+
+    {{ range $images }}
+        {{ if (and (ne .MediaType.MainType "image") (ne .MediaType.SubType "svg")) }}
+            {{/* On ne traite que les images */}}
+        {{ else }}
+            {{ $thumbnail := . }}
+            {{ if ne .MediaType.SubType "svg" }}
+                {{ $thumbnail = .Fill "300x300" }}
+            {{ end }}
+            <a href="{{ .RelPermalink }}" 
+               data-pswp-width="{{ .Width }}" 
+               data-pswp-height="{{ .Height }}" 
+               target="_blank">
+                <img src="{{ $thumbnail.RelPermalink }}" alt="{{ .Name }}" />
+            </a>
+        {{ end }}
+    {{ end }}
+</div>
