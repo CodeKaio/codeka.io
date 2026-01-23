@@ -14,6 +14,10 @@
 <script defer language="javascript" type="text/javascript" src="{{ $js_bundle.RelPermalink }}"></script>
 
 
+{{ if .Page.Params.hasGallery }}
+<script type="module" src="/js/photoswipe/photoswipe-init.js"></script>
+{{ end }}
+
 {{ if .Site.Params.plausible }}
 <script defer data-domain="{{ .Site.Params.plausible_domain }}" src="{{ .Site.Params.plausible_script }}"></script>
 {{ end }}
