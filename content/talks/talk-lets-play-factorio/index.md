@@ -5,6 +5,7 @@ date: 2025-06-01
 tags:
   - Internet
   - Basics
+hasGallery: true
 events:
   - name: DevFest Lyon 2025
     date: 2025-11-28
