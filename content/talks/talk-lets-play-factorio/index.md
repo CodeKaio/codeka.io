@@ -10,9 +10,11 @@ events:
   - name: DevFest Lyon 2025
     date: 2025-11-28
     feedbacks_url: https://openfeedback.io/6UvvOdJnjaGGkwaSUKC1/2025-11-28/6Ivti5gj9LN0TqLY5w11
+    pictures: pictures-devfest-lyon-2025
   - name: DevFest Nantes 2025
     date: 2025-10-16
     feedbacks_url: https://openfeedback.io/devfestnantes2025/2025-10-16/letsplayfactorio
+    pictures: pictures-devfest-nantes-2025
     youtube: I07DxOLw10E
   - name: Sunny Tech 2025
     date: 2025-06-27
