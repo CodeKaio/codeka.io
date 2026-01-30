@@ -7,6 +7,10 @@ tags:
   - Basics
 hasGallery: true
 events:
+  - name: Epitech Summit 2026
+    date: 2026-01-29
+    feedbacks_url: https://openfeedback.io/epitech-summit-2026/2026-01-29/ZpMlR7PTPpkguAL26x5l
+    pictures: pictures-epitech-summit-2026
   - name: DevFest Lyon 2025
     date: 2025-11-28
     feedbacks_url: https://openfeedback.io/6UvvOdJnjaGGkwaSUKC1/2025-11-28/6Ivti5gj9LN0TqLY5w11
@@ -61,6 +65,7 @@ Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
 * Sauvegarde de la session de SunnyTech 2025 : [sunny-tech-2025.zip](sunny-tech-2025.zip)
 * Sauvegarde de la session du DevFest Nantes 2025 : [devfest-nantes-2025.zip](devfest-nantes-2025.zip)
 * Sauvegarde de la session du DevFest Lyon 2025 : [devfest-lyon-2025.zip](devfest-lyon-2025.zip)
+* Sauvegarde de la session de Epitech Summit 2026 : [epitech-summit-2026.zip](epitech-summit-2026.zip)
 
 ## Liens
 
