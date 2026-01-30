@@ -1,67 +1,67 @@
 [
   {
     "page": "/",
-    "visits": 832
+    "visits": 869
   },
   {
     "page": "/2025/12/19/adieu-direnv-bonjour-mise/",
-    "visits": 803
+    "visits": 855
   },
   {
     "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/",
-    "visits": 371
-  },
-  {
-    "page": "/2025/11/07/je-suis-orga-dun-événement-tech/",
-    "visits": 309
+    "visits": 377
   },
   {
     "page": "/2025/12/12/montée-de-version-spring-boot-4-avec-openrewrite/",
-    "visits": 293
+    "visits": 349
+  },
+  {
+    "page": "/2025/11/07/je-suis-orga-dun-événement-tech/",
+    "visits": 311
   },
   {
     "page": "/2023/02/23/mkdocs-material/",
-    "visits": 246
-  },
-  {
-    "page": "/2023/05/25/anatomie-requete-http/",
-    "visits": 232
+    "visits": 248
   },
   {
     "page": "/talks/talk-lets-play-factorio/",
-    "visits": 222
+    "visits": 241
+  },
+  {
+    "page": "/2023/05/25/anatomie-requete-http/",
+    "visits": 236
   },
   {
     "page": "/2024/02/05/tomcat-11-virtual-threads/",
-    "visits": 216
-  },
-  {
-    "page": "/books/iac-avec-terraform/",
-    "visits": 191
+    "visits": 226
   },
   {
     "page": "/2025/07/18/markdown-et-pandoc/",
-    "visits": 183
+    "visits": 202
+  },
+  {
+    "page": "/books/iac-avec-terraform/",
+    "visits": 193
   },
   {
     "page": "/ai/",
-    "visits": 176
+    "visits": 178
   },
   {
     "page": "/projects/gitlab-classrooms/",
-    "visits": 172
+    "visits": 176
   },
   {
     "page": "/2025/07/25/montage-dun-clavier-mécanique/",
-    "visits": 168
+    "visits": 171
   },
   {
     "page": "/2025/07/04/leeloo-dallas-multipass-répondre-aux-5-éléments-dun-cfp/",
-    "visits": 159
+    "visits": 160
   },
   {
     "page": "/2024/12/31/terraform-et-clever-cloud/",
-    "visits": 144
+    "visits": 145
   },
   {
     "page": "/2021/02/06/xdotool-cheatsheet/",
@@ -69,11 +69,11 @@
   },
   {
     "page": "/2025/11/22/kubernetes-50-solutions-pour-les-postes-de-dev-et-les-clusters-de-prod/",
-    "visits": 136
+    "visits": 138
   },
   {
     "page": "/2025/10/31/la-veille-de-wittouck-fin-octobre-2025/",
-    "visits": 121
+    "visits": 122
   },
   {
     "page": "/2025/04/24/devoxx-2025-bilan/",
@@ -92,8 +92,12 @@
     "visits": 85
   },
   {
+    "page": "/2026/01/16/la-veille-de-wittouck-début-janvier-2026/",
+    "visits": 83
+  },
+  {
     "page": "/2025/12/31/la-veille-de-wittouck-fin-décembre-2025/",
-    "visits": 81
+    "visits": 83
   },
   {
     "page": "/2025/04/18/la-veille-de-wittouck-début-avril-2025/",
@@ -104,12 +108,16 @@
     "visits": 76
   },
   {
+    "page": "/2025/11/14/la-veille-de-wittouck-début-novembre-2025/",
+    "visits": 75
+  },
+  {
     "page": "/2025/07/25/bilan-saison-2024-2025/",
     "visits": 74
   },
   {
-    "page": "/2025/11/14/la-veille-de-wittouck-début-novembre-2025/",
-    "visits": 73
+    "page": "/posts/",
+    "visits": 72
   },
   {
     "page": "/2025/10/17/la-veille-de-wittouck-édition-spéciale-devfest-de-nantes-2025/",
@@ -120,10 +128,6 @@
     "visits": 71
   },
   {
-    "page": "/posts/",
-    "visits": 69
-  },
-  {
     "page": "/talks/talk-laissez-tomber-vos-dockerfile-adoptez-un-buildpack/",
     "visits": 68
   },
@@ -132,39 +136,39 @@
     "visits": 68
   },
   {
-    "page": "/2026/01/16/la-veille-de-wittouck-début-janvier-2026/",
-    "visits": 65
-  },
-  {
     "page": "/2025/02/20/gitlab-oidc-vault/",
     "visits": 63
   },
   {
-    "page": "/2025/01/17/vault-sur-clever-cloud/",
-    "visits": 56
+    "page": "/en/2021/02/06/xdotool-cheatsheet/",
+    "visits": 59
   },
   {
     "page": "/talks/talk-rebase-crane/",
     "visits": 56
   },
   {
-    "page": "/en/2021/02/06/xdotool-cheatsheet/",
-    "visits": 53
+    "page": "/2025/01/17/vault-sur-clever-cloud/",
+    "visits": 56
   },
   {
     "page": "/2025/12/12/la-veille-de-wittouck-début-décembre-2025/",
-    "visits": 51
+    "visits": 52
   },
   {
     "page": "/2022/06/17/direnv-pour-votre-shell/",
+    "visits": 50
+  },
+  {
+    "page": "/2023/11/02/deploy-sonarqube-on-clever-cloud/",
+    "visits": 49
+  },
+  {
+    "page": "/2025/12/02/la-veille-de-wittouck-fin-novembre-2025/",
     "visits": 48
   },
   {
     "page": "/2025/08/01/bilan-saison-2024-2025/",
-    "visits": 47
-  },
-  {
-    "page": "/2025/12/02/la-veille-de-wittouck-fin-novembre-2025/",
     "visits": 47
   },
   {
@@ -176,31 +180,31 @@
     "visits": 45
   },
   {
-    "page": "/2023/11/02/deploy-sonarqube-on-clever-cloud/",
-    "visits": 45
+    "page": "/2026/01/20/pop_os-24.04-une-expérience-cosmic/",
+    "visits": 42
   },
   {
     "page": "/2022/07/22/skaffold-et-minikube/",
     "visits": 41
   },
   {
-    "page": "/talks/",
-    "visits": 33
+    "page": "/series/la-veille-de-wittouck/",
+    "visits": 35
   },
   {
-    "page": "/series/la-veille-de-wittouck/",
-    "visits": 32
+    "page": "/talks/",
+    "visits": 34
   },
   {
     "page": "/2025/03/27/la-veille-de-wittouck-fin-mars-2025/",
     "visits": 32
   },
   {
-    "page": "/projects/gaia-app/",
+    "page": "/talks/bbl-preparer-et-passer-la-certification-terraform/",
     "visits": 28
   },
   {
-    "page": "/talks/bbl-preparer-et-passer-la-certification-terraform/",
+    "page": "/projects/gaia-app/",
     "visits": 28
   },
   {
@@ -209,14 +213,18 @@
   },
   {
     "page": "/projects/",
-    "visits": 23
+    "visits": 25
   },
   {
     "page": "/2020/06/01/global-gitignore-file/",
     "visits": 19
   },
   {
-    "page": "/series/terraform-et-clever-cloud/",
+    "page": "/now/",
+    "visits": 16
+  },
+  {
+    "page": "/talks/talk-service-accounts/",
     "visits": 16
   },
   {
@@ -224,19 +232,15 @@
     "visits": 16
   },
   {
-    "page": "/now/",
-    "visits": 15
-  },
-  {
-    "page": "/talks/talk-service-accounts/",
-    "visits": 14
-  },
-  {
-    "page": "/search/",
-    "visits": 13
+    "page": "/series/terraform-et-clever-cloud/",
+    "visits": 16
   },
   {
     "page": "/2021/03/26/rewrite-git-history/",
+    "visits": 13
+  },
+  {
+    "page": "/search/",
     "visits": 13
   },
   {
@@ -248,11 +252,11 @@
     "visits": 11
   },
   {
-    "page": "/en/",
+    "page": "/tags/ia/",
     "visits": 9
   },
   {
-    "page": "/tags/ia/",
+    "page": "/en/",
     "visits": 9
   },
   {
@@ -276,23 +280,15 @@
     "visits": 4
   },
   {
+    "page": "/tags/terraform/",
+    "visits": 4
+  },
+  {
     "page": "/tags/skaffold/",
     "visits": 4
   },
   {
-    "page": "/tags/terraform/",
-    "visits": 3
-  },
-  {
-    "page": "/talks/talk-self-service-infrastructure-gcp-terraform-gitlab/",
-    "visits": 3
-  },
-  {
-    "page": "/tags/tomcat/",
-    "visits": 3
-  },
-  {
-    "page": "/projects/gitlab-classrooms/LICENSE",
+    "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/v1/",
     "visits": 3
   },
   {
@@ -304,11 +300,19 @@
     "visits": 3
   },
   {
-    "page": "/2025/06/05/déployer-des-applications-statiques-sur-clever-cloud/v1/",
+    "page": "/projects/gitlab-classrooms/LICENSE",
     "visits": 3
   },
   {
     "page": "/tags/gitlab/",
+    "visits": 3
+  },
+  {
+    "page": "/tags/tomcat/",
+    "visits": 3
+  },
+  {
+    "page": "/talks/talk-self-service-infrastructure-gcp-terraform-gitlab/",
     "visits": 3
   },
   {
@@ -328,6 +332,10 @@
     "visits": 2
   },
   {
+    "page": "/rss.xml",
+    "visits": 2
+  },
+  {
     "page": "/page/4/",
     "visits": 2
   },
@@ -336,23 +344,15 @@
     "visits": 2
   },
   {
-    "page": "/tags/go/",
-    "visits": 1
-  },
-  {
     "page": "/en/tags/linux/",
     "visits": 1
   },
   {
-    "page": "/2025/01/17/vault-sur-clever-cloud/️",
+    "page": "/tags/docs/",
     "visits": 1
   },
   {
-    "page": "/articles/http-anatomy/http-request-response.svg",
-    "visits": 1
-  },
-  {
-    "page": "/en/tags/basics/",
+    "page": "/2025/07/04/leeloo-dallas-multipass-r%u00e9pondre-aux-5-%u00e9l%u00e9ments-dun-cfp/",
     "visits": 1
   },
   {
@@ -360,7 +360,15 @@
     "visits": 1
   },
   {
-    "page": "/2025/07/04/leeloo-dallas-multipass-r%u00e9pondre-aux-5-%u00e9l%u00e9ments-dun-cfp/",
+    "page": "/2025/01/17/vault-sur-clever-cloud/️",
+    "visits": 1
+  },
+  {
+    "page": "/2023/02/23/mkdocs-material/\nhttps://squidfunk.github.io/mkdocs-material/getting-started/\nhttps://heia-fr.github.io/mkdocs-edu-howto/theme/",
+    "visits": 1
+  },
+  {
+    "page": "/en/2025/12/12/spring-boot-4-upgrade-with-openrewrite/",
     "visits": 1
   },
   {
@@ -372,19 +380,15 @@
     "visits": 1
   },
   {
-    "page": "/en/2025/12/12/spring-boot-4-upgrade-with-openrewrite/",
+    "page": "/en/tags/basics/",
     "visits": 1
   },
   {
-    "page": "/rss.xml",
+    "page": "/articles/http-anatomy/http-request-response.svg",
     "visits": 1
   },
   {
-    "page": "/tags/docs/",
-    "visits": 1
-  },
-  {
-    "page": "/2023/02/23/mkdocs-material/\nhttps://squidfunk.github.io/mkdocs-material/getting-started/\nhttps://heia-fr.github.io/mkdocs-edu-howto/theme/",
+    "page": "/tags/go/",
     "visits": 1
   }
 ]
