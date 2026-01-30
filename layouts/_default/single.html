@@ -4,19 +4,6 @@
 
   {{ partial "post/i18nlist.html" . }}
 
-  {{ $postDate := .Date }}
-  {{ $twoYearsAgo := now.AddDate -2 0 0 }}
-  {{ if lt $postDate $twoYearsAgo }}
-  <blockquote class="alert alert-warning">
-    <p class="alert-heading">
-      ⚠️ Warning
-    </p>
-    <p class="alert-content">
-      {{ i18n "old-post" }}
-    </p>
-  </blockquote>
-  {{ end }}
-
   {{ if .Params.original }}
   <blockquote class="alert alert-info">
     <p class="alert-heading">
@@ -43,7 +30,6 @@
   </blockquote>
   {{ end }}
 
-
   {{ with .Resources }}
     {{ with .GetMatch "{cover.*}" }}
          {{ $cover := .Resize "820x webp" }}
@@ -54,13 +40,6 @@
   {{ end }}
 
   {{ .Content }}
-  {{ if (.Site.Params.listmonk) }}
-    {{ partial "post/listmonk_email_newsletters.html" . }}
-  {{ end }}
-  {{ partial "post/navigation.html" . }}
-  {{ if or (.Site.Params.remark42) (.Site.Config.Services.Disqus.Shortname) }}
-    {{ partial "post/comments.html" . }}
-  {{ end }}
 </div>
 {{- end }}
 {{ define "sidebar" }}
