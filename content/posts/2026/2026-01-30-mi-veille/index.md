@@ -23,7 +23,7 @@ La veille de Wittouck de fin janvier se concentre donc un peu sur ces thèmes.
 
 * [LLMs Are Not Fun](https://orib.dev/nofun.html) _via_ [Siegfried Ehret](https://ehret.me/2026/01/nflm-developer/)
 
-> J'avais déjà cité un article sur cette même thématique ([The hidden cost of AI coding](https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/) partagé dans [La veille de Wittouck - Début Mai 2025](http://localhost:1313/2025/05/16/la-veille-de-wittouck-d%C3%A9but-mai-2025/)): travailler en utilisant un LLM retire le fun de notre travail.
+> J'avais déjà cité un article sur cette même thématique ([The hidden cost of AI coding](https://terriblesoftware.org/2025/04/23/the-hidden-cost-of-ai-coding/) partagé dans [La veille de Wittouck - Début Mai 2025](/2025/05/16/la-veille-de-wittouck-d%C3%A9but-mai-2025/)): travailler en utilisant un LLM retire le fun de notre travail.
 > Et faire du pair-programming avec un LLM ne fait progresser personne, alors que c'est tout l'inverse avec une autre personne, les deux apprennent de l'exercice.
 
 * [The /llms.txt file – llms-txt](https://llmstxt.org/)
