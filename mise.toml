@@ -22,11 +22,12 @@ run = "go run bluesky_stats.go"
 
 [tasks.build]
 description = "Build le site avec Hugo"
-run = "hugo build $HUGO_OPTIONS"
+run = "hugo build hugo --gc --minify --destination public"
+depends_post = ["post-build"]
 
 [tasks.post-build]
 description = "Post build hooks"
-depends = ["precompress"]
+depends_post = ["precompress"]
 
 [tasks.precompress]
 description = "Precompress static resources"
