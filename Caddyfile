@@ -1,7 +1,7 @@
 :8080
 
 file_server {
-    root cc_static_autobuilt
+    root public
     precompressed
 }
 
