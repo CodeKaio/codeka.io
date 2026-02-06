@@ -1,0 +1,8 @@
+{{- $image := .Page.Resources.GetMatch .Destination -}}
+{{- $width := math.Min 820 $image.Width -}}
+{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width) -}}
+{{- with $image.Resize $resizeOpts -}}
+<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+ {{- with $.PlainText }} alt="{{ . }}"{{ end -}}
+ {{ with $.Title }}title="{{ . }}"{{ end }}>
+{{- end -}}
