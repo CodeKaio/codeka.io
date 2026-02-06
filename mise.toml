@@ -1,5 +1,5 @@
 [tools]
-hugo-extended = "0.152"
+hugo-extended = "0.155"
 node = "latest"
 "npm:clever-tools" = "latest"
 
