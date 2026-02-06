@@ -5,4 +5,8 @@ file_server {
     precompressed
 }
 
+header {
+    Strict-Transport-Security: max-age=63072000
+}
+
 encode
