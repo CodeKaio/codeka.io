@@ -1,5 +1,5 @@
 :8080
 
 file_server {
-    root public
+    root cc_static_autobuilt
 }
