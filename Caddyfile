@@ -2,4 +2,6 @@
 
 file_server {
     root cc_static_autobuilt
+    encode
+    precompressed
 }
