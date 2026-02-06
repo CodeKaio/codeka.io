@@ -207,7 +207,7 @@ Le jour J, une partie de l'équipe (dont votre dévoué serviteur) était prése
 
 Toute l'équipe était d'accord pour que ce soit votre serviteur qui prenne la parole pour l'ouverture de la journée. C'est un exercice avec lequel je suis à l'aise, et que j'apprécie beaucoup. Donc j'avais passé un peu de temps à préparer les slides de présentation de l'ouverture de journée.
 Notre keynote d'ouverture s'étant décommandé quelques jours avant (le vendredi juste avant), il nous fallait meubler le créneau d'ouverture, j'ai donc travaillé une présentation d'ouverture de journée qui tiendrait en 20 minutes.
-Les slides sont disponibles ici : [Ouverture de journée Cloud Nord 2025.pdf](Ouverture%20de%20journ%C3%A9e%20Cloud%20Nord%202025.pdf)
+Les slides sont disponibles ici : [Ouverture de journée Cloud Nord 2025.pdf](ouverture-de-journee-cloud-nord-2025.pdf)
 
 Prendre la parole de bon matin devant ce public, c'était clairement mon kiff de la journée.
 
