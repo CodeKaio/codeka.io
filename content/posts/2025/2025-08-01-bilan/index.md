@@ -54,8 +54,8 @@ J'ai soumis ces talks un peu partout, et j'ai eu la chance de pouvoir donner 3 s
 * "Rebase d'image Docker/OCI avec crane" au DevLille (45 minutes) ;
 * "Let's play Factorio" à SunnyTech (50 minutes).
 
-{{< img-resized src=jwk-devlille.jpg >}}
-{{< img-resized src=jwk-sunny-tech.jpg >}}
+![](jwk-devlille.jpg)
+![](jwk-sunny-tech.jpg)
 {class=images-grid-2}
 
 "Let's play Factorio" sera aussi rejoué sur la saison 2025-2026.
@@ -79,9 +79,9 @@ J'avais bloqué dans mon emploi du temps les semaines avant les confs pour final
 
 Pour les déplacements, je voyage systématiquement en train. J'aime prendre des trains directs, ça permet de me poser et d'éviter un stress supplémentaire lié à un changement de gare sur Paris. Je sais que certains d'entre vous ont un kink pour mes photos de train avec ma tête fatiguée, je vous ai donc rassemblé ces photos ici 😅
 
-{{< img-resized src=train-clever-cloud-fest.jpg >}}
-{{< img-resized src=train-devoxx.jpg >}}
-{{< img-resized src=train-sunny-tech.jpg >}}
+![](train-clever-cloud-fest.jpg)
+![](train-devoxx.jpg)
+![](train-sunny-tech.jpg)
 {class=images-grid-3}
 
 > Mon comptable fait probablement la même tête que moi sur la dernière photo quand il voit les coûts listés plus bas 😬
@@ -102,7 +102,7 @@ C'est la troisième année que je m'implique dans cette conférence que j'affect
 Après avoir été relecteur au CFP, l'année dernière, j'avais rejoint officiellement les organisateurs bénévoles de Cloud Nord.
 J'étais donc présent sur l'édition 2024 en tant qu'orga. Si vous y êtes venus, j'ai probablement scanné vos billets le matin, ou je vous ai accueilli dans une des salles l'après-midi.
 
-{{< img-resized src=cloud-nord.png >}}
+![](cloud-nord.png)
 
 > Il est chouette notre nouveau site web  💙
 
@@ -138,13 +138,13 @@ Parmi ces articles, ["La veille de Wittouck"]({{< relref "/series/la-veille-de-w
 
 Pour la période du 1er septembre au 1er août, 1800 personnes ont visité [codeka.io](https://codeka.io), pour un total de 2600 pages lues.
 
-{{< img-resized src=stats-plausible-visites.png >}}
+![](stats-plausible-visites.png)
 
 L'article ayant eu le plus de succès est [Déployer des applications statiques sur Clever Cloud]({{< relref "/posts/2025/2025-06-05-static-apps-clever/v2">}}).
 Je pense que cela s'explique par le fait que Clever Cloud ait repartagé cet article, ainsi que le pote [Denis Germain](https://blog.zwindler.fr/).
 C'est aussi un des articles les plus récents, peut-être que mon audience se construit petit à petit.
 
-{{< img-resized src=stats-plausible-pages.png >}}
+![](stats-plausible-pages.png)
 
 Parmi les pages les plus visitées, il y a également trois "anomalies".
 La page [xdotool cheatsheet]({{< relref "/posts/2021/2021-02-06-xdotool-cheatsheet">}}) est visitée presque exclusivement depuis la Russie. Je suppose qu'elle est bien référencée chez Yandex. C'est aussi une des rares pages que j'avais traduite en anglais.
@@ -166,11 +166,11 @@ Je poste principalement le contenu de ma veille, ainsi que mes articles. Sur Blu
 
 J'ai extrait mes stats LinkedIn pour la rédaction de ce bilan, et je suis plutôt impressionné par le résultat : 275k vues sur la saison.
 
-{{< img-resized src=stats-linkedin-views.png >}}
+![](stats-linkedin-views.png)
 
 Les posts les plus performants sont ceux que je qualifierai de "coup de gueule". Ce n'est pas très surprenant pour ce réseau.
 
-{{< img-resized src=stats-linkedin-posts.png >}}
+![](stats-linkedin-posts.png)
 
 Je n'ai pas trouvé comment extraire le nombre de posts que j'ai publié sur l'année, mais comme j'essaye d'avoir un rythme de un à deux posts par semaine, j'ai probablement posté un peu plus de 70 fois, sans compter les reposts.
 
@@ -184,9 +184,9 @@ Entre mon pote et associé Romain, qui a tenu à être le premier à avoir sa d�
 
 Je n'ai pas tenu les comptes, mais j'ai dû en dédicacer au moins 25, c'est toujours un moment un peu spécial.
 
-{{< img-resized src=dedicace-benj.jpg >}}
-{{< img-resized src=dedicace-pierre.jpg >}}
-{{< img-resized src=livre-fnac.jpg >}}
+![](dedicace-benj.jpg)
+![](dedicace-pierre.jpg)
+![](livre-fnac.jpg)
 {class=images-grid-3}
 
 Chercher et trouver son propre livre dans les rayons à la Fnac et au Furet du Nord est aussi un moment plutôt ouf.
@@ -195,7 +195,7 @@ Pour en faire la promo, j'ai eu aussi l'occasion de participer à une [table ron
 
 On a aussi enregistré avec Romain un épisode spécial de son podcast "Technologie en pratique", qui est disponible sur [Youtube](https://youtu.be/L4pmn1wTpTg). On y parle du livre, de la démarche d'écriture, en toute transparence.
 
-{{< img-resized src=youtube-iac.png >}}
+![](youtube-iac.png)
 
 À ce jour, 350 exemplaires papier ont été vendus. Avec un prix de vente de 39,9 euros (contrôlé par l'éditeur), et des royalties de 10%, j'ai pour l'instant touché un peu moins de 1000 euros.
 
@@ -209,7 +209,7 @@ Au-delà de la promo de mon livre, j'ai pu participer avec Romain à l'enregistr
 * [Ils sont organisateurs d'événements techs](https://youtu.be/Sp1o_nFMtvM) avec Emmanuel Demey
 * [Devoxx 25 : le débrief](https://youtu.be/XpEhtay8qXQ) avec Romain
 
-{{< img-resized src=youtube-devoxx.png >}}
+![](youtube-devoxx.png)
 
 ## Jeux vidéos
 
@@ -229,7 +229,7 @@ Pour finir ce bilan, les jeux vidéos auxquels j'ai joué cette saison, il y en 
 * God of War Ragnarock (platiné) ;
 * Star Wars Jedi Survivor.
 
-{{< img-resized src=ds2.jpg >}}
+![](ds2.jpg)
 
 J'ai une affection particulière pour Death Stranding, donc c'est sans aucun doute mon jeu préféré de cette année. J'avais même précommandé la manette, que je trouve très cool. Une fois terminé, je m'attaquerai à Clair Obscur : Expedition 33.
 

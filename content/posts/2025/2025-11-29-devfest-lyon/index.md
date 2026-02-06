@@ -34,7 +34,7 @@ La soirée des speakers est toujours un moment privilégié (et traditionnel). J
 Pour le jour J, une salle speakers nous a été mise à disposition, avec boissons, bonbons, brioche à la praline (miam).
 Nous avons également eu le droit à un shooting photo personnel (hâte de recevoir ma future photo de profil 💙) ainsi qu'à un petit cadeau pour nous tenir chaud dans les soirées d'hiver qui approchent : un joli plaid brandé "DevFest Lyon".
 
-![Le plaid DevFest Lyon](./plaid.jpg)
+![Le plaid DevFest Lyon](plaid.jpg)
 
 Ce sont toutes ces petites attentions qui font de ces événements un réel plaisir pour les speakeuses et les speakers. Merci à toute l'équipe pour cet accueil chaleureux.
 
@@ -46,7 +46,7 @@ De mon point de vue, l'organisation est impeccable. L'équipe a pensé à tout.
 
 L'accueil est chaleureux dès la remise des badges. Badges qui contiennent le programme de la journée, ainsi que les QR Codes à scanner vers les pages du site et des feedbacks. C'est une bonne idée et c'est plutôt pratique (j'avais déjà vu ça au DevFest de Nantes).
 
-![Le badge](./badge.jpg)
+![Le badge](badge.jpg)
 
 L'accent est mis sur le côté "collector" de certains goodies, comme le sticker "J'étais au 1er DevFest Lyon", et sur le tour de cou du badge. C'est très rigolo, et ça fonctionne plutôt bien.
 
@@ -55,7 +55,7 @@ Les orgas sont attentifs, disponibles et s'assurent que tout se passe bien. On v
 Le lieu "L'embarcadère" est parfait pour ce type d'évènement. Les salles de conférence sont très belles (la grande halle 🤩).
 C'est très agréable d'être sur scène dans cette salle, et d'y prendre la parole, surtout devant une salle presque comble.
 
-![Julien sur scène, devant une salle presque comble](./julien-sur-scene.jpg)
+![Julien sur scène, devant une salle presque comble](julien-sur-scene.jpg)
 
 La technique est rodée, aussi bien sur le son que sur la vidéo.
 Pas de captation pour cette première édition, il faudra se contenter des photos (qui vont être cool, la photographe a l'air de faire du super travail), mais je suis certain que les orgas ajouteront ça l'année prochaine.
@@ -66,7 +66,7 @@ La sélection des talks est solide (et je dis pas ça parce que j'en fait partie
 
 Le public est souriant, bienveillant, et généreux en feedbacks et discussions. L'ambiance globale de ce DevFest est définitivement très (très) sympa.
 
-![Les feedbacks de mon talk !](./feedbacks.png)
+![Les feedbacks de mon talk !](feedbacks.png)
 
 Le traiteur local a proposé une nourriture très bonne et variée (mention spéciale aux ravioles 😋).
 
@@ -85,4 +85,4 @@ Bravo aux speakeuses et aux speakers pour vos talks, et merci pour les échanges
 
 Merci pour l'accueil incroyable à Lyon, et à l'année prochaine 💙
 
-![La cathédrale Saint Jean la nuit tombée](./saint-jean.jpg)
+![La cathédrale Saint Jean la nuit tombée](saint-jean.jpg)

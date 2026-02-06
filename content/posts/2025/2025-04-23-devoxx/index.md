@@ -36,7 +36,7 @@ J'étais aussi curieux de la quantité de café qui est écoulée sur la journé
 
 ## Mercredi
 
-{{< img-resized src=crane-train.jpg >}}
+![](crane-train.jpg)
 
 Mercredi, après avoir un peu révisé dans le train, je suis arrivé vers 9h30, j'ai donc loupé la keynote. En arrivant, ça m'a permis de faire un peu le tour des stands, de prendre un café tranquillement pour m'accoutumer à l'ambiance si particulière du lieu. J'avais déjà prévu mon programme de la journée : quelques talks le matin, aller soutenir mon pote Romain le midi, faire une pause pour exécuter les scripts de prépa de ma démo en début d'aprèm, puis présenter mon talk !
 
@@ -48,7 +48,7 @@ Cela fait plusieurs années qu'Alina nous présente l'utilisation de GraalVM. Ce
 
 ### Kestra : un orchestrateur open source, event driven et déclaratif, codé en Java - Loïc Mathieu
 
-{{< img-resized src=loic-kestra.jpg >}}
+![](loic-kestra.jpg)
 
 Dans ce lunch talk (15 minutes, ça va vite !), mon pote Loïc a présenté Kestra, son architecture, et a fait une démo d'écriture et d'exécution d'un workflow simple dans l'interface Kestra, et a présenté l'écosystème des plugins Kestra. Il a aussi expliqué les avantages d'avoir choisi Java pour le développement de cet outil, en particulier l'utilisation de Nashorn (qui sera remplacé à terme par GraalVM polyglot), pour exécuter les scripts écrits dans le langage du choix du développeur.
 
@@ -56,7 +56,7 @@ Dans ce lunch talk (15 minutes, ça va vite !), mon pote Loïc a présenté Kes
 
 ### BullShit IT Awards : Célébrons les erreurs des équipes Tech ! - Romain Rozewicz
 
-{{< img-resized src=rrz-bullshit.jpg >}}
+![](rrz-bullshit.jpg)
 
 Une salle comble pour mon pote Romain ! Romain nous présente les meilleures pépites qu'il a pu voir ou entendre sur des projets IT ! Le public a été mis à contribution pour voter pour la meilleure pépite. Une conf décalée, qui sera aussi rejouée au DevLille cette année.
 
@@ -70,7 +70,7 @@ Jérôme nous explique comment fonctionne OpenRewrite, et comment écrire notre 
 
 ### Rebase d'image Docker/OCI avec crane - Julien Wittouck
 
-{{< img-resized src=cover.jpg >}}
+![](cover.jpg)
 
 Je ne pouvais pas manquer mon propre talk 😅
 Cela s'est plutôt bien passé de mon point de vue. J'ai même eu le temps de jouer une démo que je m'étais gardé sur le côté au cas où.
@@ -79,7 +79,7 @@ L'abstract et les slides sont dispo ici : [Rebase d'images Docker/OCI avec cran
 
 Je n'ai pas eu énormément de feedbacks sur l'appli, mais ils sont tous positifs !
 
-{{< img-resized src=ratings.png >}}
+![](ratings.png)
 
 ### Un p'tit tour sur les stands
 
@@ -110,7 +110,7 @@ En s'appuyant sur son travail de recherche et sur des cartes géographique des c
 
 ### Anatomie d'une faille - Olivier Poncet
 
-{{< img-resized src=olivier-xz.jpg >}}
+![](olivier-xz.jpg)
 
 Olivier retrace les différentes étapes qui ont mené à l'implémentation de la faille dite 'xz' de l'année dernière. De l'ingénierie sociale pour "infiltrer" les maintainers du paquet cible, à l'ingénierie technique pour intégrer le code malveillant dans les paquets, jusqu'à la découverte "accidentelle" de la faille.
 
@@ -118,7 +118,7 @@ Olivier retrace les différentes étapes qui ont mené à l'implémentation de l
 
 ### Kubernetes : 5 façons créatives de flinguer sa prod 🔫 - Denis Germain
 
-{{< img-resized src=denis-k8s.jpg >}}
+![](denis-k8s.jpg)
 
 Avec l'émoji dans le titre 🔫. Denis présente cinq cas issus de ses expériences, qui ont conduit à une prod en PLS. Des erreurs bêtes liées à des suppressions de ressources Helm, des cas d'erreurs en cascade liées à des liveness checks. Au delà des erreurs, Denis présente aussi les actions mises en place pour que cela ne se reproduise plus, backups du cluster, admission controller et policies Kyverno ou OPA.
 
@@ -139,7 +139,7 @@ Un talk sur les communications IOT via satellite. On y parle de modulation de fr
 
 ### Optimisez vos applications Spring Boot avec CDS et Project Layden - Sébastien Deleuze
 
-{{< img-resized src=sebastien-cds.jpg >}}
+![](sebastien-cds.jpg)
 
 Sébastien (qui développe Spring chez Broadcom) présente le CDS (pour _Class Data Sharing_) appliqué à Spring Boot. Une nouvelle option a été introduite dans Spring Boot 3.3 pour faciliter l'export du dump `-Dspring.context.exit=onRefresh`. Il présente aussi rapidement l'_AOT cache_ du projet Leyden, qui vise à encore étendre le CDS pour améliorer les performances au démarrage.
 
@@ -147,7 +147,7 @@ Sébastien (qui développe Spring chez Broadcom) présente le CDS (pour _Class D
 
 ### Jib : Osez le Dockerless pour vos projets Java ! - Ludovic Chombeau
 
-{{< img-resized src=ludo-jib.jpg >}}
+![](ludo-jib.jpg)
 
 Ludovic présente Jib, un plugin maven qui permet de builder des images OCI sans avoir besoin de Docker. Il nous explique comment est constituée une image OCI, et comment Jib construit ses images différemment de ce que fait Docker. Plusieurs démos expliquent aussi les étapes nécessaires à la configuration du plugin. Enfin, il présente aussi un REX de l'utilisation de cet outil chez Leroy Merlin.
 
@@ -165,7 +165,7 @@ Vendredi petite journée, je me suis couché assez tard, et je voulais rentrer s
 Je suis arrivé au Palais des congrés vers 8h30, et j'ai directement pris une place en salle Maillot pour l'overflow des keynotes.
 Nous avons aussi pris le temps avec mon pote Romain d'[enregistrer un rush de pas loin d'une heure](https://www.linkedin.com/posts/julien-wittouck_michelin-michelinit-devoxxfr-activity-7318937665716842497-B_Ry), en discutant de nos impressions respectives sur la conférence.
 
-{{< img-resized src=podcast.jpg >}}
+![](podcast.jpg)
 
 ### Keynote : Plongez dans l’Ère Quantique : décryptez et anticipez la révolution à venir - Fanny Bouton
 
