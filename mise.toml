@@ -26,9 +26,11 @@ run = "go run bluesky_stats.go"
 
 [tasks.build]
 description = "Build le site avec Hugo"
-run = '''
-hugo build $HUGO_OPTIONS
+run = "hugo build $HUGO_OPTIONS"
 
+[tasks.precompress]
+description = "Precompress static resources"
+run = '''
 COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|png|webp|pdf)$"
 find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd -15
 find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd --format=gzip -15
