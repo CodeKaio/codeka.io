@@ -1,6 +1,6 @@
 ---
-date: 2026-=02-06
-title: Optimiser un site Hugo sur Clever Cloud
+date: 2026-02-06
+title: Optimiser un site Hugo
 draft: true
 ---
 
