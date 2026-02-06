@@ -1,7 +1,0 @@
-{{ $original := .Page.Resources.GetMatch (.Get "src") }}
-{{ $image := $original }}
-{{ if gt $original.Width 820 }}
-  {{ $image = $original.Resize "820x webp" }}
-{{ end }}
-
-<img src="{{ $image.RelPermalink }}" width="{{ if gt $original.Width 820 }}820{{ else }}{{ $original.Width }}{{ end }}px">
