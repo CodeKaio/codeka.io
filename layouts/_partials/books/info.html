@@ -14,7 +14,7 @@
     
     {{ if .Params.featuredImage }}
     <a href="{{ .Permalink }}">
-        <img alt="Couverture du livre {{ .Title }}" style="max-height: 10rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
+        <img class="featuredImage" alt="Couverture du livre {{ .Title }}" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
     </a>
     {{end}}
 

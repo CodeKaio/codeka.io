@@ -17,7 +17,7 @@
     
     {{ if .Params.featuredImage }}
     <a href="{{ .Permalink }}">
-        <img style="max-height: 5rem;" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
+        <img class="featuredImage" src="{{ .RelPermalink }}/{{ .Params.featuredImage }}">
     </a>
     {{end}}
 
