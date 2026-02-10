@@ -6,7 +6,14 @@ file_server {
 }
 
 header {
-    Strict-Transport-Security: max-age=63072000
+	Strict-Transport-Security "max-age=63072000"
+	X-Content-Type-Options nosniff
+	Content-Security-Policy "
+	    script-src 'self' codeka.io plausible.io;
+	    frame-src 'self' plausible.io www.youtube-nocookie.com openfeedback.io;
+	    img-src 'self' img.shields.io;
+	    default-src 'self';
+	"
 }
 
 encode
