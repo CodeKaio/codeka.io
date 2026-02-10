@@ -9,10 +9,10 @@ featuredImage: cover.jpg
 description: Ce livre sur Terraform s’adresse aussi bien aux « Devs » qu’aux « Ops », débutants ou disposant déjà de notions de base, qui souhaitent maîtriser le développement d’une infrastructure sur le cloud. Le lecteur y trouvera des cas d’usage illustrés par des exemples de code variés lui permettant d’être à l’aise avec son langage, son utilisation et son écosystème.
 
 links:
-  eni: https://fliz.ly/W6Lbo_w
-  amazon: https://amzn.to/4dVZPil
-  fnac: https://fliz.ly/EPp5q_w
-  cultura: https://fliz.ly/6z4Bg_w
+  eni: https://www.editions-eni.fr/livre/l-infrastructure-as-code-avec-terraform-deployez-votre-infrastructure-sur-le-cloud-9782409046629
+  amazon: https://amzn.eu/d/05SpAUqe
+  fnac: https://www.fnac.com/a20731156/Julien-Wittouck-L-infrastructure-as-Code-avec-Terraform-Deployez-votre-infrastructure-sur-le-Cloud
+  cultura: https://www.cultura.com/p-l-infrastructure-as-code-avec-terraform-deployez-votre-infrastrucrure-sur-le-cloud-deployez-votre-infrastrucrure-sur-le-cloud-9782409046629.html
 ---
 
 <affilizz-rendering-component loading="lazy" publication-content-id="67b58a698d59475792a2263a"></affilizz-rendering-component>
