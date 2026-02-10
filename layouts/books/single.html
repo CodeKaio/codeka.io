@@ -1,24 +1,6 @@
 {{ define "main" -}}
-<div class="projects">
-  <div class="info">
-    <h2 class="post-title">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h1>
-    {{ if .Params.tags }}
-    <ul class="tags">
-        {{ range .Params.tags }}
-
-        {{ $tagPage := site.GetPage "tags" . }}
-
-        <li class="tag-{{ . }}">
-            <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{$tagPage.Params.emoji}} {{ . }}</a>
-        </li>
-        {{ end }}
-    </ul>
-    {{ end }}
-    
-  </div>
-  
+<div class="books">
+  {{ partial "books/info.html" . }}
 
   {{ .Content }}
 </div>
