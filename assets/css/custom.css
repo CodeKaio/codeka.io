@@ -123,6 +123,10 @@ ul.certifications {
     margin: 0;
 }
 
+/* styles for list pages */
+.entries h3 {
+    text-align: center;
+}
 
 /* links style for books list view in home page */
 .books .info {
