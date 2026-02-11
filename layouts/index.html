@@ -33,10 +33,15 @@
 
         {{ with .Resources }}
             {{ with .GetMatch "{cover.*}" }}
-                {{ $cover := .Fill "820x240 webp" }}
-                {{ with $cover }}
-                    <img loading="lazy" alt="Cover for the article" src="{{ .Permalink }}" width="820" height="240"/>
-                {{ end }}
+                {{ $cover820 := .Fill "820x240 webp lossless q100 lanczos" }}
+                {{ $cover480 := .Fill "480x240 webp lossless q100 lanczos" }}
+                <img loading="lazy"
+                     srcset="{{ $cover820.RelPermalink }} 820w,
+                             {{ $cover480.RelPermalink }} 480w"
+                     sizes="(max-width: 480px) 480px,
+                                 820px"
+                     src="{{ $cover820.RelPermalink }}"
+                     alt="Cover for the article"/>
             {{ end }}
         {{ end }}
 

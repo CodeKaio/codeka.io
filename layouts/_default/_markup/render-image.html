@@ -1,8 +1,19 @@
 {{- $image := .Page.Resources.GetMatch .Destination -}}
-{{- $width := math.Min 820 $image.Width -}}
-{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width) -}}
-{{- with $image.Resize $resizeOpts -}}
-<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
+
+{{- $width820 := math.Min 820 $image.Width -}}
+{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width820) -}}
+{{- $img820 := $image.Resize $resizeOpts -}}
+
+{{- $width480 := math.Min 480 $image.Width -}}
+{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width480) -}}
+{{- $img480 := $image.Resize $resizeOpts -}}
+
+<img srcset="
+    {{ $img820.RelPermalink }} 820w,
+    {{ $img480.RelPermalink }} 480w"
+     sizes="(max-width: 480px) 480px,
+      820px"
+     src="{{ $img820.RelPermalink }}"
  {{- with $.PlainText }} alt="{{ . }}"{{ end -}}
  {{ with $.Title }}title="{{ . }}"{{ end }}>
-{{- end -}}
+{{- /* chomp trailing newline */ -}}
