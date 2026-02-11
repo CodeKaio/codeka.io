@@ -32,8 +32,9 @@ depends_post = ["precompress"]
 [tasks.precompress]
 description = "Precompress static resources"
 run = '''
-COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|png|webp|pdf|woff2)$"
-find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd -15 -f
+COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf|woff2)$"
+find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd --keep --force -19
+find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs gzip --keep  --force --best
 '''
 
 [tasks.serve]
