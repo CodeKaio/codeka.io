@@ -30,6 +30,29 @@ Voici les scores de mon site à l'heure actuelle :
 
 > J'ai clairement une marge d'amélioration sur l'accessibilité et les performances.
 
+## Minification
+
+Une première étape consiste à minifier les ressources statiques, HTML, CSS et JS.
+
+Cette étape est très simple à mettre en place, car elle est déjà supportée par Hugo.
+Il suffit lors du build d'ajouter le flag `--minify` pour demander à Hugo de minifier toutes les ressources.
+
+Ma commande de build est la suivante dans mon `mise.toml` :
+
+```toml
+[tasks.build]
+description = "Build le site avec Hugo"
+run = "hugo --gc --minify --destination public"
+```
+
+Ce qui produit des fichiers HTML minifiés de ce type :
+
+```html
+<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=fr-FR lang=fr-FR><head><script defer language=javascript type=text/javascript src=/js/bundle.min.39a1898ad60dcb3b845d8dc359b7c996c10aa0da902f0d461da32348b1bc5f02.js></script><script defer data-domain=codeka.io src=https://plausible.io/js/script.js></script><script type=text/javascript src=https://app.affilizz.com/affilizz.js async></script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.png><meta property="og:image" content="/pp_ekite_itvw.png"><meta name=twitter:image content="/pp_ekite_itvw.png"><meta name=twitter:card content="summary_large_image"><meta property="og:image:width" content="639"><meta property="og:image:height" content="708"><meta property="og:image:type" content="image/png"><title itemprop=name>Julien Wittouck</title><meta property="og:title" content="Julien Wittouck"><meta name=twitter:title content="Julien Wittouck"><meta itemprop=name content="Julien Wittouck"><meta name=application-name content="Julien Wittouck"><meta property="og:site_name" content="Julien Wittouck">
+```
+
+Hop, on peut passer rapidement à autre chose 🚶
+
 ## Conversion des images en webp et redimensionnement
 
 Une des actions que j'ai mis en place il y a un moment, est l'utilisation du format _webp_ pour compresser les illustrations que j'utilise dans mes articles.
@@ -38,7 +61,7 @@ J'utilise souvent des photos que j'ai capturées avec mon smartphone (pour les a
 
 Ces photos sont souvent lourdes (plusieurs mégaoctets) et en haute résolution, et la première action simple consiste à redimensionner ces photo et les recompresser au format _webp_.
 
-Hugo supporte la recompression des images dans différents formats à la volée, mais pas leur redimensionnement automatique.
+Hugo supporte la recompression des images dans différents formats à la volée, mais pas leur redimensionnement automatique, il faut implémenter soi-même la mécanique.
 Pour pouvoir redimensionner les images à la volée, la meilleure solution semble d'utiliser un hook "img" Hugo, qui permet de surcharger la traduction du markdown et d'y mettre le code qu'on souhaite.
 
 Le hook utilisé par défaut est le suivant :
@@ -65,7 +88,13 @@ Pour redimensionner les images à une taille maximale de 820px (la taille utilis
 {{- /* chomp trailing newline */ -}}
 ```
 
+Je force l'utilisation de `lossless` avec la qualité maximale `q100` pour éviter une perte de données qui rendrait les illustations peu lisible, ce qui serait surtout problématique pour les schémas.
+
 ## Pré-compression des ressources statiques
+
+Les images étant maintenant compressées au build par Hugo, je peux m'atteler à la compression des ressources déjà minifiées (HTML, CSS et JS donc).
+
+Avant de passer à la pré-compression en elle-même, il faut regarder comment les ressources seront servies.
 
 Mon site est hébergé chez Clever Cloud, dans une instance de type _static_.
 J'avais écrit un article à ce sujet l'année dernière : [Déployer des applications statiques sur Clever Cloud](/2025/06//2025-06-05-static-apps-clever).
@@ -87,20 +116,20 @@ file_server {
 encode
 ```
 
-Lors de l'exécution d'une requête, Caddy va servir les fichiers statiques, et potentiellement compresser les réponses HTTP en alimentant le headers `Content-Encoding`.
+Lors de l'exécution d'une requête, Caddy va servir les fichiers statiques, et potentiellement compresser les réponses HTTP en alimentant le headers `Content-Encoding`. Les formats utilisés par défaut par Caddy sont `zstd` et `gzip`, et seules les ressources pertinentes sont compressées (les formats déjà compressés comme `jpg` ne sont pas re-compressés).
 
 Cette compression permet d'économiser de la bande passante et accélère le temps de chargement des pages.
 
 Cependant, la compression se fait en utilisant un peu de CPU à la volée.
 Il est alors intéressant de pré-compresser les ressources statiques à la phase de build pour économiser un peu de CPU.
 
-Un directive Caddy permet de servir des fichiers statiques pré-compressés : `precompressed`.
+Une directive Caddy permet de servir des fichiers statiques pré-compressés : `precompressed`.
 Caddy va alors rechercher des variantes compressées des fichiers, sous la forme de fichiers sidecar.
-À côté de chaque fichier statique, il faut donc générer les variantes compressées et les nommer en utilisant les extensions `.br` et `.gz` par exemple.
+À côté de chaque fichier statique, il faut donc générer les variantes compressées et les nommer en utilisant les extensions `.gz`, `.br` et `.zst` par exemple.
 
-Hugo ne permet pas de générer ces variantes compressées, donc je dois utiliser un petit script qui s'exécutera en fin de la phase de build.
+Hugo ne permet pas de générer ces variantes compressées de lui-même, donc je dois utiliser un petit script qui s'exécutera en fin de la phase de build.
 
-J'ai donc créé ce script dans mon fichier `mise.toml`:
+J'ai donc créé ce script dans mon fichier `mise.toml` :
 
 ```toml
 [tasks.build]
@@ -114,11 +143,14 @@ depends_post = ["precompress"]
 [tasks.precompress]
 description = "Precompress static resources"
 run = '''
-COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|png|webp|pdf)$"
-find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd -15 -f
-find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd --format=gzip -15 -f
+COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf|woff2)$"
+find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd --keep --force -19
+find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs gzip --keep  --force --best
 '''
 ```
+
+J'ai implémenté la compression avec `gzip` en utilisant le plus haut niveau de compression possible (`--best`), et avec `zstd` avec la plus forte compression également (`-19`). Le niveau de compression a surtout un impact à la compression, mais peu à la décompression, donc autant maximiser les différents niveaux.
+J'ai fait l'impasse sur le format `br` parce qu'il nécessite d'installer un binaire supplémentaire sur mes instances Clever Cloud, et que `gz` et `zst` sont déjà bien suffisants : `zst` sera supporté par les navigateurs modernes dans les versions les plus récentes, `gzip` fera office de format par défaut raisonnable.
 
 Par défaut, Clever Cloud exécute une tâche `mise run build` si elle existe, donc l'ajouter dans mon fichier permet de pouvoir préciser mes options de build.
 
@@ -145,9 +177,8 @@ hugo v0.155.2-d8c0dfccf72ab43db2b2bca1483a61c8660021d9+extended linux/amd64 Buil
  Cleaned          │  0 │   0
 
 Total in 272 ms
-[precompress] $ COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|png|webp|pdf)$"
-593 files compressed : 90.10% (   165 MiB =>    149 MiB)                       B ==> 98%%
-593 files compressed : 93.31% (   165 MiB =>    154 MiB)
+[precompress] $ COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf|woff2)$"
+245 files compressed : 80.99% (  83.3 MiB =>   67.4 MiB)                       B ==> 98%^T
 Finished in 7.77s
 ```
 
@@ -155,20 +186,30 @@ On peut valider que les fichiers buildés sont précompressés comme souhaité, 
 
 ```bash
 $ ls public/
-2020          ai-manifesto     icons             logo_blue.png.zst                       pp_ekite_itvw_hu_41404e93ad715bdf.webp.gz
-2021          books            images            logo_transparent_background.png         pp_ekite_itvw_hu_41404e93ad715bdf.webp.zst
-2022          credentials      index.html        logo_transparent_background.png.gz      projects
-2023          css              index.html.gz     logo_transparent_background.png.zst     robots.txt
-2024          ekite            index.html.zst    now                                     series
-2025          en               index.xml         page                                    sitemap.xml
-2026          favicon.png      index.xml.gz      posts                                   sitemap.xml.gz
-404.html      favicon.png.gz   index.xml.zst     pp_ekite_itvw.png                       sitemap.xml.zst
-404.html.gz   favicon.png.zst  js                pp_ekite_itvw.png.gz                    stats
-404.html.zst  fonts            logo_blue.png     pp_ekite_itvw.png.zst                   tags
-ai            fr               logo_blue.png.gz  pp_ekite_itvw_hu_41404e93ad715bdf.webp  talks
+2020         404.html.zst  fonts           index.xml.zst                           projects
+2021         ai            fr              js                                      robots.txt
+2022         ai-manifesto  icons           logo_blue.png                           series
+2023         books         images          logo_transparent_background.png         sitemap.xml
+2024         credentials   index.html      now                                     sitemap.xml.gz
+2025         css           index.html.gz   page                                    sitemap.xml.zst
+2026         ekite         index.html.zst  posts                                   stats
+404.html     en            index.xml       pp_ekite_itvw.png                       tags
+404.html.gz  favicon.png   index.xml.gz    pp_ekite_itvw_hu_41404e93ad715bdf.webp  talks
 ```
 
-Pour ensuite servir les fichiers précompressés, il faut ajouter la directive `precompressed` dans le `Caddyfile` :
+et vérifier la taille des fichiers compressés :
+
+```bash
+$ ls -al public/index.*
+.rw-rw-r-- jwittouck jwittouck  33 KB Wed Feb 11 12:15:21 2026 index.html
+.rw-rw-r-- jwittouck jwittouck 9.4 KB Wed Feb 11 12:15:21 2026 index.html.gz
+.rw-rw-r-- jwittouck jwittouck 9.0 KB Wed Feb 11 12:15:21 2026 index.html.zst
+.rw-rw-r-- jwittouck jwittouck  67 KB Wed Feb 11 12:15:22 2026 index.xml
+.rw-rw-r-- jwittouck jwittouck  18 KB Wed Feb 11 12:15:22 2026 index.xml.gz
+.rw-rw-r-- jwittouck jwittouck  17 KB Wed Feb 11 12:15:22 2026 index.xml.zst
+```
+
+Pour ensuite servir les fichiers précompressés, il faut ajouter la [directive `precompressed`](https://caddyserver.com/docs/caddyfile/directives/file_server#precompressed) dans le `Caddyfile` :
 
 ```Caddyfile
 # Clever Cloud needs us to listen on port 8080
@@ -177,6 +218,7 @@ Pour ensuite servir les fichiers précompressés, il faut ajouter la directive `
 file_server {
 	# Clever Cloud serves the public directory
     root public
+    # serve precompressed files
     precompressed
 }
 
@@ -184,22 +226,18 @@ file_server {
 encode
 ```
 
-On peut ensuite simplement vérifier que les fichiers compressés sont servis avec une commande `curl`.
+La directive `precompressed` recherchera dans l'ordre les fichiers `.zst` et `.gz` pour les servir en priorité, et utilisera comme _fallback_ une compression à la volée.
+
+On peut ensuite simplement vérifier que les fichiers compressés sont bien servis compressés avec une commande `curl`.
 
 Voici ce qui était renvoyé _avant_ la compression :
 
 ```bash
-$ curl --compressed --head https://codeka.io
+$ curl --head https://codeka.io
 
-HTTP/1.1 200 OK
-content-length: 81156
-content-type: text/html
-accept-ranges: bytes
-last-modified: Tue, 03 Feb 2026 12:10:53 GMT
-vary: accept-encoding
-cache-control: max-age=86400
-date: Fri, 06 Feb 2026 16:42:58 GMT
-Sozu-Id: 01KGSXBPJWK3D8CZEF8FSPD1Y5
+Content-Length: 81157
+Content-Type: text/html; charset=utf-8
+Server: Caddy
 ```
 
 et la même commande après la compression :
@@ -207,19 +245,14 @@ et la même commande après la compression :
 ```bash
 $ curl --compressed --head https://codeka.io
 
-HTTP/1.1 206 Partial Content
-Accept-Ranges: bytes
+HTTP/1.1 200 OK
 Content-Encoding: zstd
-Content-Length: 9487
-Content-Range: bytes 0-9486/9487
 Content-Type: text/html; charset=utf-8
-Etag: "dg80yb3ycgay7bj"
-Last-Modified: Fri, 06 Feb 2026 16:37:33 GMT
 Server: Caddy
-Vary: Accept-Encoding
-Date: Fri, 06 Feb 2026 16:43:06 GMT
-Sozu-Id: 01KGSXBY5TS81HK0BCRSYZSM4S
+Content-Length: 9
 ```
+
+[//]: # (TODO) revérifier après le déploiement
 
 On passe d'une page HTML de 81ko à une donnée compressée de 13ko, sans impacter le CPU du serveur puisque la compression se fait au build !
 
@@ -308,7 +341,15 @@ encode
 
 J'utilise plausible.io pour suivre les visites de mes articles, donc son script doit pouvoir être chargé. De la même manière, j'ai des iframes (bouh) sur les pages de mes talks qui référencent les videos Youtube ainsi que les feedbacks OpenFeedback.io. Je dois donc aussi autoriser ces ressources.
 
-La directive `default-src` sert de fallback pour toutes les directives possible, et indique que seul mon site est autorisé.
+La directive `default-src` sert de fallback pour toutes les directives possibles, et indique que seul mon site est autorisé. 
+
+## Conclusion
+
+Ça m'a pris une bonne demi-journée pour mettre en place tous ces mécanismes, mais j'en ressort avec une meilleure compréhension de la sécurité et de la compression en HTTP.
+J'ai aussi découvert Caddy, et amélioré mon fichier `mise.toml`.
+
+Pour la plupart de mes lecteurs, l'impact de la compression sera probablement minime, car sur des réseaux performants, la différence de temps de chargement ne se ressentira peut-être pas beaucoup.
+Mais avec une compression effectuée uniquement au build, c'est aussi une du CPU de moins de consommé, ce qui devrait pouvoir m'assurer de rester sur des instances les plus petites pour mon site le plus longtemps possible.
 
 ## Liens et références
 
@@ -316,7 +357,13 @@ La directive `default-src` sert de fallback pour toutes les directives possible,
 * La méthode [Resize de Hugo](https://gohugo.io/methods/resource/resize/)
 * [Le hookimage de Hugo](https://gohugo.io/render-hooks/images/#article)
 
+* Documentation de Caddy :
+  * [La directive `encode`](https://caddyserver.com/docs/caddyfile/directives/encode#syntax)
+  * [La directive `precompressed`](https://caddyserver.com/docs/caddyfile/directives/file_server#precompressed)
+
 * Documentation MDN :
   * [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy)
 
 * [Precompressing Content With Hugo and Caddy](https://scottstuff.net/posts/2025/03/09/precompressing-content-with-hugo-and-caddy/)
+
+* L'excellent talk de Antoine Caron et Hubert Sablonière : [La compression Web : comment (re)prendre le contrôle ?](https://www.youtube.com/watch?v=LWd0hr6ljZk)
