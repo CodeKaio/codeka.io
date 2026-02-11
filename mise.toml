@@ -22,7 +22,7 @@ run = "go run bluesky_stats.go"
 
 [tasks.build]
 description = "Build le site avec Hugo"
-run = "hugo build hugo --gc --minify --destination public"
+run = "hugo build hugo --gc --minify --cleanDestinationDir --destination public"
 depends_post = ["post-build"]
 
 [tasks.post-build]
