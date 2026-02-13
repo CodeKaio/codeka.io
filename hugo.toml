@@ -5,6 +5,8 @@ defaultContentLanguage = 'fr'
 
 baseUrl = 'https://codeka.io'
 
+timeout = '120s'
+
 [languages]
   [languages.fr]
     languageCode = 'fr-FR'
