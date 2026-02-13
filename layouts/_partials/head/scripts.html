@@ -21,9 +21,3 @@
 {{ if .Site.Params.plausible }}
 <script defer data-domain="{{ .Site.Params.plausible_domain }}" src="{{ .Site.Params.plausible_script }}"></script>
 {{ end }}
-
-<script type="text/javascript" src="https://app.affilizz.com/affilizz.js" async></script>
-
-{{ if hugo.IsProduction -}}
-  {{ template "_internal/google_analytics.html" . -}}
-{{ end -}}
