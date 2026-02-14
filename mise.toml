@@ -8,6 +8,10 @@ HUGO_OPTIONS = "--printI18nWarnings --printPathWarnings --cleanDestinationDir --
 
 [tasks]
 
+[tasks.clean]
+description = "Clean up Hugo build directories"
+run = "rm -rf public/ resources/"
+
 [tasks.fetch-views-data]
 description = 'Fetch data from plausible'
 dir = "scripts"
