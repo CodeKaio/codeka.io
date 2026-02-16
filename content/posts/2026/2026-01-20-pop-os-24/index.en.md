@@ -41,7 +41,7 @@ The text editor also allows opening files in several tabs, offers basic syntax h
 The configuration manager allows you to configure everything you can imagine (in the style of GNOME Settings).
 The application store allows you to quickly search for software and install it in three clicks.
 
-![COSMIC Text Editor on the left, with some open tabs, COSMIC Store on the top right and COSMIC Terminal at the bottom right](apps.png "COSMIC Text Editor on the left, with some open tabs, COSMIC Store on the top right and COSMIC Terminal at the bottom right")
+![COSMIC Text Editor on the left, with some open tabs, COSMIC Store on the top right and COSMIC Terminal at the bottom right](apps.webp "COSMIC Text Editor on the left, with some open tabs, COSMIC Store on the top right and COSMIC Terminal at the bottom right")
 
 ## The distribution
 
@@ -69,13 +69,13 @@ I often opt for the `flatpak` versions because they are more recent than those a
 
 COSMIC is pleasant to use. It's far from a revolution, but it's quite fresh. GNOME users won't be lost, as COSMIC looks a lot like it. The nuance being that no additional plugin is needed to have a complete and customizable desktop environment.
 
-![The default COSMIC desktop](cover.png "The default COSMIC desktop")
+![The default COSMIC desktop](cover.webp "The default COSMIC desktop")
 
 The desktop is set to floating windows by default, auto-tiling is activated with one click in the taskbar widget. You can also change the audio source/output, or manipulate Bluetooth and Network connections in the taskbar. It's practical and avoids having to open an extra tool or window to change an audio output.
 
-![Tiling configuration](widget-tiling.png "Tiling configuration")
-![Audio configuration](widget-audio.png "Audio configuration")
-![Accessibility shortcuts](widget-a11y.png "Accessibility shortcuts")
+![Tiling configuration](widget-tiling.webp "Tiling configuration")
+![Audio configuration](widget-audio.webp "Audio configuration")
+![Accessibility shortcuts](widget-a11y.webp "Accessibility shortcuts")
 {class=images-grid-3}
 
 Workspaces are practical to manipulate, it is possible to have workspaces in horizontal or vertical mode, and in the case of a multiscreen setup to be able to share them by screen or separate them.
@@ -84,7 +84,7 @@ Basic accessibility options are also available, the zoom works well and correctl
 Auto-tiling is pleasant to use, even with a multiscreen setup. I'm still going to have to remap the keys intended for moving windows for my split keyboard (the shortcuts are designed to use the keyboard arrows).
 Dragging a window with the mouse is also straightforward, and you quickly manage to arrange the windows as you wish.
 
-![Auto-tiling in action](auto-tiling.png "Auto-tiling in action")
+![Auto-tiling in action](auto-tiling.webp "Auto-tiling in action")
 
 Screen management is inspired by that of GNOME. Note that the settings are rather fine, you can set different scaling and refresh rates for each screen (especially practical if your screens are not identical), and it works well.
 
@@ -103,7 +103,7 @@ On day 1, without any trouble or specific tuning, I was able to:
 * take screenshots;
 * capture some video with OBS Studio connected to my PS5!
 
-![OBS in action](obs.png "OBS in action")
+![OBS in action](obs.webp "OBS in action")
 
 And just as important if you know me:
 
@@ -116,7 +116,7 @@ It's expected for any modern Linux distribution, but I expected some more signif
 It is possible to customize the theme, with a Dark or Light mode, and you can change the global colors of the interface, as well as the rounded corners and other small options, which is nice.
 The fonts offered by default are `Open Sans` and `Noto Sans Mono`, the rendering is clean and sharp.
 
-![Theme customization window](appearance.png)
+![Theme customization window](appearance.webp)
 
 ## Apps, applets, and themes
 
