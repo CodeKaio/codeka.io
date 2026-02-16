@@ -1,11 +1,11 @@
 {{- $image := .Page.Resources.GetMatch .Destination -}}
 
 {{- $width820 := math.Min 820 $image.Width -}}
-{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width820) -}}
+{{- $resizeOpts := printf "%dx webp q75 lanczos" (int $width820) -}}
 {{- $img820 := $image.Resize $resizeOpts -}}
 
 {{- $width480 := math.Min 480 $image.Width -}}
-{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width480) -}}
+{{- $resizeOpts := printf "%dx webp q75 lanczos" (int $width480) -}}
 {{- $img480 := $image.Resize $resizeOpts -}}
 
 <img srcset="

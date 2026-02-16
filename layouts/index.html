@@ -33,8 +33,8 @@
 
         {{ with .Resources }}
             {{ with .GetMatch "{cover.*}" }}
-                {{ $cover820 := .Fill "820x240 webp lossless q100 lanczos" }}
-                {{ $cover480 := .Fill "480x240 webp lossless q100 lanczos" }}
+                {{ $cover820 := .Fill "820x240 webp q75 lanczos" }}
+                {{ $cover480 := .Fill "480x240 webp q75 lanczos" }}
                 <img loading="lazy"
                      srcset="{{ $cover820.RelPermalink }} 820w,
                              {{ $cover480.RelPermalink }} 480w"
