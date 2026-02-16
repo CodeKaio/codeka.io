@@ -18,9 +18,9 @@ On approche aussi de la fin du semestre universitaire à l'Université de Lille,
 
 J'enchaîne les confs avec mon talk "[Let's play Factorio]({{<relref "talks/talk-lets-play-factorio">}})", les salles sont pleines à chaque fois, et les feedbacks sont oufs.
 
-![](factorio-montpelier.png)
-![](factorio-nantes.jpg)
-![](factorio-lyon.jpg)
+![](factorio-montpelier.webp)
+![](factorio-nantes.webp)
+![](factorio-lyon.webp)
 {class=images-grid-3}
 
 À venir et confirmées : Snowcamp 2026, Touraine Tech 2026, et Epitech Summit.
@@ -36,8 +36,8 @@ Je boucle toujours sur certains artistes :
 
 J'ai aussi acheté les vinyles de la BO de Death Stranding 1, celui du 2 ne devrait pas tarder à arriver dans ma boite aux lettres.
 
-![](spotify-wrapped-1.png)
-![](spotify-wrapped-2.png)
+![](spotify-wrapped-1.webp)
+![](spotify-wrapped-2.webp)
 {class=images-grid-2}
 
 ## Lecture
@@ -74,7 +74,7 @@ En cours :
 * Final Fantasy XVI 🎯🏆
 * Blood Bowl 3 🎯🏆
 
-![](ps-gt7.jpg)
-![](ps-pws2.jpg)
-![](ps-bb3.jpg)
+![](ps-gt7.webp)
+![](ps-pws2.webp)
+![](ps-bb3.webp)
 {class=images-grid-3}
