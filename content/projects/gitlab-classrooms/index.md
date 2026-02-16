@@ -4,7 +4,7 @@ tags:
 - DevOps
 - GitLab
 title: GitLab Classrooms
-featuredImage: logo-with-text.png
+featuredImage: logo-with-text.webp
 description: '**GitLab Classroom** is a modest clone of [Github Classroom](https://classroom.github.com/), aimed at GitLab.'
 links:
   github:

@@ -4,7 +4,7 @@ tags:
 - DevOps
 - Terraform
 title: Gaia
-featuredImage: gaia_logo_with_title.png
+featuredImage: gaia_logo_with_title.webp
 description: 'Gaia is a Terraform UI for your Terraform modules, and self-service infrastructure.'
 
 links:
@@ -31,15 +31,15 @@ Go to [docs.gaia-app.io](https://docs.gaia-app.io) for the full documentation.
 
 The module edition view allows you to edit module details, such as variables and their validation.
 
-![module edition view](screenshot-gaia-module.png)
+![module edition view](screenshot-gaia-module.webp)
 
 The stack view helps you to input your variable values, and shows job results and latest output values.
 
-![stack edition view](screenshot-gaia-stack.png)
+![stack edition view](screenshot-gaia-stack.webp)
 
 The job view shows you the Terraform workflow, and the logs of the `plan` and `apply` logs
 
-![job view](screenshot-gaia-job.png)
+![job view](screenshot-gaia-job.webp)
 
 ## Requirements
 
