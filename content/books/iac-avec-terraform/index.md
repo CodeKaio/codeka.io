@@ -5,7 +5,7 @@ tags:
 - DevOps
 title: L'Infrastructure as Code avec Terraform
 fullTitle: Déployez votre infrastructure sur le Cloud
-featuredImage: cover.jpg
+featuredImage: cover.webp
 description: Ce livre sur Terraform s’adresse aussi bien aux « Devs » qu’aux « Ops », débutants ou disposant déjà de notions de base, qui souhaitent maîtriser le développement d’une infrastructure sur le cloud. Le lecteur y trouvera des cas d’usage illustrés par des exemples de code variés lui permettant d’être à l’aise avec son langage, son utilisation et son écosystème.
 
 links:
