@@ -7,7 +7,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 [I'm an inline-style link](https://www.google.com)
 
-![cover.jpg](cover.jpg){ width=50% }
+![cover.webp](cover.webp){ width=50% }
 
 # Lists
 

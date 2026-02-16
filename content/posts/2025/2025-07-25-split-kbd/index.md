@@ -20,7 +20,7 @@ J'ai choisi l'écran pour la partie gauche, pour afficher les infos du clavier (
 
 Le kit est arrivé bien emballé.
 
-![](20250710_131320.jpg)
+![](20250710_131320.webp)
 
 Les instructions de montage sont sur une doc en ligne et ont l'air plutôt claires.
 
@@ -32,30 +32,30 @@ C'est parti !
 
 Une fois le carton déballé, on se rend compte de l'ensemble des pièces qui composent le kit.
 
-![](20250711_085344.jpg)
+![](20250711_085344.webp)
 
 Le kit contient donc les deux cartes du clavier, les switches (compatibles MX), un kit de touches, les plaques de protection du clavier avec pour chaque côté une mousse, une plaque décorative en aluminium et une base en plexi. On a aussi les câbles USB-C, les deux modules, et un peu de visserie.
 
 La carte de chaque partie du clavier contient le contrôleur déjà soudé, avec une puce RP2040 et deux ports USB-C.
 Ici la partie gauche du clavier :
 
-![](20250711_090103.jpg)
+![](20250711_090103.webp)
 
 On distingue bien les encoches dans lesquelles viendront se plugger les switches, ainsi que les LED pour chacune des touches.
 
-![](20250711_090114.jpg)
+![](20250711_090114.webp)
 
 Chaque partie du clavier est associée à une plaque métallique (en aluminium propre) et à une petite plaque de mousse.
 C'est dans ces plaques que viendront se loger les touches du clavier.
 
-![](20250711_091051.jpg)
+![](20250711_091051.webp)
 
 ## Monter les plaques
 
 La première étape consiste à visser la plaque en alu ainsi que la mousse sur la carte du clavier.
 C'est plutôt facile, ça se fait avec un petit tournevis plat, tout s'emboite facilement.
 
-![](20250711_091424.jpg)
+![](20250711_091424.webp)
 
 Cette première étape était plutôt facile, ça commence à prendre forme !
 
@@ -64,14 +64,14 @@ Cette première étape était plutôt facile, ça commence à prendre forme !
 J'ai choisi les switches proposés par le site web, à savoir des _Kailh Pro Purple_.
 Ils ont un toucher "tactile", et devraient être plus silencieux que mon clavier actuel (qui est en _Cherry MX Brown_).
 
-![](20250711_091846.jpg)
+![](20250711_091846.webp)
 
 Ces switches sont aussi compatibles avec les touches "MX", ce qui me permettra de réutiliser des touches de mon clavier actuel, et de pouvoir acheter quelques touches customisées si le cœur m'en dit.
 
 Les switches viennent se clipser dans la plaque en alu, et sont ensuite être insérés dans la carte en poussant légèrement.
 C'est assez simple à faire.
 
-![](20250711_092639.jpg)
+![](20250711_092639.webp)
 
 Au montage, je me rends compte que changer les switches risque d'être un peu compliqué. J'ai pris une pince pour ça, mais c'est une opération assez délicate, car la plaque métallique accroche fortement.
 
@@ -79,7 +79,7 @@ Bien que le kit soit vendu comme étant _hot swap_ pour les switches, car ils ne
 
 Poser les switches prend quelques minutes, une fois l'opération finie, ça prend une forme plutôt sympa, on devine bien le futur clavier.
 
-![](20250711_093125.jpg)
+![](20250711_093125.webp)
 
 L'étape suivante, c'est le petit module avec l'écran !
 
@@ -90,15 +90,15 @@ C'est un peu plus technique ici.
 
 Un tout petit écran !
 
-![](20250711_093432.jpg)
-![](20250711_093441.jpg)
+![](20250711_093432.webp)
+![](20250711_093441.webp)
 {class=images-grid-2}
 
 L'installation d'un module est un peu plus technique, il faut réussir à glisser la première nappe dans le connecteur, puis visser le module, et connecter l'autre côté.
 C'est plus fin, mais ce n'est pas non plus très compliqué.
 
-![](20250711_094328.jpg)
-![](20250711_094335.jpg)
+![](20250711_094328.webp)
+![](20250711_094335.webp)
 {class=images-grid-2}
 
 Il faudra ensuite flasher tout ça, quand le montage sera fini.
@@ -107,7 +107,7 @@ Pour protéger l'écran, j'ai aussi pris une petite _cover_, qui s'installe en t
 Le kit contient des covers pour les deux côtés du clavier, ainsi que pour tous les types de boutons.
 Avec la cover, mon petit écran est entièrement couvert, et protégé raisonnable des rayures (et des éclaboussures de café ahaha)/
 
-![](20250711_095218.jpg)
+![](20250711_095218.webp)
 
 ## La plaque de socle
 
@@ -116,21 +116,21 @@ Je les ai choisies en plexiglass transparent, pour pouvoir admirer la carte, il 
 
 Elle se visse sur la carte, et on ajoute ensuite les petits "bumps" plastiques qui vont venir dans chaque coin.
 
-![](20250711_100023.jpg)
+![](20250711_100023.webp)
 
 ## Les touches
 
 Une fois tout ça monté, on peut installer les touches du clavier.
 J'ai installé les touches suivant le pattern azerty classique pour l'instant, je les changerai probablement plus tard.
 
-![](20250711_100644.jpg)
+![](20250711_100644.webp)
 
 ## La deuxième moitié du clavier
 
 La deuxième partie du clavier s'assemble exactement comme la première, j'ai été plus efficace sur cette deuxième moitié.
 Sur cette partie droite, j'ai posé le bouton rotatif, il se pose de la même manière que l'écran.
 
-![](20250711_111608.jpg)
+![](20250711_111608.webp)
 
 Je trouve que le rendu est plutôt sympa et propre.
 
@@ -138,7 +138,7 @@ Je trouve que le rendu est plutôt sympa et propre.
 
 Maintenant que tout est monté, il faut flasher chaque moitié du clavier.
 
-![](20250711_112134.jpg)
+![](20250711_112134.webp)
 
 Pour ce faire, il suffit de brancher le clavier sur un port usb 
 Le firmware est un simple fichier à déposer sur le device USB qui apparait alors.
@@ -148,7 +148,7 @@ Les firmwares sont dispos sur le site du fabricant, et sont directement paramét
 
 Une fois l'opération faite, le clavier s'illumine, et est prêt â être utilisé.
 
-![](20250711_112832.jpg)
+![](20250711_112832.webp)
 
 ## Configurer le mapping
 
@@ -157,7 +157,7 @@ L'outil est disponible sous une forme binaire, ou peut aussi fonctionner sous Ch
 
 Il est plutôt pratique d'utilisation. Il suffit de sélectionner la touche à configurer et d'y associer le caractère souhaité. La touche est alors immédiatement paramétrée.
 
-![](vial-rocks.png)
+![](vial-rocks.webp)
 
 On reste contraint par les différents mappings supportés et implémentés dans les OS.
 

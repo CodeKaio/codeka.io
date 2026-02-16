@@ -342,7 +342,7 @@ I hadn't paid attention to this change in the migration guides, so I might have 
 
 Once these last adjustments were made, the tests pass correctly 🎉:
 
-![Screenshot of my unit tests passing!](tests.png)
+![Screenshot of my unit tests passing!](tests.webp)
 
 ## Conclusion
 

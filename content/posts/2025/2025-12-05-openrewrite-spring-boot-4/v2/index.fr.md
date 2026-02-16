@@ -342,7 +342,7 @@ Je n'avais pas fait attention à cette modification dans les guides de migration
 
 Une fois ces derniers ajustements faits, les tests passent correctement 🎉 :
 
-![Screenshot de mes tests unitaires qui passent !](tests.png)
+![Screenshot de mes tests unitaires qui passent !](tests.webp)
 
 ## Conclusion
 

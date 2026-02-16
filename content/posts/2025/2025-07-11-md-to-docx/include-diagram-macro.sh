@@ -13,7 +13,7 @@ while IFS= read -r line; do
       drawio -x -f png --width 1024 -t "$filename" >/dev/null 2>&1
       exported_file=$(basename "$filename" .drawio)
       # Output the file content wrapped in code blocks
-      echo "![]($exported_file.png)"
+      echo "![]($exported_file.webp)"
     fi
   else
     # Output the line as is

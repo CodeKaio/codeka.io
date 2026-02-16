@@ -23,7 +23,7 @@ Alors on lit la veille de Wittouck !
 * [DevOxx France 2025](https://www.youtube.com/playlist?list=PLTbQvx84FrATiYy0se8yoHJHicXtmDbB-) sur Youtube
 
 > La playlist de Devoxx France 2025 se remplit avec des vidéos masquées, donc la publication devrait bientôt être faite 🤞
-> ![](devoxx-playlist.png)
+> ![](devoxx-playlist.webp)
 
 * [Professeur Fabrizio Bucella](https://www.youtube.com/@FabrizioBucella/shorts) sur Youtube.
 

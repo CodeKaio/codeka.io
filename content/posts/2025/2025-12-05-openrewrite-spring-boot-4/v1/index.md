@@ -352,7 +352,7 @@ Certains de mes tests utilisaient flyway (en particulier pour valider que Hibern
 
 Une fois ces derniers ajustements faits, les tests passent correctement 🎉 :
 
-![Screenshot de mes tests unitaires qui passent !](tests.png)
+![Screenshot de mes tests unitaires qui passent !](tests.webp)
 
 ## Conclusion
 

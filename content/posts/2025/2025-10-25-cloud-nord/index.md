@@ -185,9 +185,9 @@ Sachant que nous avions un quickie réservé à Flora (issue du tremplin), et un
 
 16 sur 117. Autant dire que la sélection est difficile.
 
-![répartition des formats du cfp](cfp-formats.png)
+![répartition des formats du cfp](cfp-formats.webp)
 
-![répartition des catégories du cfp](cfp-categories.png)
+![répartition des catégories du cfp](cfp-categories.webp)
 
 Au niveau des formats, pas de surprise, la répartition est bien celle attendue. Sur les catégories par contre, les catégories Data et IA, et Découverte ont reçu le plus de propositions.
 J'en ai déjà parlé, mais à Cloud Nord, même si nous avons laissé une large place à l'IA cette année, ce n'est pas le coeur de notre ligne éditoriale. Donc si on exclut les 2 talks découverte que nous avons sélectionné, autant dire que vous avez toutes vos chances avec un talk sur les containers.
@@ -211,7 +211,7 @@ Les slides sont disponibles ici : [Ouverture de journée Cloud Nord 2025.pdf](ou
 
 Prendre la parole de bon matin devant ce public, c'était clairement mon kiff de la journée.
 
-![cover.png](cover.png)
+![cover.webp](cover.webp)
 
 En l'absence de captation professionnelle, et comme j'ai un peu de matos pour mon setup de télétravail (comprendre une webcam et un micro qui ne sont pas ceux de mon ordinateur portable), je me suis proposé d'improviser la captation d'une des salles. Maxime suivi avec son matos perso.
 
@@ -220,7 +220,7 @@ Le but étant de minimiser le temps de montage à la fin, et de faire le maximum
 
 J'ai également acheté (sur le compte de ma société) une carte acquisition vidéo, des câbles HDMI et USB-C longs (10m), donc 250€ de matos environ.
 
-![matos-capta.jpg](matos-capta.jpg)
+![matos-capta.webp](matos-capta.webp)
 
 > Promis, si l'année prochaine je refais la captation moi-même, je nettoie mon clavier et je fais un peu de _cable-management_. Mais je garde la machine avec la tête de mort 💀
 
@@ -256,7 +256,7 @@ J'ai passé environ une quinzaine d'heures (sur 2 jours) pour tout faire. Je vou
 
 Les vidéos sont disponibles sur Youtube : https://www.youtube.com/playlist?list=PLVQhat0Bx0WB-fhbbQ0bQkhfTLAZIU2IU
 
-![Screenshot de la playlist youtube de Cloud Nord 2025](playlist-youtube.png)
+![Screenshot de la playlist youtube de Cloud Nord 2025](playlist-youtube.webp)
 
 Je pense que pour une captation faite à l'arrache par des amateurs, le résultat est quand même pas si mal.
 On fera probablement mieux l'année prochaine, mais c'est mieux que rien pour cette édition "lite".

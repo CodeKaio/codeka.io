@@ -20,7 +20,7 @@ Cette édition spéciale de ["La veille de Wittouck"]({{< relref "/series/la-vei
 
 ## Une ambiance unique
 
-![Entrée de la cité des congrès de Nantes, décorée aux couleurs du DevFest](cite-congres.jpg)
+![Entrée de la cité des congrès de Nantes, décorée aux couleurs du DevFest](cite-congres.webp)
 
 Dès l'arrivée au DevFest de Nantes, on est mis dans l'ambiance. Cette année, le thème est "le monde enchanté des contes et légendes". On a donc des trolls, des fées et des personnages mystiques partout, dans les jingles de lancement des conférences, sur les affiches, sur les t-shirts des orgas, et aussi sur les stands des sponsors qui ont beaucoup joué le jeu.
 Au détour des couloirs, on croise certains orgas déguisés en troll (le troll mignon), en fées, ou en chevalier. C'est très rigolo, et ça contribue beaucoup à l'ambiance.
@@ -28,7 +28,7 @@ Au détour des couloirs, on croise certains orgas déguisés en troll (le troll 
 On se plaît à rechercher toutes les références cachées dans le générique de lancement, entre Blanche Neige et les 7 Logos Androids, Linux Hansel et Linux Gretel, et le petit Chaperon rouge et son Firefox à la place du grand méchant loup.
 Mention spéciale au RTFM qui apparaît projetté sur le mur d'une salle.
 
-![Photo du mur d'une des sales de conférence. Un livre dont la couverture indique 'RTFM'](rtfm.jpg)
+![Photo du mur d'une des sales de conférence. Un livre dont la couverture indique 'RTFM'](rtfm.webp)
 
 2500 personnes sont présentes pour cet évènement, et les différentes salles sont à l'image de ces chiffres. La plus grande salle peut accueillir plus de 1500 personnes, une salle intermédiaire accueille 800 personnes. La salle Belem, dans laquelle j'ai eu la chance d'être speaker, dispose de 400 places.
 Les salles sont belles, spacieuses, et les sièges de type "cinéma" sont bien confortables.
@@ -37,7 +37,7 @@ Des clins d'œil au thème de la conférence sont présents un peu partout, entr
 
 Les sponsors et exposants sont nombreux, ESN et entreprises ont répondu présentes, une trentaine de stands sont répartis dans le grand hall, sur deux niveaux. Comme on le voit sur d'autres confs, les stands proposent des activités et goodies, et aussi parfois de quoi manger (et de quoi boire).
 
-![Photo du hall principale, prise en hauteur, noir de monde.](hall.jpg)
+![Photo du hall principale, prise en hauteur, noir de monde.](hall.webp)
 
 Entre deux conférences, le hall est plein à craquer. J'ai été agréablement surpris, même s'il y a beaucoup de monde, le hall n'est pas si bruyant que ça, et on arrive à tenir une conversation à un niveau de voix raisonnable.
 Le lieu a l'air plutôt accessible (même si je ne suis pas directement concerné, ça me semble important), j'ai l'impression que plusieurs personnes circulaient en fauteuil de manière plutôt fluide, donc c'est aussi un très bon point pour le lieu !
@@ -53,7 +53,7 @@ On se surprend à avoir des moments où on félicite un speaker pour un talk qu'
 
 Le traditionnel dîner des speakers s'est tenu la veille de la conférence au Carrousel des mondes marins, lieu emblématique de l'île de Nantes. J'ai vécu ma meilleure vie en faisant un tour de carrousel (pas de pompon à attraper par contre, sous prétexte que nous sommes adultes).
 
-![Photo prise sur le carrousel des mondes marins, depuis mon point de vue.](carrousel.jpg)
+![Photo prise sur le carrousel des mondes marins, depuis mon point de vue.](carrousel.webp)
 
 Concernant les salles, être sur scène, dans ces dispositions d'amphithéâtre, avec le public souriant est réellement plaisant.
 
@@ -80,7 +80,7 @@ Je fait déjà beaucoup de veille par ailleurs, donc ce n'était pas trop le but
 Après avoir vu le magnifique générique d'ouverture, la keynote d'ouverture intitulée "Advice Well Taken", était articulée autour du concept de "Techlore", le Folklore Tech.
 Nous y avons découvert le travail de documentation mené par Ilina Dasha, au travers d'interviews qu'elle a réalisées et dont elle a diffusé quelques extraits.
 
-![Photo d'Ilina Dasha sur scène, derrière son pupitre](techlore.jpg)
+![Photo d'Ilina Dasha sur scène, derrière son pupitre](techlore.webp)
 
 On y a vu notamment certaines pratiques DIY, comme mettre son téléphone dans un sachet congélation pour pouvoir écouter de la musique sous la douche, ou utiliser du dentifrice pour réparer des micro-rayures sur les écrans (là je pense qu'on est clairement sur du Folklore Tech).
 On a aussi vu l'interview d'une personne dont le téléphone s'éteint à chaque fois qu'il rentre dans son lieu de travail.
@@ -108,7 +108,7 @@ Je découvre aussi dans ce talk FerretDB, qui implémente le protocole MongoDb p
 
 Sébastien nous présente les enjeux de son quotidien : faire tourner en production une cinquantaine d'applications.
 
-![Photo de Sébastier Ferrer sur scène, juste avant le démarrage de son talk.](detectives.jpg)
+![Photo de Sébastier Ferrer sur scène, juste avant le démarrage de son talk.](detectives.webp)
 
 Après avoir rappelé quelques principes et acronymes, comme le _TTA_ / _TTR_ (_Time To Ack_ et _Time To Restore_) et les différents niveaux de priorité, il a utilisé quelques cas d'exemple liés à ses expériences d'incidents survenus en production pour illustrer l'enjeu principal : restaurer le service avant tout. La résolution des problèmes (avec l'analyse de la cause racine _via_ une méthode des 5 Whys) pouvant être faite plus tard.
 
@@ -136,7 +136,7 @@ Il a ensuite évoqué les usages de Cloud Privé, Public, Hybrides et Multi-Clou
 
 ### Let's Play Factorio par Julien Wittouck
 
-![Photo de l'entrée de la salle Belem du DevFest, pour mon talk. L'écran indique le titre du talk ainsi que ma photo](lets-play-factorio-1.jpg)
+![Photo de l'entrée de la salle Belem du DevFest, pour mon talk. L'écran indique le titre du talk ainsi que ma photo](lets-play-factorio-1.webp)
 
 C'était pour moi la deuxième édition de mon talk. Et quelle édition incroyable !
 
@@ -144,7 +144,7 @@ Technique parfaite. Salle comble (400 personnes pour venir me voir, des personne
 
 Environ 30% du public avait déjà joué au jeu, ou le connaissait, j'étais donc déjà en terrain conquis.
 
-![Selfie de moi sur scène, la salle pleine en arrière plan ](lets-play-factorio-2.jpg)
+![Selfie de moi sur scène, la salle pleine en arrière plan ](lets-play-factorio-2.webp)
 
 J'ai particulièrement aimé intéragir avec le public. L'humour a fait mouche, les réactions du public devant certains parallèles que j'ai introduits étaient géniales.
 Je me suis senti bien, sur cette scène, et j'ai l'impression que ça a bien marché.
@@ -165,7 +165,7 @@ Bien qu'elles seront dans la vidéo, je les remets ici (de mémoire, ainsi que c
 "Combien d'heures as-tu dans le jeu ?"
 > J'ai 300 heures listées sur Steam, dont la petite centaine passées pour la préparation, les répétitions et les 2 sessions données. J'avais aussi acheté le jeu en early accès il y a très longtemps (en 2014 ou 2015 je crois), toutes ces heures je ne sais pas les dénombrer.
 
-![feedbacks-devfest-nantes-2025.png](feedbacks-devfest-nantes-2025.png)
+![feedbacks-devfest-nantes-2025.webp](feedbacks-devfest-nantes-2025.webp)
 
 Les feedbacks sont justes incroyables, j'ai rarement vu autant d'engagement sur des talks (le public du DevFest est très généreux sur cette partie j'ai l'impression). J'ai 189 votes _Fun_. Sur 400 personnes présentes dans la salle, presque une sur deux a mis un vote. Je pense que le QRCode in-game a bien chauffé le public.
 La page web derrière le QRCode (https://linktr.ee/lets_play_factorio) a reçu plus de 300 visites.
@@ -209,7 +209,7 @@ Avec 6 ou 7 démos (je n'ai pas compté, et il semblerait qu'ils aient sauté un
 
 Ils ont commencé avec les _limits_ et _requests_ dans Kubernetes, mettre en avant les impacts de ces paramètres avec quelques schémas très clairs et plusieurs démos.
 
-![Photo de Denis et Quentin sur scène. Un schéma "CPU Limits, il se passe quoi sous le capôt ?" présenté en arrière plan.](cpu-throlling.jpg)
+![Photo de Denis et Quentin sur scène. Un schéma "CPU Limits, il se passe quoi sous le capôt ?" présenté en arrière plan.](cpu-throlling.webp)
 
 > Je ne connaissais pas l'implémentation du throttling de CPU dans les cgroups Linux, et je comprends donc maintenant mieux pourquoi mettre une limite de CPU sur un pod est une FBI (Fausse Bonne Idée). Je partageais cet avis mais pour d'autres raisons (en particulier la possibilité de Burst le CPU si besoin vu que des ressources sont peut-être disponibles sur la machine), donc ça fait une corde de plus à mon arc d'arguments.
 
@@ -243,7 +243,7 @@ Le gagnant de la joute, en cinq manches, sera celui qui constituera, à la fin, 
 
 C'est donc complètement décalé, et forcément génial.
 
-![Photo de la joute de Faltazi, l'animateur sur scène, en costume médiéval.](joute-faltazi.jpg)
+![Photo de la joute de Faltazi, l'animateur sur scène, en costume médiéval.](joute-faltazi.webp)
 
 Nous avons eu droit à la quête du fromage magique, l'éveil du champignon spécial, une collaboration douteuse entre deux architectes de nuage (leur métier équivalent à nos architectes Cloud), à la tirade entre un forgeron maladroit, son père et un marteau qui parle, et à une vision étrange d'un capitaine de bateau transportant des containers.
 
@@ -257,7 +257,7 @@ L'attention apportée aux speakers est exceptionnelle (on a vraiment été chouc
 
 Vous posez la barre très haut. Un immense merci, et un grand bravo.
 
-![Photo prise pendant le générique du DevFest. On y voit tous les personnages de la direction artistique. Le pupitre avec le logo du DevFest est au premier plan](devfest-nantes-2.png)
+![Photo prise pendant le générique du DevFest. On y voit tous les personnages de la direction artistique. Le pupitre avec le logo du DevFest est au premier plan](devfest-nantes-2.webp)
 
 C'est aussi toujours un plaisir un peu particulier de croiser des speakers déjà rencontrés ailleurs, ou d'en rencontrer de nouveaux.
 Pour ma part, c'est toujours un peu intimidant ce genre d'évènement, je rencontre des gens dont je suis admiratif et que j'aime aller écouter en conférence.

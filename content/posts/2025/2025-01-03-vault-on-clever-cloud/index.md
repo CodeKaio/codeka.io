@@ -25,7 +25,7 @@ Le code de cet article est aussi disponible sur GitHub : https://github.com/juw
 
 Avant d'entrer dans la mise en pratique, il convient ici d'expliquer quelques choix illustrés par le schéma suivant.
 
-![](cc_vault.png)
+![](cc_vault.webp)
 
 Clever Cloud propose de déployer des applications dans de [nombreux langages](https://www.clever-cloud.com/developers/doc/applications/). Pour héberger une instance Vault, le plus simple semblait d'utiliser une instance Docker.
 
@@ -257,26 +257,26 @@ Lors de sa première ouverture, Vault doit être initialisé, puis déverrouill�
 
 Ces opérations doivent être faites une seule fois à la création du serveur Vault et doivent être faites manuellement _via_ le CLI Vault ou sa console. Dans cet exemple, nous allons effectuer ces manipulations dans la console de Vault :
 
-![img.png](vault-create-root-keys.png)
+![img.webp](vault-create-root-keys.webp)
 
 Une fois le nombre de clés choisi, ainsi que les différentes options de chiffrement, Vault génère les clés et les met à disposition sur l'écran suivant :
 
-![img.png](vault-root-keys.png)
+![img.webp](vault-root-keys.webp)
 
 > Ces clés ne doivent être perdues en aucune circonstance ! En cas d'utilisation en production, le nombre de clés souhaité sera probablement différent de 1 !
 
 Après avoir stocké les clés en lieu sûr, l'écran suivant nous invite à déverrouiller Vault en saisissant une clé de déverrouillage.
 Lorsque suffisamment de clés auront été entrées, Vault sera déverrouillé et prêt à l'utilisation.
 
-![img.png](vault-unseal.png)
+![img.webp](vault-unseal.webp)
 
 Une fois Vault déverrouillé, l'écran de _login_ apparaît, il est alors possible de se connecter avec le _token_ d'accès `root` obtenu aux étapes précédentes :
 
-![img.png](vault-login.png)
+![img.webp](vault-login.webp)
 
 La console de Vault est maintenant disponible :
 
-![img.png](vault-console.png)
+![img.webp](vault-console.webp)
 
 Vault est maintenant initialisé, déverrouillé et prêt à être utilisé !
 

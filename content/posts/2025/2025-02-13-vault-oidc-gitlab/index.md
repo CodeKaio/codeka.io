@@ -137,14 +137,14 @@ En fonction de votre instance GitLab et de vos droits d'accès, la création de 
 
 Pour cet article, j'ai créé l'application dans mon profil personnel.
 
-![](gitlab-vault-app.png)
+![](gitlab-vault-app.webp)
 
 Il est important de bien saisir l'URL de redirection qui sera utilisée par Vault. Ce format est précisé dans la documentation de Vault [OIDC authentication](https://developer.hashicorp.com/vault/docs/auth/jwt#oidc-authentication). Cette URL prend la forme `https://{host:port}/ui/vault/auth/{path}/oidc/callback`.
 Concernant les _scopes_, seul `openid` est obligatoire pour l'utilisation de l'authentification.
 
 Une fois ces informations saisies, on peut valider la création de l'application :
 
-![](gitlab-vault-id-secret.png)
+![](gitlab-vault-id-secret.webp)
 
 Après validation, GitLab génère un _Application ID_ et un _Secret_ qui permettront de configurer Vault.
 Le secret peut également être regénéré à tout instant.
@@ -212,7 +212,7 @@ EOT
 
 Le _mount_ est alors visible dans Vault :
 
-![](vault-mount.png)
+![](vault-mount.webp)
 
 On peut alors créer quelques secrets d'exemple avec des données aléatoires :
 
@@ -244,7 +244,7 @@ resource "vault_kv_secret_v2" "secret" {
 
 Une fois les secrets créés, ils sont visibles directement dans Vault :
 
-![img.png](vault-secrets.png)
+![img.webp](vault-secrets.webp)
 
 > Mon préféré est le `supreme-caribou` ahah 😆
 
@@ -254,15 +254,15 @@ Tout est maintenant en place.
 
 Lorsqu'on accède à la page de _login_ de Vault, l'authentification _via_ GitLab est proposée.
 
-![](vault-login-gitlab.png)
+![](vault-login-gitlab.webp)
 
 Lors d'une première authentification, GitLab demandera à l'utilisateur de confirmer qu'il souhaite bien utiliser son compte GitLab pour s'authentifier à notre instance :
 
-![](gitlab-vault-auth.png)
+![](gitlab-vault-auth.webp)
 
 Une fois l'authentification terminée, l'utilisateur a accès aux secrets :
 
-![](vault-mount.png)
+![](vault-mount.webp)
 
 ## En conclusion
 

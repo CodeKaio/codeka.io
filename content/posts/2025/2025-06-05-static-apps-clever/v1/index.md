@@ -36,20 +36,20 @@ $ clever create --type TYPE APP_NAME
 Mais comme je teste en avant-première, le type _static_ n'est probablement pas encore implémenté dans le CLI.
 Je crée donc mon application dans Clever Cloud en utilisant la console :
 
-![img.png](clever-static-app.png)
+![img.webp](clever-static-app.webp)
 
 Au niveau de la scalabilité, je pars sur une instance _pico_, qui est la plus petite disponible.
 _A priori_, ce format d'instance devrait être suffisant pour servir mes articles de blog, c'est ce que mentionne David dans son post en tout cas.
 
-![img.png](clever-scaling-pico.png)
+![img.webp](clever-scaling-pico.webp)
 
 Enfin, je choisis d'_hoster_ mon application sur l'infrastructure de Clever Cloud.
 
-![img.png](clever-region.png)
+![img.webp](clever-region.webp)
 
 Une fois ces étapes validées, l'application statique apparaît bien dans ma console.
 
-![img.png](clever-static-console.png)
+![img.webp](clever-static-console.webp)
 
 ## Le déploiement
 
@@ -106,7 +106,7 @@ Opening the application in your browser
 
 Et là, bim, 404 !
 
-![img.png](clever-404.png)
+![img.webp](clever-404.webp)
 
 En effet, il faut positionner quelques variables d'environnement pour que tout fonctionne correctement (merci David Legrand pour le topo d'ailleurs) :
 
@@ -134,7 +134,7 @@ $ clever restart
 
 Et après quelques minutes, le site est disponible : 
 
-![img.png](clever-site-dispo.png)
+![img.webp](clever-site-dispo.webp)
 
 ## La bascule DNS
 
@@ -149,7 +149,7 @@ Your domain has been successfully saved
 
 La configuration du DNS est expliquée directement dans la console :
 
-![img_1.png](clever-dns.png)
+![img_1.webp](clever-dns.webp)
 
 Comme j'utilise un domain racine, j'ai dû déclarer les records de type `A` dans ma zone DNS :
 

@@ -45,7 +45,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 [I'm an inline-style link](https://www.google.com)
 
-![cover.jpg](cover.jpg)
+![cover.webp](cover.webp)
 
 # Lists
 
@@ -84,7 +84,7 @@ est transformé en _docx_ avec la commande `pandoc sample.md -o sample.docx`
 
 Le résultat n'est pas des plus stylés, mais est déjà plutôt pas mal, on voit bien que markdown est bien supporté :
 
-![sample.png](sample.png)
+![sample.webp](sample.webp)
 [sample.docx](sample.docx)
 
 ## Rendre le document stylé
@@ -102,7 +102,7 @@ Les styles utilisés par pandoc sont décrits dans [sa documentation](https://pa
 Pour redimensionner les images, il est aussi possible de préciser leur taille en attribut :
 
 ```markdown
-![cover.jpg](cover.jpg){ width=50% }
+![cover.webp](cover.webp){ width=50% }
 ```
 
 Une fois ce document personnalisé, on génére les fichiers _docx_ en utilisant l'option `--reference-doc=custom-reference.docx` :
@@ -111,7 +111,7 @@ Une fois ce document personnalisé, on génére les fichiers _docx_ en utilisant
 pandoc sample.md -o sample-with-style.docx --reference-doc=custom-reference.docx
 ```
 
-![sample-with-style.png](sample-with-style.png)
+![sample-with-style.webp](sample-with-style.webp)
 [sample-with-style.docx](sample-with-style.docx)
 
 ## Pré-processing
@@ -199,7 +199,7 @@ La macro pour extraire un diagramme est du même type :
 [//]: # (DIAGRAM FICHIER_A_INCLURE)
 ```
 
-Et le script est aussi similaire, il utilise le CLI de _drawio_ pour exporter le diagramme dans un `.png`, qui est ensuite inclus dans le markdown :
+Et le script est aussi similaire, il utilise le CLI de _drawio_ pour exporter le diagramme dans un `.webp`, qui est ensuite inclus dans le markdown :
 
 ```shell
 regex='\[\/\/\]: # \(DIAGRAM (.*)\)'
@@ -216,7 +216,7 @@ while IFS= read -r line; do
       drawio -x -f png --width 1024 -t "$filename" >/dev/null 2>&1
       exported_file=$(basename "$filename" .drawio)
       # add markdown for exported diagram
-      echo "![]($exported_file.png)"
+      echo "![]($exported_file.webp)"
     fi
   else
     # Output the line as is
@@ -250,7 +250,7 @@ $ cat sample.md |
 
 Le document généré par cette commande est maintenant complet :
 
-![sample-final.png](sample-final.png)
+![sample-final.webp](sample-final.webp)
 [sample-final.docx](sample-final.docx)
 
 ## Conclusion
