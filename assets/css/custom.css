@@ -173,8 +173,9 @@ ul.certifications {
     margin-bottom: 0;
 }
 
-.info ul li {
+.info ul.tags li {
     margin-left: 0;
+    margin-right: .25em;
 }
 
 /* On small screens, stack metadata and show tags on a separate line */
