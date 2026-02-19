@@ -2,6 +2,8 @@
 date: 2026-02-18
 language: fr
 title: Touraine Tech 2026 - Voyage au pays de la rillette
+tags:
+- events
 ---
 
 Dans ma tournée des conférences tech de France pour jouer à Factorio, je suis passé par Touraine Tech, la semaine dernière.
