@@ -1,9 +1,7 @@
 ---
 date: "2025-12-09"
 language: fr
-aliases:
-  - now
-title: "now"
+title: "now (Decembre 2025)"
 ---
 
 > Ce que je fais en ce moment, inspiré par [nownownow.com](https://nownownow.com/about)
