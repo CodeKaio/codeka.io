@@ -8,7 +8,7 @@ tags:
   - tools
 ---
 
-Sur les bons conseils du pote [Antoine Caron](https://blog.slashgear.dev/), j'ai pris temps cette semaine d'optimiser un peu mon site.
+Sur les bons conseils du pote [Antoine Caron](https://blog.slashgear.dev/), j'ai pris le temps cette semaine d'optimiser un peu mon site.
 
 Ce site que vous êtes en train de lire est un site statique, buildé avec Hugo.
 
