@@ -1,20 +1,26 @@
 ---
-date: 2026-02-06
-title: Optimiser un site Hugo
+date: 2026-02-20
+title: Optimiser les perfs et la sécurité d'un site Hugo
+tags:
+  - clevercloud
+  - security
+  - devops
+  - tools
 draft: true
 ---
 
-[//]: # (TODO link vers le blog d'antoine)
-Sur les bons conseils du pote Antoine Caron, j'ai pris temps cette semaine d'optimiser un peu mon site.
+Sur les bons conseils du pote [Antoine Caron](https://blog.slashgear.dev/), j'ai pris temps cette semaine d'optimiser un peu mon site.
 
 Ce site que vous êtes en train de lire est un site statique, buildé avec Hugo.
 
 J'ai déjà un peu travaillé la compression des différentes ressources, principalement les illustrations, mais je m'étais arrêté à ça.
 Dans cet article, je détaille comment j'ai optimisé le build de ce site, pour minimiser les temps de chargement, et comment j'ai amélioré sa sécurité en suivant les bonnes pratiques poussées par MDN.
 
+<!-- more -->
+
 ## Le score Lighthouse
 
-Pour faire un premier travail sur les performances de ce site, j'ai utilisé [une analyse LightHouse](https://pagespeed.web.dev/analysis/https-codeka-io/we5dukzmku?form_factor=desktop).
+Pour faire un premier travail sur les performances de ce site, j'ai utilisé [une analyse LightHouse](https://pagespeed.web.dev/analysis/https-codeka-io/we5dukzmku?form_factor=desktop) (assez classique).
 
 Lighthouse permet en quelques minutes d'avoir une vue des performances d'une application ou d'un site web, à la fois pour une cible _Desktop_ et _Mobile_.
 Il permet aussi de valider certaines propriétés d'accessibilité, comme des contrastes, la présence de texte alternatif pour les lecteurs d'écran, etc.
@@ -23,12 +29,21 @@ C'est, je pense, un bon point de départ.
 
 Voici les scores de mon site à l'heure actuelle :
 
-
 ![Score Lighthouse pour un mobile](lighthouse-mobile.png)
 ![Score Lighthouse pour un desktop](lighthouse-desktop.png)
+{ class="images-grid-2" }
 
+
+Ces scores peuvent sembler intéressants sur la page d'accueil, mais ils se dégradent fortement sur certaines pages.
+Voici les scores pour la page de mon talk sur Factorio :
+
+![Score Lighthouse sur mobile pour une autre page](lighthouse-talk-mobile.png)
+![Score Lighthouse sur desktop pour une autre page](lighthouse-talk-desktop.png)
+{ class="images-grid-2" }
 
 > J'ai clairement une marge d'amélioration sur l'accessibilité et les performances.
+
+Sans rentrer dans le détail et l'analyse de ce qui est remonté par cet outil, on va tout de suite s'attaquer au vif du sujet.
 
 ## Minification
 
@@ -47,19 +62,15 @@ run = "hugo --gc --minify --destination public"
 
 Ce qui produit des fichiers HTML minifiés de ce type :
 
-```html
-<!doctype html><html xmlns=http://www.w3.org/1999/xhtml xml:lang=fr-FR lang=fr-FR><head><script defer language=javascript type=text/javascript src=/js/bundle.min.39a1898ad60dcb3b845d8dc359b7c996c10aa0da902f0d461da32348b1bc5f02.js></script><script defer data-domain=codeka.io src=https://plausible.io/js/script.js></script><script type=text/javascript src=https://app.affilizz.com/affilizz.js async></script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.png><meta property="og:image" content="/pp_ekite_itvw.png"><meta name=twitter:image content="/pp_ekite_itvw.png"><meta name=twitter:card content="summary_large_image"><meta property="og:image:width" content="639"><meta property="og:image:height" content="708"><meta property="og:image:type" content="image/png"><title itemprop=name>Julien Wittouck</title><meta property="og:title" content="Julien Wittouck"><meta name=twitter:title content="Julien Wittouck"><meta itemprop=name content="Julien Wittouck"><meta name=application-name content="Julien Wittouck"><meta property="og:site_name" content="Julien Wittouck">
-```
+![Mon fichier index.html minifié](index-html-minified.png "Mon fichier index.html minifié")
 
-Hop, on peut passer rapidement à autre chose 🚶
+Pas de surprise ni de difficulté sur cette première partie, hop, on peut passer rapidement à autre chose 🚶
 
 ## Conversion des images en webp et redimensionnement
 
-Une des actions que j'ai mis en place il y a un moment, est l'utilisation du format _webp_ pour compresser les illustrations que j'utilise dans mes articles.
-
 J'utilise souvent des photos que j'ai capturées avec mon smartphone (pour les articles de conférence), des captures d'écran ou des schémas (produit sur draw.io le plus souvent), ou des photos _stock_ que je vais chercher pour illustrer mes articles de veille.
 
-Ces photos sont souvent lourdes (plusieurs mégaoctets) et en haute résolution, et la première action simple consiste à redimensionner ces photo et les recompresser au format _webp_.
+Ces photos sont souvent lourdes (plusieurs mégaoctets) et en haute résolution, et une action simple consiste à redimensionner ces photo et les recompresser au format _webp_.
 
 Hugo supporte la recompression des images dans différents formats à la volée, mais pas leur redimensionnement automatique, il faut implémenter soi-même la mécanique.
 Pour pouvoir redimensionner les images à la volée, la meilleure solution semble d'utiliser un hook "img" Hugo, qui permet de surcharger la traduction du markdown et d'y mettre le code qu'on souhaite.
@@ -74,12 +85,24 @@ Le hook utilisé par défaut est le suivant :
 {{- /* chomp trailing newline */ -}}
 ```
 
+Une image déclarée en Markdown de cette manière :
+
+```markdown
+![Une image](photo.jpg)
+```
+
+Aura pour équivalent HTML le code suivant :
+
+```html
+<img src="/photo.jpg" alt="Une image">
+```
+
 Pour redimensionner les images à une taille maximale de 820px (la taille utilisée sur la colonne de contenu de ce site), j'utilise le hook suivant :
 
 ```go
 {{- $image := .Page.Resources.GetMatch .Destination -}}
 {{- $width := math.Min 820 $image.Width -}}
-{{- $resizeOpts := printf "%dx webp lossless q100 lanczos" (int $width) -}}
+{{- $resizeOpts := printf "%dx webp q75 lanczos" (int $width) -}}
 {{- with $image.Resize $resizeOpts -}}
 <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"
     {{- with $.PlainText }} alt="{{ . }}"{{ end -}}
@@ -88,7 +111,58 @@ Pour redimensionner les images à une taille maximale de 820px (la taille utilis
 {{- /* chomp trailing newline */ -}}
 ```
 
-Je force l'utilisation de `lossless` avec la qualité maximale `q100` pour éviter une perte de données qui rendrait les illustations peu lisible, ce qui serait surtout problématique pour les schémas.
+La magie a lieu sur les premières lignes.
+Je redimensionne l'image à la taille maximale de 820px (ou moins si l'image est plus petite), et j'applique une conversion en `webp`.
+
+Je force l'utilisation de `lossless` avec la qualité maximale `q100` pour éviter une perte de données qui rendrait les illustrations peu lisibles, ce qui serait surtout problématique pour les schémas.
+
+Le HTML généré par Hugo pour mes images est maintenant le suivant :
+
+```html
+<img src="/photo_hu_ed495de5ae801a42.webp" width="820" height="540" alt="Une image">
+```
+
+Avec le redimensionnement et la conversion en webp, j'optimise les images pour leur affichage sur le format de mon site.
+
+Je peux même aller encore un peu plus loin en travaillant avec un `srcset` pour proposer au navigateur des images de différentes tailles en fonction de la taille d'affichage de la vue, ce qui permet de ne pas télécharger une image de 820 pixels de large pour un affichage qui n'en comporte que 480.
+
+En retravaillant le hook pour générer plusieurs images de dimensions différentes, j'obtiens le code suivant :
+
+```go
+{{- $image := .Page.Resources.GetMatch .Destination -}}
+
+{{- $width820 := math.Min 820 $image.Width -}}
+{{- $resizeOpts := printf "%dx webp q75 lanczos" (int $width820) -}}
+{{- $img820 := $image.Resize $resizeOpts -}}
+
+{{- $width480 := math.Min 480 $image.Width -}}
+{{- $resizeOpts := printf "%dx webp q75 lanczos" (int $width480) -}}
+{{- $img480 := $image.Resize $resizeOpts -}}
+
+<img srcset="{{ $img820.RelPermalink }} 820w,
+             {{ $img480.RelPermalink }} 480w"
+     sizes="(max-width: 480px) 480px,
+            820px"
+     src="{{ $img820.RelPermalink }}"
+ {{- with $.PlainText }} alt="{{ . }}"{{ end -}}
+ {{ with $.Title }}title="{{ . }}"{{ end }}>
+{{- /* chomp trailing newline */ -}}
+```
+
+Le code HTML généré ressemble donc à ça :
+
+```html
+<img srcset="/photo_hu_ed495de5ae801a42.webp 820w, 
+             /photo_hu_21e26f92cb8d445a.webp 480w"
+     sizes="(max-width: 480px) 480px, 
+            820px" 
+     src="/photo_hu_ed495de5ae801a42.webp"
+     alt="Une image">
+```
+
+Très basiquement, je redimensionne les images en 2 tailles, `820px` et `480px`, et je demande au navigateur d'utiliser la version de `480px` pour toutes les tailles d'écran inférieures à `480px` et la version de `820px` pour toutes les autres tailles.
+
+On peut encore aller un peu plus loin, mais on a déjà fait un bon travail sur les images, il est tant de passer à une étape suivante.
 
 ## Pré-compression des ressources statiques
 
@@ -108,7 +182,7 @@ Cette option va me permettre de pouvoir configurer Caddy pour servir le réperto
 :8080
 
 file_server {
-	# Clever Cloud serves the public directory in a cc_static_autobuilt directory
+	# Clever Cloud serves the public directory
     root public
 }
 
@@ -116,7 +190,7 @@ file_server {
 encode
 ```
 
-Lors de l'exécution d'une requête, Caddy va servir les fichiers statiques, et potentiellement compresser les réponses HTTP en alimentant le headers `Content-Encoding`. Les formats utilisés par défaut par Caddy sont `zstd` et `gzip`, et seules les ressources pertinentes sont compressées (les formats déjà compressés comme `jpg` ne sont pas re-compressés).
+Lors de l'exécution d'une requête, Caddy va servir les fichiers statiques, et potentiellement compresser les réponses HTTP en alimentant le headers `Content-Encoding`, grâce à la directive `encode`. Les formats utilisés par défaut par Caddy sont `zstd` et `gzip`, et seules les ressources pertinentes sont compressées (les formats déjà compressés comme `jpg` ne sont pas re-compressés).
 
 Cette compression permet d'économiser de la bande passante et accélère le temps de chargement des pages.
 
@@ -143,7 +217,7 @@ depends_post = ["precompress"]
 [tasks.precompress]
 description = "Precompress static resources"
 run = '''
-COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf|woff2)$"
+COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf)$"
 find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs zstd --keep --force -19
 find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs gzip --keep  --force --best
 '''
@@ -177,7 +251,7 @@ hugo v0.155.2-d8c0dfccf72ab43db2b2bca1483a61c8660021d9+extended linux/amd64 Buil
  Cleaned          │  0 │   0
 
 Total in 272 ms
-[precompress] $ COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf|woff2)$"
+[precompress] $ COMPRESSREGEX=".*(html|css|js|xml|ico|svg|md|pdf)$"
 245 files compressed : 80.99% (  83.3 MiB =>   67.4 MiB)                       B ==> 98%^T
 Finished in 7.77s
 ```
@@ -235,7 +309,7 @@ Voici ce qui était renvoyé _avant_ la compression :
 ```bash
 $ curl --head https://codeka.io
 
-Content-Length: 81157
+Content-Length: 34963
 Content-Type: text/html; charset=utf-8
 Server: Caddy
 ```
@@ -252,23 +326,23 @@ Server: Caddy
 Content-Length: 9
 ```
 
-[//]: # (TODO) revérifier après le déploiement
-
-On passe d'une page HTML de 81ko à une donnée compressée de 13ko, sans impacter le CPU du serveur puisque la compression se fait au build !
+On passe d'une page HTML de 34ko à une donnée compressée de 13ko, sans impacter le CPU du serveur puisque la compression se fait au build !
 
 ## Headers de sécurité
 
-La dernière étape de cette configuration consiste à moderniser les headers servis pour impléments un peu de sécurité supplémentaire.
+La dernière étape de cette configuration consiste à moderniser les headers servis pour implémenter un peu de sécurité supplémentaire.
 
-Maintenant que Caddy sert le site et que j'ai un Caddyfile sur lequel j'ai la main, je peux contrôler les headers HTTP renvoyés.
+Maintenant que Caddy sert le site et que j'ai un `Caddyfile` sur lequel j'ai la main, je peux contrôler les headers HTTP renvoyés facilement.
 
-Pour savoir quoi faire, sur les conseils d'Antoine, j'ai utilisé l'analyseur de MDN :
+Pour savoir quoi-faire, sur les conseils d'Antoine, j'ai utilisé l'analyseur du [MDN Observatory](https://developer.mozilla.org/en-US/observatory) :
 
 https://developer.mozilla.org/en-US/observatory/analyze?host=codeka.io#scoring
 
 ![Résultat de l'analyse de MDN](mdn-analysis.png "Résultat de l'analyse de MDN")
 
-### HSTS
+> Encore une fois, le résultat de l'analyse est médiocre, puisqu'aucune optimisation n'avait été faite. Il y a du travail sur cette partie !
+
+### HSTS et headers faciles
 
 Le premier header intéressant à utiliser est le `Strict-Transport-Security`.
 
@@ -277,7 +351,7 @@ Bien que j'ai déjà configuré une redirection HTTP vers HTTPS sur mon domaine 
 
 La recommandation de MDN est de positionner cette valeur :
 
-```HTTP
+```text
 Strict-Transport-Security: max-age=63072000
 ```
 
@@ -301,6 +375,8 @@ header {
 # Ask Caddy to compress static files 
 encode
 ```
+
+Je fais la même chose pour quelques headers recommandés supplémentaires, comme `X-Content-Type-Optionsfire` et `X-XSS-Protection`.
 
 ### Content-Security-Policy
 
@@ -345,8 +421,14 @@ La directive `default-src` sert de fallback pour toutes les directives possibles
 
 ## Conclusion
 
-Ça m'a pris une bonne demi-journée pour mettre en place tous ces mécanismes, mais j'en ressort avec une meilleure compréhension de la sécurité et de la compression en HTTP.
+Ça m'a pris une bonne demi-journée pour mettre en place tous ces mécanismes, mais j'en ressors avec une meilleure compréhension de la sécurité et de la compression en HTTP.
 J'ai aussi découvert Caddy, et amélioré mon fichier `mise.toml`.
+
+Et le résultat n'est pas des moindres.
+Voici l'analyse issue de Lighthouse :
+
+
+Et le nouveau score MDN Observatory :
 
 Pour la plupart de mes lecteurs, l'impact de la compression sera probablement minime, car sur des réseaux performants, la différence de temps de chargement ne se ressentira peut-être pas beaucoup.
 Mais avec une compression effectuée uniquement au build, c'est aussi une du CPU de moins de consommé, ce qui devrait pouvoir m'assurer de rester sur des instances les plus petites pour mon site le plus longtemps possible.
@@ -362,6 +444,8 @@ Mais avec une compression effectuée uniquement au build, c'est aussi une du CPU
   * [La directive `precompressed`](https://caddyserver.com/docs/caddyfile/directives/file_server#precompressed)
 
 * Documentation MDN :
+  * [Responsive Images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)  
+  * [MDN HTTP Observatory](https://developer.mozilla.org/en-US/observatory)
   * [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy)
 
 * [Precompressing Content With Hugo and Caddy](https://scottstuff.net/posts/2025/03/09/precompressing-content-with-hugo-and-caddy/)
