@@ -470,7 +470,7 @@ En fouillant un peu, ce sont les `iframes` qui plombent les perfs, donc je n'y p
 
 Côté headers de sécurité, j'ai atteint la perfection avec le joli score de 105/100, soit un A+, à la place du D- initial :
 
-[Le détail du score MDN A+](mdn-after.webp)
+![Le détail du score MDN A+](mdn-after.webp)
 
 ## Conclusion
 
