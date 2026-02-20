@@ -486,10 +486,11 @@ Il me restera à adresser le sujet du temps de build, qui risque de poser probl�
 
 ## Liens et références
 
-* Configuration de l'[optimisation des images avec Hugo](https://gohugo.io/configuration/imaging/#quality)
-* La [méthode Resize de Hugo](https://gohugo.io/methods/resource/resize/
-* Les [formats supportés par Hugo](https://gohugo.io/functions/images/process/#format)
-* [Le hookimage de Hugo](https://gohugo.io/render-hooks/images/#article)
+* Documentation de Hugo :
+  * Configuration de l'[optimisation des images avec Hugo](https://gohugo.io/configuration/imaging/#quality)
+  * La [méthode Resize de Hugo](https://gohugo.io/methods/resource/resize/)
+  * Les [formats supportés par Hugo](https://gohugo.io/functions/images/process/#format)
+  * [Le hookimage de Hugo](https://gohugo.io/render-hooks/images/#article)
 
 * Documentation de Caddy :
   * [La directive `encode`](https://caddyserver.com/docs/caddyfile/directives/encode#syntax)
@@ -507,4 +508,3 @@ Il me restera à adresser le sujet du temps de build, qui risque de poser probl�
 * L'excellent talk de Antoine Caron et Hubert Sablonière : [La compression Web : comment (re)prendre le contrôle ?](https://www.youtube.com/watch?v=LWd0hr6ljZk)
 
 * L'article de Denis Germain, qui a fait la même chose que moi cette semaine : [Optimisation webperf : AVIF et pré-compression pour le blog](https://blog.zwindler.fr/2026/02/19/optimisation-webperf-avif-precompression/)
-* 
