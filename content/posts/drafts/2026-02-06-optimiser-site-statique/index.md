@@ -72,6 +72,16 @@ J'utilise souvent des photos que j'ai capturées avec mon smartphone (pour les a
 
 Ces photos sont souvent lourdes (plusieurs mégaoctets) et en haute résolution, et une action simple consiste à redimensionner ces photo et les recompresser au format _webp_.
 
+```shell
+N="$(nproc)"
+find content -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) -print0 \
+  | xargs -0 -n 1 -P "$N" sh -c '
+      in="$1"
+      out="${in%.*}.webp"
+      exec cwebp -q 75 "$in" -o "$out"
+    ' sh
+```
+
 Hugo supporte la recompression des images dans différents formats à la volée, mais pas leur redimensionnement automatique, il faut implémenter soi-même la mécanique.
 Pour pouvoir redimensionner les images à la volée, la meilleure solution semble d'utiliser un hook "img" Hugo, qui permet de surcharger la traduction du markdown et d'y mettre le code qu'on souhaite.
 
