@@ -22,7 +22,7 @@ Cette boucle est généralement implémentée par des pipelines de CI/CD. Ces pi
 
 [`skaffold`](https://skaffold.dev), développé par Google, est un outil open-source en license Apache, qui permet d'implémenter cette boucle de développement sur un environnement Kubernetes local ou distant. La promesse de `skaffold` est de rendre le développement sur Kubernetes simple, rapide et reproductible.
 
-![la page d'accueil de skaffold](skaffold.png)
+![la page d'accueil de skaffold](skaffold.webp)
 
 `skaffold` implémente un *pipeline* qui se déroule en plusieurs étapes:
 1. *build* : construction des images docker avec:
@@ -49,7 +49,7 @@ Cette boucle est généralement implémentée par des pipelines de CI/CD. Ces pi
 La première étape consiste à déployer un cluster `minikube` sur mon poste de développement.
 Pour ce faire, le plus pratique est de suivre les étapes d'installation de l'outil détaillées [dans leur documentation d'installation](https://minikube.sigs.k8s.io/docs/start/).
 
-![installation de minikube](minikube-install.png)
+![installation de minikube](minikube-install.webp)
 
 Voici les commandes que j'ai exécuté pour installer `minikube` sur mon poste Linux :
 ```shell
@@ -333,7 +333,7 @@ Watching for changes...
 [backend] 14:15:41.202 [main] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [k8s, cloud]
 [backend] 14:15:41.557 [main] INFO  io.micronaut.runtime.Micronaut - Startup completed in 803ms. Server Running: http://demo-skaffold-5bfb47c8fc-cvld4:8080
 ```
-![](localhost.png)
+![](localhost.webp)
 
 En quelques minutes, mon application est démarré sur mon cluster `minikube` local.
 Je peux voir avec une commande `kubectl get all` que mes manifests ont bien été déployés et que mon application tourne:
