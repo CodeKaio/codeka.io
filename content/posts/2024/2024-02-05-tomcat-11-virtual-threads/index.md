@@ -161,7 +161,7 @@ Notez qu'avant l'avènement des _Virtual Threads_, le problème du coût de cré
 
 ## L'implémentation de Tomcat
 
-![](tomcat-executors.png)
+![](tomcat-executors.webp)
 
 Dans le code de Tomcat, l'interface `Executor` décrit les objets qui ont pour responsabilité d'exécuter les requêtes entrantes. Depuis la version 10.1 de Tomcat, cette interface a deux implémentations. L'implémentation historique `StandardThreadExecutor`, qui s'appuie sur un _pool_ de _Threads_ _workers_ et une `BlockingQueue` de taille fixe pour les requêtes entrantes, et la nouvelle implémentation `StandardVirtualThreadExecutor` qui utilise un _Virtual Thread_ pour exécuter chaque requête entrante.
 

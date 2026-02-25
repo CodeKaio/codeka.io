@@ -66,7 +66,7 @@ export CC_OAUTH_SECRET=54707b61e5ff44a08137f64fa2bbf4ce
 
 La commande `clever login` permet de récupérer les valeurs des variables `CC_OAUTH_TOKEN` et `CC_OAUTH_SECRET` :
 
-![Clever Login](clever-login.png)
+![Clever Login](clever-login.webp)
 
 La valeur de la variable `CC_ORGANISATION` se récupère directement dans la console de Clever Cloud.
 
@@ -155,7 +155,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 Une fois cette commande exécutée, l'_add-on_ et le _bucket_ apparaissent dans la console :
 
-![img.png](clever-cellar.png)
+![img.png](clever-cellar.webp)
 
 ### Récupération des informations d'accès au bucket
 
@@ -321,7 +321,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 La base de données apparaît alors dans la console Clever Cloud :
 
-![img.png](clever-postgresql.png)
+![img.png](clever-postgresql.webp)
 
 La ressource `clevercloud_postgresql` permet également de récupérer les informations de connexion à la base de données.
 
