@@ -15,7 +15,7 @@ Le protocole HTTP est spécifié par la [RFC 2616](https://www.rfc-editor.org/rf
 
 Cet article traite de la version 1.1 du protocole, qui a été normalisée en 1997. Une version 2.0 a été normalisée en 2015, et étend la version 1.1 avec d'autres capacités. Les bases de la version 1.1 ne sont donc pas obsolètes&nbsp;!
 
-![](client-server.png)
+![](client-server.webp)
 
 Dans cet article, nous allons étudier la structure d'une requête et d'une réponse HTTP.
 

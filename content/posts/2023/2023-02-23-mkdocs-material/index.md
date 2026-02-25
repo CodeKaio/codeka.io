@@ -66,8 +66,7 @@ C'est ce qui est utilisé par le framework Java *Spring* par exemple.
 
 Voici à titre d'exemple la [documentation générée pour le framework Spring](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) , à partir des documents *asciidoc* disponible sur _Github_: 
 
-![](mkdocs-spring.png)
-
+![](mkdocs-spring.webp)
 
 Les sources sont visibles sur le [_Github_ de _Spring_](https://github.com/spring-projects/spring-boot/tree/main/spring-boot-project/spring-boot-docs/src/docs/asciidoc).
 
@@ -159,7 +158,7 @@ INFO     -  [09:32:45] Serving on http://127.0.0.1:8000/
 
 Le site web est construit, et disponible en local:
 
-![](create-docs-website-preview.png)
+![](create-docs-website-preview.webp)
 
 # Ajout d'un thème & customisation
 
@@ -256,7 +255,7 @@ extra_css:
 
 Et voici notre site avec le thème et sa customisation.
 
-![](create-docs-website-theme.png)
+![](create-docs-website-theme.webp)
 
 # L'ajout de contenu
 L'ajout de contenu passe maintenant simplement par l'ajout de nouveaux fichiers _markdown_ dans le répertoire de documentation.
@@ -283,7 +282,7 @@ L'en-tête du fichier est au format _Front Matter_, qui a été popularisé par 
 
 Le rendu est le suivant:
 
-![](create-docs-website-content-page.png)
+![](create-docs-website-content-page.webp)
 
 Notez que :
 
@@ -381,11 +380,11 @@ Le fichier final complet est disponible sur [le repository _Github_](https://git
 
 À noter que le déploiement avec _Github Pages_ doit être activé dans le repository _Github_, et que le repository doit être public :
 
-![](create-docs-website-github-pages.png)
+![](create-docs-website-github-pages.webp)
 
 Une fois le fichier Github Actions publié, le workflow pourra s'exécuter, et publier le site web:
 
-![](create-docs-website-workflow.png)
+![](create-docs-website-workflow.webp)
 
 Le résultat final est visible [via ce lien](https://ekit3.github.io/mkdocs-website-sample/).
 
