@@ -23,7 +23,7 @@ J'ai déjà pas mal bidouillé Spring Boot 4 avec Open Rewrite et j'ai deux arti
 * [Split Keyboards Are Superior And The Reason I'm The Writer I Am Today](https://aftermath.site/best-split-keyboards-diy-qmk-zmk-corne/)  _via_ [Molly White (@molly.wiki)](https://bsky.app/profile/molly.wiki) sur [Bluesky](https://bsky.app/profile/molly.wiki/post/3mb7v3fhcxc2b)
 
 > Un article complet sur les split keyboards. L'auteur y présente le concept, revient sur les keymaps, la gestion de layers, et l aspect DIY (Do It Yourself) avec le choix des switches et des keycaps.
-> J'ai d'ailleurs monté mon propre split keyboard, il y a quelques mois, l'article est ici : [Montage d'un clavier mécanique](/2025/07/25/montage-dun-clavier-mécanique)
+> J'ai d'ailleurs monté mon propre split keyboard, il y a quelques mois, l'article est ici : [Montage d'un clavier mécanique](/2025/07/25/montage-dun-clavier-mécanique)
 
 * [Firefox se dote d’une vue partagée pour afficher deux sites côte à côte - Next](https://next.ink/brief_article/firefox-se-dote-dune-vue-partagee-pour-afficher-deux-sites-cote-a-cote/?utm_source=dlvr.it&utm_medium=bluesky) _via_ [next.ink](https://next.ink)
 
@@ -35,7 +35,7 @@ J'ai déjà pas mal bidouillé Spring Boot 4 avec Open Rewrite et j'ai deux arti
 
 * [Backing up Spotify](https://annas-archive.li/blog/backing-up-spotify.html) _via_ [Marme & lade (@marmelade.bsky.social)](https://bsky.app/profile/marmelade.bsky.social) sur [Bluesky](https://bsky.app/profile/marmelade.bsky.social/post/3mahhuoqp5223)
 
-> J'ai vu passer cette info et je ne sais pas quoi en penser. Au-delà de l'acte "pirate" en lui-même et de l'usage qui pourrait être fait de ces données (faire apprendre une IA ?), il semble y avoir une réelle démarche de conservation.
+> J'ai vu passer cette info et je ne sais pas quoi en penser. Au-delà de l'acte "pirate" en lui-même et de l'usage qui pourrait être fait de ces données (faire apprendre une IA ?), il semble y avoir une réelle démarche de conservation.
 Quoi qu'il en soit, l'article détaille des informations plutôt intéressantes et des graphes sur l'écoute des morceaux et l'algo supposé "aléatoire" de Spotify.
 
 ## 🌱 Spring Boot
@@ -72,7 +72,7 @@ Quoi qu'il en soit, l'article détaille des informations plutôt intéressantes 
 > Un court article qui revient sur le démarrage du Kernel Linux et une partie de son fonctionnement. Il est intéressant de voir comment on peut très facilement démarrer un Kernel dans une VM QEMU, et lancer un simple programme.
 > Ça permet aussi de réfléchir au concept de distribution Linux.
 
-* [GNOME et KDE ont pris un coup de vieux : pourquoi tout le monde parle de COSMIC ?](https://goodtech.info/cosmic-desktop-rust-pop-os-system76-linux-revolution/) _via_ [Le journal du Hacker](https://www.journalduhacker.net/)
+* [GNOME et KDE ont pris un coup de vieux : pourquoi tout le monde parle de COSMIC ?](https://goodtech.info/cosmic-desktop-rust-pop-os-system76-linux-revolution/) _via_ [Le journal du Hacker](https://www.journalduhacker.net/)
 
 > Je teste COSMIC depuis quelques jours, et je suis déjà séduit. Ça marche bien, c'est frais, efficace (tiling auto💙), et c'est joli. À voir sur la durée, j'aurai un avis plus poussé d'ici à quelques semaines.
 

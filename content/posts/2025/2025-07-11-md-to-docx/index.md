@@ -19,9 +19,9 @@ J'ai donc cherché un moyen de pouvoir travailler dans un format de type _markdo
 
 ## _pandoc_ et _markdown_
 
-_pandoc_ est un outil de conversion de documents. Il gère de nombreux formats en entrée et en sortie, dont le _markdown_ et le _docx_ !
+_pandoc_ est un outil de conversion de documents. Il gère de nombreux formats en entrée et en sortie, dont le _markdown_ et le _docx_ !
 
-Après avoir installé l'outil, on peut convertir des documents. L'option `-o` permet de préciser le fichier de sortie, le format est détecté à partir de l'extension du fichier :
+Après avoir installé l'outil, on peut convertir des documents. L'option `-o` permet de préciser le fichier de sortie, le format est détecté à partir de l'extension du fichier :
 
 ```shell
 # générer un doc html
@@ -33,7 +33,7 @@ $ pandoc file.md -o file.docx
 
 La génération par défaut en format _docx_ est tout à fait correcte et prend en compte les différents niveaux de titre, la gestion du gras et de l'italique, le code et les blocs de citation, ainsi que les listes, tableaux et images. Bref, tout ce qu'on peut basiquement faire en _markdown_.
 
-Le markdown suivant :
+Le markdown suivant :
 
 ~~~markdown
 # Content
@@ -82,7 +82,7 @@ echo "Hello World"
 
 est transformé en _docx_ avec la commande `pandoc sample.md -o sample.docx`
 
-Le résultat n'est pas des plus stylés, mais est déjà plutôt pas mal, on voit bien que markdown est bien supporté :
+Le résultat n'est pas des plus stylés, mais est déjà plutôt pas mal, on voit bien que markdown est bien supporté :
 
 ![sample.webp](sample.webp)
 [sample.docx](sample.docx)
@@ -99,13 +99,13 @@ Les styles utilisés par pandoc sont décrits dans [sa documentation](https://pa
 
 À noter que le code source inline est représenté par le style de caractères _Verbatim Char_, et le code source en blocs prendra le style de paragraphe _Source Code_ (qui n'est pas créé par défaut dans le document de référence).
 
-Pour redimensionner les images, il est aussi possible de préciser leur taille en attribut :
+Pour redimensionner les images, il est aussi possible de préciser leur taille en attribut :
 
 ```markdown
 ![cover.webp](cover.webp){ width=50% }
 ```
 
-Une fois ce document personnalisé, on génére les fichiers _docx_ en utilisant l'option `--reference-doc=custom-reference.docx` :
+Une fois ce document personnalisé, on génére les fichiers _docx_ en utilisant l'option `--reference-doc=custom-reference.docx` :
 
 ```shell
 pandoc sample.md -o sample-with-style.docx --reference-doc=custom-reference.docx
@@ -116,7 +116,7 @@ pandoc sample.md -o sample-with-style.docx --reference-doc=custom-reference.docx
 
 ## Pré-processing
 
-L'utilisation du format texte markdown étant donc possible, je souhaitais pouvoir pré-processer mes fichiers markdown pour :
+L'utilisation du format texte markdown étant donc possible, je souhaitais pouvoir pré-processer mes fichiers markdown pour :
 
 * inclure du code source réel dans le document
 * générer mes diagrammes au format drawio en png et les inclure dans le document généré
@@ -127,9 +127,9 @@ J'ai donc écrit un peu de script qui fait tout ça.
 
 Il est possible avec _pandoc_ d'exécuter des filtres pendant l'exécution de la transformation. L'utilisation des filtres n'est cependant pas très bien documentée, et s'appuie sur la manipulation d'un AST au format JSON. Cette approche, bien que plutôt propre, me semblait quand même compliquée pour simplement inclure du code dans mes fichiers.
 
-J'ai donc trouvé une autre solution plus simple : dans mes fichiers _markdown_, j'utilise une syntaxe de _Commentaires_ pour recréer une espèce de macro, que je fais pré-processer par un script shell.
+J'ai donc trouvé une autre solution plus simple : dans mes fichiers _markdown_, j'utilise une syntaxe de _Commentaires_ pour recréer une espèce de macro, que je fais pré-processer par un script shell.
 
-La macro d'inclusion de code que j'ai utilisée est celle-ci :
+La macro d'inclusion de code que j'ai utilisée est celle-ci :
 
 ```markdown
 [//]: # (INCLUDECODE FICHIER_A_INCLURE)
@@ -139,7 +139,7 @@ La syntaxe `[//]: # ()` correspond à l'équivalent d'un commentaire markdown (c
 J'ai alors simplement utilisé un commentaire `INCLUDECODE` devant être suivi du nom du fichier à inclure.
 
 Pour pré-processer ces _macros_, j'utilise la puissance du shell et le fait que _pandoc_ accepte le contenu du document à transformer sur `STDIN`.
-Les 2 commandes suivantes ont un comportement identique (au delta de l'exécution d'un `cat` en plus) :
+Les 2 commandes suivantes ont un comportement identique (au delta de l'exécution d'un `cat` en plus) :
 
 ```shell
 # direct
@@ -149,7 +149,7 @@ $ pandoc sample.md -o sample.docx
 $ cat sample.md | pandoc -o sample.docx
 ```
 
-Avec ce fonctionnement, il est facile de glisser un script shell entre deux :
+Avec ce fonctionnement, il est facile de glisser un script shell entre deux :
 
 ```shell
 $ cat sample.md |
@@ -157,7 +157,7 @@ $ cat sample.md |
  pandoc -o sample.docx
 ```
 
-Le script shell intercepte les lignes correspondant à la macro et insère le contenu du fichier référencé :
+Le script shell intercepte les lignes correspondant à la macro et insère le contenu du fichier référencé :
 
 ```shell
 #!/bin/bash
@@ -191,15 +191,15 @@ Cela me permet de les modifier sur le côté, et de regénérer mes documents d'
 
 ### Générer des diagrammes _drawio_ et les inclure
 
-Pour gérer des diagrammes _drawio_ à la volée, j'ai simplement suivi le même principe : une syntaxe de type _macro_ et un script pour la traiter.
+Pour gérer des diagrammes _drawio_ à la volée, j'ai simplement suivi le même principe : une syntaxe de type _macro_ et un script pour la traiter.
 
-La macro pour extraire un diagramme est du même type :
+La macro pour extraire un diagramme est du même type :
 
 ```markdown
 [//]: # (DIAGRAM FICHIER_A_INCLURE)
 ```
 
-Et le script est aussi similaire, il utilise le CLI de _drawio_ pour exporter le diagramme dans un `.webp`, qui est ensuite inclus dans le markdown :
+Et le script est aussi similaire, il utilise le CLI de _drawio_ pour exporter le diagramme dans un `.webp`, qui est ensuite inclus dans le markdown :
 
 ```shell
 regex='\[\/\/\]: # \(DIAGRAM (.*)\)'
@@ -227,7 +227,7 @@ done
 exit 0
 ```
 
-J'aurais aussi pu utiliser directement une directive d'image de cette manière :
+J'aurais aussi pu utiliser directement une directive d'image de cette manière :
 
 ```markdown
 ![](mon_diagramme.drawio)
@@ -239,7 +239,7 @@ Je m'étais aussi laissé la possibilité d'affiner les scripts pour redimension
 
 ### La commande définitive
 
-En cumulant tout ce qu'on a vu, la commande suivante fait l'inclusion du code, la génération des diagrammes à la volée, et la conversion en `.docx` avec un style fourni :
+En cumulant tout ce qu'on a vu, la commande suivante fait l'inclusion du code, la génération des diagrammes à la volée, et la conversion en `.docx` avec un style fourni :
 
 ```shell
 $ cat sample.md |
@@ -248,7 +248,7 @@ $ cat sample.md |
   pandoc -o sample-final.docx --reference-doc=custom-reference.docx
 ```
 
-Le document généré par cette commande est maintenant complet :
+Le document généré par cette commande est maintenant complet :
 
 ![sample-final.webp](sample-final.webp)
 [sample-final.docx](sample-final.docx)
@@ -258,7 +258,7 @@ Le document généré par cette commande est maintenant complet :
 _pandoc_ permet de générer des documents Word assez propres de mon point de vue.
 Avec un peu de travail sur la feuille de style, il est assez facile de personnaliser le rendu des documents.
 
-C'est d'ailleurs cette façon de générer les documents que j'ai utilisée pour écrire (et compiler) mon livre !
+C'est d'ailleurs cette façon de générer les documents que j'ai utilisée pour écrire (et compiler) mon livre !
 
 En utilisant la puissance du shell, il est relativement facile de scripter l'inclusion d'éléments externes comme du code source, des diagrammes ou d'autres fichiers.
 

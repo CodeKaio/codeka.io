@@ -40,11 +40,11 @@ Les sponsors et exposants sont nombreux, ESN et entreprises ont répondu présen
 ![Photo du hall principale, prise en hauteur, noir de monde.](hall.webp)
 
 Entre deux conférences, le hall est plein à craquer. J'ai été agréablement surpris, même s'il y a beaucoup de monde, le hall n'est pas si bruyant que ça, et on arrive à tenir une conversation à un niveau de voix raisonnable.
-Le lieu a l'air plutôt accessible (même si je ne suis pas directement concerné, ça me semble important), j'ai l'impression que plusieurs personnes circulaient en fauteuil de manière plutôt fluide, donc c'est aussi un très bon point pour le lieu !
+Le lieu a l'air plutôt accessible (même si je ne suis pas directement concerné, ça me semble important), j'ai l'impression que plusieurs personnes circulaient en fauteuil de manière plutôt fluide, donc c'est aussi un très bon point pour le lieu !
 
 ## Une expérience parfaite en tant que speaker
 
-Une chose est certaine, les orgas sont aux petits soins pour les speakers. L'accueil particulier réservé aux speakers est très confortable : salle au calme avec massages, café et petit-déjeuner, et petits cadeaux. On se sent réellement privilégiés.
+Une chose est certaine, les orgas sont aux petits soins pour les speakers. L'accueil particulier réservé aux speakers est très confortable : salle au calme avec massages, café et petit-déjeuner, et petits cadeaux. On se sent réellement privilégiés.
 La salle speaker permet de passer un moment calme et relaxant, aussi bien pour se préparer à son talk, mais aussi pour faire une pause entre deux sessions et souffler un peu (ou écrire son article de blog).
 Nous avions également une zone réservée pour nos repas, ce qui nous permet de ne pas avoir à faire la queue si on veut manger rapidement et retourner se concentrer ou s'isoler.
 Les discussions entre speakers sont bienveillantes et toujours agréables, c'est toujours sympa de re-croiser des speakers avec qui on avait fait connaissance à d'autres confs, et de rencontrer de nouvelles personnes.
@@ -59,7 +59,7 @@ Concernant les salles, être sur scène, dans ces dispositions d'amphithéâtre,
 
 L'organisation dans les différentes salles est impeccable techniquement. Les branchements sont simples et efficaces, deux écrans sont disponibles en retour pour le speaker, pour y afficher un retour simple d'écran, et un compteur de temps pour pouvoir bien gérer le timing de sa présentation.
 
-Pour ma part, je n'ai eu aucun problème technique, le flux vidéo et sonore a bien fonctionné. L'ingénieur son qui m'a équipé était très efficace, on a pu faire quelques tests de son (pour la musique du jeu) avant que le public rentre dans la salle, pour s'assurer que tout aller bien marcher, et c'était le cas. Bravo !
+Pour ma part, je n'ai eu aucun problème technique, le flux vidéo et sonore a bien fonctionné. L'ingénieur son qui m'a équipé était très efficace, on a pu faire quelques tests de son (pour la musique du jeu) avant que le public rentre dans la salle, pour s'assurer que tout aller bien marcher, et c'était le cas. Bravo !
 
 Ce côté pro aide beaucoup, on se sent rassuré, et on peut ainsi se concentrer sur son talk en toute sérénité.
 
@@ -84,7 +84,7 @@ Nous y avons découvert le travail de documentation mené par Ilina Dasha, au tr
 
 On y a vu notamment certaines pratiques DIY, comme mettre son téléphone dans un sachet congélation pour pouvoir écouter de la musique sous la douche, ou utiliser du dentifrice pour réparer des micro-rayures sur les écrans (là je pense qu'on est clairement sur du Folklore Tech).
 On a aussi vu l'interview d'une personne dont le téléphone s'éteint à chaque fois qu'il rentre dans son lieu de travail.
-Quelques phrases un peu marquantes, à propos de FaceID également : "Tout le monde l'utilise, donc ça doit aller", ou "Le côté pratique l'emporte beaucoup trop sur les questions de fond".
+Quelques phrases un peu marquantes, à propos de FaceID également : "Tout le monde l'utilise, donc ça doit aller", ou "Le côté pratique l'emporte beaucoup trop sur les questions de fond".
 
 De quoi se poser quelques questions sur la perte de connaissance par rapport à ces outils dont on dépend tant, et dont le fonctionnement pourra finir par être assimilé à de la magie.
 
@@ -104,24 +104,24 @@ Je découvre aussi dans ce talk FerretDB, qui implémente le protocole MongoDb p
 
 > Bravo à Kévin pour son sang-froid, puisqu'il a malheureusement subi des problèmes de clignotement d'écran lors de son talk. Il a particulièrement bien géré la situation, et a même réussi à nous expliquer certains concepts sans slides pendant quelques minutes.
 
-### Détectives de la prod : résoudre l'enquête avant le crash par Sébastien Ferrer
+### Détectives de la prod : résoudre l'enquête avant le crash par Sébastien Ferrer
 
-Sébastien nous présente les enjeux de son quotidien : faire tourner en production une cinquantaine d'applications.
+Sébastien nous présente les enjeux de son quotidien : faire tourner en production une cinquantaine d'applications.
 
 ![Photo de Sébastier Ferrer sur scène, juste avant le démarrage de son talk.](detectives.webp)
 
-Après avoir rappelé quelques principes et acronymes, comme le _TTA_ / _TTR_ (_Time To Ack_ et _Time To Restore_) et les différents niveaux de priorité, il a utilisé quelques cas d'exemple liés à ses expériences d'incidents survenus en production pour illustrer l'enjeu principal : restaurer le service avant tout. La résolution des problèmes (avec l'analyse de la cause racine _via_ une méthode des 5 Whys) pouvant être faite plus tard.
+Après avoir rappelé quelques principes et acronymes, comme le _TTA_ / _TTR_ (_Time To Ack_ et _Time To Restore_) et les différents niveaux de priorité, il a utilisé quelques cas d'exemple liés à ses expériences d'incidents survenus en production pour illustrer l'enjeu principal : restaurer le service avant tout. La résolution des problèmes (avec l'analyse de la cause racine _via_ une méthode des 5 Whys) pouvant être faite plus tard.
 
-Il a également partagé quelques astuces simples pour avoir des logs exploitables : utiliser des champs structurés pour avoir le plus de données de contexte.
+Il a également partagé quelques astuces simples pour avoir des logs exploitables : utiliser des champs structurés pour avoir le plus de données de contexte.
 Il a aussi donné quelques bonnes pratiques de monitoring et des exemples de dashboards intéressants pour surveiller les services, ou avoir un résumé de l'état d'une application lors d'un changement d'équipe jour/nuit.
 
 Un talk que tous les _Devs_ devraient avoir vu pour prendre conscience des enjeux du _Run_.
 
 > Ce talk était plein d'humour, et d'humilité. J'ai beaucoup apprécié le ton employé par Sébastien. J'ai aussi eu le plaisir de pouvoir échanger quelques mots avec lui directement. Quelqu'un que je recroiserai avec plaisir à l'avenir.
 
-### État des lieux de la Souveraineté du Cloud : Des Clouds Publics aux Clouds Confidentiels par Seifeddin Mansri
+### État des lieux de la Souveraineté du Cloud : Des Clouds Publics aux Clouds Confidentiels par Seifeddin Mansri
 
-Seifeddin a d'abord commencé par présenté quelques enjeux autour de la souveraineté du Cloud : Juridique (adapté au territoire où sont stockées les données et à l'éventuelle extra-territorialité), Technique avec les outils utilisés et la sécurité associé, Opérationnel avec les entités de confiance pour la gestion, et ce qu'il a qualifié de Sémantique, regroupant surtout les notions d'auditabilité.
+Seifeddin a d'abord commencé par présenté quelques enjeux autour de la souveraineté du Cloud : Juridique (adapté au territoire où sont stockées les données et à l'éventuelle extra-territorialité), Technique avec les outils utilisés et la sécurité associé, Opérationnel avec les entités de confiance pour la gestion, et ce qu'il a qualifié de Sémantique, regroupant surtout les notions d'auditabilité.
 
 Il a ensuite évoqué les usages de Cloud Privé, Public, Hybrides et Multi-Cloud, pour ensuite parler de manière un peu plus détaillée des implémentations de Cloud de confiance (S3NS et Bleu), et le SecNumCloud.
 
@@ -138,7 +138,7 @@ Il a ensuite évoqué les usages de Cloud Privé, Public, Hybrides et Multi-Clou
 
 ![Photo de l'entrée de la salle Belem du DevFest, pour mon talk. L'écran indique le titre du talk ainsi que ma photo](lets-play-factorio-1.webp)
 
-C'était pour moi la deuxième édition de mon talk. Et quelle édition incroyable !
+C'était pour moi la deuxième édition de mon talk. Et quelle édition incroyable !
 
 Technique parfaite. Salle comble (400 personnes pour venir me voir, des personnes ont été refusées à l'entrée car la salle était pleine). MC au top. Public accroché et conquis dès les premières minutes. J'ai adoré voir les sourires et les yeux des spectateurs briller à l'affichage du menu et des différents tableaux du jeu.
 
@@ -151,18 +151,18 @@ Je me suis senti bien, sur cette scène, et j'ai l'impression que ça a bien mar
 
 J'ai même eu quelques questions.
 
-Bien qu'elles seront dans la vidéo, je les remets ici (de mémoire, ainsi que certains échanges informels que j'ai eu sur le côté) :
+Bien qu'elles seront dans la vidéo, je les remets ici (de mémoire, ainsi que certains échanges informels que j'ai eu sur le côté) :
 
-"Combien de temps as-tu passé sur la préparation ?"
+"Combien de temps as-tu passé sur la préparation ?"
 > Une bonne centaine d'heures comptées. Pas forcément toutes in-game, beaucoup de temps passé à cogiter sur le talk (idée que j'avais depuis près de 2 ans), beaucoup de temps passé à manipuler le jeu pour essayer d'illustrer certains principes, et enfin au moins 80 heures dans le jeu pour préparer tous les tableaux présentés. J'ai passé pas loin de 2 heures dans le train aller vers Nantes pour améliorer la première transition en train et l'_habiller_ un peu mieux, afin d'embarquer les spectateurs dans le jeu.
 
-"As-tu pensé à représenter les notions de testing comme des TU ?"
+"As-tu pensé à représenter les notions de testing comme des TU ?"
 > Tester c'est douter. Dans le jeu, on teste directement en production. Je pense que je vais y réfléchir un peu, mais ça me semble difficile représenter un test qui passe ou qui échoue dans le jeu.
 
-"Est-ce que tu as pensé à faire ce talk dans Satisfactory ?"
+"Est-ce que tu as pensé à faire ce talk dans Satisfactory ?"
 > J'aime aussi beaucoup ce jeu, mais le côté 3D et vue à la première personne serait un peu compliqué à suivre pour les participants, je risquerai de me perdre dans l'usine, et ils serait impossible  de pouvoir dézoomer et avoir cette représentation haut-niveau que je voulais montrer.
 
-"Combien d'heures as-tu dans le jeu ?"
+"Combien d'heures as-tu dans le jeu ?"
 > J'ai 300 heures listées sur Steam, dont la petite centaine passées pour la préparation, les répétitions et les 2 sessions données. J'avais aussi acheté le jeu en early accès il y a très longtemps (en 2014 ou 2015 je crois), toutes ces heures je ne sais pas les dénombrer.
 
 ![feedbacks-devfest-nantes-2025.webp](feedbacks-devfest-nantes-2025.webp)
@@ -180,11 +180,11 @@ Entre les émotions encore présentes de la veille, et les intéractions sociale
 
 J'ai pu profiter d'un créneau libre pour me faire masser en salle speaker, et j'ai pris un peu de temps au calme pour commencer à rédiger ces lignes, et discuter avec d'autres speakers.
 
-### Karpenter + Keda : Le duo gagnant du FinOps par Guillaume Membré et Sébastien Fourreau
+### Karpenter + Keda : Le duo gagnant du FinOps par Guillaume Membré et Sébastien Fourreau
 
 Je connaissais déjà Keda, mais pas spécialement Karpenter, donc c'était pour moi l'occasion de découvrir cet outil.
 
-Les deux speakers travaillent pour RCA qui édite l'outil "MEG : Mon Expert en Gestion", dont je suis utilisateur avec mon cabinet comptable, c'est un point de détail assez rigolo.
+Les deux speakers travaillent pour RCA qui édite l'outil "MEG : Mon Expert en Gestion", dont je suis utilisateur avec mon cabinet comptable, c'est un point de détail assez rigolo.
 
 Ils ont commencé par expliquer les enjeux autour du coût d'une infrastructure Kubernetes (managée sur AWS dans leur cas), avec les différents éléments qui sont en partie non-prédictibles (load-balancing et coûts réseau). 
 
@@ -203,13 +203,13 @@ Les speakers ont enfin montré les gains réalisés sur leur facture Cloud, qui 
 ### Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes par Denis Germain et Quentin Joly
 
 Denis et Quentin se sont livrés à l'exercice du talk en binôme, et ont utilisé leur relation de manager/managé avec beaucoup d'humour.
-Denis en a d'ailleurs profité pour mentionner son livre, _Kubernetes : 50 solutions pour les postes de développement et les clusters de production_ (que je vais lire dans les prochaines semaines), qui lui a aussi permis de découvrir des distributions Kubernetes qu'il a utilisé pour ce talk.
+Denis en a d'ailleurs profité pour mentionner son livre, _Kubernetes : 50 solutions pour les postes de développement et les clusters de production_ (que je vais lire dans les prochaines semaines), qui lui a aussi permis de découvrir des distributions Kubernetes qu'il a utilisé pour ce talk.
 
-Avec 6 ou 7 démos (je n'ai pas compté, et il semblerait qu'ils aient sauté une démo pendant la présentation ?), Denis et Quentin ont expliqué le fonctionnement des différents paramètres listés dans le titre de leur conférence et surtout l'impact qu'ils ont sur nos applications en particulier au niveau des performances et du scheduling.
+Avec 6 ou 7 démos (je n'ai pas compté, et il semblerait qu'ils aient sauté une démo pendant la présentation ?), Denis et Quentin ont expliqué le fonctionnement des différents paramètres listés dans le titre de leur conférence et surtout l'impact qu'ils ont sur nos applications en particulier au niveau des performances et du scheduling.
 
 Ils ont commencé avec les _limits_ et _requests_ dans Kubernetes, mettre en avant les impacts de ces paramètres avec quelques schémas très clairs et plusieurs démos.
 
-![Photo de Denis et Quentin sur scène. Un schéma "CPU Limits, il se passe quoi sous le capôt ?" présenté en arrière plan.](cpu-throlling.webp)
+![Photo de Denis et Quentin sur scène. Un schéma "CPU Limits, il se passe quoi sous le capôt ?" présenté en arrière plan.](cpu-throlling.webp)
 
 > Je ne connaissais pas l'implémentation du throttling de CPU dans les cgroups Linux, et je comprends donc maintenant mieux pourquoi mettre une limite de CPU sur un pod est une FBI (Fausse Bonne Idée). Je partageais cet avis mais pour d'autres raisons (en particulier la possibilité de Burst le CPU si besoin vu que des ressources sont peut-être disponibles sur la machine), donc ça fait une corde de plus à mon arc d'arguments.
 
@@ -218,7 +218,7 @@ Ils ont ensuite présenté les 3 classes de _QoS_ de Kubernetes, _Guaranteed_, _
 Enfin, ils ont présenté la notion de _PriorityClasses_, que je ne connaissais pas. Ces classes arbitraires (définies par l'utilisateur), permettent de prioriser le scheduling des pods (c'est bien nommé), et donc d'aller occuper des ressources qui pourraient être réclamées d'autres pods plus prioritaires.
 Denis a d'ailleurs cité un cas d'usage d'un Jobs en tâche de fond, qui occupent des ressources et qui sont dé-schedulés si un autre workload en a besoin.
 
-> En discutant avec mon voisin Guillaume Moirod pendant cette partie, il m'a évoqué un cas d'usage que je qualifierait de génie, en couplant un Pod _placeholder_ à priorité très faible, qui vient forcer les cluster auto-scalers à créer des nodes, en prévision de jobs qui seraient poussés par un GitLab Runner. On "pré-chaufferai" ici des nodes, pour booster les temps de démarrage des jobs. Il faut que j'écrive un post sur ce sujet !
+> En discutant avec mon voisin Guillaume Moirod pendant cette partie, il m'a évoqué un cas d'usage que je qualifierait de génie, en couplant un Pod _placeholder_ à priorité très faible, qui vient forcer les cluster auto-scalers à créer des nodes, en prévision de jobs qui seraient poussés par un GitLab Runner. On "pré-chaufferai" ici des nodes, pour booster les temps de démarrage des jobs. Il faut que j'écrive un post sur ce sujet !
 
 > Un de mes talks préférés de cette conférence, et la complicité des deux speakers et leur humour (dont on ne sait pas s'il est prévu ou improvisé) m'a beaucoup fait rire.
 

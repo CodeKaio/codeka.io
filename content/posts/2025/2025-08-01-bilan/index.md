@@ -27,12 +27,12 @@ Mine de rien, l'année était quand même bien chargée.
 
 ## Conférences et talks
 
-Cette saison, j'ai eu le plaisir d'assister à pas mal de conférences :
+Cette saison, j'ai eu le plaisir d'assister à pas mal de conférences :
 
-* Cloud Nord le 10 octobre 2024 (en tant qu'orga) ;
-* Clever Cloud Fest le 7 février (j'ai fait un passage express) ;
-* Devoxx France du 16 au 18 avril (en tant que speaker) ;
-* DevLille les 12 et 13 juin (en tant que speaker) ;
+* Cloud Nord le 10 octobre 2024 (en tant qu'orga) ;
+* Clever Cloud Fest le 7 février (j'ai fait un passage express) ;
+* Devoxx France du 16 au 18 avril (en tant que speaker) ;
+* DevLille les 12 et 13 juin (en tant que speaker) ;
 * Sunny-Tech les 26 et 27 juin (en tant que speaker).
 
 Ça représente un total de neuf jours en conf, c'est pas mal du tout.
@@ -42,16 +42,16 @@ Pour 2025-2026, je vais essayer de garder au moins le même rythme.
 
 ### Mes talks
 
-Pour la saison, j'avais travaillé trois sujets de talk :
+Pour la saison, j'avais travaillé trois sujets de talk :
 
-* "OpenTofu - 2 ans après" : pour dresser le bilan après le _drama_ et le _fork_ ;
-* ["Rebase d'image Docker/OCI avec crane"](talks/talk-rebase-crane) : une démo technique d'un concept qui me travaillait depuis près de deux ans ;
-* ["Let's play Factorio"](talks/talk-lets-play-factorio) : un talk de vulgarisation fun, dans un de mes jeux préférés.
+* "OpenTofu - 2 ans après" : pour dresser le bilan après le _drama_ et le _fork_ ;
+* ["Rebase d'image Docker/OCI avec crane"](talks/talk-rebase-crane) : une démo technique d'un concept qui me travaillait depuis près de deux ans ;
+* ["Let's play Factorio"](talks/talk-lets-play-factorio) : un talk de vulgarisation fun, dans un de mes jeux préférés.
 
-J'ai soumis ces talks un peu partout, et j'ai eu la chance de pouvoir donner 3 sessions :
+J'ai soumis ces talks un peu partout, et j'ai eu la chance de pouvoir donner 3 sessions :
 
-* "Rebase d'image Docker/OCI avec crane" à Devoxx France (30 minutes) ;
-* "Rebase d'image Docker/OCI avec crane" au DevLille (45 minutes) ;
+* "Rebase d'image Docker/OCI avec crane" à Devoxx France (30 minutes) ;
+* "Rebase d'image Docker/OCI avec crane" au DevLille (45 minutes) ;
 * "Let's play Factorio" à SunnyTech (50 minutes).
 
 ![](jwk-devlille.webp)
@@ -65,7 +65,7 @@ Ce talk me travaillait depuis près de deux ans, je suis content d'avoir enfin e
 
 Le sujet sur OpenTofu n'a été accepté à aucune conf, mais je le retravaillerai pour le reproposer l'année prochaine. J'ai aussi arrêté de le soumettre quand mes deux autres sujets ont été acceptés, pour ne pas (trop) me mettre en difficulté.
 
-Du point de vue du temps de préparation de ces talks, j'ai une métrique qui semble correcte d'année en année : une heure de prépa par minute sur scène.
+Du point de vue du temps de préparation de ces talks, j'ai une métrique qui semble correcte d'année en année : une heure de prépa par minute sur scène.
 
 J'ai donc passé une trentaine d'heure à préparer la première session de "Rebase d'image Docker/OCI avec crane" et une dizaine d'heures pour l'adapter au format un peu plus long du DevLille.
 "Let's play Factorio" m'a demandé pas loin de cent heures de préparation. C'est ce que j'imaginais, car ce talk a un format bien particulier. J'espère pouvoir le rejouer plusieurs fois l'année prochaine pour essayer de "l'amortir".
@@ -114,20 +114,20 @@ Le sujet du moment est celui du CFP, il est d'ailleurs toujours possible de [pos
 
 Une des activités que j'apprécie également est l'enseignement.
 
-Cette année, j'ai donné :
+Cette année, j'ai donné :
 
-* 68 heures à l'Université de Lille sur les thèmes Java / Spring ;
+* 68 heures à l'Université de Lille sur les thèmes Java / Spring ;
 * 88 heures dans des écoles privés sur le thème IaC / Terraform.
 
 J'aurais au total enseigné mon art (ahaha) à près de 70 étudiants de diverses formations.
 
-Pour ces cours, j'ai la chance d'être soutenu par un sponsor qui finance une organisation dans laquelle mes étudiants déploient leurs TPs : Clever Cloud.
+Pour ces cours, j'ai la chance d'être soutenu par un sponsor qui finance une organisation dans laquelle mes étudiants déploient leurs TPs : Clever Cloud.
 Pour la saison prochaine, Scaleway a également accepté de sponsoriser cette activité avec des crédits pour les TPs de mes étudiants.
 
 J'estime le coût de ces sponsorings à environ 300 euros au total.
 C'est clairement un coût que je pourrais prendre à ma charge, mais le sponsoring permet d'éviter de devoir surveiller en permanence le billing associé à ces comptes, donc c'est un véritable plus.
 
-Clever Cloud, Scaleway, si vous lisez ces lignes : un énorme merci à vous 💙
+Clever Cloud, Scaleway, si vous lisez ces lignes : un énorme merci à vous 💙
 
 ## Mon site
 
@@ -159,12 +159,12 @@ Pour la saison prochaine, je vais essayer de maintenir le rythme. J'ai trois dra
 
 ## Mes réseaux sociaux
 
-J'ai réduit ma présence sur les réseaux sociaux à deux réseaux : [LinkedIn](https://www.linkedin.com/in/julien-wittouck/) et [Bluesky](https://bsky.app/profile/codeka.io).
+J'ai réduit ma présence sur les réseaux sociaux à deux réseaux : [LinkedIn](https://www.linkedin.com/in/julien-wittouck/) et [Bluesky](https://bsky.app/profile/codeka.io).
 Je n'ai pas désactivé mon compte [Twitter](https://x.com/CodeKaio) (je n'arrive pas à dire "X"), mais je ne publie plus dessus, et je m'y connecte très rarement, trop de bots, de contenu p*rn et de racisme.
 
 Je poste principalement le contenu de ma veille, ainsi que mes articles. Sur Bluesky, je poste aussi du contenu plus "perso", comme les jeux auxquels je joue ou les séries que je regarde. Mon LinkedIn ne contient pas ce type de contenu plus perso.
 
-J'ai extrait mes stats LinkedIn pour la rédaction de ce bilan, et je suis plutôt impressionné par le résultat : 275k vues sur la saison.
+J'ai extrait mes stats LinkedIn pour la rédaction de ce bilan, et je suis plutôt impressionné par le résultat : 275k vues sur la saison.
 
 ![](stats-linkedin-views.webp)
 
@@ -201,37 +201,37 @@ On a aussi enregistré avec Romain un épisode spécial de son podcast "Technolo
 
 ## Podcasts
 
-Au-delà de la promo de mon livre, j'ai pu participer avec Romain à l'enregistrement de quelques épisodes de ses podcasts. Certains des enregistrements ont plus d'un an, mais sont parus cette saison :
+Au-delà de la promo de mon livre, j'ai pu participer avec Romain à l'enregistrement de quelques épisodes de ses podcasts. Certains des enregistrements ont plus d'un an, mais sont parus cette saison :
 
 * [Méfiez-vous de la hype](https://youtu.be/QFUwKoq9Rmc) avec William Leemans
 * [Craftmanship](https://youtu.be/NJ-lLdRbS2k) avec Edouard Cattez
 * [L'IA ça existe depuis des années](https://youtu.be/7RDcsUYK-1Q) avec Deniz Pekin
 * [Ils sont organisateurs d'événements techs](https://youtu.be/Sp1o_nFMtvM) avec Emmanuel Demey
-* [Devoxx 25 : le débrief](https://youtu.be/XpEhtay8qXQ) avec Romain
+* [Devoxx 25 : le débrief](https://youtu.be/XpEhtay8qXQ) avec Romain
 
 ![](youtube-devoxx.webp)
 
 ## Jeux vidéos
 
-Pour finir ce bilan, les jeux vidéos auxquels j'ai joué cette saison, il y en a une paire :
+Pour finir ce bilan, les jeux vidéos auxquels j'ai joué cette saison, il y en a une paire :
 
-* Factorio (sans blague) ;
-* Death Stranding 2 : On the beach (mon jeu du moment) ;
-* Monster Hunter Wilds ;
-* Need For Speed Hot Pursuit ;
-* Gran Turismo 7 (toujours de temps en temps, au volant) ;
-* Balatro (quel enfer ce jeu) ;
-* Humanity (platiné) ;
-* The Stanley Parable ;
-* Robocop rogue city (platiné) ;
-* Dynasty Warriors 9 (ne me jugez pas) ;
-* Dave the Diver (platiné) ;
-* God of War Ragnarock (platiné) ;
+* Factorio (sans blague) ;
+* Death Stranding 2 : On the beach (mon jeu du moment) ;
+* Monster Hunter Wilds ;
+* Need For Speed Hot Pursuit ;
+* Gran Turismo 7 (toujours de temps en temps, au volant) ;
+* Balatro (quel enfer ce jeu) ;
+* Humanity (platiné) ;
+* The Stanley Parable ;
+* Robocop rogue city (platiné) ;
+* Dynasty Warriors 9 (ne me jugez pas) ;
+* Dave the Diver (platiné) ;
+* God of War Ragnarock (platiné) ;
 * Star Wars Jedi Survivor.
 
 ![](ds2.webp)
 
-J'ai une affection particulière pour Death Stranding, donc c'est sans aucun doute mon jeu préféré de cette année. J'avais même précommandé la manette, que je trouve très cool. Une fois terminé, je m'attaquerai à Clair Obscur : Expedition 33.
+J'ai une affection particulière pour Death Stranding, donc c'est sans aucun doute mon jeu préféré de cette année. J'avais même précommandé la manette, que je trouve très cool. Une fois terminé, je m'attaquerai à Clair Obscur : Expedition 33.
 
 ## Conclusion
 

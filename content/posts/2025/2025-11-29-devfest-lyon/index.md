@@ -18,7 +18,7 @@ Comme l'on dit les orgas de ce tout nouvel événement au mot d'ouverture (Micka
 
 ![Photo de Mickaël et Margaux pour l'ouverture de la journée](ouverture.webp)
 
-C'est maintenant le cas, et quel DevFest !
+C'est maintenant le cas, et quel DevFest !
 
 Sold-out plus d'un mois à l'avance, 314 propositions reçues au CFP pour 16 créneaux de talk, on voit que le public Lyonnais était en attente de cet événement.
 
@@ -26,13 +26,13 @@ Sold-out plus d'un mois à l'avance, 314 propositions reçues au CFP pour 16 cr�
 
 La traditionnelle soirée des speakers s'est déroulée au bar à vin "Les Canailles de Raphaël".
 
-On a pu y rencontrer l'équipe des orgas au grand complet, ainsi que les bénévoles, la photographe et les 2 MC (maîtres de cérémonie) venus aider pour animer la journée : Estelle Landry et Mathieu Mure.
+On a pu y rencontrer l'équipe des orgas au grand complet, ainsi que les bénévoles, la photographe et les 2 MC (maîtres de cérémonie) venus aider pour animer la journée : Estelle Landry et Mathieu Mure.
 Je pense que c'est une bonne idée d'inviter toute l'équipe ainsi que les bénévoles qui contribuent à la réussite de la journée. C'est une belle manière de récompenser les personnes pour leur investissement personnel. Nous avons eu la même approche cette année à Cloud Nord, nous y avions invité les bénévoles qui avaient contribués aux CFP, la démarche avait été aussi appréciée.
 
 La soirée des speakers est toujours un moment privilégié (et traditionnel). J'étais très content de croiser les autres speakers, dont certain que je connaissais déjà, et pouvoir en rencontrer d'autres que j'avais simplement aperçu lors d'autres confs 😊. 
 
 Pour le jour J, une salle speakers nous a été mise à disposition, avec boissons, bonbons, brioche à la praline (miam).
-Nous avons également eu le droit à un shooting photo personnel (hâte de recevoir ma future photo de profil 💙) ainsi qu'à un petit cadeau pour nous tenir chaud dans les soirées d'hiver qui approchent : un joli plaid brandé "DevFest Lyon".
+Nous avons également eu le droit à un shooting photo personnel (hâte de recevoir ma future photo de profil 💙) ainsi qu'à un petit cadeau pour nous tenir chaud dans les soirées d'hiver qui approchent : un joli plaid brandé "DevFest Lyon".
 
 ![Le plaid DevFest Lyon](plaid.webp)
 
@@ -40,7 +40,7 @@ Ce sont toutes ces petites attentions qui font de ces événements un réel plai
 
 ## La barre est mise très haute
 
-Concernant le jour J, un seul mot : Bravo.
+Concernant le jour J, un seul mot : Bravo.
 
 De mon point de vue, l'organisation est impeccable. L'équipe a pensé à tout.
 
@@ -62,11 +62,11 @@ Pas de captation pour cette première édition, il faudra se contenter des photo
 
 Les MC animent parfaitement les transitions entre les talks, et sont aux petits soins pour aider à l'installation sur scène, apporter bouteille d'eau et vérifier que tout va bien. Un grand merci à Estelle qui a fait mon intro 💙. Ça aide vraiment à démarrer un talk dans les meilleures conditions, et à évacuer le stress en détendant l'atmosphère avec quelques blagues bien ciblées 😅.
 
-La sélection des talks est solide (et je dis pas ça parce que j'en fait partie 😅), toutes les speakeuses et tous les speakers ont assuré. Je ne fais pas le récap des confs que j'ai vues hier, mais chacune d'entre elles était impeccable, bravo à toutes et à tous !
+La sélection des talks est solide (et je dis pas ça parce que j'en fait partie 😅), toutes les speakeuses et tous les speakers ont assuré. Je ne fais pas le récap des confs que j'ai vues hier, mais chacune d'entre elles était impeccable, bravo à toutes et à tous !
 
 Le public est souriant, bienveillant, et généreux en feedbacks et discussions. L'ambiance globale de ce DevFest est définitivement très (très) sympa.
 
-![Les feedbacks de mon talk !](feedbacks.webp)
+![Les feedbacks de mon talk !](feedbacks.webp)
 
 Le traiteur local a proposé une nourriture très bonne et variée (mention spéciale aux ravioles 😋).
 
@@ -81,7 +81,7 @@ Que ce soit en tant que speaker (🤞) ou en tant que participant. Cette nouvell
 
 Bravo à toute l'équipe, aux MC et aux bénévoles, et aux sponsors pour leur soutien.
 
-Bravo aux speakeuses et aux speakers pour vos talks, et merci pour les échanges que j'ai pu avoir avec certains d'entre vous, j'ai hâte de vous recroiser à d'autres événements !
+Bravo aux speakeuses et aux speakers pour vos talks, et merci pour les échanges que j'ai pu avoir avec certains d'entre vous, j'ai hâte de vous recroiser à d'autres événements !
 
 Merci pour l'accueil incroyable à Lyon, et à l'année prochaine 💙
 

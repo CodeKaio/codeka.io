@@ -6,7 +6,7 @@ tags:
   - kubernetes
 ---
 
-Il y a quelques semaines, Denis Germain (aka [Zwindler](https://blog.zwindler.fr/) sur les internets), m'a fait parvenir un exemplaire de son livre fraîchement paru : [Kubernetes : 50 solutions pour les postes de développement et les clusters de production](https://www.editions-eyrolles.com/livre/kubernetes).
+Il y a quelques semaines, Denis Germain (aka [Zwindler](https://blog.zwindler.fr/) sur les internets), m'a fait parvenir un exemplaire de son livre fraîchement paru : [Kubernetes : 50 solutions pour les postes de développement et les clusters de production](https://www.editions-eyrolles.com/livre/kubernetes).
 
 L'expertise de Denis sur Kubernetes n'est plus à prouver, c'est son sujet de prédilection, et j'assiste systématiquement à ses conférences quand j'en ai l'occasion (fanboy mode 😁).
 Je suis content qu'il ait proposé de m'envoyer un exemplaire de son livre, si tu lis ces lignes Denis, merci 😊
@@ -23,8 +23,8 @@ Forcément, avec l'ambition de présenter 50 solutions Kubernetes différentes, 
 
 C'est le cas.
 
-Sans forcément chercher l'exhaustivité, la sélection de Denis couvre tous les usages qu'on pourrait imaginer : depuis le poste de travail, jusqu'à des usages de production, en passant par des solutions "alien" 👽 parfois originales.
-Pour nous guider dans la lecture, les 300 pages du livre sont structurées en 7 grandes parties (chapitres) :
+Sans forcément chercher l'exhaustivité, la sélection de Denis couvre tous les usages qu'on pourrait imaginer : depuis le poste de travail, jusqu'à des usages de production, en passant par des solutions "alien" 👽 parfois originales.
+Pour nous guider dans la lecture, les 300 pages du livre sont structurées en 7 grandes parties (chapitres) :
 
 * les solutions destinées aux développeurs, installables sur leur machine, que Denis a regroupé sur le nom "Outils de type Desktop"
 * les solutions managées par des opérateurs Cloud
@@ -36,12 +36,12 @@ Pour nous guider dans la lecture, les 300 pages du livre sont structurées en 7 
 
 Dans chaque chapitre, on va donc retrouver une courte intro qui explique le but de ce regroupement de ces solutions, puis un sous-chapitre pour chacune d'entre elles, ainsi qu'une courte conclusion.
 
-Chaque solution est présentée en suivant la même structure : 
+Chaque solution est présentée en suivant la même structure : 
 
 * un tableau récapitulatif de l'outil (systèmes supportés, licence, etc.)
-* une courte description ainsi que les pré-requis à l'installation ;
-* l'installation en elle-même à la manière d'un tutoriel ;
-* des pistes, liens et conseils pour aller plus loin ;
+* une courte description ainsi que les pré-requis à l'installation ;
+* l'installation en elle-même à la manière d'un tutoriel ;
+* des pistes, liens et conseils pour aller plus loin ;
 * un tableau récapitulatif des avantages et inconvénients de l'outil.
 
 Cette structure permet de rapidement comprendre à quel usage convient chaque solution, et l'écriture sous forme de tutoriel détaillés (ligne de commande, consoles et autres screenshots) permet de rapidement mettre le pied à l'étrier.
@@ -57,7 +57,7 @@ Je me suis aussi beaucoup attardé sur le chapitre portant sur les solutions man
 
 Je me suis un peu moins concentré sur les autres chapitres, car ils couvrent des domaines sur lesquels je n'ai pas de besoin, ou en dehors de mon expertise. Mais si l'envie me prend de bidouiller, je sais que j'y trouverai la matière pour pouvoir tester et installer une solution.
 
-## À qui s'est destiné ?
+## À qui s'est destiné ?
 
 Ce livre ne s'adresse clairement pas aux débutants sur Kubernetes. 
 Bien que Denis rappelle rapidement les concepts principaux de kube en intro, le but n'est pas d'apprendre Kubernetes, ses concepts et ses usages.
@@ -72,13 +72,13 @@ Les tableaux de présentation de chaque outil, ainsi que les récapitulatifs des
 
 ## Mes solutions prefs
 
-Forcément, en parcourant les différentes solutions, je suis tombé sur des solutions que j'utilise régulièrement : Minikube (qui est certes un peu lourd, mais fait bien le job), k3s qui tourne sur certaines machines que j'ai chez moi, Docker Desktop et Rancher Desktop que j'utilise parfois chez mes clients, ainsi que les différentes offres managées, et l'incontournable OpenTofu.
+Forcément, en parcourant les différentes solutions, je suis tombé sur des solutions que j'utilise régulièrement : Minikube (qui est certes un peu lourd, mais fait bien le job), k3s qui tourne sur certaines machines que j'ai chez moi, Docker Desktop et Rancher Desktop que j'utilise parfois chez mes clients, ainsi que les différentes offres managées, et l'incontournable OpenTofu.
 
-Mais j'ai aussi découvert (ou redécouvert) des implémentations auxquelles je n'avais jamais prêté attention et que je vais rapidement tester : _kind_ (Kubernetes IN Docker), que j'ai déjà installé sur mon poste de travail principal (il n'y a plus qu'à jouer avec pour mon prochain projet);
+Mais j'ai aussi découvert (ou redécouvert) des implémentations auxquelles je n'avais jamais prêté attention et que je vais rapidement tester : _kind_ (Kubernetes IN Docker), que j'ai déjà installé sur mon poste de travail principal (il n'y a plus qu'à jouer avec pour mon prochain projet);
 
 J'adore aussi le principe de KWOK (Kubernetes WithOut Kubelet) qui consiste à simuler le comportement d'un cluster.
 Comme Denis, je pense que ça peut être très pratique pour tester le bon fonctionnement de topologies, contraintes de ressources, charts Helms, etc. 
-Je testerai probablement mes charts Helms sur cette implémentation à l'avenir (peut-être même directement dans une CI, qui sait ? 🤫)
+Je testerai probablement mes charts Helms sur cette implémentation à l'avenir (peut-être même directement dans une CI, qui sait ? 🤫)
 
 Mention spéciale pour la dernière solution présentée, qui n'est autre que le contenu du talk de Denis "Démystifions Kubernetes, binaire par binaire".
 Il ajoute également en référence la vidéo de cette conférence captée à Cloud Nord 2023 (j'étais dans la salle ce jour là 💙).
@@ -96,7 +96,7 @@ J'imaginais qu'il y aurait eu un chapitre sur l'offre Kubernetes de Clever Cloud
 
 Je pense que j'aurai aimé avoir directement dans le livre un tableau sous forme d'index, qui reprend l'ensemble des solutions avec tous les tableaux récapitulatifs détaillés en en-tête de chapitre (type d'outil, compatibilité, production-ready, etc.).
 Cela permettrait de pouvoir trouver rapidement une solution en fonction d'un besoin particulier.
-Denis a néanmoins publié ce genre de tableau dans un article de blog il y a quelques semaines : [93 façons de déployer Kubernetes : j'ai recensé (presque) toutes les méthodes existantes](https://blog.zwindler.fr/2025/11/02/93-facons-de-deployer-kubernetes/).
+Denis a néanmoins publié ce genre de tableau dans un article de blog il y a quelques semaines : [93 façons de déployer Kubernetes : j'ai recensé (presque) toutes les méthodes existantes](https://blog.zwindler.fr/2025/11/02/93-facons-de-deployer-kubernetes/).
 
 Si vous restez sur votre faim par rapport à une solution particulière, Denis fournit les liens et pointeurs (souvent vers la documentation officielle des outils) pour pouvoir "Aller plus loin" (du nom de la section dans chaque sous-chapitre).
 Cette section est parfois un peu légère, mais une fois la phase "tuto" passée, il est courant de se plonger dans la documentation officielle, donc rien de très surprenant en fait.
@@ -114,13 +114,13 @@ Ce livre m'a donné envie de tester plusieurs solutions, je pense que c'est miss
 
 Le travail qu'a fait Denis sur ce livre est impressionnant, bravo à lui.
 
-## Où l'acheter ?
+## Où l'acheter ?
 
-C'est dispo sur toutes les bonnes plateformes au prix de 37€, je vous remets ici les liens vers mes préférées : 
+C'est dispo sur toutes les bonnes plateformes au prix de 37€, je vous remets ici les liens vers mes préférées : 
 
 * Sur le site de l'éditeur [Eyrolles](https://www.eyrolles.com/Informatique/Livre/kubernetes-9782416022647/), en version papier ou numérique
 * [Fnac](https://www.fnac.com/a21789006/Denis-Germain-Kubernetes)
 * [Furet du Nord](https://www.furet.com/livres/kubernetes-denis-germain-9782416022647.html)
 * [Cultura](https://www.cultura.com/p-kubernetes-50-solutions-pour-les-postes-de-developpement-et-les-clusters-de-production-9782416022647.html) 
 
-Bonne lecture !
+Bonne lecture !

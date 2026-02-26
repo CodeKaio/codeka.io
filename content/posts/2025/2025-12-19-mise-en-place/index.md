@@ -395,11 +395,11 @@ Maintenant qu'on a vu comment fonctionnait `mise`, j'ai envie d'implémenter un 
 
 Le site que vous lisez est hébergé sur Clever Cloud. J'ai donc sur mon poste des variables d'environenment `CLEVER_TOKEN` et `CLEVER_SECRET` qui traînent, un fichier `.clever.json` avec les liens vers mes apps, ainsi qu'un runtime node avec le CLI `clever-tools`.
 
-Est-ce qu'il est facile de migrer tout ça vers `mise` ?
+Est-ce qu'il est facile de migrer tout ça vers `mise` ?
 
 ### L'installation du CLI `clever-tools`
 
-Installer le CLI de Clever Cloud avec `mise` se fait en une commande : `mise use npm:clever-tools`.
+Installer le CLI de Clever Cloud avec `mise` se fait en une commande : `mise use npm:clever-tools`.
 Le préfixe `npm:` permet d'indiquer à `mise` où aller chercher le package, cela ouvre tout un tas de cas d'usages intéressants. Fini les `npm install -g` (ou pire `sudo npm install -g`) dans tous les sens, on installe juste l'outil au bon endroit, et la dépendance devient même explicite.
 
 ```shell
@@ -407,7 +407,7 @@ $ mise use npm:clever-tools
 mise ~/workspaces/codekaio/codeka.io/mise.toml tools: npm:clever-tools@4.4.1
 ```
 
-Une fois la commande exécutée, `clever-tools` apparaît dans le fichier `mise.toml`, dans le bloc `[tools]` :
+Une fois la commande exécutée, `clever-tools` apparaît dans le fichier `mise.toml`, dans le bloc `[tools]` :
 
 ```toml
 [tools]
@@ -417,7 +417,7 @@ Une fois la commande exécutée, `clever-tools` apparaît dans le fichier `mise.
 ### `CLEVER_TOKEN` et `CLEVER_SECRET`
 
 
-Pour s'authentifier aux API, le CLI `clever-tools` utilise 2 variables d'environnement `CLEVER_TOKEN` et `CLEVER_SECRET`, qu'on peut récupérer en exécutant la commande `clever login` :
+Pour s'authentifier aux API, le CLI `clever-tools` utilise 2 variables d'environnement `CLEVER_TOKEN` et `CLEVER_SECRET`, qu'on peut récupérer en exécutant la commande `clever login` :
 
 ```shell
 $ clever login
@@ -425,7 +425,7 @@ Opening https://console.clever-cloud.com/cli-oauth?cli_version=4.4.1 in your bro
 Login successful as Julien WITTOUCK <julien@codeka.io>
 ```
 
-Les variables sont alors récupérables depuis la fenêtre de navigateur qui sert à l'authentification, et sont déposées dans le fichier `.config/clever-tools/config.json` :
+Les variables sont alors récupérables depuis la fenêtre de navigateur qui sert à l'authentification, et sont déposées dans le fichier `.config/clever-tools/config.json` :
 
 ```json
 {"token":"081e54b8-853b-4e8f-a000-8f314238c5c3","secret":"6834da77-9edb-4e4a-bde8-9a6109934311","expirationDate":"2026-12-21T11:35:15.291Z"}
@@ -438,7 +438,7 @@ $ jq -r '.token' ~/.config/clever-cloud/clever-tools.json | mise set --raw --age
 $ jq -r '.secret' ~/.config/clever-cloud/clever-tools.json | mise set --raw --age-encrypt --prompt CLEVER_SECRET
 ```
 
-Les deux variables apparaissent bien dans mon `mise.toml` :
+Les deux variables apparaissent bien dans mon `mise.toml` :
 
 ```toml
 [env]
@@ -446,7 +446,7 @@ CLEVER_TOKEN = { age = "XXX" }
 CLEVER_SECRET = { age = "YYY" }
 ```
 
-J'ai fait la même chose avec mon `APP_ID` afin de pouvoir également le stocker sans souci sur git :
+J'ai fait la même chose avec mon `APP_ID` afin de pouvoir également le stocker sans souci sur git :
 
 ```shell
 $ mise set --raw --age-encrypt --prompt PROD_APP_ID
@@ -455,7 +455,7 @@ Enter value for PROD_APP_ID ************
 
 ### La tasks
 
-Écrire les tasks pour `mise` est alors plutôt facile, il suffit d'enchaîner les deux commandes `clever link` et `clever deploy` dans un seul script :
+Écrire les tasks pour `mise` est alors plutôt facile, il suffit d'enchaîner les deux commandes `clever link` et `clever deploy` dans un seul script :
 
 ```toml
 [tasks."clever:deploy"]
@@ -466,7 +466,7 @@ clever deploy --alias codeka.io
 '''
 ```
 
-Il suffit alors ensuite de lancer la commande `mise clever:deploy` et mon site est en production :
+Il suffit alors ensuite de lancer la commande `mise clever:deploy` et mon site est en production :
 
 ```shell
 mise clever:deploy

@@ -16,7 +16,7 @@ Un des projets que je maintiens activement est [GitLab Classrooms](projects/gitl
 Le code de ce projet est écrit en Spring Boot 3 et Java 25.
 Avec la sortie récente de Spring Boot 4, je voulais faire la montée de version de ce projet rapidement.
 
-Pour ça, j'ai donc deux possibilités : soit je fais la montée de version à la main, soit j'utilise un outil pour le faire automatiquement.
+Pour ça, j'ai donc deux possibilités : soit je fais la montée de version à la main, soit j'utilise un outil pour le faire automatiquement.
 
 J'en ai donc profité pour tester OpenRewrite.
 
@@ -33,7 +33,7 @@ J'avais découvert cet outil lors du [talk de Jérôme Tama à Devoxx France 202
 
 Une [recette de migration Spring Boot 4](https://docs.openrewrite.org/recipes/java/spring/boot4/upgradespringboot_4_0-community-edition) est disponible pour la version communautaire.
 
-En parcourant le code de la recette sur [Github](https://github.com/openrewrite/rewrite-spring/blob/main/src/main/resources/META-INF/rewrite/spring-boot-40.yml), il semble que la recette fait une grande partie de ce qui est indiqué dans le guide de migration de Spring :
+En parcourant le code de la recette sur [Github](https://github.com/openrewrite/rewrite-spring/blob/main/src/main/resources/META-INF/rewrite/spring-boot-40.yml), il semble que la recette fait une grande partie de ce qui est indiqué dans le guide de migration de Spring :
 
 * la montée de version du pom `spring-boot-starter-parent`
 * les modifications liées aux changements de coordonnées de certains artifacts maven
@@ -41,7 +41,7 @@ En parcourant le code de la recette sur [Github](https://github.com/openrewrite/
 * la mise à jour des properties dépréciées
 * la mise à jour vers testcontainers 2
 
-La recette prend la forme d'un fichier YAML, et elle est accompagnée de code qui implémente les différentes transformations :
+La recette prend la forme d'un fichier YAML, et elle est accompagnée de code qui implémente les différentes transformations :
 
 > Je ne rentre pas dans les détails du fonctionnement d'OpenRewrite, allez voir le talk de Jérôme Tama indiqué plus haut pour plus d'informations.
 

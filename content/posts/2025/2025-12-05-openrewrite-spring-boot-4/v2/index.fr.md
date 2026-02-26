@@ -15,7 +15,7 @@ Un des projets que je maintiens activement est [GitLab Classrooms](projects/gitl
 Le code de ce projet est écrit en Spring Boot 3 et Java 25.
 Avec la sortie récente de Spring Boot 4, je voulais faire la montée de version de ce projet rapidement.
 
-Pour ça, j'ai donc deux possibilités : soit je fais la montée de version à la main, soit j'utilise un outil pour le faire automatiquement.
+Pour ça, j'ai donc deux possibilités : soit je fais la montée de version à la main, soit j'utilise un outil pour le faire automatiquement.
 
 J'en ai donc profité pour tester OpenRewrite.
 
@@ -32,7 +32,7 @@ J'avais découvert cet outil lors du [talk de Jérôme Tama à Devoxx France 202
 
 Une [recette de migration Spring Boot 4](https://docs.openrewrite.org/recipes/java/spring/boot4/upgradespringboot_4_0-community-edition) est disponible pour la version communautaire.
 
-En parcourant le code de la recette sur [Github](https://github.com/openrewrite/rewrite-spring/blob/main/src/main/resources/META-INF/rewrite/spring-boot-40.yml), il semble que la recette fait une grande partie de ce qui est indiqué dans le guide de migration de Spring :
+En parcourant le code de la recette sur [Github](https://github.com/openrewrite/rewrite-spring/blob/main/src/main/resources/META-INF/rewrite/spring-boot-40.yml), il semble que la recette fait une grande partie de ce qui est indiqué dans le guide de migration de Spring :
 
 * la montée de version du pom `spring-boot-starter-parent`
 * les modifications liées aux changements de coordonnées de certains artifacts maven
@@ -44,7 +44,7 @@ En parcourant le code de la recette sur [Github](https://github.com/openrewrite/
 > [!INFO]
 > La recette évolue régulièrement, donc peut-être qu'elle fait encore plus de choses au moment où vous lisez cet article.
 
-La recette prend la forme d'un fichier YAML, et elle est accompagnée de code qui implémente les différentes transformations :
+La recette prend la forme d'un fichier YAML, et elle est accompagnée de code qui implémente les différentes transformations :
 
 > Je ne rentre pas dans les détails du fonctionnement d'OpenRewrite, allez voir le talk de Jérôme Tama indiqué plus haut pour plus d'informations.
 
@@ -123,7 +123,7 @@ recipeList:
       newArtifactId: spring-boot-starter-aspectj
 ```
 
-La doc d'OpenRewrite indique qu'on peut utiliser une simple commande _Maven_ pour effectuer la migration :
+La doc d'OpenRewrite indique qu'on peut utiliser une simple commande _Maven_ pour effectuer la migration :
 
 ```shell
 mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
@@ -134,7 +134,7 @@ mvn -U org.openrewrite.maven:rewrite-maven-plugin:run \
 
 > Plutôt pratique, car je n'aurai pas à modifier mon `pom.xml`, ni ajouter de fichier de configuration dans mon projet pour pouvoir effectuer cette migration en one-shot.
 
-L'exécution de la commande prend quelques secondes et affiche les opérations effectuées (j'ai beaucoup nettoyé les logs pour que ce soit plus lisible) :
+L'exécution de la commande prend quelques secondes et affiche les opérations effectuées (j'ai beaucoup nettoyé les logs pour que ce soit plus lisible) :
 
 ```shell
 [INFO] --- rewrite:6.25.0:run (default-cli) @ gitlab-classrooms ---
@@ -174,7 +174,7 @@ L'exécution de la commande prend quelques secondes et affiche les opérations e
 [INFO] ------------------------------------------------------------------------
 ```
 
-OpenRewrite semble s'être correctement exécuté et indique que plusieurs fichiers ont été modifiés. Un `git status` permet de se rendre compte de ce qui a été impacté :
+OpenRewrite semble s'être correctement exécuté et indique que plusieurs fichiers ont été modifiés. Un `git status` permet de se rendre compte de ce qui a été impacté :
 
 ```shell
 git status
@@ -205,7 +205,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 * les fichiers de configuration properties (certaines properties ont été renommées)
 * les fichiers de test (surtout pour la dépréciation de `@MockBean` et `@SpyBean`)
 
-Un `git diff` permet de vérifier tout ça :
+Un `git diff` permet de vérifier tout ça :
 
 ```shell
 git diff pom.xml
@@ -286,7 +286,7 @@ Au niveau du `pom.xml`, tout s'est bien passé, l'ensemble des modifications att
 
 La nouvelle architecture modulaire de Spring Boot 4 a bien été traitée.
 
-Le code de tests a aussi bien été nettoyé des anciens `@MockBean` dépréciés :
+Le code de tests a aussi bien été nettoyé des anciens `@MockBean` dépréciés :
 
 ```text
 @@ -37,10 +37,10 @@ class ClassroomControllerMVCTest {
@@ -324,7 +324,7 @@ Un import dans ma configuration Spring Security n'est pas résolu
 import org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest;
 ```
 
-car cette classe a été déplacée dans un autre package :
+car cette classe a été déplacée dans un autre package :
 
 ```java
 import org.springframework.boot.security.autoconfigure.actuate.web.servlet.EndpointRequest;
@@ -332,7 +332,7 @@ import org.springframework.boot.security.autoconfigure.actuate.web.servlet.Endpo
 
 Une fois ces petits ajustements faits, je lance mes tests unitaires.
 
-Cette fois-ci, j'obtiens un message d'erreur lié à Spring Security au démarrage :
+Cette fois-ci, j'obtiens un message d'erreur lié à Spring Security au démarrage :
 
 ```text
 Caused by: java.lang.IllegalArgumentException: pattern must start with a /
@@ -340,9 +340,9 @@ Caused by: java.lang.IllegalArgumentException: pattern must start with a /
 
 Je n'avais pas fait attention à cette modification dans les guides de migration, donc je suis peut-être passé à travers. Quoi qu'il en soit, ce n'est pas une modification très compliquée, je l'ai facilement appliquée.
 
-Une fois ces derniers ajustements faits, les tests passent correctement 🎉 :
+Une fois ces derniers ajustements faits, les tests passent correctement 🎉 :
 
-![Screenshot de mes tests unitaires qui passent !](tests.webp)
+![Screenshot de mes tests unitaires qui passent !](tests.webp)
 
 ## Conclusion
 

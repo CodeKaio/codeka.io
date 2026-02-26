@@ -26,7 +26,7 @@ Les instructions de montage sont sur une doc en ligne et ont l'air plutôt clair
 
 Je vais devoir monter le clavier (les deux parties séparément), puis flasher le firmware de chaque contrôleur. Ensuite, ce sera le moment de paramétrer le mapping des touches, et aussi de (ré)apprendre à taper au clavier (ouch).
 
-C'est parti !
+C'est parti !
 
 ## Le kit
 
@@ -37,7 +37,7 @@ Une fois le carton déballé, on se rend compte de l'ensemble des pièces qui co
 Le kit contient donc les deux cartes du clavier, les switches (compatibles MX), un kit de touches, les plaques de protection du clavier avec pour chaque côté une mousse, une plaque décorative en aluminium et une base en plexi. On a aussi les câbles USB-C, les deux modules, et un peu de visserie.
 
 La carte de chaque partie du clavier contient le contrôleur déjà soudé, avec une puce RP2040 et deux ports USB-C.
-Ici la partie gauche du clavier :
+Ici la partie gauche du clavier :
 
 ![](20250711_090103.webp)
 
@@ -57,7 +57,7 @@ C'est plutôt facile, ça se fait avec un petit tournevis plat, tout s'emboite f
 
 ![](20250711_091424.webp)
 
-Cette première étape était plutôt facile, ça commence à prendre forme !
+Cette première étape était plutôt facile, ça commence à prendre forme !
 
 ## Les switches
 
@@ -81,14 +81,14 @@ Poser les switches prend quelques minutes, une fois l'opération finie, ça pren
 
 ![](20250711_093125.webp)
 
-L'étape suivante, c'est le petit module avec l'écran !
+L'étape suivante, c'est le petit module avec l'écran !
 
 ## Le module
 
 Pour limiter les soudures, les modules sont déjà assemblés, et s'installent avec un petit cable de type _nappe_.
 C'est un peu plus technique ici.
 
-Un tout petit écran !
+Un tout petit écran !
 
 ![](20250711_093432.webp)
 ![](20250711_093441.webp)
@@ -163,16 +163,16 @@ On reste contraint par les différents mappings supportés et implémentés dans
 
 ## La suite
 
-Il faut maintenant que je m'habitue à deux choses : le QWERTY, qui semble quand même plus pratique pour ce type de clavier, et la disposition des touches en colonne. Mon cerveau va avoir du taf dans les prochains mois.
+Il faut maintenant que je m'habitue à deux choses : le QWERTY, qui semble quand même plus pratique pour ce type de clavier, et la disposition des touches en colonne. Mon cerveau va avoir du taf dans les prochains mois.
 
 Je vais passer un peu de temps à m'entrainer sur https://www.keybr.com/.
 
 J'ai aussi un peu galéré à trouver le bon mapping qui me permet d'avoir toutes les touches que je veux, en particulier le support des accents.
 
-J'en suis à une semaine d'utilisation et pour le moment, j'ai environ atteint 20% de mes capacités de frappe sur mon clavier précédent sur lequel je tape à 70 wpm avec 95% de précision. La marge de progression est énorme !
+J'en suis à une semaine d'utilisation et pour le moment, j'ai environ atteint 20% de mes capacités de frappe sur mon clavier précédent sur lequel je tape à 70 wpm avec 95% de précision. La marge de progression est énorme !
 
 ## Liens et références
 
-* https://splitkb.com/ : le site sur lequel j'ai acheté mon clavier
-* https://docs.splitkb.com/product-guides/halcyon-series/build-guide/introduction : la doc de montage de mon clavier
-* https://www.keybr.com/ : pour s'entraîner
+* https://splitkb.com/ : le site sur lequel j'ai acheté mon clavier
+* https://docs.splitkb.com/product-guides/halcyon-series/build-guide/introduction : la doc de montage de mon clavier
+* https://www.keybr.com/ : pour s'entraîner
