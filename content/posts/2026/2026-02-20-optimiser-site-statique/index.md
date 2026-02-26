@@ -26,14 +26,14 @@ Il permet aussi de valider certaines propriétés d'accessibilité, comme des co
 
 C'est, je pense, un bon point de départ.
 
-Voici les scores de mon site à l'heure actuelle, pour une navigation mobile et desktop :
+Voici les scores de mon site à l'heure actuelle, pour une navigation mobile et desktop :
 
 ![Score Lighthouse pour un mobile](lighthouse-mobile.webp)
 ![Score Lighthouse pour un desktop](lighthouse-desktop.webp)
 { class="images-grid-2" }
 
 Ces scores peuvent sembler intéressants sur la page d'accueil, mais ils se dégradent fortement sur certaines pages.
-Voici les scores pour la page de mon talk sur Factorio :
+Voici les scores pour la page de mon talk sur Factorio :
 
 ![Score Lighthouse sur mobile pour une autre page](lighthouse-talk-mobile.webp)
 ![Score Lighthouse sur desktop pour une autre page](lighthouse-talk-desktop.webp)
@@ -50,7 +50,7 @@ Une première étape consiste à minifier les ressources statiques, HTML, CSS et
 Cette étape est très simple à mettre en place, car elle est déjà supportée par Hugo.
 Il suffit lors du build d'ajouter le flag `--minify` pour demander à Hugo de minifier toutes les ressources.
 
-Ma commande de build est la suivante dans mon `mise.toml` :
+Ma commande de build est la suivante dans mon `mise.toml` :
 
 ```toml
 [tasks.build]
@@ -88,7 +88,7 @@ find . -type f -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \
   | xargs -n 1 -P "$JOBS" -I IMG sh -c 'cwebp -q 75 IMG -o $(echo "IMG" | sed "s/\.[^.]*$/.webp/")'
 ```
 
-Puis un gros `sed` pour remplacer les références dans mes markdown :
+Puis un gros `sed` pour remplacer les références dans mes markdown :
 
 ```shell
 sed -Ei 's/\.(jpe?g|png)$/\.webp/I' **/*.md
@@ -115,7 +115,7 @@ Je n'ai pas fait le calcul de la réduction de taille, mais sur les images sourc
 Hugo supporte la recompression des images dans différents formats à la volée (qui aurait pu remplacer mes scripts, mais il vallait mieux ne pas faire ça au build), mais pas leur redimensionnement automatique, il faut implémenter soi-même la mécanique.
 Pour pouvoir redimensionner les images à la volée (au build donc), la meilleure solution semble d'utiliser un hook _img_ Hugo, qui permet de surcharger la traduction du markdown et d'y mettre le code qu'on souhaite.
 
-Le hook utilisé par défaut est le suivant :
+Le hook utilisé par défaut est le suivant :
 
 ```go
 <img src="{{ .Destination | safeURL }}"
@@ -130,7 +130,7 @@ Une image déclarée en Markdown de cette manière :
 ![Une image](photo.jpg)
 ```
 
-aura pour équivalent HTML le code suivant :
+aura pour équivalent HTML le code suivant :
 
 ```html
 <img src="/photo.jpg" alt="Une image">
@@ -154,7 +154,7 @@ Pour redimensionner les images à une taille maximale de 820px (la taille utilis
 La magie a lieu sur les premières lignes.
 Je redimensionne l'image à la taille maximale de 820px (ou moins si l'image est plus petite).
 
-Le HTML généré par Hugo pour mes images est maintenant le suivant :
+Le HTML généré par Hugo pour mes images est maintenant le suivant :
 
 ```html
 <img src="/photo_hu_ed495de5ae801a42.webp" width="820" height="540" alt="Une image">
@@ -186,7 +186,7 @@ En retravaillant le hook pour générer plusieurs images de dimensions différen
  {{ with $.Title }}title="{{ . }}"{{ end }}>
 ```
 
-Le code HTML généré ressemble donc à ça :
+Le code HTML généré ressemble donc à ça :
 
 ```html
 <img srcset="/photo_hu_ed495de5ae801a42.webp 820w, 
@@ -237,13 +237,13 @@ Cette compression permet d'économiser de la bande passante et accélère le tem
 Cependant, la compression se fait en utilisant un peu de CPU à la volée.
 Il est alors intéressant de pré-compresser les ressources statiques à la phase de build pour économiser un peu de CPU.
 
-Une directive Caddy permet de servir des fichiers statiques pré-compressés : `precompressed`.
+Une directive Caddy permet de servir des fichiers statiques pré-compressés : `precompressed`.
 Caddy va alors rechercher des variantes compressées des fichiers, sous la forme de fichiers sidecar.
 À côté de chaque fichier statique, il faut donc générer les variantes compressées et les nommer en utilisant les extensions `.gz`, `.br` et `.zst` par exemple.
 
 Hugo ne permet pas de générer ces variantes compressées de lui-même, donc je dois utiliser un petit script qui s'exécutera en fin de la phase de build.
 
-J'ai donc créé un script `precompress` dans mon fichier `mise.toml` :
+J'ai donc créé un script `precompress` dans mon fichier `mise.toml` :
 
 ```toml
 [tasks.build]
@@ -276,7 +276,7 @@ L'exécution de ces scripts produit la sortie suivante :
 245 files compressed : 80.99% (  83.3 MiB =>   67.4 MiB)                       B ==> 98%^T
 ```
 
-On peut valider que les fichiers buildés sont précompressés comme souhaité, avec les extensions `.gz` et `.zst` :
+On peut valider que les fichiers buildés sont précompressés comme souhaité, avec les extensions `.gz` et `.zst` :
 
 ```bash
 $ ls public/
@@ -305,7 +305,7 @@ $ ls -al public/index.*
 
 > On a encore un joli gain avec les compressions `gzip` et `zstd`, de l'ordre de 75%.
 
-Pour ensuite servir les fichiers précompressés, il faut ajouter la [directive `precompressed`](https://caddyserver.com/docs/caddyfile/directives/file_server#precompressed) dans le `Caddyfile` :
+Pour ensuite servir les fichiers précompressés, il faut ajouter la [directive `precompressed`](https://caddyserver.com/docs/caddyfile/directives/file_server#precompressed) dans le `Caddyfile` :
 
 ```Caddyfile
 # Clever Cloud needs us to listen on port 8080
@@ -336,7 +336,7 @@ Content-Type: text/html; charset=utf-8
 Server: Caddy
 ```
 
-et la même commande après la compression :
+et la même commande après la compression :
 
 ```bash
 $ curl --compressed --head https://codeka.io
@@ -377,7 +377,7 @@ La recommandation de MDN est de positionner cette valeur :
 Strict-Transport-Security: max-age=63072000
 ```
 
-Dans mon Caddyfile, rien de plus simple, j'ajoute le header `Strict-Transport-Security` :
+Dans mon Caddyfile, rien de plus simple, j'ajoute le header `Strict-Transport-Security` :
 
 ```Caddyfile
 # Clever Cloud needs us to listen on port 8080
@@ -447,11 +447,11 @@ Pour les directives `script-src` et `connect-src`, étant donné que j'utilise p
 La directive `img-src` permet d'autoriser les images qui proviennent de shields.io, que j'utilise pour afficher quelques badges.
 Enfin, la directive `default-src` sert de fallback pour toutes les directives possibles, et indique que seul mon site est une source autorisée. 
 
-## Et ça donne quoi ?
+## Et ça donne quoi ?
 
-Après toutes ces modifications, voici les résultats de l'analyse LightHouse :
+Après toutes ces modifications, voici les résultats de l'analyse LightHouse :
 
-Voici les scores de mon site à l'heure actuelle, pour une navigation mobile et desktop :
+Voici les scores de mon site à l'heure actuelle, pour une navigation mobile et desktop :
 
 ![Score Lighthouse pour un mobile](lighthouse-mobile-after.webp)
 ![Score Lighthouse pour un desktop](lighthouse-desktop-after.webp)
@@ -459,7 +459,7 @@ Voici les scores de mon site à l'heure actuelle, pour une navigation mobile et 
 
 96 et 100 en performance sur la page d'accueil, on est mieux que les 91 initiaux, mission accomplie ici.
 
-Pour la page qui avait un résultat vraiment mauvais, le résultat est un peu plus mitigé :
+Pour la page qui avait un résultat vraiment mauvais, le résultat est un peu plus mitigé :
 
 ![Score Lighthouse sur mobile pour une autre page](lighthouse-talk-mobile-after.webp)
 ![Score Lighthouse sur desktop pour une autre page](lighthouse-talk-desktop-after.webp)
@@ -468,7 +468,7 @@ Pour la page qui avait un résultat vraiment mauvais, le résultat est un peu pl
 Les scores initiaux étaient de 43 en mobile et de 58 en desktop.
 En fouillant un peu, ce sont les `iframes` qui plombent les perfs, donc je n'y pourrai pas grand chose.
 
-Côté headers de sécurité, j'ai atteint la perfection avec le joli score de 105/100, soit un A+, à la place du D- initial :
+Côté headers de sécurité, j'ai atteint la perfection avec le joli score de 105/100, soit un A+, à la place du D- initial :
 
 ![Le détail du score MDN A+](mdn-after.webp)
 
@@ -486,17 +486,17 @@ Il me restera à adresser le sujet du temps de build, qui risque de poser probl�
 
 ## Liens et références
 
-* Documentation de Hugo :
+* Documentation de Hugo :
   * Configuration de l'[optimisation des images avec Hugo](https://gohugo.io/configuration/imaging/#quality)
   * La [méthode Resize de Hugo](https://gohugo.io/methods/resource/resize/)
   * Les [formats supportés par Hugo](https://gohugo.io/functions/images/process/#format)
   * [Le hookimage de Hugo](https://gohugo.io/render-hooks/images/#article)
 
-* Documentation de Caddy :
+* Documentation de Caddy :
   * [La directive `encode`](https://caddyserver.com/docs/caddyfile/directives/encode#syntax)
   * [La directive `precompressed`](https://caddyserver.com/docs/caddyfile/directives/file_server#precompressed)
 
-* Documentation MDN :
+* Documentation MDN :
   * [Responsive Images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)  
   * [MDN HTTP Observatory](https://developer.mozilla.org/en-US/observatory)
   * [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy)
@@ -505,6 +505,6 @@ Il me restera à adresser le sujet du temps de build, qui risque de poser probl�
 
 * [Precompressing Content With Hugo and Caddy](https://scottstuff.net/posts/2025/03/09/precompressing-content-with-hugo-and-caddy/)
 
-* L'excellent talk de Antoine Caron et Hubert Sablonière : [La compression Web : comment (re)prendre le contrôle ?](https://www.youtube.com/watch?v=LWd0hr6ljZk)
+* L'excellent talk de Antoine Caron et Hubert Sablonière : [La compression Web : comment (re)prendre le contrôle ?](https://www.youtube.com/watch?v=LWd0hr6ljZk)
 
-* L'article de Denis Germain, qui a fait la même chose que moi cette semaine : [Optimisation webperf : AVIF et pré-compression pour le blog](https://blog.zwindler.fr/2026/02/19/optimisation-webperf-avif-precompression/)
+* L'article de Denis Germain, qui a fait la même chose que moi cette semaine : [Optimisation webperf : AVIF et pré-compression pour le blog](https://blog.zwindler.fr/2026/02/19/optimisation-webperf-avif-precompression/)

@@ -42,7 +42,7 @@ Sont aussi analysées les dates de création des comptes, avec des pics de créa
 
 Le constat est sans appel, la manipulation politique de cette crise (mais aussi d'autres évènements) est évidente, puisque les agriculteurs, premiers concernés par cet évènement, sont très peu présents dans le discours face aux mouvements politiques, face aux comptes associés à des ingérences étrangères, et autres mouvements contestataires (anti-vax, théoristes du complot, etc.).
 
-Pour conclure, Clément pousse la réflexion au monde de l'IA Gen, qui est entraînée sur ces contenus (en particulier Grok, entraîné sur le contenu de Twitter donc) : la propagande russe infiltre l'IA Gen.
+Pour conclure, Clément pousse la réflexion au monde de l'IA Gen, qui est entraînée sur ces contenus (en particulier Grok, entraîné sur le contenu de Twitter donc) : la propagande russe infiltre l'IA Gen.
 
 Il nous a également présenté l'initiative Française VigiNum (unique au monde), qui vise à surveiller les tendances sur les réseaux sociaux, et détecter les tentatives d'ingérences qui pourraient être menées par certains états, ainsi que quelques axes permettant de riposter face à ces attaques.
 
@@ -57,7 +57,7 @@ _Ordralfabétix_ (Ambre avec ses couettes et muni de son poisson pas frais) et _
 
 ![20260212_101047.webp](20260212_101047.webp)
 
-Le ton est vite posé. Ce talks est un des plus drôles que j'ai vus récemment. Tout est prétexte à un jeu de mots en _ix_ : une partie de _Chifoumix_ : Menhir/Parchemin/Serpe, la commande `curlix` pour exécuter des requêtes HTTP, le serveur de cache _Redix_.
+Le ton est vite posé. Ce talks est un des plus drôles que j'ai vus récemment. Tout est prétexte à un jeu de mots en _ix_ : une partie de _Chifoumix_ : Menhir/Parchemin/Serpe, la commande `curlix` pour exécuter des requêtes HTTP, le serveur de cache _Redix_.
 
 Le jeu entre les deux speakers fonctionne bien, sur fond de rivalité éternelle entre ces deux personnages.
 
@@ -81,9 +81,9 @@ Randomized Testing permet de facilement générer des données aléatoires de to
 Chaque exécution est associée à un _seed_ qui va rendre le test reproductible.
 Un axe est aussi d'exécuter les tests dans des répétitions pour maximiser les cas couverts.
 
-Un seul point négatif : la librairie est conçue pour être utilisée avec JUnit&nbsp;4 uniquement, ce qui est un peu limitant pour les projets récents utilisant JUnit 5 ou 6.
+Un seul point négatif : la librairie est conçue pour être utilisée avec JUnit&nbsp;4 uniquement, ce qui est un peu limitant pour les projets récents utilisant JUnit 5 ou 6.
 
-### Metal-As-A-Service : Gérer votre bare-metal en MaaS, comme si c'était une machine virtuelle ! - par Julien Briault
+### Metal-As-A-Service : Gérer votre bare-metal en MaaS, comme si c'était une machine virtuelle ! - par Julien Briault
 
 On ne présente plus Julien, bénévole aux Restos du Coeur, et porteur de l'initiative _Le Cloud du Coeur_. Cette fois-ci, il nous présente les challenges associée à la gestion de serveurs en bare-metal.
 
@@ -99,7 +99,7 @@ C'est bluffant.
 > 
 > Si vous ne les avez pas vu, allez aussi jetter un oeil aux autres talks de Julien sur le Cloud du Coeur, ça vaut le détour.
 
-### Fatigués de la POO ? Passez à la DOP ! - Par Jérôme Tama
+### Fatigués de la POO ? Passez à la DOP ! - Par Jérôme Tama
 
 Un talk qui parcours les évolutions de Java depuis la version 8 jusqu'aux versions récentes.
 L'approche est de proposer en live un refactoring de code, d'une application Java 8, sous la forme d'un Kata.
@@ -119,9 +119,9 @@ Le talk est très dense, et beaucoup de mécanismes sont présentés, c'est exha
 
 > Un bon rappel du fonctionnement de la mémoire. C'est dense et technique, mais c'est intéressant pour se refaire l'_overview_ de ce qui existe.
 
-### Keynote du Jeudi soir : Speechless - par Jean-François Garreau
+### Keynote du Jeudi soir : Speechless - par Jean-François Garreau
 
-Un exercice d'improvisation, animé par Jean-François, avec quatre speakers de légende : Estelle Landry, Aurélie Vache, Mickael Alves, et Sébastien Ferrer; plus deux membres du jury : Marjorie Aubert et Thierry Chantier.
+Un exercice d'improvisation, animé par Jean-François, avec quatre speakers de légende : Estelle Landry, Aurélie Vache, Mickael Alves, et Sébastien Ferrer; plus deux membres du jury : Marjorie Aubert et Thierry Chantier.
 Un bel exercice, très drôle, pendant lequel le public participe au choix des sujets.
 
 ![20260212_174047.webp](20260212_174047.webp)
@@ -134,7 +134,7 @@ Le vendredi matin, j'étais très fatigué (j'ai passé une mauvaise nuit). Apr�
 
 J'ai profité du regain d'énergie de l'heure du midi pour aller voir quelques talks _Lightning_ de 15 minutes.
 
-### Keynote - Gray Hat, Black Hat, Users : comment protéger une plateforme de 85M d'utilisateurs face à des menaces hybrides - Par Mikael Robert et Yohan Boyer
+### Keynote - Gray Hat, Black Hat, Users : comment protéger une plateforme de 85M d'utilisateurs face à des menaces hybrides - Par Mikael Robert et Yohan Boyer
 
 Mikael et Yohan sont co-fondateurs du réseau social Yubo, réseau social Français 🇫🇷, avec pour cible des utilisateurs de la Gen Z (donc _obviously_, je ne connaissais pas ce réseau).
 
@@ -150,22 +150,22 @@ Ce sont des challenges auxquels on est pas forcément habitués, donc c'est touj
 
 > Le message principal est donc que le risque vient aussi de l'intérieur et des usages détournés. La surveillance des signaux dits "faibles" prend une place importante. 
 
-### Mieux écrire, mieux trouver : Diátaxis comme guide de documentation - par Alexis "Horgix" Chotar
+### Mieux écrire, mieux trouver : Diátaxis comme guide de documentation - par Alexis "Horgix" Chotar
 
 Alexis présente rapidement le concept de Diataxis, framework d'organisation de documentation.
 
 ![20260213_121002.webp](20260213_121002.webp)
 
-Ce framework propose d'organiser la doc selon 2 axes, en 4 parties : les tutoriels et how-tos visant à documenter des actions, et les explications et la références plus portées sur la connaissance.
+Ce framework propose d'organiser la doc selon 2 axes, en 4 parties : les tutoriels et how-tos visant à documenter des actions, et les explications et la références plus portées sur la connaissance.
 
 Quelques tips intéressants, en particulier ne pas hésiter à lier les articles de documentation, ainsi qu'être le plus spécifique possible.
 
 ![20260213_122251.webp](20260213_122251.webp)
 
 > J'ai bien aimé l'approche avec les exemples sur la photo précédente, qui aide à se projetter dans l'organisation proposée par le framework.
-> Comme l'a dit Alexis, le mieux, c'est de se lancer !
+> Comme l'a dit Alexis, le mieux, c'est de se lancer !
 
-### Déchaînez le Chaos : Tester la résilience de votre application avec Chaos Monkey - par Erwan Le Tutour
+### Déchaînez le Chaos : Tester la résilience de votre application avec Chaos Monkey - par Erwan Le Tutour
 
 Erwan présente les approches de Chaos Monkey, qui ont été popularisées par Netflix, avec la Simian Army.
 
@@ -175,16 +175,16 @@ Il nous présente ici très concrètement comment mettre en place un Chaos Monke
 
 La démo est intéressante, Erwan nous montre comment activer le Chaos Monkey, sur les différentes couches de notre application, pour y introduire des latences ou des erreurs. À tester couplé avec des tirs de charge pour observer comment les applications se comportent et améliorer leur résilience.
 
-> Probablement une brique que je vais tester à l'avenir, vu que c'est tout pile dans ma stack !
+> Probablement une brique que je vais tester à l'avenir, vu que c'est tout pile dans ma stack !
 
-### Tricher pour mieux apprendre : 30 minutes par jour pour rester curieux dans nos métiers de la tech - par Yann Schepens
+### Tricher pour mieux apprendre : 30 minutes par jour pour rester curieux dans nos métiers de la tech - par Yann Schepens
 
 Yann nous parle de veille techno, et nous propose de prendre 30 minutes chaque jour, sur notre temps de travail pour faire de la veille.
 Il nous invite à pratiquer, lancer des projets persos, partager.
 
 ![20260213_130011.webp](20260213_130011.webp)
 
-L'idée la plus pertinente à mon sens : faire sa veille 30 minutes avant le daily. Cela permet de bien gérer le temps, de ne pas déborder.
+L'idée la plus pertinente à mon sens : faire sa veille 30 minutes avant le daily. Cela permet de bien gérer le temps, de ne pas déborder.
 30 minutes par jour, ça représente une dizaine d'heures par mois, donc cette "triche" permet quand même de cumuler pas mal de temps, c'est une bonne astuce si on a pas encore de temps consacré à la veille.
 
 > Je reste convaincu que la veille est probablement une des pratiques les plus importantes de nos métiers.
@@ -198,24 +198,24 @@ Un talk tout en déguisements, et sur le thème du jeu Hadès. La mise en scène
 
 Antoine et Mathieu nous présentent l'histoire de l'utilisation des images sur le web, depuis la photo des Cernettes (première photo publiée sur internet), en passant par les différents formats, des BMP, GIF, en passant par les JPG et PNG, jusqu'aux formats modernes AVIF ET WEBP, dont les codecs sont issus du monde de la vidéo.
 
-Ils nous listent avec humour les piliers de l'enfer : des JPG non-transparents, aux images qui ne chargent pas, à l'image de 20 pixels affichée en grand donc floue, à l'image de 4000 pixels affichée en tout petit.
+Ils nous listent avec humour les piliers de l'enfer : des JPG non-transparents, aux images qui ne chargent pas, à l'image de 20 pixels affichée en grand donc floue, à l'image de 4000 pixels affichée en tout petit.
 
-Mais au delà de cet aspect humoristique, ils nous partagent des axes d'amélioration très concrets : l'utilisation des formats modernes qui sont très légers, le redimensionnement des images et la mise à disposition au browser d'un `srcset` pour lui permettre de choisir parmi les formats, les `lazy loading` et `fetchpriority` pour aller chercher des images au bon moment.
+Mais au delà de cet aspect humoristique, ils nous partagent des axes d'amélioration très concrets : l'utilisation des formats modernes qui sont très légers, le redimensionnement des images et la mise à disposition au browser d'un `srcset` pour lui permettre de choisir parmi les formats, les `lazy loading` et `fetchpriority` pour aller chercher des images au bon moment.
 
 Une architecture est aussi proposée pour redimensionner les images à la volée et les conserver en cache, plutôt que de faire ces redimensionnements au build (pas comme sur ce blog donc), à base de Strapi, imgproxy, d'un bucket et d'une BDD pour le stockage, et d'un Varnish ou d'un CDN pour le cache.
 C'est plutôt intéressant pour des sites publics, je testerai probablement une ou deux de ces astuces dans les prochains mois.
 
 > J'avais déjà entamé un travail sur les images de ce blog sur les bons conseils d'Antoine, il m'a redonné des idées supplémentaires avec ce talk. J'en avais pas besoin ahah.
 
-### Local-first et sync-engines, l'architecture du futur ? - par Benjamin Legrand
+### Local-first et sync-engines, l'architecture du futur ? - par Benjamin Legrand
 
-Benjamin présente les problèmes liés aux architectures classiques _n-tiers_, avec le Frontend qui communique à un Backend, avec des requêtes HTTP par exemple. Ces communications sont sources d'attente côté utilisateur en cas de latence réseau, et on met en place des mécanismes pour y palier : loaders et spinners. La gestion d'erreur est également un problème en soi, ainsi que la disponibilité du Backend qui doit être maximale, sous peine de rendre le Frontend inutilisable.
+Benjamin présente les problèmes liés aux architectures classiques _n-tiers_, avec le Frontend qui communique à un Backend, avec des requêtes HTTP par exemple. Ces communications sont sources d'attente côté utilisateur en cas de latence réseau, et on met en place des mécanismes pour y palier : loaders et spinners. La gestion d'erreur est également un problème en soi, ainsi que la disponibilité du Backend qui doit être maximale, sous peine de rendre le Frontend inutilisable.
 
 ![20260213_143026.webp](20260213_143026.webp)
 
 Il présente ensuite les approches _local-first_, qui consistent à avoir une base de données locale au Frontend (type _IndexedDB_ ou _sqLite_), couplée à un moteur de synchronisation.
 
-Les avantages sont nombreux : plus besoin de _spinner_, l'accès réseau devient optionnel car l'application peut fonctionner en mode déconnecté, les données peuvent être plus facilement sécurisées et privées si besoin, le Frontend devient alors aussi plus tolérant aux pannes du Backend.
+Les avantages sont nombreux : plus besoin de _spinner_, l'accès réseau devient optionnel car l'application peut fonctionner en mode déconnecté, les données peuvent être plus facilement sécurisées et privées si besoin, le Frontend devient alors aussi plus tolérant aux pannes du Backend.
 
 Côté Frontend, l'utilisation de _live-queries_ permet d'implémenter le lien entre les écrans et la base de données facilement (ainsi que le refresh pour les données synchronisées entrantes). Côté moteur de synchronisation, la plupart des moteurs du marché proposent l'utilisation d'un _CRDT_ (pour _Conflict-free Replicated Data Type_), une espèce d'API de Documents à la MongoDb, pour implémenter la synchronisation simplement.
 
@@ -223,9 +223,9 @@ _localfirst.fm_ fournit une vision complète de l'ensemble des libraries ou fram
 
 > J'avais déjà vu ce genre d'architecture par le passé. Le principal problème est pour moi le besoin de déplacer (ou dupliquer) les règles de gestion dans le Frontend, mais je trouve l'approche intéressant quand l'application Web est le seul canal.
 
-## Keynote de fin : Une belle démarche de transparence
+## Keynote de fin : Une belle démarche de transparence
 
-La keynote de cloture du vendredi soir (juste après ma game de Factorio), a été l'occasion pour les orgas de remercier tout le monde : sponsors, speakeuses et speakers, et le public présent.
+La keynote de cloture du vendredi soir (juste après ma game de Factorio), a été l'occasion pour les orgas de remercier tout le monde : sponsors, speakeuses et speakers, et le public présent.
 
 ![20260213_174521.webp](20260213_174521.webp)
 

@@ -35,8 +35,8 @@ Plutôt que de parser du HTML, le markdown devrait permettre aux LLMs de pouvoir
 
 * [A fun trick for getting discovered by LLMs and AI tools](https://cassidoo.co/post/ai-llm-discoverability/) de [Cassidy Williams](https://cassidoo.co)
 
-> Comment maintenir son site web à l'air des crawlers IA qui alimentent les LLMs ?
-Et comment réussir à être cité en source ?
+> Comment maintenir son site web à l'air des crawlers IA qui alimentent les LLMs ?
+Et comment réussir à être cité en source ?
 >
 > Cassidy Williams donne quelques pistes qu'elle a expérimentées, avec succès.
 On y retrouve le llms.txt.
@@ -64,7 +64,7 @@ On y retrouve le llms.txt.
 C'est joli, et c'est gratuit.
 La variante italique est incroyable. Je pense que je vais utiliser cette font sur mon site, pour les titres surtout.
 
-* [Comprendre la loi de Brooks : le mythe du mois-homme, 50 ans plus tard](https://www.sfeir.dev/tendances/comprendre-la-loi-de-brooks-le-mythe-du-mois-homme-50-ans-plus-tard/) _via_ [Siegfried Ehret](https://ehret.me/2026/01/nflm-developer/)
+* [Comprendre la loi de Brooks : le mythe du mois-homme, 50 ans plus tard](https://www.sfeir.dev/tendances/comprendre-la-loi-de-brooks-le-mythe-du-mois-homme-50-ans-plus-tard/) _via_ [Siegfried Ehret](https://ehret.me/2026/01/nflm-developer/)
 
 > Chiffrer en jours/homme, ajouter des personnes à un projet en retard, on sait que ça ne fonctionne pas, mais des organisations continuent à le faire.
 >
@@ -73,7 +73,7 @@ La variante italique est incroyable. Je pense que je vais utiliser cette font su
 * [Veille technologique ma méthode pour rester à jour | Camille Roux](https://youtu.be/d8nLfDFcip4) _via_ [LinkedIn](https://www.linkedin.com/posts/camilleroux_veille-technologique-ma-methode-pour-rester-activity-7407785711631933440-hHnQ)
 
 > Utiliser un lecteur RSS est de nouveau hype.
-Camille Roux nous donne quelques conseils concrets pour faire sa veille et la partager. En 3 mots : classer, consacrer du temps, partager.
+Camille Roux nous donne quelques conseils concrets pour faire sa veille et la partager. En 3 mots : classer, consacrer du temps, partager.
 Quelques bonnes idées avec un peu d'IA, pour faire des résumés ciblés, ou "écouter" des articles plutôt que les lire.
 S'appuyer sur des aggrégateurs d'actus forme aussi un bon point de départ.
 

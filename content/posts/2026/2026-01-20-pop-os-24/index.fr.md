@@ -9,26 +9,26 @@ title: Pop!_OS 24.04, une expérience COSMIC
 J'utilise la distribution Linux **Pop!_OS** depuis presque cinq ans. 
 J'ai toujours apprécié leur démarche autour de l'auto-tiling, qui est une fonctionnalité qui manque cruellement à GNOME (bien que des plugins existent).
 
-Après quelques mois passés sous Manjaro Linux, et des galères liées à des montées de version hasardeuses qui ont plusieurs fois cassé mon système, et avec la sortie récente de Pop!_OS 24.04, il était temps pour moi de revenir sur cette distribution pour me faire un avis sur l'environnement très attendu : COSMIC.
+Après quelques mois passés sous Manjaro Linux, et des galères liées à des montées de version hasardeuses qui ont plusieurs fois cassé mon système, et avec la sortie récente de Pop!_OS 24.04, il était temps pour moi de revenir sur cette distribution pour me faire un avis sur l'environnement très attendu : COSMIC.
 
 <!--more-->
 
-## Le nouvel environnement de bureau : COSMIC
+## Le nouvel environnement de bureau : COSMIC
 
 Pop!_OS n'a pas eu de mise à jour majeure depuis longtemps (la version précédente, 22.04, était sortie en avril 2022 donc)
 La raison est simple, leur effort était principalement concentré autour du développement de leur environnement de bureau COSMIC, qui a duré plus de trois ans.
 
-La promesse est forte : un environnement écrit en Rust pour avoir de bonnes performances et de la stabilité, un environnement pensé dès le départ pour supporter l'auto-tiling, ainsi que les workspaces dans un contexte multi-écran.
+La promesse est forte : un environnement écrit en Rust pour avoir de bonnes performances et de la stabilité, un environnement pensé dès le départ pour supporter l'auto-tiling, ainsi que les workspaces dans un contexte multi-écran.
 COSMIC est aussi pensé dès le départ pour s'intégrer avec Wayland, en remplacement de X11.
 
-COSMIC se veut être un environnement complet, et propose donc un ensemble de logiciels inclus, qui fournissent à peu près les mêmes outils que la suite GNOME, à savoir :
+COSMIC se veut être un environnement complet, et propose donc un ensemble de logiciels inclus, qui fournissent à peu près les mêmes outils que la suite GNOME, à savoir :
 
-* un terminal : COSMIC Terminal
-* un éditeur de texte : COSMIC Text Editor
-* un explorateur de fichiers : COSMIC Files
-* un lecteur multimedia : COSMIC Media Player
-* un gestionnaire de configuration : COSMIC Settings
-* un store d'applications : COSMIC Store
+* un terminal : COSMIC Terminal
+* un éditeur de texte : COSMIC Text Editor
+* un explorateur de fichiers : COSMIC Files
+* un lecteur multimedia : COSMIC Media Player
+* un gestionnaire de configuration : COSMIC Settings
+* un store d'applications : COSMIC Store
 
 > Oui, ils ne se sont pas foulés pour les noms, mais au moins c'est facile à retenir 😅
 
@@ -45,9 +45,9 @@ Le store d'applications permet de rechercher rapidement des logiciels et de les 
 
 ## La distribution
 
-Pop!_OS (qui est top 5 sur [DistroWatch](https://distrowatch.com/table.php?distribution=popos), même si ça ne veut pas dire grand-chose hormis qu'il y a une hype certaine autour de cette distrib) est une distribution Linux basée sur Ubuntu. Elle est développée par System76, une société américaine qui vend des ordinateurs portables sous Linux uniquement. On y retrouve donc les outils habituels : _apt_ et _flatpak_ pour l'installation de paquets (pas de _snap_ par défaut, et c'est tant mieux).
+Pop!_OS (qui est top 5 sur [DistroWatch](https://distrowatch.com/table.php?distribution=popos), même si ça ne veut pas dire grand-chose hormis qu'il y a une hype certaine autour de cette distrib) est une distribution Linux basée sur Ubuntu. Elle est développée par System76, une société américaine qui vend des ordinateurs portables sous Linux uniquement. On y retrouve donc les outils habituels : _apt_ et _flatpak_ pour l'installation de paquets (pas de _snap_ par défaut, et c'est tant mieux).
 
-Au niveau de l'ISO à télécharger, 2 versions sont disponibles : une version simple, et une version embarquant les drivers Nvidia (l'option que j'ai choisie, puisque j'ai un petit GPU dans ma machine). Il existe aussi une version pour les architectures ARM. Je n'ai pas de machine ARM pour tester, mais je pense que ça peut être intéressant pour certains home-labs.
+Au niveau de l'ISO à télécharger, 2 versions sont disponibles : une version simple, et une version embarquant les drivers Nvidia (l'option que j'ai choisie, puisque j'ai un petit GPU dans ma machine). Il existe aussi une version pour les architectures ARM. Je n'ai pas de machine ARM pour tester, mais je pense que ça peut être intéressant pour certains home-labs.
 Les ISOs sont assez lourds (2.8Go et 3.3Go pour la version avec les drivers Nvidia).
 L'installation est simple, avec un helper graphique comme on en trouve dans toutes les distributions.
 
@@ -91,24 +91,24 @@ La gestion des écrans est inspirée de celle de GNOME. À noter que les paramé
 > Sur mon setup de bureau, j'ai deux écrans 24 pouces en résolution 2560x1440, je les ai conservés en affichage à 100%, ce qui est plutôt confortable. J'ai activé l'auto-tiling par défaut, et des workspaces verticaux séparés pour chaque écran.
 Sur mon laptop, j'ai un écran 14 pouces en 2880x1800, un scaling partiel à 150% est plus confortable.
 
-Un point important : TOUT A FONCTIONNÉ DU PREMIER COUP.
+Un point important : TOUT A FONCTIONNÉ DU PREMIER COUP.
 
-C'est, je pense, suffisamment bien pour pouvoir le mentionner (EN CRIANT !).
+C'est, je pense, suffisamment bien pour pouvoir le mentionner (EN CRIANT !).
 
-J'ai pu facilement :
-* imprimer ;
-* connecter plusieurs casques Bluetooth ;
-* utiliser mon micro et ma webcam pour une visio ;
-* partager mon écran ;
-* prendre des screenshots ;
-* capturer un peu de video avec OBS Studio connecté à ma PS5 !
+J'ai pu facilement :
+* imprimer ;
+* connecter plusieurs casques Bluetooth ;
+* utiliser mon micro et ma webcam pour une visio ;
+* partager mon écran ;
+* prendre des screenshots ;
+* capturer un peu de video avec OBS Studio connecté à ma PS5 !
 
 ![OBS en action](obs.webp "OBS en action")
 
-Et tout aussi important :
+Et tout aussi important :
 
-* installer Steam ;
-* et jouer à Factorio 🏭⚙️ !
+* installer Steam ;
+* et jouer à Factorio 🏭⚙️ !
 
 Tout ça sans aucune galère.
 C'est du niveau attendu pour toute distribution Linux moderne, mais je m'attendais à quelques galères plus importantes, surtout avec un environnement aussi récent.
@@ -153,6 +153,6 @@ Donc, ça y est, en 2026 je reste sur Pop!_OS, ça valait le coup d'attendre.
 * La page [Community de COSMIC](https://system76.com/cosmic/community)
 * Le GitHub [cosmic-utils](https://github.com/cosmic-utils)
 * Pop!_OS sur [DistroWatch](https://distrowatch.com/table.php?distribution=popos)
-* [libcosmic](https://github.com/pop-os/libcosmic?) pour développer :
+* [libcosmic](https://github.com/pop-os/libcosmic?) pour développer :
   * des [applets](https://github.com/pop-os/cosmic-applet-template)
   * des [applications](https://github.com/pop-os/cosmic-app-template)
