@@ -56,7 +56,7 @@ run = "hugo server --openBrowser $HUGO_OPTIONS --buildDrafts --buildFuture"
 description = "Insère des espaces insécables avant ;?:! dans les posts"
 shell = "zsh -c"
 run = '''
-sed -i '/^---$/,/^---$/b;s/ \([;?:!]\)/\ \1/g' content/posts/**/*.md
+sed -i '/^---$/,/^---$/b;/^```$/,/^```$/b;s/ \([;?:!]\)/\ \1/g' content/posts/**/*.md
 '''
 
 [tasks."new-tech-watch-post"]
