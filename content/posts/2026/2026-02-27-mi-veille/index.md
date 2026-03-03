@@ -20,7 +20,7 @@ On repart donc avec un résumé du mois de février, plusieurs sujets autour de 
 
 ## ☁️ Cloud
 
-* [Souveraineté numérique : pourquoi la France doit absolument reprendre en main son destin informatique](https://www.lesnumeriques.com/societe-numerique/souverainete-numerique-pourquoi-la-france-doit-absolument-reprendre-en-main-son-destin-informatique-n251743.html) _via_ [lesnumeriques.com](https://lesnumeriques.com) _via_ [Bearstech](https://bsky.app/profile/bearstech.com) sur [Bluesky](https://bsky.app/profile/bearstech.com/post/3mfmvpesbch2e)
+* [Souveraineté numérique : pourquoi la France doit absolument reprendre en main son destin informatique](https://www.lesnumeriques.com/societe-numerique/souverainete-numerique-pourquoi-la-france-doit-absolument-reprendre-en-main-son-destin-informatique-n251743.html) _via_ [lesnumeriques.com](https://lesnumeriques.com) _via_ [Bearstech](https://bsky.app/profile/bearstech.com) sur [Bluesky](https://bsky.app/profile/bearstech.com/post/3mfmvpesbch2e)
 
  > La France achète 83% de ses services Cloud à l'étranger. Le constat est fort, la dépendance réelle.
 Maintenant, il faut des actes, et des décisions politiques pour appuyer une migration.
@@ -32,7 +32,7 @@ Maintenant, il faut des actes, et des décisions politiques pour appuyer une mig
 > Cette phase d'état des lieux pourra servir de point de départ.
 > [Une grille d'évaluation](https://gitlab.com/digitalresilienceinitiative/adri-irn), sous la forme d'un fichier CSV, est disponible sur GitLab.
 
-* [IRN 2026 : un outil pour mesurer sa dépendance tech](https://loud-technology.com/blog/indice-resilience-numerique-irn-souverainete-2026/) par [loud-technology.com](https://loud-technology.com)
+* [IRN 2026 : un outil pour mesurer sa dépendance tech](https://loud-technology.com/blog/indice-resilience-numerique-irn-souverainete-2026/) par [loud-technology.com](https://loud-technology.com)
 
 > Une analyse de l'IRN, avec une implémentation proposée en 20 questions simples pour pouvoir s'évaluer rapidement.
 > Encore une fois, l'outil est vu ici comme un bon point de départ, mais sans réelle volontée, c'est un coup d'épée dans l'eau.
@@ -55,7 +55,7 @@ Les impacts sur le consommateur se ressentent maintenant, avec des prix exorbita
 
 > Conséquence directe des augmentations des tarifs de la RAM et des disques durs, Steam repousse la sortie de ses nouveaux devices. Un autre coup de gueule sur le même site (décidément, ils ont un avis assez tranché sur ce site).
 
-* [Faut-il laisser les juniors utiliser de l'IA pour coder ?](https://www.nirinarabeson.fr/posts/2026-02-07/) par [Nirina Rabeson](https://nirinarabeson.fr)
+* [Faut-il laisser les juniors utiliser de l'IA pour coder ?](https://www.nirinarabeson.fr/posts/2026-02-07/) par [Nirina Rabeson](https://nirinarabeson.fr)
 
 > Nirina propose ses réflexions sur l'utilisation d'assistants IA, pour les profils junior. Il y a des arguments pour et des arguments contre. La question n'est clairement pas évidente.
 
@@ -89,7 +89,7 @@ C'est plutôt intéressant, car on a vu qu'il avait un avis très tranché sur l
 
 > Un web-component, très léger, qui permet d'embarquer un thread BlueSky sur n'importe quel site. Intéressant pour construire un système de commentaires sur un blog par exemple. Peut-être que je vais le mettre en place ici.
 
-* [[Devfest Lille 2024] La compression Web : comment (re)prendre le contrôle ?](https://www.youtube.com/watch?v=LWd0hr6ljZk)
+* [[Devfest Lille 2024] La compression Web : comment (re)prendre le contrôle ?](https://www.youtube.com/watch?v=LWd0hr6ljZk)
 
 > Une excellente conférence des potes Antoine Caron et Hubert Sablonnière. Ça parle de compression web, entre le serveur et le navigateur. 
 La partie que j'ai adorée est le rappel des algos de compression, avec le codage de Huffman démontré brillamment.
@@ -99,7 +99,7 @@ J'ai revu cette conf pour travailler les perfs de mon site web, ça vallait le c
 
 * [Your First Modular Java Project with Apache Maven 4](https://open-elements.com/posts/2026/01/27/your-first-modular-java-project-with-apache-maven-4/) par [Gerd Aschemann](https://open-elements.com/employees/gerd/)
 
-> Dans les architectures modulaires, on a souvent deux approches opposées : une approche multi-modules portée par l'outil de build, une approche multi-modules portée pas une séparation de packages rigoureuse.
+> Dans les architectures modulaires, on a souvent deux approches opposées : une approche multi-modules portée par l'outil de build, une approche multi-modules portée pas une séparation de packages rigoureuse.
 Les modules "Java 9" existent aussi, mais sont rarement utilisés.
 >
 > Maven 4 propose une implémentation des modules Java qui permet d'avoir plusieurs modules dans une unique codebase avec un unique pom.xml
@@ -113,7 +113,7 @@ Je suis plutôt hypé par l'approche.
 
 * [10 or more reasons to not use JDK’s HttpClient](https://blog.arkey.fr/2026/02/08/ten-reasons-to-not-use-jdk-httpclient/) par [Brice Dutheil](https://blog.arkey.fr) _via_ [Erik Thauvin](https://bsky.app/profile/erik.thauvin.net) sur [Bluesky](https://bsky.app/profile/erik.thauvin.net/post/3mekspqb7uj22)
 
-> Comment choisir son client HTTP en Java ?
+> Comment choisir son client HTTP en Java ?
 Le client du JDK peut sembler une bonne idée (en supprimant une dépendance donc), mais finalement, ses limitations semblent trop handicapantes.
 
 
