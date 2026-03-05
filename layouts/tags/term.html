@@ -6,12 +6,12 @@
     <h3>{{ .Key }}</h3>
     {{ range .Pages }}
     <li>
-                <span class="title">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </span>
+        <span class="title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </span>
         <span class="published">
-                    <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
-                </span>
+            <time class="pull-right post-list">{{ .Date | time.Format ":date_long" }}</time>
+        </span>
     </li>
     {{ end }}
     {{ end }}
