@@ -9,6 +9,7 @@ hasGallery: true
 events:
   - name: Touraine Tech 20026
     date: 2026-02-13
+    youtube: juD1RwbiRsM
     feedbacks_url: https://openfeedback.io/nIlFquxGUZ1IJ1cDkc1z/2026-02-13/cmfl2vyvf041pml1eg6tp42u2
     pictures: pictures-touraine-tech-2026
   - name: Epitech Summit 2026
