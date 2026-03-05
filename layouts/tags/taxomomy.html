@@ -1,0 +1,11 @@
+{{ define "main" -}}
+<h1 class="title">{{ .Title }}</h1>
+<div class="tags-container">
+    {{ range .Data.Terms.Alphabetical }}
+    <a href="{{ .Page.RelPermalink }}" class="tag-card">
+        <span class="tag-name">{{ .Page.Title | default .Term }}</span>
+        <span class="tag-count">{{ .Count }}</span>
+    </a>
+    {{ end }}
+</div>
+{{- end }}
