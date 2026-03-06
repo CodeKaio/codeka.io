@@ -6,17 +6,9 @@ title: Bilan saison 2024-2025
 aliases:
   - /2025/07/25/bilan-saison-2024-2025
 tags:
-  #  - DevOps
-  #  - Docker
-  #  - Git
-#  - IA
-  - Internet
   - certifications
-#  - Java
-#  - Kubernetes
-#  - Linux
-#  - Security
-#  - Tools
+  - events
+  - internet
 ---
 
 Maintenant que l'été est bien avancé, il est intéressant pour moi de faire le bilan de mon année 2024-2025.
