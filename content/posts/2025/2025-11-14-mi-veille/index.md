@@ -14,6 +14,7 @@ tags:
   - linux
   - events
   - clevercloud
+  - certifications
 ---
 
 En cette mi-novembre, la sortie de Spring Boot 4 se profile et la saison des conférences continue.

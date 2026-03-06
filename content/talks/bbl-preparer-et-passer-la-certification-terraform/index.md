@@ -5,6 +5,7 @@ date: 2024-01-25
 tags:
   - DevOps
   - Terraform
+  - certifications
 events: 
   - name: JetDev
     date: 2024-01-25

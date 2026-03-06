@@ -11,6 +11,7 @@ tags:
   #  - Git
 #  - IA
   - Internet
+  - certifications
 #  - Java
 #  - Kubernetes
 #  - Linux
