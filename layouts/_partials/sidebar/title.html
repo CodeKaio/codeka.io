@@ -10,18 +10,4 @@
     <p class="lead">
     {{ with .Site.Params.description }}{{. | safeHTML}}{{end}}
     </p>
-
-    <ul class="certifications">
-    {{ range .Site.Params.certifications }}
-        <li>
-            {{ $cred_logo := resources.Get .Logo }}
-            {{ $cred_logo := $cred_logo.Resize "96x96 webp"}}
-            <a href="{{.Credentials }}" target="_blank">
-                <img src="{{ $cred_logo.Permalink }}" alt="{{.Name}}" max-width="50%"/>
-                {{ .Name}}
-            </a>
-        </li>
-    {{ end }}
-    </ul>
-
 </div>
