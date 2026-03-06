@@ -3,8 +3,9 @@ date: 2026-03-06
 title: J'ai passé la certif Scaleway Foundations
 slug: scaleway-foundations
 tags:
+  - cloud
   - scaleway
-  - certification
+  - certifications
 ---
 
 Cela faisait quelque temps que je voulais investir sur les offres de Cloud souveraines.
