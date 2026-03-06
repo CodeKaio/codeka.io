@@ -46,8 +46,9 @@ timeout = '120s'
   front_page_content = ["posts", "projects", "books"]
 
   certifications = [
-    {Name = "CKAD: Certified Kubernetes Application Developer", Issuer= "The Linux Foundation", Issued= "2023-12", Expires= "2026-12", Credentials= "https://www.credly.com/badges/cdd863d0-5136-44e1-a393-8fa2dd736fa2/public_url", Logo= "/credentials/ckad-certified-kubernetes-application-developer.png"},
-    {Name = "HashiCorp Certified: Terraform Associate (003)", Issuer= "HashiCorp", Issued= "2023-11", Expires= "2025-11", Credentials= "https://www.credly.com/badges/c8e35084-2c3d-443f-96fd-76a46b237360/public_url", Logo= "/credentials/hashicorp-certified-terraform-associate-003.png"}
+    {Name = "Scaleway Foundations", Issuer= "Scaleway", Issued= "2026-03", Expires= "2028-03", Credentials= "https://scaleway.360learning.com/api/certification/6478933742264014/file.pdf", Logo= "/credentials/scaleway-foundations.png"},
+    {Name = "CKAD", Issuer= "The Linux Foundation", Issued= "2023-12", Expires= "2026-12", Credentials= "https://www.credly.com/badges/cdd863d0-5136-44e1-a393-8fa2dd736fa2/public_url", Logo= "/credentials/ckad-certified-kubernetes-application-developer.png"},
+    {Name = "Terraform Associate (003)", Issuer= "HashiCorp", Issued= "2023-11", Expires= "2025-11", Credentials= "https://www.credly.com/badges/c8e35084-2c3d-443f-96fd-76a46b237360/public_url", Logo= "/credentials/hashicorp-certified-terraform-associate-003.png"}
   ]
 
   plausible = true

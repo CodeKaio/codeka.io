@@ -26,21 +26,28 @@ body {
     font-size: 1rem;
 }
 
-ul.certifications {
+.certifications {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+
     border-top: solid 1px white;
     border-bottom: solid 1px white;
     padding: 1rem 0 1rem 0;
-}
+    margin: 0;
 
-.certifications li {
-    list-style-type: none;
-}
+    li {
+        width: 96px;
+        flex-shrink: 1;
+        list-style-type: none;
+    }
 
-.certifications img {
-    width: 96px;
-    height: 96px;
-    border: 2px solid white;
+    img {
+        width: 96px;
+        height: 96px;
+        border: 2px solid white;
+    }
 }
 
 @media (max-width: 48em) {
