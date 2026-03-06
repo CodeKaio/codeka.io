@@ -54,6 +54,14 @@ body {
     }
 }
 
+.sidebar-socials {
+    border-top: solid 1px white;
+    padding: 1rem 0 1rem 0;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media (max-width: 48em) {
     .sidebar {
         padding: 1rem;
@@ -64,8 +72,10 @@ body {
             margin-top: 0;
             margin-bottom: 0;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             gap: 1rem;
+            border-top: none;
             .heading {
                 text-decoration-line: underline;
                 text-decoration-style: dotted;
@@ -78,7 +88,7 @@ body {
                 display: none;
             }
         }
-        .social {
+        .sidebar-socials {
             display: none;
         }
         .footnote {
