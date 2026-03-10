@@ -53,6 +53,10 @@
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      {{- with .Resources.GetMatch "{cover.*}" }}
+      {{- $cover := .Resize "820x" }}
+      <enclosure url="{{ $cover.Permalink }}" type="image/webp" length="0" />
+      {{- end }}
     </item>
     {{- end }}
   </channel>
