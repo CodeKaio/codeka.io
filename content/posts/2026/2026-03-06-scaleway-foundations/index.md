@@ -15,7 +15,7 @@ J'ai donc décidé de m'y mettre sérieusement, et d'entamer le parcours de cert
 
 ## Le programme de certification Scaleway
 
-Scaleway propose depuis peu (un an je crois) un programme de certification.
+Scaleway propose depuis peu (un an, je crois) un programme de certification.
 Ce programme est constitué pour l'instant de quatre certifications différentes :
 
 * Scaleway Foundations
@@ -23,7 +23,7 @@ Ce programme est constitué pour l'instant de quatre certifications différentes
 * Scaleway Associate : Security & Identity
 * Scaleway Associate : Kubernetes
 
-Ensemble, elles forment un parcours adaptés à tous les profils tech, mais avec quand même un fort penchant vers les profils _Ops_.
+Ensemble, elles forment un parcours adapté à tous les profils tech, mais avec quand même un fort penchant vers les profils _Ops_.
 
 La certification _Foundations_ est donc la première à passer, les autres pouvant, je pense, être ensuite passées dans n'importe quel ordre.
 
@@ -33,13 +33,13 @@ Une fois la commande validée, un accès est donné à la plateforme 360Learning
 
 ## Le contenu de la certification _Foundations_
 
-Pour préparer le passage de l'examen, un module de _e-learning_ complet est donc dispo sur la plateforme 360Learning une fois l'inscription validée.
+Pour préparer le passage de l'examen, un module d'_e-learning_ complet est donc dispo sur la plateforme 360Learning une fois l'inscription validée.
 Il est alors possible de suivre le contenu à son rythme, tout se fait en ligne sur cette plateforme (y compris l'examen).
 
 Un document [Scaleway Foundations Exam Guide](https://scaleway-learning-exam-guides-shared.s3.nl-ams.scw.cloud/Scaleway%20Foundations%20Exam%20Guide.pdf), fourni par Scaleway, reprend aussi l'ensemble du contenu de la certification et des thèmes abordés. Il est très bien rédigé, et permet de bien comprendre le contenu de la certification et le passage de l'exam.
 
-Ce module de _e-learning_ comporte pas moins de 35 étapes, qui doivent être faites dans l'ordre.
-Chaque étape traîte d'un thème différent, et est composée d'un _slide-deck_ présentant le sujet. Les decks comportent entre 5 et 25 à 30 slides pour les plus complets. Certains decks contiennent également des vidéos explicatives, issues de la documentation officielle.
+Ce module d'_e-learning_ comporte pas moins de 35 étapes, qui doivent être faites dans l'ordre.
+Chaque étape traîte d'un thème différent, et est composée d'un _slidedeck_ présentant le sujet. Les decks comportent entre 5 et 25 à 30 slides pour les plus complets. Certains decks contiennent également des vidéos explicatives, issues de la documentation officielle.
 
 > En _rushant_ les contenus que je maitrisais déjà, j'ai passé un peu plus d'une heure sur l'ensemble des contenus.
 
@@ -68,7 +68,7 @@ Le contenu porte donc sur les thèmes suivants :
 C'est donc assez vaste. Chaque thème est présenté, mais sans rentrer dans le détail. Ce qui est important ici, c'est bien de comprendre l'ensemble de l'écosystème, des avantages et inconvénients de chaque offre, et leurs possibilités respectives.
 Il ne s'agit pas de savoir configurer un serveur ou une base de données, mais de savoir par exemple, quel est le mode de facturation de chaque offre, ou de savoir quelles sont les bonnes pratiques pour s'assurer de la haute disponibilité (et donc comprendre le mode instance simple Vs HA).
 
-Pour les personnes ayant déjà une première expérience du Cloud (sur Scalewau ou ailleurs), il n'y a pas de surprise, les notions abordées sont basiques. Pour les personnes n'ayant jamais travaillé sur un Cloud, le contenu est assez complet et couvre bien les aspects les plus importants. Ces personnes devront probablement passer plus de temps sur le contenu, pour bien les ingérer (une bonne journée je suppose, voire deux jours). C'est grosso-modo ce que confirme Scaleway dans leur [guide de passage de la certification](https://scaleway-learning-exam-guides-shared.s3.nl-ams.scw.cloud/Scaleway%20Foundations%20Exam%20Guide.pdf).
+Pour les personnes ayant déjà une première expérience du Cloud (sur Scaleway ou ailleurs), il n'y a pas de surprise, les notions abordées sont basiques. Pour les personnes n'ayant jamais travaillé sur un Cloud, le contenu est assez complet et couvre bien les aspects les plus importants. Ces personnes devront probablement passer plus de temps sur le contenu, pour bien les ingérer (une bonne journée, je suppose, voire deux jours). C'est grosso-modo ce que confirme Scaleway dans leur [guide de passage de la certification](https://scaleway-learning-exam-guides-shared.s3.nl-ams.scw.cloud/Scaleway%20Foundations%20Exam%20Guide.pdf).
 
 ## L'examen
 
