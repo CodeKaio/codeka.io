@@ -13,6 +13,8 @@ Je connaissais déjà pas trop mal l'écosystème _Scaleway_, pour l'avoir prati
 
 J'ai donc décidé de m'y mettre sérieusement, et d'entamer le parcours de certification sur _Scaleway_ sur les prochaines semaines.
 
+<!--more-->
+
 ## Le programme de certification Scaleway
 
 Scaleway propose depuis peu (un an, je crois) un programme de certification.
