@@ -6,7 +6,6 @@ tags:
   - kubernetes
   - java
   - scaleway
-draft: true
 ---
 
 La version 1.35 de Kubernetes, nommée "Timbernetes", est sortie le 17 décembre dernier (ça passe vite !) et est déjà disponible sur toutes les bonnes plateformes de Cloud.
@@ -17,15 +16,15 @@ Dans cet article, j'explore cette feature, en particulier pour des applications 
 
 <!--more-->
 
-## Une appli simple pour faire un bench
+## Une appli Java simple pour faire un bench
 
-Pour pouvoir tester cette feature, je veux pouvoir charger un peu le CPU et la Heap d'une JVM. J'ai donc demandé à OpenCode / DevStral de me générer une petite appli qui utilise JMH pour bencher un bon vieux _fibonnaci_ :
+Pour pouvoir tester cette feature, je veux pouvoir charger un peu le CPU et la Heap d'une JVM. J'ai donc codé une petite appli qui utilise JMH pour bencher un bon vieux _fiboacci_ :
 
 ```java
 public class CPUStress {
 
     @Benchmark
-    public void fibonacciCalculation(Blackhole blackhole) {
+    public void fibonacciBench(Blackhole blackhole) {
         for (int i = 0; i < 50; i++) {
             var result = fibonacci(i);
             blackhole.consume(result);
@@ -33,8 +32,11 @@ public class CPUStress {
     }
 
     private long fibonacci(int n) {
-        if (n <= 1) return n;
-        long a = 0, b = 1;
+        if (n <= 1) {
+            return n;
+        }
+        long a = 0;
+        long b = 1;
         for (int i = 2; i <= n; i++) {
             long temp = a + b;
             a = b;
@@ -56,7 +58,7 @@ public class MemoryStress {
     private final List<byte[]> memory = new ArrayList<>();
 
     @Benchmark
-    public void allocateMemory(Blackhole blackhole) {
+    public void memoryBench(Blackhole blackhole) {
         try {
             memory.add(new byte[MB_TO_ALLOCATE * 1024 * 1024]);
             blackhole.consume(memory);
@@ -98,7 +100,8 @@ public class BenchmarkRunner {
 ```
 
 Le bench est lancé sans forker la JVM, ce qui va me permettre de voir quel est l'impact d'un redimensionnement de la JVM pendant son exécution.
-J'ai exposé le démarrage du bench dans un endpoint HTTP `/stress/start` et la récupération des résultats dans `/stress/results`.
+J'ai aussi positionné 2 threads, histoire de voir les impacts lorsque le nombre de CPU disponibles sera supérieur à 1.
+J'ai exposé le démarrage du bench dans un endpoint HTTP `/stress/start`.
 
 ## Exposer quelques métriques avec Micrometer
 
@@ -204,9 +207,9 @@ Lorsque la JVM démarre, elle viendra prendre 80% de la RAM disponible pour la H
 En faisant un test rapide avec Docker, je peux vérifier que mes métriques sont correctes, en contraignant le nombre de CPU et la RAM visibles par le container :
 
 ```shell
-docker image build -t timbernetes-demo .
+$ docker image build -t timbernetes-demo .
 
-docker container run --rm --cpus=2 --memory=512m -p 8080:8080 timbernetes-demo
+$ docker container run --rm --cpus=2 --memory=512m -p 8080:8080 timbernetes-demo
 ```
 
 ```http request
@@ -218,9 +221,11 @@ jvm_memory_max_mb 396.375
 jvm_memory_used_mb 4.075630187988281
 ```
 
-## Instancier un cluster sur Scaleway
+Le code est prêt, je peux maintenant le déployer sur un cluster Kubernetes.
 
-Pour pouvoir expérimenter et jouer avec ces features, j'ai choisi d'utiliser un cluster que j'instancie sur Scaleway.
+## Instancier un cluster Kapsule sur Scaleway
+
+Pour pouvoir expérimenter et jouer avec ces features, j'ai choisi d'utiliser un cluster Kapsule sur Scaleway.
 Ça me permet de valider un vrai comportement de production, là où utiliser un _minikube_ ou un _kind_ en local pourrait avoir des comportements différents.
 
 Armé de mon meilleur _CLI_, j'enchaine donc les commandes.
@@ -239,7 +244,6 @@ NAME     AVAILABLE CNIS                           AVAILABLE CONTAINER RUNTIMES
 La version 1.35.2 est celle qui m'intéresse aujourd'hui, je vais donc pouvoir déployer un cluster avec cette version :
 
 ```bash
-# création du cluster
 $ scw k8s cluster create name=timbernetes-demo version=1.35.2
 
 ID                100d3564-66b2-4439-bcc2-b5e76cd6d1fb
@@ -266,7 +270,7 @@ Le cluster est créé immédiatement. Les paramètres par défaut sont suffisant
 
 Le cluster apparaît dans la console :
 
-![scaleway-console-cluster-starting](scaleway-console-cluster-starting.png)
+![Console Scaleway : Cluster en cours de création](scaleway-console-cluster-starting.webp)
 
 Une fois le cluster créé, il faut lui ajouter un _node-pool_, avec une petite machine _DEV1-M_ (3CPU et 4G de RAM) qui sera bien suffisante pour mes test :
 
@@ -298,16 +302,16 @@ Region            fr-par
 
 Après quelques minutes, le cluster est dispo :
 
-![img.png](scaleway-console-cluster-up.png)
+![Console Scaleway : Cluster Kubernetes opérationnel](scaleway-console-cluster-up.webp)
 
-![img.png](scaleway-console-nodepool-up.png)
+![Console Scaleway : Pool de nœuds opérationnel](scaleway-console-nodepool-up.webp)
 
 Je peux générer mon fichier `kubeconfig`, et vérifier que tout fonctionne bien :
 
 ```bash
 $ scw k8s kubeconfig get 100d3564-66b2-4439-bcc2-b5e76cd6d1fb > kubeconfig.yaml
 
-kubectl get nodes
+$ kubectl get nodes
 
 NAME                                             STATUS   ROLES    AGE     VERSION
 scw-timbernetes-dem-timbernetes-demo-po-fd96dc   Ready    <none>   1m55s   v1.35.2
@@ -331,7 +335,7 @@ ImageCount      0
 Region          fr-par
 ```
 
-![img.png](scaleway-console-registry.png)
+![Console Scaleway : Registre de conteneurs créé](scaleway-console-registry.webp)
 
 J'authentifie mon CLI Docker au registry avec un `docker login` :
 
@@ -347,7 +351,7 @@ $ docker tag timbernetes-demo rg.fr-par.scw.cloud/timbernetes-demo/java:latest
 $ docker push rg.fr-par.scw.cloud/timbernetes-demo/java:latest
 ```
 
-![img.png](scaleway-console-image.png)
+![Console Scaleway : Image Docker poussée sur le registre](scaleway-console-image.webp)
 
 Tout est prêt pour pouvoir déployer l'application et lancer les tests.
  
@@ -421,7 +425,6 @@ Pour ces tests, je vais suivre le scénario suivant :
 * Modifier la taille du pod pour le passer à 2CPU et 1Go de RAM
 * Relancer un stress-test
 * Remodifier la taille du pod pour revenir à 1 CPU et 512Mo de RAM
-* Relancer un dernier stress-test
 
 Je m'attends à voir le nombre de CPU modifiés, et les résultats des tests adaptés en fonction. Par contre, pour la RAM, je m'attends à ce qu'il ne se passe rien, puisque la RAM consommée par la JVM est fixée au redémarrage, allouer de la RAM supplémentaire sera donc inutile.
 
@@ -436,30 +439,28 @@ GET localhost:8081/stress/start
 Started benchmark
 ```
 
-Pendant le premier Benchmark, CPUStress, le CPU est bien chargé, la RAM ne bouge pas :
+Pendant le premier Benchmark, CPUStress, le CPU est bien chargé, on voit le load qui est proche de 1, la RAM ne bouge pas :
 
-```shell
+```http request
+GET localhost:8080/metrics
+
 cpu_count 1.0
-process_cpu_load 0.80859375
+process_cpu_load 0.90859375
+
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 5.6450958251953125
 ```
 
 Pendant le second Benchmark, on voit que la RAM se rempli, et est nettoyée une fois pleine :
 
-```shell
+```http request
+GET localhost:8080/metrics
+
 cpu_count 1.0
 process_cpu_load 0.99267578125
+
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 353.49063873291016
-```
-
-Le benchmark donne les résultats suivants :
-
-```text
-Benchmark                        Mode  Cnt        Score        Error  Units
-CPUStress.fibonacciCalculation  thrpt    5  1853767.056 ± 303895.231  ops/s
-MemoryStress.allocateMemory     thrpt    5       44.607 ±      2.511  ops/s
 ```
 
 Cela nous fait un point de départ.
@@ -500,6 +501,7 @@ GET localhost:8080/metrics
 
 cpu_count 2.0
 process_cpu_load 0.04296875
+
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 362.24312591552734
 ```
@@ -514,19 +516,23 @@ GET localhost:8080/metrics
 
 cpu_count 2.0
 process_cpu_load 1.90654296875
+
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 355.3716583251953
 ```
 
-Un `top` dans le container permet de confirmer ce qu'on voit avec la métrique, le process utilise 200% de CPU, les 2 coeurs sont bien exploités par la JVM.
-![img.png](console-top.png)
+
+Le load est maintenant proche de 2.
+
+Un `top` dans le container permet de confirmer ce qu'on voit avec la métrique, le process utilise 200% de CPU, les 2 cœurs sont bien exploités par la JVM.
+![Commande top dans le conteneur montrant l'utilisation des deux cœurs CPU par la JVM](console-top.webp)
 
 ### Redimensionnement et dernier tir
 
 Pour compléter les tests, je redimensionne à nouveau le pod, cette fois-ci avec des valeurs à la baisse, pour revenir aux valeurs initiales : 
 
 ```bash
-kubectl patch pod timbernetes-demo --subresource resize --patch \
+$ kubectl patch pod timbernetes-demo --subresource resize --patch \
   '{"spec":{"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"512Mi"},"requests":{"cpu":"1","memory":"512Mi"}}}]}}'
   
 pod/timbernetes-demo patched
@@ -535,7 +541,8 @@ pod/timbernetes-demo patched
 Les évènements sur le pod affichent bien que le resizing a été exécuté :
 
 ```bash
-kubectl events --for pod/timbernetes-demo
+$ kubectl events --for pod/timbernetes-demo
+
 LAST SEEN   TYPE     REASON            OBJECT                 MESSAGE
 53s         Normal   ResizeStarted     Pod/timbernetes-demo   Pod resize started: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"512Mi"},"requests":{"cpu":"1","memory":"512Mi"}}}],"generation":3}
 52s         Normal   ResizeCompleted   Pod/timbernetes-demo   Pod resize completed: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"512Mi"},"requests":{"cpu":"1","memory":"512Mi"}}}],"generation":3}
@@ -548,21 +555,21 @@ GET localhost:8080/metrics
 
 cpu_count 1.0
 process_cpu_load 0.03466796875
+
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 206.46312713623047
 ```
 
 Pas de surprise non plus sur ce redimensionnement qui est aussi effectué à chaud.
 
-Enfin, pour observer ce qu'il se passerai avec un redimensionnement sur une RAM déjà consommé, j'opère un redimensionnement à une valeur de RAM inférieure à celle que consomme déjà le pod.
-Je dois m'attendre à un OOMKill, puis un redémarrage du pod, qui reprendra donc un taille de Heap à 80% de la RAM disponible, vu que ce dimensionnement est fait au démarrage de la JVM.
+Enfin, pour observer ce qu'il se passerait avec un redimensionnement sur une RAM déjà consommée, j'opère un redimensionnement à une valeur de RAM inférieure à celle que consomme déjà le pod.
 
 ```bash
 $ kubectl patch pod timbernetes-demo --subresource resize --patch   '{"spec":{"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"128Mi"},"requests":{"cpu":"1","memory":"128Mi"}}}]}}'
 pod/timbernetes-demo patched
 ```
 
-Cette fois-ci, lorsque je regarde les évènements du pod, j'observe une erreur : 
+Cette fois-ci, lorsque je regarde les évènements du pod, j'observe une erreur _cannot decrease memory limits_: 
 
 ```bash
 $ kubectl events --for pod/timbernetes-demo
@@ -572,19 +579,17 @@ $ kubectl events --for pod/timbernetes-demo
 
 Kubernetes refuse de redimensionner le pod à chaud, car la RAM consommée est supérieure à la nouvelle taille de RAM, ce qui est cohérent.
 
-## Conclusion
+## Intégration avec les VPA
 
-Le redimensionnement des ressources à chaud fonctionne à merveille, et le comportement de la JVM est bien celui auquel on s'attendait : le nombre de CPU est détecté dynamiquement, et les threads schedulés par la JVM peuvent exploiter pleinement les coeurs ajoutés.
+Ces mécanismes sont déjà chouettes par eux-même, mais vont prendre une toute autre dimension avec leur intégration dans les _VPA_ (_Vertical Pod Autoscaler_).
 
-Concernant la RAM, étant donné que la JVM fix sa quantité de Heap au démarrage, et que cette valeur ne peut pas être ajustée au runtime, modifier la RAM allouée à un pod Java n'a aucun effet.
+### InPlaceOrRecreate
 
-Des [drafts de JEP](https://openjdk.org/jeps/8359211) proposent que les différents _Garbage Collector_ (G1, ZGC et Serial) soient modifiés pour pouvoir ajuster à chaud la taille de la Heap en fonction de l'environnement dans lequel s'exécute la JVM. Ces évolutions permettraient donc à terme de pouvoir bénéficier pleinement de cette feature de Kubernetes.
+Les VPA, depuis leur version 1.6, ont également un nouveau mode appelé `InPlaceOrRecreate` qui permet de redimensionner les pods sans les redémarrer, et de forcer une recréation du Pod si le redimensionnement n'est pas possible. Cette fonctionnalité rend maintenant l'utilisation des VPA pertinentes pour des applications Java. On peut imaginer qu'un pod verrait son nombre de CPU ajusté à chaud, plutôt que de faire de la scalabilité horizontale.
 
-Les VPA (_Vertical Pod Autoscaler_) ont également un nouveau mode appelé `InPlaceOrRecreate` qui permet de redimensionner les pods sans les redémarrer, et de forer une recréation si le redimensionnement n'est pas possible. Cette fonctionnalité rend maintenant l'utilisation des VPA pertinentes pour des applications Java. On peut imaginer qu'un pod verrai son nombre de CPU ajusté à chaud, plutôt que de faire de la scalabilité horizontale.
+Il faut cependant limiter cet usage au CPU (en tout cas pour des applis Java), et utiliser un VPA est toujours incompatible avec un HPA, donc l'intérêt reste encore un peu limité.
 
-Il faut cependant limiter cet usage à au CPU, et utiliser un VPA est toujours incompatible avec un HPA, donc l'intérêt reste encore un peu limité.
-
-Voici un exemple de VPA pour une application Java :
+Voici un exemple de VPA pour mon application Java, tirant parti de cette feature :
 
 ```yaml
 apiVersion: autoscaling.k8s.io/v1
@@ -610,7 +615,46 @@ spec:
       controlledValues: RequestsAndLimits
 ```
 
+> Les VPA ne semblent pas disponibles sur les clusters Kapsule, donc je n'ai pas pu tester cette partie (et installer un VPA est au-delà de mes compétences ahaha).
+
+### CPU Startup Boost
+
+La feature des VPA nommée CPU Startup Boost a pour objectif de donner accès à un pod un peu plus de ressources pendant son démarrage, et de réduire ces ressources une fois que le pod est au statut _Ready_.
+
+Dans l'exemple ci-dessous, on double le nombre de CPU disponibles, et on le repasse au nombre de CPU initialement alloués, 10 secondes après que le pod soit _Ready_ :
+
+```yaml
+apiVersion: "autoscaling.k8s.io/v1"
+kind: VerticalPodAutoscaler
+metadata:
+  name: timbernetes-demo-vpa
+spec:
+  targetRef:
+    apiVersion: "apps/v1"
+    kind: Deployment
+    name: timbernetes-demo
+  startupBoost:
+    cpu:
+      type: "Factor"
+      factor: 2
+      durationSeconds: 10
+```
+
+Cette feature est pour l'instant disponible en version alpha dans les VPA 1.7.
+
+C'est clairement une feature qui va être très utile pour les applications Java, en particulier les applications Spring Boot, qui nécessitent beaucoup de CPU au démarrage pour analyser le classpath et configurer l'application context.
+
+## Conclusion
+
+Le redimensionnement des ressources à chaud fonctionne à merveille, et le comportement de la JVM est bien celui auquel on s'attendait : le nombre de CPU est détecté dynamiquement, et les threads schedulés par la JVM peuvent exploiter pleinement les coeurs ajoutés.
+
+Concernant la RAM, étant donné que la JVM fixe sa quantité de Heap au démarrage, et que cette valeur ne peut pas être ajustée au runtime, modifier la RAM allouée à un pod Java n'a aucun effet.
+
+Des [drafts de JEP](https://openjdk.org/jeps/8359211) proposent que les différents _Garbage Collector_ (G1, ZGC et Serial) soient modifiés pour pouvoir ajuster à chaud la taille de la Heap en fonction de l'environnement dans lequel s'exécute la JVM. Ces évolutions permettraient donc à terme de pouvoir bénéficier pleinement de cette feature de Kubernetes.
+
 ## Liens et références
+
+* Le repo Github avec lequel j'ai expérimenté : https://github.com/juwit/timbernetes-demo
 
 Kubernetes :
 * [Release](https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/) note de Kubernetes 1.35 : Timbernetes
@@ -618,13 +662,24 @@ Kubernetes :
 * L'article de blog pour promouvoir la feature : [Kubernetes 1.35: In-Place Pod Resize Graduates to Stable](https://kubernetes.io/blog/2025/12/19/kubernetes-v1-35-in-place-pod-resize-ga/)
 * La page de documentation [Resize CPU and Memory Resources assigned to Containers](https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/)
 * La page de documentation [Resize CPU and Memory Resources assigned to Pods](https://kubernetes.io/docs/tasks/configure-pod-container/resize-pod-resources/)
+* Vertical Pod Autoscaling :
+    * [Installation of the Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/blob/master/vertical-pod-autoscaler/docs/installation.md)
+    * [InPlaceOrRecreate Update mode](https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/#updateMode-InPlaceOrRecreate)
+    * Vertical Pod Autoscaler - [AEP-4016: Support for in place updates in VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support)
+    * Vertical Pod Autoscaler - [AEP-7862: CPU Startup Boost](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/7862-cpu-startup-boost)
+
 Scaleway :
+
 * La documentation Scaleway : [Kapsule & Kosmos release calendar](https://www.scaleway.com/en/docs/kubernetes/reference-content/version-support-policy/#scaleway-kubernetes-kapsule--kosmos-release-calendar)
 * La documentation du CLI Scaleway : [Creating and managing a Kubernetes Kapsule with CLI (v2)](https://www.scaleway.com/en/docs/kubernetes/api-cli/creating-managing-kubernetes-lifecycle-cliv2/)
 * [Scaleway Instances datasheet](https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/)
+
 JMH :
+
 * Le tuto de Baeldung [Microbenchmarking with Java](https://www.baeldung.com/java-microbenchmark-harness)
+
 Java :
+
 * [JEP draft: Automatic Heap Sizing for G1](https://openjdk.org/jeps/8359211)
 * [JEP draft: Automatic Heap Sizing for ZGC](https://openjdk.org/jeps/8377305)
 * [JEP draft: Automatic Heap Sizing for the Serial Garbage Collector](https://openjdk.org/jeps/8350152)
