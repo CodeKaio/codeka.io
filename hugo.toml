@@ -24,6 +24,8 @@ timeout = '120s'
     posts = '/:year/:month/:day/:slug'
 
 [markup]
+  [markup.highlight]
+    noClasses = false
   [markup.goldmark]
     [markup.goldmark.renderHooks]
       [markup.goldmark.renderHooks.link]

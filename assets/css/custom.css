@@ -13,10 +13,10 @@ body {
     --date-color: #515151;
     --table-border-color: #E5E5E5;
     --table-stripe-color: #F9F9F9;
-    --code-color: #000;
-    --code-background-color: #E5E5E5;
-    --code-block-color: #fff;
-    --code-block-background-color: #272822;
+    --code-color: #d44950;
+    --code-background-color: #f0f0f0;
+    --code-block-color: #333;
+    --code-block-background-color: #eeeeee;
     --moon-sun-color: #FFF;
     --moon-sun-background-color: #515151;
     background-color: var(--bkg-color);
