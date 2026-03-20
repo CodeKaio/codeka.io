@@ -177,7 +177,7 @@ public class MetricsServer {
 
 Lorsque je démarre l'application sur ma machine, j'obtiens les métriques suivantes :
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 22.0
@@ -212,7 +212,7 @@ $ docker image build -t timbernetes-demo .
 $ docker container run --rm --cpus=2 --memory=512m -p 8080:8080 timbernetes-demo
 ```
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 2.0
@@ -404,7 +404,7 @@ Forwarding from [::1]:8081 -> 8081
 
 Je regarde les métriques à froid :
 
-```http request
+```text
 GET localhost:8080/metrics
 
 cpu_count 1.0
@@ -432,7 +432,7 @@ Je m'attends à voir le nombre de CPU modifiés, et les résultats des tests ada
 
 Je démarre le premier tir avec un curl :
 
-```http request
+```
 GET localhost:8081/stress/start
 
 200 OK
@@ -441,7 +441,7 @@ Started benchmark
 
 Pendant le premier Benchmark, CPUStress, le CPU est bien chargé, on voit le load qui est proche de 1, la RAM ne bouge pas :
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 1.0
@@ -453,7 +453,7 @@ jvm_memory_used_mb 5.6450958251953125
 
 Pendant le second Benchmark, on voit que la RAM se rempli, et est nettoyée une fois pleine :
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 1.0
@@ -496,7 +496,7 @@ Les deux dernières lignes font bien état de la modification.
 
 Quand je requête à nouveau le endpoint `/metrics`, j'obtiens alors la réponse suivante :
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 2.0
@@ -511,7 +511,7 @@ Par contre, comme on l'attendait, la Heap maximale que peut consommer la JVM n'a
 
 Une fois le stress test lancé, on observe les métriques suivantes :
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 2.0
@@ -550,7 +550,7 @@ LAST SEEN   TYPE     REASON            OBJECT                 MESSAGE
 
 La métrique affiche de nouveau 1 CPU disponible, aucun changement au niveau de la RAM comme attendu :
 
-```http request
+```
 GET localhost:8080/metrics
 
 cpu_count 1.0
