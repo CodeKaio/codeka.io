@@ -81,6 +81,7 @@ public class BenchmarkRunner {
                     .mode(Mode.Throughput)
                     .timeUnit(TimeUnit.SECONDS)
                     .forks(0)
+                    .threads(2)
                     .result(tempFile.getAbsolutePath())
                     .resultFormat(ResultFormatType.TEXT)
                     .build();
@@ -403,7 +404,7 @@ Je regarde les métriques à froid :
 GET localhost:8080/metrics
 
 cpu_count 1.0
-process_cpu_load 1.4755859375
+process_cpu_load 0.18505859375
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 4.081321716308594
 ```
@@ -448,7 +449,7 @@ Pendant le second Benchmark, on voit que la RAM se rempli, et est nettoyée une 
 
 ```shell
 cpu_count 1.0
-process_cpu_load 0.875
+process_cpu_load 0.99267578125
 jvm_memory_max_mb 396.375
 jvm_memory_used_mb 353.49063873291016
 ```
@@ -481,9 +482,6 @@ On peut lister les events du pod pour voir que le resizing est bien fait, et que
 ```bash
 & kubectl events --for pod/timbernetes-demo
 LAST SEEN           TYPE      REASON              OBJECT                 MESSAGE
-17m                 Normal    NotTriggerScaleUp   Pod/timbernetes-demo   pod didn't trigger scale-up:
-17m                 Warning   FailedScheduling    Pod/timbernetes-demo   no nodes available to schedule pods
-17m (x4 over 17m)   Warning   FailedScheduling    Pod/timbernetes-demo   no nodes available to schedule pods
 16m                 Normal    Scheduled           Pod/timbernetes-demo   Successfully assigned default/timbernetes-demo to scw-timbernetes-dem-timbernetes-demo-po-1b7caa
 16m                 Normal    Pulling             Pod/timbernetes-demo   Pulling image "rg.fr-par.scw.cloud/timbernetes-demo/java:latest"
 15m                 Normal    Pulled              Pod/timbernetes-demo   Successfully pulled image "rg.fr-par.scw.cloud/timbernetes-demo/java:latest" in 14.487s (27.916s including waiting). Image size: 109821985 bytes.
@@ -491,6 +489,125 @@ LAST SEEN           TYPE      REASON              OBJECT                 MESSAGE
 15m                 Normal    Started             Pod/timbernetes-demo   Container started
 113s                Normal    ResizeStarted       Pod/timbernetes-demo   Pod resize started: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"2","memory":"1Gi"},"requests":{"cpu":"2","memory":"1Gi"}}}],"generation":2}
 112s                Normal    ResizeCompleted     Pod/timbernetes-demo   Pod resize completed: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"2","memory":"1Gi"},"requests":{"cpu":"2","memory":"1Gi"}}}],"generation":2}
+```
+
+Les deux dernières lignes font bien état de la modification.
+
+Quand je requête à nouveau le endpoint `/metrics`, j'obtiens alors la réponse suivante :
+
+```http request
+GET localhost:8080/metrics
+
+cpu_count 2.0
+process_cpu_load 0.04296875
+jvm_memory_max_mb 396.375
+jvm_memory_used_mb 362.24312591552734
+```
+
+On observe que le nombre de CPU visibles par le JVM a changé, c'est une bonne nouvelle.
+Par contre, comme on l'attendait, la Heap maximale que peut consommer la JVM n'a pas changé. La Heap est configurée au démarrage de la JVM et n'est donc pas redimensionnée à chaud, même si le pod a plus de RAM disponible.
+
+Une fois le stress test lancé, on observe les métriques suivantes :
+
+```http request
+GET localhost:8080/metrics
+
+cpu_count 2.0
+process_cpu_load 1.90654296875
+jvm_memory_max_mb 396.375
+jvm_memory_used_mb 355.3716583251953
+```
+
+Un `top` dans le container permet de confirmer ce qu'on voit avec la métrique, le process utilise 200% de CPU, les 2 coeurs sont bien exploités par la JVM.
+![img.png](console-top.png)
+
+### Redimensionnement et dernier tir
+
+Pour compléter les tests, je redimensionne à nouveau le pod, cette fois-ci avec des valeurs à la baisse, pour revenir aux valeurs initiales : 
+
+```bash
+kubectl patch pod timbernetes-demo --subresource resize --patch \
+  '{"spec":{"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"512Mi"},"requests":{"cpu":"1","memory":"512Mi"}}}]}}'
+  
+pod/timbernetes-demo patched
+```
+
+Les évènements sur le pod affichent bien que le resizing a été exécuté :
+
+```bash
+kubectl events --for pod/timbernetes-demo
+LAST SEEN   TYPE     REASON            OBJECT                 MESSAGE
+53s         Normal   ResizeStarted     Pod/timbernetes-demo   Pod resize started: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"512Mi"},"requests":{"cpu":"1","memory":"512Mi"}}}],"generation":3}
+52s         Normal   ResizeCompleted   Pod/timbernetes-demo   Pod resize completed: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"512Mi"},"requests":{"cpu":"1","memory":"512Mi"}}}],"generation":3}
+```
+
+La métrique affiche de nouveau 1 CPU disponible, aucun changement au niveau de la RAM comme attendu :
+
+```http request
+GET localhost:8080/metrics
+
+cpu_count 1.0
+process_cpu_load 0.03466796875
+jvm_memory_max_mb 396.375
+jvm_memory_used_mb 206.46312713623047
+```
+
+Pas de surprise non plus sur ce redimensionnement qui est aussi effectué à chaud.
+
+Enfin, pour observer ce qu'il se passerai avec un redimensionnement sur une RAM déjà consommé, j'opère un redimensionnement à une valeur de RAM inférieure à celle que consomme déjà le pod.
+Je dois m'attendre à un OOMKill, puis un redémarrage du pod, qui reprendra donc un taille de Heap à 80% de la RAM disponible, vu que ce dimensionnement est fait au démarrage de la JVM.
+
+```bash
+$ kubectl patch pod timbernetes-demo --subresource resize --patch   '{"spec":{"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"128Mi"},"requests":{"cpu":"1","memory":"128Mi"}}}]}}'
+pod/timbernetes-demo patched
+```
+
+Cette fois-ci, lorsque je regarde les évènements du pod, j'observe une erreur : 
+
+```bash
+$ kubectl events --for pod/timbernetes-demo
+32s         Normal    ResizeStarted     Pod/timbernetes-demo   Pod resize started: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"128Mi"},"requests":{"cpu":"1","memory":"128Mi"}}}],"generation":5}
+32s         Warning   ResizeError       Pod/timbernetes-demo   Pod resize error: {"containers":[{"name":"timbernetes-demo","resources":{"limits":{"cpu":"1","memory":"128Mi"},"requests":{"cpu":"1","memory":"128Mi"}}}],"generation":5,"error":"cannot decrease memory limits: [attempting to set pod memory limit (134217728) below current usage (418054144), attempting to set container \"timbernetes-demo\" memory limit (134217728) below current usage (418054144)]"}
+```
+
+Kubernetes refuse de redimensionner le pod à chaud, car la RAM consommée est supérieure à la nouvelle taille de RAM, ce qui est cohérent.
+
+## Conclusion
+
+Le redimensionnement des ressources à chaud fonctionne à merveille, et le comportement de la JVM est bien celui auquel on s'attendait : le nombre de CPU est détecté dynamiquement, et les threads schedulés par la JVM peuvent exploiter pleinement les coeurs ajoutés.
+
+Concernant la RAM, étant donné que la JVM fix sa quantité de Heap au démarrage, et que cette valeur ne peut pas être ajustée au runtime, modifier la RAM allouée à un pod Java n'a aucun effet.
+
+Des [drafts de JEP](https://openjdk.org/jeps/8359211) proposent que les différents _Garbage Collector_ (G1, ZGC et Serial) soient modifiés pour pouvoir ajuster à chaud la taille de la Heap en fonction de l'environnement dans lequel s'exécute la JVM. Ces évolutions permettraient donc à terme de pouvoir bénéficier pleinement de cette feature de Kubernetes.
+
+Les VPA (_Vertical Pod Autoscaler_) ont également un nouveau mode appelé `InPlaceOrRecreate` qui permet de redimensionner les pods sans les redémarrer, et de forer une recréation si le redimensionnement n'est pas possible. Cette fonctionnalité rend maintenant l'utilisation des VPA pertinentes pour des applications Java. On peut imaginer qu'un pod verrai son nombre de CPU ajusté à chaud, plutôt que de faire de la scalabilité horizontale.
+
+Il faut cependant limiter cet usage à au CPU, et utiliser un VPA est toujours incompatible avec un HPA, donc l'intérêt reste encore un peu limité.
+
+Voici un exemple de VPA pour une application Java :
+
+```yaml
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: timbernetes-demo-vpa
+spec:
+  targetRef:
+    apiVersion: "apps/v1"
+    kind: Deployment
+    name: timbernetes-demo
+  updatePolicy:
+    updateMode: "InPlaceOrRecreate"
+  resourcePolicy:
+    containerPolicies:
+    - containerName: "timbernetes-demo"
+      minAllowed:
+        cpu: 100m
+      maxAllowed:
+        cpu: 2
+      controlledResources:
+      - cpu
+      controlledValues: RequestsAndLimits
 ```
 
 ## Liens et références
@@ -507,3 +624,7 @@ Scaleway :
 * [Scaleway Instances datasheet](https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/)
 JMH :
 * Le tuto de Baeldung [Microbenchmarking with Java](https://www.baeldung.com/java-microbenchmark-harness)
+Java :
+* [JEP draft: Automatic Heap Sizing for G1](https://openjdk.org/jeps/8359211)
+* [JEP draft: Automatic Heap Sizing for ZGC](https://openjdk.org/jeps/8377305)
+* [JEP draft: Automatic Heap Sizing for the Serial Garbage Collector](https://openjdk.org/jeps/8350152)
