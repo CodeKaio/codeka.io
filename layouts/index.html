@@ -31,10 +31,11 @@
     <article class="post">
         {{ partial "post/info.html" . }}
 
+        {{ $anchor := .Params.cover_anchor | default "Smart" }}
         {{ with .Resources }}
             {{ with .GetMatch "{cover.*}" }}
-                {{ $cover820 := .Fill "820x240 webp q75 lanczos" }}
-                {{ $cover480 := .Fill "480x240 webp q75 lanczos" }}
+                {{ $cover820 := .Fill (printf "820x240 webp q75 lanczos %s" $anchor) }}
+                {{ $cover480 := .Fill (printf "480x240 webp q75 lanczos %s" $anchor) }}
                 <img loading="lazy"
                      srcset="{{ $cover820.RelPermalink }} 820w,
                              {{ $cover480.RelPermalink }} 480w"
