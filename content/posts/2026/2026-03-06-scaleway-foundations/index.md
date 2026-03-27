@@ -6,6 +6,7 @@ tags:
   - cloud
   - scaleway
   - certifications
+cover_anchor: top
 ---
 
 Cela faisait quelque temps que je voulais investir sur les offres de Cloud souveraines.

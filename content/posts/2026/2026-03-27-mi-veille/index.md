@@ -13,6 +13,7 @@ tags:
   - java
   - tools
 writing_time: 2h30
+cover_anchor: center
 ---
 
 Comme depuis plusieurs semaines, je continue à m'intéresser aux sujets autour de la souveraineté numérique.
