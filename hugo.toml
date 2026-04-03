@@ -64,6 +64,7 @@ timeout = '120s'
     {Name = "Projects", URL = "/projects/", HasChildren = true, Limit = 3},
     {Name = "AI Manifesto", Page = "/ai/"},
     {Name = "now", Page = "/now/"},
+    {Name = "setup", Page = "/setup/"},
     {Name = "stats", Page = "/stats/"}
   ]
 
