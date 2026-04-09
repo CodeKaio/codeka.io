@@ -1,5 +1,7 @@
 public/
 resources/
 
+data/plausible-stats/visits.json
+
 .clever.json
 .backstop/
