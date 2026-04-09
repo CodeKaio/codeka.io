@@ -26,6 +26,8 @@
 {{- else }}
 {{- $pages = $pctx.Pages }}
 {{- end }}
+{{- /* Exclure les pages dans now/archive du flux RSS */ -}}
+{{- $pages = where $pages "RelPermalink" "not" "match" "^/now/archive/" -}}
 {{- $limit := .Site.Config.Services.RSS.Limit }}
 {{- if ge $limit 1 }}
 {{- $pages = $pages | first $limit }}
