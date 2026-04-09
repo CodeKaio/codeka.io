@@ -1,3 +1,4 @@
 ---
 title: "archive"
+type: now
 ---

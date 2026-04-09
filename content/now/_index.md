@@ -2,6 +2,7 @@
 date: "2026-02-19"
 language: fr
 title: "now (Février 2026)"
+type: now
 ---
 
 > Ce que je fais en ce moment, inspiré par [nownownow.com](https://nownownow.com/about)
