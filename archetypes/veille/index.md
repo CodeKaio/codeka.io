@@ -1,5 +1,6 @@
 ---
 date: 
+writing_time: 
 language: fr
 title: La veille de Wittouck - 
 series: La veille de Wittouck
@@ -14,6 +15,7 @@ tags:
   - Linux
   - Security
   - Tools
+anchor: Smart
 draft: true
 ---
 
