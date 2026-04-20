@@ -4,7 +4,7 @@ language: fr
 title: La veille de Wittouck - Fin mars 2026
 series: La veille de Wittouck
 tags:
-  - souverainete
+  - sovereignty
   - open source
   - git
   - ia
