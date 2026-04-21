@@ -1,0 +1,110 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "desktop",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "cookiePath": ".backstop/engine_scripts/cookies.json",
+      "url": "http://localhost:1313/",
+      "referenceUrl": "https://codeka.io/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Posts",
+      "cookiePath": ".backstop/engine_scripts/cookies.json",
+      "url": "http://localhost:1313/posts/",
+      "referenceUrl": "https://codeka.io/posts/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Tags",
+      "url": "http://localhost:1313/tags/",
+      "referenceUrl": "https://codeka.io/tags/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Talks",
+      "url": "http://localhost:1313/talks/",
+      "referenceUrl": "https://codeka.io/talks/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Talks - Factorio",
+      "url": "http://localhost:1313/talks/talk-lets-play-factorio/",
+      "referenceUrl": "https://codeka.io/talks/talk-lets-play-factorio/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Recent Post",
+      "url": "http://localhost:1313/2025/12/19/adieu-direnv-bonjour-mise/",
+      "referenceUrl": "https://codeka.io/2025/12/19/adieu-direnv-bonjour-mise/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Recent Tech Watch Post",
+      "url": "http://localhost:1313/2025/12/31/la-veille-de-wittouck-fin-décembre-2025/",
+      "referenceUrl": "https://codeka.io/2025/12/31/la-veille-de-wittouck-fin-décembre-2025/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Translated Post - FR",
+      "url": "http://localhost:1313/2020/06/01/global-gitignore-file/",
+      "referenceUrl": "https://codeka.io/2020/06/01/global-gitignore-file/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Translated Post - EN",
+      "url": "http://localhost:1313/en/2020/06/01/global-gitignore-file/",
+      "referenceUrl": "https://codeka.io/en/2020/06/01/global-gitignore-file/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Post with Multiple Versions - v1",
+      "url": "http://localhost:1313/2025/12/12/mont%C3%A9e-de-version-spring-boot-4-avec-openrewrite/v1/",
+      "referenceUrl": "https://codeka.io/2025/12/12/mont%C3%A9e-de-version-spring-boot-4-avec-openrewrite/v1/",
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Post with Multiple Versions - v2",
+      "url": "http://localhost:1313/2025/12/12/mont%C3%A9e-de-version-spring-boot-4-avec-openrewrite/",
+      "referenceUrl": "https://codeka.io/2025/12/12/mont%C3%A9e-de-version-spring-boot-4-avec-openrewrite/",
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": ".backstop/bitmaps_reference",
+    "bitmaps_test": ".backstop/bitmaps_test",
+    "engine_scripts": ".backstop/engine_scripts",
+    "html_report": ".backstop/html_report",
+    "ci_report": ".backstop/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "delay": 1000,
+  "misMatchThreshold": 0.05,
+  "debug": false,
+  "debugWindow": false
+}

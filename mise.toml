@@ -77,3 +77,18 @@ run = '''
 clever link $PROD_APP_ID --alias codeka.io || true
 clever deploy --alias codeka.io
 '''
+
+[tasks."backstop:test"]
+description = "Exécute les tests visual regression avec BackstopJS"
+tools."npm:backstopjs" = "latest"
+run = "backstop test"
+
+[tasks."backstop:reference"]
+description = "Prend les captures d'écran de référence"
+tools."npm:backstopjs" = "latest"
+run = "backstop reference"
+
+[tasks."backstop:approve"]
+description = "Valide les tests visual regression"
+tools."npm:backstopjs" = "latest"
+run = "backstop approve"
