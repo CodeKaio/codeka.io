@@ -1,0 +1,15 @@
+:8080
+
+forward_auth 127.0.0.1:8923 {
+    uri /.within.website/x/cmd/anubis/api/check
+    trusted_proxies private_ranges
+    @unauthorized status 401
+    handle_response @unauthorized {
+            redir * /.within.website/?redir={uri} 307
+    }
+    header_up X-Real-Ip {remote_host}
+    header_up X-Http-Version {http.request.proto}
+}
+file_server {
+    root cc_static_autobuilt
+}

@@ -1,0 +1,7 @@
+# POLICY_FNAME=anubis.yaml TARGET=" " anubis
+
+bots:
+  - import: (data)/meta/default-config.yaml
+  - name: allow-telegraf
+    action: ALLOW
+    user_agent_regex: Telegraf
