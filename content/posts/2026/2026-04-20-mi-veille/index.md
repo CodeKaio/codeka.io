@@ -31,16 +31,16 @@ Je profite de la découverte du compte Flickr de la NASA (oui Flickr existe enco
 >
 > On s'amuse du nom qui fait penser à Astérix (et semble eclipser Nix), c'est bien trouvé.
 >
-> Je trouve le choix d'une base NixOS intéressante. Les avantages en termes d'admistration, de stabilité et de fork pour les différentes entités de l'État sont cool. La montée en compétence pour les profils non-tech risque de piquer par contre.
+> Je trouve le choix d'une base NixOS intéressante. Les avantages en termes administration, de stabilité et de fork pour les différentes entités de l'État sont cool. La montée en compétence pour les profils non-tech risque de piquer par contre.
 
 * [EU Cloud Sovereignty Framework Explained - Emiel Brok, SUSE / DOSBA ](https://www.youtube.com/watch?v=9Xky-bfqCss)
 * [Lightning Talk: Designing for Exit: Why Portability Is a Sovereignty Requirement - Alireza Rahmani](https://www.youtube.com/watch?v=h7sD08_3Do4)
 
 > Deux talks issus de la journée _Open Souvereign Cloud Day_, organisée par la CNCF en marge de la Cloud Native Con.
 > 
-> Le premier est un talk animé par Emiel Brok de SUSE. Il nous présente quelques enjeux de souveraineté, et le "Cloud Sovereignty Framework¨, un document de la Commission Européenne qui cadre 8 axes de souveraineté, ainsi que l'outil développé par SUSE pour effectuer le self-assessment (que j'avais déjà listé lors de ma dernière veille).
+> Le premier est un talk animé par Emiel Brok de SUSE. Il nous présente quelques enjeux de souveraineté, et le "Cloud Sovereignty Framework¨, un document de la Commission Européenne qui cadre huit axes de souveraineté, ainsi que l'outil développé par SUSE pour effectuer le self-assessment (que j'avais déjà listé lors de ma dernière veille).
 >
-> Le second est un talk court, animé par Alireza Rahmani avec un angle est clair : la souveraineté a pour pré-requis la portabilité.
+> Le second est un talk court, animé par Alireza Rahmani avec un angle clair : la souveraineté a pour pré-requis la portabilité.
 > Sans surprise, on parle de standards, de containers, de limiter le vendor lock-in.
 
 ## ☁️ Cloud
@@ -104,7 +104,7 @@ Je profite de la découverte du compte Flickr de la NASA (oui Flickr existe enco
 
 * [Why Your Engineering Team Is Slow (It's the Codebase, Not the People)](https://piechowski.io/post/codebase-drag-audit/) _via_ [Hugo Lassiège sur Bluesky](https://bsky.app/profile/eventuallycoding.com/post/3miove77y7c2z)
 
-> L'auteur a identifié 5 pain-points (qu'on retrouve souvent) qui permettent d'expliquer la lenteur d'une équipe : les estimations hors-sols (et dépassées), la peur du déploiement, les fichiers maudis. la coverage qui ne rassure personne et le Time to First Commit des nouveaux contributeurs.
+> L'auteur a identifié 5 pain-points (qu'on retrouve souvent) qui permettent d'expliquer la lenteur d'une équipe : les estimations hors-sols (et dépassées), la peur du déploiement, les fichiers maudits, la coverage qui ne rassure personne et le Time to First Commit des nouveaux contributeurs.
 > 
 > Des bons angles d'analyse.
 
@@ -118,12 +118,12 @@ Je profite de la découverte du compte Flickr de la NASA (oui Flickr existe enco
 
 * [Am I a Tech Bro?](https://amiatechbro.com/)
 
-> Un quizz rapide qui permet de vérifier votre "alignement" avec les idées des Tech-Bros.
+> Un quiz rapide qui permet de vérifier votre "alignement" avec les idées des Tech-Bros.
 > 
-> Les question sont directes, les intentions sont claires.
+> Les questions sont directes, les intentions sont claires.
 > Toutes les questions sont sourcées, c'est assez intéressant d'aller les consulter.
 > 
-> Bon, pas de surprise, je ne suis pas un Tech Bro (domage ?).
+> Bon, pas de surprise, je ne suis pas un Tech Bro (dommage ?).
 
 ## ☕ Java
 
@@ -149,7 +149,7 @@ Je profite de la découverte du compte Flickr de la NASA (oui Flickr existe enco
 
 * [First Contact with Tetragon](https://blog.littlejo.link/en/tetragon/started/) par [Joseph Ligier](https://blog.littlejo.link)
 
-> Joseph nous présente dans ce premier article le fonctionnement de Tetragon, qui utilise eBPF pour tracer les exécution de processus au niveau du noyau Linux, et en particulier pour des cluster Kubernetes.
+> Joseph nous présente dans ce premier article le fonctionnement de Tetragon, qui utilise eBPF pour tracer les exécutions de processus au niveau du noyau Linux, et en particulier pour des clusters Kubernetes.
 > 
 > Ce premier article présente rapidement l'outil, j'ai hâte de voir l'intégration avec Kubernetes et l'utilisation de policies pour surveiller des comportements anormaux.
 
@@ -174,7 +174,7 @@ Je profite de la découverte du compte Flickr de la NASA (oui Flickr existe enco
 
 > Un setup de connexion SSH avec une clé YubiKey. La clé privée étant stockée sur la YubiKey. C'est plutôt simple, le tuto liste toutes les commandes nécessaires.
 > 
-> Bien penser à configurer 2 clés pour éviter d'être coincé en cas de perte !
+> Bien penser à configurer deux clés pour éviter d'être coincé en cas de perte !
 
 ---
 
