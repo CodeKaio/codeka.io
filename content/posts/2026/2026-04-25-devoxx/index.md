@@ -22,7 +22,7 @@ Je vous raconte tout ça.
 
 ## Mercredi
 
-Je suis arrivé mercredi matin, vers 9h. Après avoir déposé mes affaires au vestiaire, et avec les keynotes déjà en cours, j'en ai profité pour faire un tour rapide dans le hall des exposants, et pour retrouver mon associé Romain et mes collègues techs de chez Ekité (au nombre de cinq) qui étaient là uniquement pour la journée du mercredi.
+Je suis arrivé mercredi matin, vers 9h. Après avoir déposé mes affaires au vestiaire, et avec les keynotes déjà en cours, j'en ai profité pour faire un tour rapide dans le hall des exposants, et pour retrouver mon associé Romain et mes collègues techs de chez Ekité (au nombre de six) qui étaient là uniquement pour la journée du mercredi.
 On s'est vite séparés pour aller ensuite voir les sujets qui nous intéressaient, mais on a pu se recroiser tout au long de la journée et faire une petite photo de groupe dans la soirée.
 
 J'ai aussi passé beaucoup de temps à discuter sur les stands (surtout Clever Cloud 💙) et avec les personnées croisées dans les couloirs, je suis aussi parti un peu tôt pour pouvoir déposer mes affaires à l'hôtel et retrouver un pote sur Paris. Donc, je n'ai pas vu beaucoup de talks ce mercredi.
