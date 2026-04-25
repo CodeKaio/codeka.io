@@ -2,6 +2,7 @@
 date: "2025-04-24"
 language: fr
 title: DevOxx 2025 - Bilan
+series: Devoxx
 tags:
   - internet
   - security
