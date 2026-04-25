@@ -1,11 +1,11 @@
 ---
-date: 2026-04-10
 title: "Installer docs sur Scaleway"
 slug: docs-scaleway
 tags:
   - kubernetes
   - scaleway
   - souveraineté
+draft: true
 ---
 
 Vous avez probablement vu passer, comme moi, les annonces concernant "La Suite numérique".
