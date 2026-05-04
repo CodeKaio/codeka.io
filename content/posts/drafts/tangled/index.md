@@ -110,3 +110,99 @@ Le code apparait bien dans le repo, première étape franchie !
 
 ![Mon repo une fois le code pushé](tangled-repo-pushed.png)
 
+## Héberger son propre _knot_
+
+Le _knot_ est le serveur qui héberge les données de Git.
+
+Pour héberger un _knot_, il faut un serveur et un domaine DNS auquel le _knot_ sera accessible.
+Le _knot_ doit également être accessible en HTTPS, un certificat SSL valide est donc aussi nécessaire.
+
+Plusieurs méthodes d'installation sont proposées par Tangled : sur une VM _via_ [Nix](https://tangled.org/tangled.org/core/blob/master/nix/modules/knot.nix), _via_ une installation manuelle (à base de scripts), ou _via_ une image Docker.
+
+Par simplicité, j'ai donc décidé de créer une VM sur Scaleway, et d'y installer mon _knot_ avec docker-compose.
+
+Aucune specification minimale n'est indiquée pour l'installation, j'ai donc pris une machine minuscule (1vCPU et 1G de RAM). Le but est surtout que le service tourne, je ne m'attends pas particulièrement à ce qu'il soit performant.
+
+Après avoir installé Docker et docker-compose (je vous passe ces étapes), je récupère le fichier `docker-compose.yml` de Tangled.
+
+Il est relativement simple, il contient un container pour le _knot_, et un container pour _Caddy_, avec l'exposition en HTTPS.
+
+
+L'image du _knot_ est disponible sur le registry _ATCR_ (lui aussi lié à AT Proto).
+
+Lors de mes tests, cette image était un peu datée, donc j'ai dû en reconstruire une fraîche.
+
+J'ai récupéré le repository https://tangled.org/tangled.org/knot-docker sur ma machine, 
+lancé un 
+
+```shell
+docker image build -t rg.fr-par.scw.cloud/tangled/knot:latest .
+
+docker image push rg.fr-par.scw.cloud/tangled/knot:latest
+```
+
+Une fois l'image buildée et pushée, je peux lancer le docker compose sur mon serveur :
+
+```shell
+$ docker-compose up -d
+
+ ✔ Image caddy:alpine                    Pulled        4.4s
+ ✔ Image atcr.io/tangled.org/knot:latest Pulled        9.3s
+ ✔ Network tangled_default               Created       0.3s
+ ✔ Container tangled-knot-1              Started       2.0s
+ ✔ Container tangled-frontend-1          Started       1.7s
+```
+
+Une fois que tout est démarré, si j'accède à l'URL de mon _knot_ :
+![img.png](knot-http.png)
+
+De retour dans l'interface de Tangled, je peux maintenant ajouter mon _knot_ :
+
+![img.png](tangled-add-knot.png)
+
+ ![img.png](tangled-knot-added.png)
+
+Une fois que mon knot est ajouté dans Tangled, lorsque je veux créer un repository, mon knot est proposé dans le formulaire.
+
+![img.png](tangled-create-repo-with-knot.png)
+
+Lorsque le repo est créé, il apparaît alors sur mon _knot_, dans un répertoire portant pour nom son "did" AT Protocol :
+
+```shell
+tangled@tangled-knot:/home/tangled/repositories# ls
+did:plc:uam62c7dmtnxgca3jlad63kg
+```
+
+## Ouvrir une pull request
+
+Ouvrir une PR sur Tangled est assez similaire à d'autres outils.
+
+Pour ce faire, il faut se rendre sur le repo souhaité, et cliquer sur le bouton "New".
+
+Le formulaire propose alors de poser un `git diff` manuellement, ou d'extraire un diff de la comparaison d'un fork.
+
+Il est aussi possible d'ajouter un titre et une description, qui sont optionnelles (Tangled extrait les informations du premier commit pour alimenter ces champs).
+
+![img.png](tangled-pr-form.png)
+
+![img.png](tangled-pr.png)
+
+Une fois la PR créé, il est possible de push de nouveaux commits, de poser des commentaires, bref, c'est l'environnement habituel.
+
+Les PR sont stockées sous la forme de records AT Protocol, dans le PDS de l'utilisateur qui ouvre la PR. L'URI du record est visible dans l'interface de Tangled. 
+
+![img.png](tangled-pr-at-uri.png)
+
+On peut alors directement voir le record AT Protocol, avec ses différents champs.
+On y retrouve les informations sur la PR (titre et description), les _rounds_ correspondent aux push successifs, et référencent le blob qui contient le patch de la PR.
+
+![img.png](tangled-pr-at-record.png)
+
+## Les issues et les labels
+
+
+## Liens et références
+
+* [Knot self-hosting guide](https://docs.tangled.org/knot-self-hosting-guide#knot-self-hosting-guide)
+  * [Module Nix](https://tangled.org/tangled.org/core/blob/master/nix/modules/knot.nix)
+  * [Image Docker](https://tangled.org/tangled.org/knot-docker)
