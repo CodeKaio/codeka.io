@@ -4,7 +4,7 @@ title: "Tangled - une alternative à GitHub sur AT Protocol"
 slug: tangled
 tags:
   - git
-  - souveraineté
+  - sovereignty
 cover_anchor: top
 draft: true
 ---
@@ -25,7 +25,7 @@ J'ai testé ça pour vous.
 
 ## Tangled c'est quoi ?
 
-Tangled, c'est donc une plateforme "sociale" d'hébergement de code.
+Tangled, c'est donc une plateforme "sociale" d'hébergement de code. La plateforme a été lancée en mars 2025, et compte 
 
 Voyez donc ça comme une alternative à GitHub, ou même GitLab.
 
@@ -210,7 +210,7 @@ Chaque nouveau repo est initialisé avec des labels basiques (retenez bien ce te
 
 Il est aussi possible de créer ses propres labels basiques, depuis la page de configuration d'un repo.
 
-![img.png](tangled-labels.png
+![img.png](tangled-labels.png)
 
 ![img.png](tangled-create-label.png)
 
@@ -231,6 +231,8 @@ Sur une issue, les labels sont ensuite présentés sous la forme d'un petit form
 ![img.png](tangled-issue-label-form.png)
 
 La flexibilité qu'offre ce système de labels est vraiment cool, je pense qu'on en trouvera des usages originaux dans le futur, mais c'est déjà très pratique de mon point de vue.
+
+## Intégration continue
 
 ## Autres features
 
@@ -257,7 +259,73 @@ Chaque témoignage ou signalement doit être accompagné d'un commentaire. Les i
 
 Un article détaillé a été publié à ce sujet sur le blog de Tangled : [combat LLM spam by building a web of trust](https://blog.tangled.org/vouching/).
 
+## Les trucs qui manquent à mon avis
+
+### Des regroupements de repos (orgas/groupes)
+
+Il n'est pour l'instant pas possible de créer d'organisation qui ne serait pas rattachée à un compte humain, et d'y faire rejoindre des utilisateurs.
+
+J'ai bien l'approche de GitLab, avec la notion de groupes, c'est peut-être aussi quelque chose qui manque un peu.
+C'est souvent pratique pour regrouper des projets ensemble.
+
+L'astuce de contournement semble donc de créer un compte AT Protocol pour l'organisation (asso, entreprise ou autre, ou même le projet), et de donner des droits d'accès repo par repo aux contributeurs. C'est un peu lourds, et ça nécessite peut-être de switcher entre plusieurs comptes.
+
+### Une gestion de release
+
+La notion de _release_ est également manquante pour le moment.
+Il est possible, au niveau des tags, d'attacher des fichiers (comme des binaires compilés ou des packages), le code source du tag est attaché par défaut.
+Ce qui manque principalement, c'est la possibilité d'attacher un _CHANGELOG_ ou des _RELEASE NOTES_ sur une version particulière.
+
+### Pas d'opérations de maintenance sur les repos
+
+Il ne semble pas possible pour l'instant, de faire quelques opérations sur les repos comme les renommer, ou les transférer.
+
+Ce n'est peut-être pas très grave en soit, mais ça risque d'être un peu limitant, surtout si on multiplie les forks.
+
+Avec l'auto-hébergement des _knot_, il serait aussi intéressant de pouvoir voir sur quel _knot_ est hébergé un repo, et de pouvoir transférer un repo d'un _knot_ à un autre.
+
+### Pas de repos privés (mais je ne pense pqs que ce soit possible)
+
+Par nature, les données de Tangled étant hébergées sur AT Proto, il n'est pas possible d'avoir de données privées.
+
+Le code, les issues, les PR, les strings, tout ça est public.
+C'est probablement un frein à l'adoption de Tangled pour un certain nombre d'utilisateurs.
+
+Pour ma part, j'ai quelques repos privés sur GitLab qui contiennent des données de mes clients (du code, mais aussi des docs).
+
+Ce besoin ne pouvant pas être porté sur Tangled. Tangled ne pourra donc pas remplacer complètement GitLab, ou GitHub en l'état (et je ne vois pas comment ils pourraient). Mais pour des projets entièrement open-source, aucun problème.
+
+### L'outillage et la doc pas encore très développé
+
+Pour l'instant, la documentation n'est pas encore très fournie, et elle est très orientée autour de l'hébergement de ses propres _knot_ et _spindle_.
+Pas de documentation d'API, pas de documentation sur les différentes features de la plateforme.
+
+Comme Tangled ressemble beaucoup à GitHub, on n'est pas surpris, ni perdu, mais je pense qu'on peut facilement passer à côté de certaines fonctionnalités, qui ne sont pas visibles immédiatement.
+Il est possible de contribuer à la documentation, dans le mono repo de Tangled : https://tangled.org/tangled.org/core/blob/master/docs/DOCS.md.
+Toute la documentation est dans un immense fichier markdown pour le moment. Cela risque d'évoluer rapidement puisque j'ai du mal à imaginer comment il serait pratique de maintenir ça.
+
+Il semble exister une API qu'on peut appeler, mais elle n'est pas du tout documentée. Pour l'instant donc, exit l'automatisation avec un CLI, sauf à reverse-engineerer l'API.
+
+Un CLI non officiel nommé [tang](https://tangled.org/onev.cat/tang) est en cours de développement, et l'équipe de Tangled a annoncé un CLI pour 2026 (dans leur annonce de levée de fonds).
+
 ## Conclusion
+
+Une des questions qu'on pourrait se poser, c'est "est-ce que Tangled est pérenne ?".
+
+Début mars 2026, l'équipe a annoncé une levée de fonds de 3.8 millions d'euros. Cela devrait financer l'équipe et l'infrastructure de Tangled pour un bon moment.
+Étant donné que la plateforme est auto-hébergeable, il est possible de créer sa propre instance isolée de Tangled, et le stockage des données sur l'AT Proto (même partiel), devrait rendre possible une réversibilité.
+
+Une fois l'argent de la levée de fonds dépensé, il est vraisemblable que Tangled cherche des revenus.
+Vu que l'IA n'est clairement pas dans leur ADN (et c'est tant mieux), il ne suivront probablement pas le chemin d'un assistant de code coûteux (sauf si leurs investisseurs mettent un coup de pression sur ce sujet).
+Je penche plutôt sur un avenir avec de la vente de temps de runner.
+
+La plateforme est actuellement en version alpha. Sur le week-end, j'ai expérimenté plusieurs coupures, des erreurs 500 lors de la navigation dans des repos, et même un bug lors de la suppression d'un repo qui l'a laissé dans un état instable (supprimé du PDS et du _knot_ mais pas de l'App).
+
+On est donc bien encore dans une phase expérimentale, et la hype actuelle risque d'empirer les choses, avec un nombre d'utilisateurs qui grossit vite.
+
+En tout cas, de mon point de vue, pour mes projets open-source, j'ai décidé que je préférais les confier à Tangled plutôt qu'à GitHub.
+
+Je pousserai des miroirs sur d'autres plateformes (dont GitLab), mais je pense que je vais supprimer une grande partie de mes repos GitHub.
 
 ## Liens et références
 
