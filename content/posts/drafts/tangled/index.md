@@ -200,9 +200,70 @@ On y retrouve les informations sur la PR (titre et description), les _rounds_ co
 
 ## Les issues et les labels
 
+Concernant la gestion des issues et des labels, Tangled propose un système similaire à GitHub.
+
+Les issues sont composées d'un titre, d'une description (tous deux en markdown) et de labels.
+
+![img.png](tangled-issues-list.png)
+
+Chaque nouveau repo est initialisé avec des labels basiques (retenez bien ce terme) : "documentation", "duplicate", "good-first-issue", "wontfix".
+
+Il est aussi possible de créer ses propres labels basiques, depuis la page de configuration d'un repo.
+
+![img.png](tangled-labels.png
+
+![img.png](tangled-create-label.png)
+
+> Comble de la tristesse, les noms de labels ne peuvent pas contenir d'emoji 😢 (en tout cas pour l'instant).
+
+En plus des labels basiques, il existe des labels "Key-Value".
+Ces labels portent un nom, et une valeur associée qui peut être une chaîne arbitraire, un _did_ AT Protocol, ou un nombre.
+
+Les cas d'usages sont multiples, et le premier cas présenté par Tangled est un label "assignee", qui a pour valeur un _did_, donc la personne a qui on a assigné l'issue.
+Il est ainsi possible d'avoir par exemple un label "component" qui référence le ou les composants impactés, ou même des labels de chiffrage (pour les foufous).
+
+![img.png](tangled-label-component.png)
+
+Sur une issue, les labels sont ensuite présentés sous la forme d'un petit formulaire, à côté de l'issue, ce qui est vraiment bien fait et pratique.
+
+![img.png](tangled-issue.png)
+
+![img.png](tangled-issue-label-form.png)
+
+La flexibilité qu'offre ce système de labels est vraiment cool, je pense qu'on en trouvera des usages originaux dans le futur, mais c'est déjà très pratique de mon point de vue.
+
+## Autres features
+
+### Strings
+
+Les strings sont des snippets partageables, l'équivalent d'un _gist_ dans GitHub.
+
+![img.png](tangled-strings-editor.png)
+
+![img.png](tangled-strings-list.png)
+
+Les strings peuvent alors être partagés avec leur lien, qui est public.
+
+> L'éditeur Markdown est hyper basique (champ de texte). C'est à la fois une bonne chose (on se concentre sur le contenu), mais un petit aperçu pour aider à la relecture manque quand même.
+
+### Vouching
+
+Le _vouching_, inspiré par [_vouch_](https://github.com/mitchellh/vouch/) de Mitchell Hashimoto, permet d'introduire la notion de confiance dans la plateforme.
+
+Il permet de _vouch_ (témoigner) ou _denounce_ (signaler) d'autres utilisateurs avec lesquels on a intéragit.
+Le but est de créer un écosystème de confiance, en particulier pour éloigner les contributions de mauvaise qualité (souvent générés avec un LLM d'ailleurs).
+
+Chaque témoignage ou signalement doit être accompagné d'un commentaire. Les informations sont alors visibles sur le cercle direct (vous avez vous même _vouched_ ou _denounced_ quelqu'un), ou indirect (quelqu'un que vous avez _vouched_ ou _denounced_ a _vouched_ ou _denounced_ quelqu'un d'autre).
+
+Un article détaillé a été publié à ce sujet sur le blog de Tangled : [combat LLM spam by building a web of trust](https://blog.tangled.org/vouching/).
+
+## Conclusion
 
 ## Liens et références
 
 * [Knot self-hosting guide](https://docs.tangled.org/knot-self-hosting-guide#knot-self-hosting-guide)
   * [Module Nix](https://tangled.org/tangled.org/core/blob/master/nix/modules/knot.nix)
   * [Image Docker](https://tangled.org/tangled.org/knot-docker)
+* Vouching
+  * [combat LLM spam by building a web of trust](https://blog.tangled.org/vouching/)
+  * https://github.com/mitchellh/vouch/
