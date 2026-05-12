@@ -5,3 +5,5 @@ data/plausible-stats/visits.json
 
 .clever.json
 .backstop/
+
+.hugo_build.lock
