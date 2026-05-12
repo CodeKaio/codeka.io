@@ -42,7 +42,7 @@ Le PDS de Tangled est hébergé en Finlande.
 
 Et c'est là où est l'idée de génie. Toutes les données relatives à Tangled sont stockées sur votre PDS, dans des records préfixés `sh.tangled`. En cas de migration de compte sur un autre PDS, les données vous suivent.
 
-![Les records AT Proto de mon compte](at-proto-records.png)
+![Les records AT Proto de mon compte](at-proto-records.webp)
 
 Les _knots_ sont des simples serveurs Git, auto-hébergeables. Encore une fois, Tangled a son propre _knot_, qui permet d'héberger le code sans avoir besoin de démarrer sa propre instance.
 Mais si vous souhaitez héberger votre propre _knot_, pour conserver la maitrise de vos données, c'est aussi possible.
@@ -62,25 +62,25 @@ Une fois cette première étape franchie, on a accès à la plateforme.
 
 La page d'accueil présente une timeline avec les activités d'autres personnes, et quelques repos _Trending_.
 
-![Page principale de Tangled](tangled-main-page.png)
+![Page principale de Tangled](tangled-main-page.webp)
 
 Comme pour tous les hébergements Git, il y a un peu de setup à faire : configurer les clés SSH qui permettront de pousser le code et configurer les adresses mails qui permettent de rattacher les commits au compte.
 
-![Configuration des adresses mail de commit](tangled-config-emails.png)
+![Configuration des adresses mail de commit](tangled-config-emails.webp)
 
-![Configuration de la clé SSH](tangled-config-ssh.png)
+![Configuration de la clé SSH](tangled-config-ssh.webp)
 
 ## Créer un nouveau repo
 
 La création d'un repo se fait en quelques clics.
 
-![Formulaire de création d'un repo](tangled-repo-creation.png)
+![Formulaire de création d'un repo](tangled-repo-creation.webp)
 
 Une subtilité dans la création du repo est la sélection du _knot_, qui est le serveur qui héberge le repo. Je reviendrai sur ce point plus loin, en détaillant la partie liée à l'auto hébergement.
 
 Une fois le repo crée, on nous propose simplement d'y pousser le code.
 
-![La page d'un repo tout neuf!](tangled-empty-repo.png)
+![La page d'un repo tout neuf!](tangled-empty-repo.webp)
 
 J'ajoute le repo à mes remote Git avec la commande `git remote`
 
@@ -108,7 +108,7 @@ To tangled.org:codeka.io/website
 
 Le code apparait bien dans le repo, première étape franchie !
 
-![Mon repo une fois le code pushé](tangled-repo-pushed.png)
+![Mon repo une fois le code pushé](tangled-repo-pushed.webp)
 
 ## Héberger son propre _knot_
 
@@ -154,17 +154,17 @@ $ docker-compose up -d
 ```
 
 Une fois que tout est démarré, si j'accède à l'URL de mon _knot_ :
-![img.png](knot-http.png)
+![img.webp](knot-http.webp)
 
 De retour dans l'interface de Tangled, je peux maintenant ajouter mon _knot_ :
 
-![img.png](tangled-add-knot.png)
+![img.webp](tangled-add-knot.webp)
 
- ![img.png](tangled-knot-added.png)
+ ![img.webp](tangled-knot-added.webp)
 
 Une fois que mon knot est ajouté dans Tangled, lorsque je veux créer un repository, mon knot est proposé dans le formulaire.
 
-![img.png](tangled-create-repo-with-knot.png)
+![img.webp](tangled-create-repo-with-knot.webp)
 
 Lorsque le repo est créé, il apparaît alors sur mon _knot_, dans un répertoire portant pour nom son "did" AT Protocol :
 
@@ -183,20 +183,20 @@ Le formulaire propose alors de poser un `git diff` manuellement, ou d'extraire u
 
 Il est aussi possible d'ajouter un titre et une description, qui sont optionnelles (Tangled extrait les informations du premier commit pour alimenter ces champs).
 
-![img.png](tangled-pr-form.png)
+![img.webp](tangled-pr-form.webp)
 
-![img.png](tangled-pr.png)
+![img.webp](tangled-pr.webp)
 
 Une fois la PR créé, il est possible de push de nouveaux commits, de poser des commentaires, bref, c'est l'environnement habituel.
 
 Les PR sont stockées sous la forme de records AT Protocol, dans le PDS de l'utilisateur qui ouvre la PR. L'URI du record est visible dans l'interface de Tangled. 
 
-![img.png](tangled-pr-at-uri.png)
+![img.webp](tangled-pr-at-uri.webp)
 
 On peut alors directement voir le record AT Protocol, avec ses différents champs.
 On y retrouve les informations sur la PR (titre et description), les _rounds_ correspondent aux push successifs, et référencent le blob qui contient le patch de la PR.
 
-![img.png](tangled-pr-at-record.png)
+![img.webp](tangled-pr-at-record.webp)
 
 ## Les issues et les labels
 
@@ -204,15 +204,15 @@ Concernant la gestion des issues et des labels, Tangled propose un système simi
 
 Les issues sont composées d'un titre, d'une description (tous deux en markdown) et de labels.
 
-![img.png](tangled-issues-list.png)
+![img.webp](tangled-issues-list.webp)
 
 Chaque nouveau repo est initialisé avec des labels basiques (retenez bien ce terme) : "documentation", "duplicate", "good-first-issue", "wontfix".
 
 Il est aussi possible de créer ses propres labels basiques, depuis la page de configuration d'un repo.
 
-![img.png](tangled-labels.png)
+![img.webp](tangled-labels.webp)
 
-![img.png](tangled-create-label.png)
+![img.webp](tangled-create-label.webp)
 
 > Comble de la tristesse, les noms de labels ne peuvent pas contenir d'emoji 😢 (en tout cas pour l'instant).
 
@@ -222,17 +222,69 @@ Ces labels portent un nom, et une valeur associée qui peut être une chaîne ar
 Les cas d'usages sont multiples, et le premier cas présenté par Tangled est un label "assignee", qui a pour valeur un _did_, donc la personne a qui on a assigné l'issue.
 Il est ainsi possible d'avoir par exemple un label "component" qui référence le ou les composants impactés, ou même des labels de chiffrage (pour les foufous).
 
-![img.png](tangled-label-component.png)
+![img.webp](tangled-label-component.webp)
 
 Sur une issue, les labels sont ensuite présentés sous la forme d'un petit formulaire, à côté de l'issue, ce qui est vraiment bien fait et pratique.
 
-![img.png](tangled-issue.png)
+![img.webp](tangled-issue.webp)
 
-![img.png](tangled-issue-label-form.png)
+![img.webp](tangled-issue-label-form.webp)
 
 La flexibilité qu'offre ce système de labels est vraiment cool, je pense qu'on en trouvera des usages originaux dans le futur, mais c'est déjà très pratique de mon point de vue.
 
 ## Intégration continue
+
+### Pipelines
+
+Les pipelines d'intégration continue sont décrits par des fichiers présents dans un répertoire `.tangled/workflows` à la racine des repos.
+
+La syntaxe des pipelines est très proche de celle de GitHub Actions, mais avec une approche plus déclarative.
+
+On décrit quelles actions déclenchent l'exécution du pipeline (un `git push`, l'ouverture d'une PR, ou un déclenchement manuel), comment le repo doit être cloné, quelles dépendances sont nécessaires à l'exécution du pipeline, et quelles étapes sont à exécuter.
+
+À ce titre, la [documentation](https://docs.tangled.org/spindles#pipelines) est plutôt complète.
+
+### Spindles
+
+L'intégration continue sur Tangled est assurée par les _spindles_.
+
+Les _spindles_ sont des exécuteurs de pipeline, similaire à ce que sont les runners GitLab CI ou GitHub Actions.
+
+La sélection d'un _spindle_ se fait au niveau des settings d'un repo.
+
+![img.webp](tangled-spindle-settings.webp)
+
+Une fois le spindle sélectionné et validé, on peut ajouter des secrets qui seront injectés dans les pipelines sous la forme de variables d'environnement.
+
+#### Auto héberger son spindle
+
+De la même manière que le _knot_, il est possible d'héberger son propre _spindle_ sur un serveur.
+
+Pour ce faire, j'ai suivi la procédure de la documentation [Spindles self-hosting guide](https://docs.tangled.org/spindles#self-hosting-guide).
+
+Sur une VM, après avoir installé `mise` (oui encore lui ahaha), j'ai exécuté les commandes suivantes :
+
+```shell
+$ git clone https://tangled.org/tangled.org/core
+Cloning into 'core'...
+remote: Enumerating objects: 27593, done.
+remote: Counting objects: 100% (27593/27593), done.
+remote: Compressing objects: 100% (7335/7335), done.
+remote: Total 27593 (delta 20524), reused 25711 (delta 19179), pack-reused 0 (from 0)
+Receiving objects: 100% (27593/27593), 18.90 MiB | 15.63 MiB/s, done.
+Resolving deltas: 100% (20524/20524), done.
+
+$ cd core/
+$ mise use go
+$ go mod download
+$ go build -o cmd/spindle/spindle cmd/spindle/main.go
+
+
+```
+
+De retour dans l'interface de Tangled, j'ajoute mon _spindle_ :
+
+![img.webp](tangled-spindle-add.webp)
 
 ## Autres features
 
@@ -240,9 +292,9 @@ La flexibilité qu'offre ce système de labels est vraiment cool, je pense qu'on
 
 Les strings sont des snippets partageables, l'équivalent d'un _gist_ dans GitHub.
 
-![img.png](tangled-strings-editor.png)
+![img.webp](tangled-strings-editor.webp)
 
-![img.png](tangled-strings-list.png)
+![img.webp](tangled-strings-list.webp)
 
 Les strings peuvent alors être partagés avec leur lien, qui est public.
 
@@ -329,9 +381,13 @@ Je pousserai des miroirs sur d'autres plateformes (dont GitLab), mais je pense q
 
 ## Liens et références
 
-* [Knot self-hosting guide](https://docs.tangled.org/knot-self-hosting-guide#knot-self-hosting-guide)
+* _Knots_
+  * [Knot self-hosting guide](https://docs.tangled.org/knot-self-hosting-guide#knot-self-hosting-guide)
   * [Module Nix](https://tangled.org/tangled.org/core/blob/master/nix/modules/knot.nix)
   * [Image Docker](https://tangled.org/tangled.org/knot-docker)
-* Vouching
+* _Spindles_
+  * [Pipelines](https://docs.tangled.org/spindles#pipelines)
+  * [Self-hosting guide](https://docs.tangled.org/spindles#self-hosting-guide)
+* _Vouching_
   * [combat LLM spam by building a web of trust](https://blog.tangled.org/vouching/)
   * https://github.com/mitchellh/vouch/
