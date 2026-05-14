@@ -1,85 +1,85 @@
 ---
 date: "2026-02-19"
 language: fr
-title: "now (Février 2026)"
+title: "now (Mai 2026)"
 type: now
 ---
-
-> Ce que je fais en ce moment, inspiré par [nownownow.com](https://nownownow.com/about)
 
 ## Travail
 
 Je suis en mission chez Électro Dépôt depuis juillet 2024. Je travaille en particulier sur la refonte du système d'encaissement, et sur l'intégration des applications qui gravitent autour.
 
-Mes cours pour l'année universitaire sont terminés. Je reprendrai les cours à la rentrée de septembre donc.
+Mes cours pour l'année universitaire 2026/2027 reprendront en septembre.
+Je prévois une grosse mise à jour des contenus, pour supporter Spring Boot 4.
 
 ## Conférences
 
-J'enchaîne toujours les confs avec mon talk "[Let's play Factorio]({{<relref "talks/talk-lets-play-factorio">}})", même si on arrive sur la fin de vie de ce talk qui a déjà bien tourné.
+Sur cette fin de saison, j'ai quatre conférences de prévues :
 
-Les feedbacks sont toujours oufs.
+* 🗓️ 11 juin - Let's Play Factorio au DevLille 2026 (Lille) : je joue à domicile, je suis content d'avoir cette session
+* 🗓️ 18 juin - Pimp My Shell à Tech'Works 2026 (Lyon) : Un nouveau talk que je suis en train de préparer
+* 🗓️ 26 juin - Let's Play Factorio à BreizhCamp 2026 (Rennes)
+* 🗓️ 8 juillet - Let's Play Factorio à RivieraDev 2026 (Sophia Antipolis)
 
-En faisant le compte rapide de tête, plus de 1000 personnes ont vu le talk. Certaines l'ont même vu plusieurs fois. (on peut donc tromper 1 fois 1000 personnes 😅).
+![Image de teaser de mon talk Factorio à Lille](factorio-devlille.png)
 
-Let's play Factorio a été recalé à MixIT 2026 et Devoxx France 2026, mais je l'ai soumis à plusieurs autres confs, DevLille 2026, DevQuest 2026, Riviera Dev 2026, et BreizhCamp 2026.
+Je suis content d'avoir encore la chance et le plaisir de donner ma conf sur Factorio. Je pense que ce sont les dernières sessions, je ne la soumettrais probablement plus (non pas que je m'en lasse, mais je suis déjà allé partout ahaha).
 
-J'ai une intervention de prévue au ENI Tech Fest 2026 en mars pour une table ronde.
+Le CFP de Cloud Nord est déjà bien démarré (on en est à mi-chemin), et je suis très content des sujets que nous recevons.
 
-On a aussi officiellement entamé l'organisation de Cloud Nord 2026, donc plus d'infos à venir prochainement.
+![Stats du CFP de Cloud Nord](cloud-nord-conference-hall.png)
+
+Nous avons également organisé le Chti Tremplin, avec les amis de DevLille et Agi'Lille, avec 6 speakeuses et speakers. La soirée s'est bien passée, et les talks étaient incroyables. Donc je suis aussi content de l'issue de l'évènement. C'était l'occasion de rencontrer de nouvelles personnes, et de recroiser quelques copains, ça fait toujours plaisir.
+
+![Photo du Chti Tremplin](tremplin.png)
 
 ## Musique
 
-Mes dernières écoutes :
+J'ai assisté au concert de _Gorillaz_ à Liverpool mi-mars, c'était vraiment chouette. J'ai aussi découvert la ville qui est un peu le "Dunkerque de l'Angleterre". J'ai passé un super week-end là-bas.
 
-* Électro : Laake, Röyksopp
-* Pop : Miki, Selah Sue, Gorillaz, Sébastien Tellier.
+![Photo du concert de Gorillaz à Liverpool](gorillaz.jpg)
 
-![O - par LAAKE](o.webp)
-![industry plant - par miki](industry-plant.webp)
-![Kiss The Beast - par Sébastien Tellier](kiss-the-beast.webp)
-{class=images-grid-3}
+Forcément, je boucle sur leurs albums, dont le dernier, qui est excellent.
+Je réécoute aussi _Blur_, en particulier _The Ballad of Darren_.
+
+Côté Electro, j'ai découvert les playlists de _Sebastian_, conçues pour les défilés d'Yves Saint Laurent.
+J'ai aussi re-découvert _Midnight Juggernauts_, dont l'album _Dystopia_ est ouf, et me sert de boost quand je bosse, ainsi que _Destroy Rock & Roll_ de _Mylo_.
+
+J'ai aussi commandé la BO de _Clair Obscur : Expédition 33_ en vinyle, cette BO est folle.
 
 ## Lecture
 
 En cours :
 
-* Ciao les nazes: Torpiller son job en 19 étapes de Séverine Bavon
-* Akira (tomes 1 à 6)
-
-![Couverture de Ciao les nazes](ciao-les-nazes.webp)
-![Couverture de Akira Tome $](akira.webp)
-{class=images-grid-2}
+* _Qui travaille vraiment ?_ - _Denis Colombi_
+* _Androides_ - Tomes 1 à 4
 
 Fini récemment :
 
-* Cat's Eye (l'intégrale)
-* Logocratie de Clément Viktorovitch
+* _Ciao les nazes: Torpiller son job en 19_ étapes de _Séverine Bavon_
+* _Akira_ (tomes 1 à 6)
+* _Les guerres de Lucas_ tome 2
 
-Ma pile :
-
-* Les guerres de Lucas tome 2
-* City Hunter tome 1
-* Qui travaille vraiment de Denis Colombi
+J'ai aussi pris un abonnement à Canard PC, j'attends mon premier numéro avec hâte.
 
 ## Gaming
 
 En cours :
 
-* Need For Speed Unbound 🎯🏆
-* Ghost of Tsushima 🎯🏆
+* Clair Obscur : Expédition 33 🎯🏆
+* Monster Hunter Stories
+* NFS Unbound
 
-![Screenshot de Ghost of Tsushima](ghost-of-tsushima.webp)
+![Screenshot de Clair Obscur : Expédition 33](e33.jpg)
 
 Terminés récemment :
 
-* Final Fantasy XVI 🏆
-* Power Wash Simulator 2 🏆
-* Lego Horizon Adventures 🏆
+* Ghost of Tsushima 🏆
+* Exit 8 🏆 - Un petit jeu assez sympa, un ovni
 
 Backlog :
 
-* Clair Obscur: Expedition 33
+* Saros : ça a l'air vraiment chouette, j'avais adoré Returnal
 * Ghost of Yōtei
 * Stray
 * Control
-* Monster Hunter Stories

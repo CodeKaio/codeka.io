@@ -1,7 +1,7 @@
 ---
 date: "2025-12-09"
 language: fr
-title: "now (Decembre 2025)"
+title: "now (Décembre 2025)"
 type: now
 ---
 
