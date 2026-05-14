@@ -21,23 +21,23 @@ Sur cette fin de saison, j'ai quatre conférences de prévues :
 * 🗓️ 26 juin - Let's Play Factorio à BreizhCamp 2026 (Rennes)
 * 🗓️ 8 juillet - Let's Play Factorio à RivieraDev 2026 (Sophia Antipolis)
 
-![Image de teaser de mon talk Factorio à Lille](factorio-devlille.png)
+![Image de teaser de mon talk Factorio à Lille](factorio-devlille.webp)
 
 Je suis content d'avoir encore la chance et le plaisir de donner ma conf sur Factorio. Je pense que ce sont les dernières sessions, je ne la soumettrais probablement plus (non pas que je m'en lasse, mais je suis déjà allé partout ahaha).
 
 Le CFP de Cloud Nord est déjà bien démarré (on en est à mi-chemin), et je suis très content des sujets que nous recevons.
 
-![Stats du CFP de Cloud Nord](cloud-nord-conference-hall.png)
+![Stats du CFP de Cloud Nord](cloud-nord-conference-hall.webp)
 
 Nous avons également organisé le Chti Tremplin, avec les amis de DevLille et Agi'Lille, avec 6 speakeuses et speakers. La soirée s'est bien passée, et les talks étaient incroyables. Donc je suis aussi content de l'issue de l'évènement. C'était l'occasion de rencontrer de nouvelles personnes, et de recroiser quelques copains, ça fait toujours plaisir.
 
-![Photo du Chti Tremplin](tremplin.png)
+![Photo du Chti Tremplin](tremplin.webp)
 
 ## Musique
 
 J'ai assisté au concert de _Gorillaz_ à Liverpool mi-mars, c'était vraiment chouette. J'ai aussi découvert la ville qui est un peu le "Dunkerque de l'Angleterre". J'ai passé un super week-end là-bas.
 
-![Photo du concert de Gorillaz à Liverpool](gorillaz.jpg)
+![Photo du concert de Gorillaz à Liverpool](gorillaz.webp)
 
 Forcément, je boucle sur leurs albums, dont le dernier, qui est excellent.
 Je réécoute aussi _Blur_, en particulier _The Ballad of Darren_.
@@ -70,7 +70,7 @@ En cours :
 * Monster Hunter Stories
 * NFS Unbound
 
-![Screenshot de Clair Obscur : Expédition 33](e33.jpg)
+![Screenshot de Clair Obscur : Expédition 33](e33.webp)
 
 Terminés récemment :
 
