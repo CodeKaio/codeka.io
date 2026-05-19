@@ -1,5 +1,5 @@
 ---
-date: 2026-04-30
+date: 2026-05-19
 title: "Tangled - une alternative à GitHub sur AT Protocol"
 slug: tangled
 tags:
@@ -11,11 +11,11 @@ draft: true
 
 Avec la chute progressive de GitHub, on voit de plus en plus de messages d'entreprises ou de projets qui cherchent à en sortir.
 
-Au-delà de l'hébergement d'un simple serveur Git, GitHub c'était aussi une espèce de réseau social.
+Au-delà de l'hébergement d'un simple service Git, GitHub, c'était aussi une plateforme de réseau social. Les développeurs partagent leur code, et on y découvre de nouveaux projets. C'est devenu au fur et à mesure des années le lieu où l'Open Source vit (bien que le code source de GitHub lui-même soit fermé, un comble !).
 
-Tangled se pose comme une alternative : un hébergement Git (presque classique), les interactions sociales qui l'accompagnent (stars, issues, etc.), l'hébergement de sites statiques (comme les GitHub Pages), et l'exécution de pipelines (similaire à GitHub Actions).
+Tangled se pose comme une alternative à GitHub : un hébergement Git (presque classique), les interactions sociales qui l'accompagnent (stars, issues, etc.), l'hébergement de sites statiques (comme les GitHub Pages), et l'exécution de pipelines (similaire à GitHub Actions).
 
-Et tout ça avec des notions d'auto-hébergement, liées à l'AT Protocol, mais aussi pour le code et les pipelines.
+Et tout ça avec des notions d'auto-hébergement, liées à l'AT Protocol, pour le code et les pipelines.
 
 Ça a l'air plutôt complet, et c'est encore en version _alpha_, donc la stabilité et les features vont continuer à évoluer dans les prochains mois.
 
@@ -25,9 +25,9 @@ J'ai testé ça pour vous.
 
 ## Tangled c'est quoi ?
 
-Tangled, c'est donc une plateforme "sociale" d'hébergement de code. La plateforme a été lancée en mars 2025, et compte 
+Tangled, c'est donc une plateforme "sociale" d'hébergement de code. La plateforme a été lancée en mars 2025, et bénéficie d'une petite hype récente.
 
-Voyez donc ça comme une alternative à GitHub, ou même GitLab.
+Voyez Tangled comme une alternative à GitHub, ou même GitLab.
 
 Pour fonctionner, Tangled s'appuie sur trois éléments distincts :
 
@@ -35,20 +35,26 @@ Pour fonctionner, Tangled s'appuie sur trois éléments distincts :
 * des serveurs Git, nommés _knots_ pour le stockage des données du code
 * des runners de CI nommées _spindle_
 
-Par défaut, Tangled propose l'utilisation de son propre PDS AT Protocol (`tngl.sh`).
-Si vous n'avez pas encore de compte AT Protocol (comme un compte Bluesky), vous pourrez en créer un qui sera hébergé sur `tngl.sh`. Si vous avez déjà un compte Bluesky, sur un PDS appartenant à Bluesky ou un autre (comme Eurosky), vous pouvez utiliser ce compte.
+Tangled héberge aussi son propre PDS AT Protocol (`tngl.sh`).
+Si vous n'avez pas encore de compte AT Protocol (comme un compte Bluesky), vous pourrez en créer un qui sera hébergé sur `tngl.sh`. Si vous avez déjà un compte AT Protocol, sur un PDS appartenant à Bluesky ou un autre comme Eurosky, vous pouvez utiliser ce compte, sans avoir à en créer un nouveau.
 
-Le PDS de Tangled est hébergé en Finlande.
+Le PDS de Tangled est [hébergé en Finlande](https://tangled.org/privacy#eu-data-hosting). Le reste est déclaré étant hébergé en Europe, sans plus de détails communiqués, mais les adresses IP derrière le domaine `tangled.org` sont associées à UpCloud en Suède.
 
-Et c'est là où est l'idée de génie. Toutes les données relatives à Tangled sont stockées sur votre PDS, dans des records préfixés `sh.tangled`. En cas de migration de compte sur un autre PDS, les données vous suivent.
+L'utilisation de l'AT Protocol est une idée de génie. Toutes les données relatives à Tangled sont stockées sur votre PDS, dans des records préfixés `sh.tangled`. En cas de migration de compte sur un autre PDS, les données vous suivent.
+
+Voici en exemple un screenshot des records AT Protocol de mon compte (qui est toujours sur un PDS opéré par Bluesky) :
 
 ![Les records AT Proto de mon compte](at-proto-records.webp)
 
-Les _knots_ sont des simples serveurs Git, auto-hébergeables. Encore une fois, Tangled a son propre _knot_, qui permet d'héberger le code sans avoir besoin de démarrer sa propre instance.
+Pour l'hébergement des données Git, ce sont les _knots_ de Tangled qui sont utilisés. Les _knot_ sont de simples serveurs Git, auto-hébergeables, qui sont connectés à l'application principale avec un petit binaire custom. Encore une fois, Tangled a son propre _knot_, qui permet d'héberger le code sans avoir besoin de démarrer sa propre instance.
 Mais si vous souhaitez héberger votre propre _knot_, pour conserver la maitrise de vos données, c'est aussi possible.
 
 Enfin, le même principe s'applique pour les _spindle_, qui sont les runners de CI.
 Ici aussi, Tangled propose son propre _spindle_, mais il est possible d'en auto-héberger un.
+
+Tangled est entièrement Open Source, il est donc aussi possible d'auto-héberger sa propre instance de l'App (bien que ce soit peut-être très compliqué, je n'ai pas essayé cette partie).
+
+Enfin, Tangled est développé en Go, et utilise Nix un peu partout, à la fois pour l'environnement de développement des contributeurs, mais aussi pour l'auto-hébergement des composants, ainsi que dans les pipelines de CI. Je pense que cet aspect contribue aussi à la hype de Tangled.
 
 ## Le setup du compte
 
@@ -70,7 +76,13 @@ Comme pour tous les hébergements Git, il y a un peu de setup à faire : configu
 
 ![Configuration de la clé SSH](tangled-config-ssh.webp)
 
-## Créer un nouveau repo
+## Gestion du code
+
+Tangled, c'est avant tout une plateforme Git. On peut très simplement créer des repos et y pousser du code, jusque là rien de surprenant.
+
+On peut en plus héberger son propre _knot_, qui permet de stocker les repos Git sur nos propres serveurs.
+
+### Créer un nouveau repo
 
 La création d'un repo se fait en quelques clics.
 
@@ -95,6 +107,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'tangled.org' (ED25519) to the list of known hosts.
 
 Welcome to Tangled's hosted knot! 🧶
+
 Enumerating objects: 4145, done.
 Counting objects: 100% (4145/4145), done.
 Delta compression using up to 22 threads
@@ -110,38 +123,53 @@ Le code apparait bien dans le repo, première étape franchie !
 
 ![Mon repo une fois le code pushé](tangled-repo-pushed.webp)
 
-## Héberger son propre _knot_
+Rien de particulier à signaler sur ces points, les push/pull fonctionnent bien.
+
+Au niveau de l'interface de visualisation d'un repo, on retrouve en premier lieu le code et l'historique des commits, pas besoin d'aller dans un sous-menu pour y accéder, ce que je trouve pratique.
+
+On peut facilement naviguer entre les branches et les tags.
+Le `README.md` du projet est affiché sous le code.
+
+On peut aussi poser une _star_ sur un repo, le _forker_ et même s'abonner à un flux atom qui permet de suivre les issues, PR, commits et tags d'un projet.
+Je trouve l'idée du flux atom très intelligente. Cela évite d'être bombardés de mails de notifications et de pouvoir filtrer et ranger le suivi dans un client RSS.
+
+### Héberger son propre _knot_
 
 Le _knot_ est le serveur qui héberge les données de Git.
 
-Pour héberger un _knot_, il faut un serveur et un domaine DNS auquel le _knot_ sera accessible.
+Pour héberger un _knot_, il faut un serveur et un domaine DNS auquel le _knot_ sera accessible, avec exposition sur internet..
 Le _knot_ doit également être accessible en HTTPS, un certificat SSL valide est donc aussi nécessaire.
 
 Plusieurs méthodes d'installation sont proposées par Tangled : sur une VM _via_ [Nix](https://tangled.org/tangled.org/core/blob/master/nix/modules/knot.nix), _via_ une installation manuelle (à base de scripts), ou _via_ une image Docker.
 
-Par simplicité, j'ai donc décidé de créer une VM sur Scaleway, et d'y installer mon _knot_ avec docker-compose.
+Par simplicité, j'ai donc décidé de créer une VM sur Scaleway, et d'y installer mon _knot_ avec _docker compose_ (là où je me sens le plus à l'aise pour débugger si je rencontre un problème).
 
 Aucune specification minimale n'est indiquée pour l'installation, j'ai donc pris une machine minuscule (1vCPU et 1G de RAM). Le but est surtout que le service tourne, je ne m'attends pas particulièrement à ce qu'il soit performant.
 
-Après avoir installé Docker et docker-compose (je vous passe ces étapes), je récupère le fichier `docker-compose.yml` de Tangled.
+Après avoir installé Docker et le plugin _compose_ (je vous passe ces étapes), je récupère le fichier [`docker-compose.yml`](https://tangled.org/tangled.org/knot-docker/blob/main/docker-compose.yml) de Tangled.
 
 Il est relativement simple, il contient un container pour le _knot_, et un container pour _Caddy_, avec l'exposition en HTTPS.
 
+L'image du _knot_ est disponible sur le [registry _ATCR_](https://atcr.io/r/tangled.org/knot#overview) (lui aussi lié à AT Proto).
 
-L'image du _knot_ est disponible sur le registry _ATCR_ (lui aussi lié à AT Proto).
+![L'image _tangled.org/knot_ sur ATCR](atcr-knot-image.webp)
 
-Lors de mes tests, cette image était un peu datée, donc j'ai dû en reconstruire une fraîche.
-
-J'ai récupéré le repository https://tangled.org/tangled.org/knot-docker sur ma machine, 
-lancé un 
+La récupération de l'image (qu'on peut aussi builder soi-même bien entendu), nécessite un compte sur `atcr.io`. Encore une fois, il suffit de se connecter avec son compte AT Protocol sur atcr, et ensuite d'utiliser un [_App Password_](https://bsky.app/settings/app-passwords) pour effectuer le `docker login` :
 
 ```shell
-docker image build -t rg.fr-par.scw.cloud/tangled/knot:latest .
+$ docker login atcr.io
+Username: codeka.io
+Password:
 
-docker image push rg.fr-par.scw.cloud/tangled/knot:latest
+Login Succeeded
 ```
 
-Une fois l'image buildée et pushée, je peux lancer le docker compose sur mon serveur :
+Pour démarrer, le _knot_ a besoin de plusieurs informations : le nom DNS qui sert à l'exposer et l'identifiant AT Protocol _did_ du compte utilisateur qui possède le _knot_.
+
+```shell
+export KNOT_SERVER_HOSTNAME=knot.codeka.io
+export KNOT_SERVER_OWNER=did:plc:a27wdjlmq3ebx4v5f2jpzvsk
+```
 
 ```shell
 $ docker-compose up -d
@@ -153,10 +181,11 @@ $ docker-compose up -d
  ✔ Container tangled-frontend-1          Started       1.7s
 ```
 
-Une fois que tout est démarré, si j'accède à l'URL de mon _knot_ :
-![img.webp](knot-http.webp)
+Une fois que tout est démarré, j'accède à l'URL de mon _knot_ :
 
-De retour dans l'interface de Tangled, je peux maintenant ajouter mon _knot_ :
+![img.webp](knot-http.png)
+
+De retour dans l'interface de Tangled, je peux maintenant ajouter mon _knot_ à mon compte utilisateur, _via_ les settings de mon compte :
 
 ![img.webp](tangled-add-knot.webp)
 
@@ -173,32 +202,41 @@ tangled@tangled-knot:/home/tangled/repositories# ls
 did:plc:uam62c7dmtnxgca3jlad63kg
 ```
 
-## Ouvrir une pull request
+Et voilà ! Les pull/push de mon code pourront maintenant atterrir sur mon propre _knot_ !
 
-Ouvrir une PR sur Tangled est assez similaire à d'autres outils.
+> Je n'ai pas trouvé de procédure permettant de migrer un repo existant vers un autre _knot_. Je pense que c'est le genre de feature qui arrivera dans les prochaines semaines ou les prochains mois.
 
-Pour ce faire, il faut se rendre sur le repo souhaité, et cliquer sur le bouton "New".
+### Utiliser un _knot_ sans Tangled ?
 
-Le formulaire propose alors de poser un `git diff` manuellement, ou d'extraire un diff de la comparaison d'un fork.
+Le _knot_ est bien un serveur Git classique (boosté à l'AT Proto). Il est aussi possible de cloner des repos et de pusher du code sans passer par Tangled.
 
-Il est aussi possible d'ajouter un titre et une description, qui sont optionnelles (Tangled extrait les informations du premier commit pour alimenter ces champs).
+La subtilité est que les repository sont créés avec un identifiant AT Protocol (et pas leur nom), mais sinon tout ressemble à un Git classique.
 
-![img.webp](tangled-pr-form.webp)
+Par exemple, je peux cloner un repo en utilisant directement l'URL de mon knot et le did d'un repo :
 
-![img.webp](tangled-pr.webp)
+```shell
+$ git clone git@knot.codeka.io:did:plc:zfbeaslfchzzd2tbmjqjl4mt
+Cloning into 'zfbeaslfchzzd2tbmjqjl4mt'...
 
-Une fois la PR créé, il est possible de push de nouveaux commits, de poser des commentaires, bref, c'est l'environnement habituel.
+Welcome to CodeKaio knot!
 
-Les PR sont stockées sous la forme de records AT Protocol, dans le PDS de l'utilisateur qui ouvre la PR. L'URI du record est visible dans l'interface de Tangled. 
+remote: Enumerating objects: 161, done.
+remote: Counting objects: 100% (161/161), done.
+remote: Compressing objects: 100% (145/145), done.
+remote: Total 161 (delta 107), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (161/161), 19.65 KiB | 1.09 MiB/s, done.
+Resolving deltas: 100% (107/107), done.
+```
 
-![img.webp](tangled-pr-at-uri.webp)
+Ce fonctionnement ouvre clairement la possibilité de migrer du code facilement, simplement en enregistrant un repo Git existant comme un _knot_ ou de pouvoir utiliser plusieurs interfaces pour le même repo de code, comme coupler Tangled avec Forgejo ou Gitea.
 
-On peut alors directement voir le record AT Protocol, avec ses différents champs.
-On y retrouve les informations sur la PR (titre et description), les _rounds_ correspondent aux push successifs, et référencent le blob qui contient le patch de la PR.
+Ce n'est pour l'instant pas outillé par Tangled, mais c'est une perspective intéressante pour faciliter les migrations entrantes ou sortantes.
 
-![img.webp](tangled-pr-at-record.webp)
+## Issues et PR
 
-## Les issues et les labels
+En plus du code, on attend d'une plateforme de développement d'avoir une gestion d'issues et de pull requests. Tangled propose son implémentation qui est assez complète, comme on l'imagine, et avec quelques petites originalités.
+
+### Les issues et les labels
 
 Concernant la gestion des issues et des labels, Tangled propose un système similaire à GitHub.
 
@@ -217,9 +255,9 @@ Il est aussi possible de créer ses propres labels basiques, depuis la page de c
 > Comble de la tristesse, les noms de labels ne peuvent pas contenir d'emoji 😢 (en tout cas pour l'instant).
 
 En plus des labels basiques, il existe des labels "Key-Value".
-Ces labels portent un nom, et une valeur associée qui peut être une chaîne arbitraire, un _did_ AT Protocol, ou un nombre.
+Ces labels portent un nom, et une valeur associée, donnée quand on applique le label à une issue ou une PR. La valeur peut être une chaîne de caractères, un _did_ AT Protocol, ou un nombre, et même être multiple.
 
-Les cas d'usages sont multiples, et le premier cas présenté par Tangled est un label "assignee", qui a pour valeur un _did_, donc la personne a qui on a assigné l'issue.
+Les cas d'usages des labels "Key-Value" sont intéressants, et le premier cas présenté par Tangled est un label "assignee", qui a pour valeur un _did_, donc la personne a qui on a assigné l'issue.
 Il est ainsi possible d'avoir par exemple un label "component" qui référence le ou les composants impactés, ou même des labels de chiffrage (pour les foufous).
 
 ![img.webp](tangled-label-component.webp)
@@ -232,19 +270,116 @@ Sur une issue, les labels sont ensuite présentés sous la forme d'un petit form
 
 La flexibilité qu'offre ce système de labels est vraiment cool, je pense qu'on en trouvera des usages originaux dans le futur, mais c'est déjà très pratique de mon point de vue.
 
+### Ouvrir une pull request
+
+Ouvrir une PR sur Tangled est assez similaire à d'autres outils.
+
+Pour ce faire, il faut se rendre sur le repo souhaité, dans l'onglet _Pull Requests_ et cliquer sur le bouton "New".
+
+Le formulaire propose alors de comparer deux branches, un fork, ou de simplement poser un `git diff` ou un patch manuellement.
+
+![Le menu de création d'une PR](tangled-pr-menu.png)
+
+Il est aussi possible d'ajouter un titre et une description, qui sont optionnelles, Tangled arrive à e extrait les informations du premier commit pour alimenter ces champs.
+
+Pouvoir créer une PR juste à partir d'un diff permet de soumettre de petits patches sans avoir à forker les repo. C'est une excellent idée.
+
+![Une PR avec un patch](tangled-pr-patch.png)
+
+La vue d'une PR est bien organisée, le code est mis en avant, les commentaires et l'historique des actions sont sur le côté. Ici, c'est bien le code qui est roi 👑
+
+On est pas tellement perdus, on y retrouve tout ce qu'on peut faire habituellement.
+
+![img.webp](tangled-pr.webp)
+
+Les PR sont stockées sous la forme de records AT Protocol, dans le PDS de l'utilisateur qui ouvre la PR. L'URI du record est visible dans l'interface de Tangled.
+
+![img.webp](tangled-pr-at-uri.webp)
+
+On peut alors directement voir le record AT Protocol, avec ses différents champs.
+On y retrouve les informations sur la PR (titre et description), les _rounds_ correspondent aux push successifs, et référencent le blob qui contient le patch de la PR.
+
+![img.webp](tangled-pr-at-record.webp)
+
 ## Intégration continue
+
+Pas de bonne plateforme sans intégration continue.
+
+Il est possible pour chaque repository de configurer des _webhooks_, qui sont transmis à chaque _push_ de code. Ils permettent de se câbler sur des intégrations continues classiques, comme Jenkins, ou d'intégrer d'autre outils (la documentation de Tangled cite pour exemple une [intégration Discord](https://docs.tangled.org/webhooks#example-integrations)).
+
+Au delà des webhooks, Tangled propose son propre système d'intégration continue. Les pipelines sont décrits en YAML, d'inspiration GitHub Actions, et exécutés par des _spindle_.
 
 ### Pipelines
 
 Les pipelines d'intégration continue sont décrits par des fichiers présents dans un répertoire `.tangled/workflows` à la racine des repos.
 
-La syntaxe des pipelines est très proche de celle de GitHub Actions, mais avec une approche plus déclarative.
+La syntaxe des pipelines est très proche de celle de GitHub Actions, mais avec une approche plus déclarative, en particulier sur la gestion du `clone` et des dépendances.
 
-On décrit quelles actions déclenchent l'exécution du pipeline (un `git push`, l'ouverture d'une PR, ou un déclenchement manuel), comment le repo doit être cloné, quelles dépendances sont nécessaires à l'exécution du pipeline, et quelles étapes sont à exécuter.
+Un workflow décrit quelles actions déclenchent l'exécution du pipeline (un `git push`, l'ouverture d'une PR, ou un déclenchement manuel), comment le repo doit être cloné, quelles dépendances sont nécessaires à l'exécution du pipeline, et quelles étapes sont à exécuter.
 
-À ce titre, la [documentation](https://docs.tangled.org/spindles#pipelines) est plutôt complète.
+On va donc retrouver dans un pipeline 4 blocs de configuration : `when`, `clone`, `dependencies`, et `steps`. On doit aussi déclarer un `engine` (seul "nixery" est disponible pour le moment), et on peut ajouter des variables d'environnement avec un bloc `environment`.
 
-### Spindles
+À ce titre, la [documentation](https://docs.tangled.org/spindles#pipelines) est plutôt complète, et donne un exemple de pipeline qui peut servir de base de travail :
+
+```yaml
+when:
+  - event: ["push", "manual"]
+    branch: ["main", "develop"]
+  - event: ["pull_request"]
+    branch: ["main"]
+
+engine: "nixery"
+
+clone:
+  skip: false
+  depth: 1
+  submodules: false
+
+dependencies:
+  nixpkgs:
+    - nodejs
+    - go
+
+environment:
+  GOOS: "linux"
+  GOARCH: "arm64"
+
+steps:
+  - name: "Build backend"
+    command: "go build"
+  - name: "Build frontend"
+    command: "npm run build"
+    environment:
+      NODE_ENV: "production"
+```
+
+L'exécution des pipelines s'appuie sur des images Docker.
+Ces images sont créées en utilisant [Nixery](https://nixery.dev/) (d'où la déclaration de l'`engine`), qui s'appuie donc sur Nix, et qui optimise la gestion des dépendances des pipelines dans des layers Docker.
+Je ne connaissais pas cet outil, c'est encore ici une idée de génie.
+
+Les dépendances déclarées dans le YAML de cette manière :
+
+```yaml
+dependencies:
+  nixpkgs:
+    - nodejs
+    - go
+```
+
+sont résolues en exécutant les pipelines dans une image Docker qui contiendra les deux packages demandés, plus les packages `bash`, `git`, `coreutils` et `nix`. L'image Docker qui sera récupérée est alors `nixery.tangled.sh/bash/git/coreutils/nix/nodejs/go`.
+
+Pour accompagner l'exécution des pipelines, Tangled propose une gestion de secrets minimaliste (clé/valeur), qui est backée par OpenBao.
+
+Ajouter des secrets se fait simplement dans les settings d'un repo :
+
+![Des secrets](tangled-pipelines-secrets.png)
+
+Les secrets sont alors injectés en variable d'environnement. C'est ici encore une fois assez classique. À noter que les secrets sont _write-only_ dans l'interface de Tangled.
+Les secrets sont stockés au niveau du _spindle_ (et pas dans un record AT Proto, ni au niveau de Tangled lui même), ce qui est une bonne chose en termes de sécurité.
+
+[//]: # (TODO exécuter un pipeline)
+
+### Héberger son propre spindle
 
 L'intégration continue sur Tangled est assurée par les _spindles_.
 
@@ -253,10 +388,6 @@ Les _spindles_ sont des exécuteurs de pipeline, similaire à ce que sont les ru
 La sélection d'un _spindle_ se fait au niveau des settings d'un repo.
 
 ![img.webp](tangled-spindle-settings.webp)
-
-Une fois le spindle sélectionné et validé, on peut ajouter des secrets qui seront injectés dans les pipelines sous la forme de variables d'environnement.
-
-#### Auto héberger son spindle
 
 De la même manière que le _knot_, il est possible d'héberger son propre _spindle_ sur un serveur.
 
@@ -278,13 +409,44 @@ $ cd core/
 $ mise use go
 $ go mod download
 $ go build -o cmd/spindle/spindle cmd/spindle/main.go
+```
 
+Je configure ensuite les deux variables d'environnement nécessaire (comme pour le _knot_), qui sont `SPINDLE_SERVER_HOSTNAME` et `SPINDLE_SERVER_OWNER`, puis j'exécute le _spindle_ :
 
+```shell
+tangled@tangled-spindle:~$ ./bin/spindle
+2026/05/15 14:38:08 INFO spindle/db: migration applied successfully migration=repos-to-repo-did
+2026/05/15 14:38:08 INFO spindle: using sqlite secrets provider path=/home/tangled/spindle.db
+2026/05/15 14:38:08 INFO spindle: tap db not yet created, marking resync nudge done migration=force-tap-repo-resync-v1 path=tap.db
+2026/05/15 14:38:08 INFO spindle: initialized queue queueSize=100 numWorkers=2
+2026/05/15 14:38:08 INFO spindle: initialized workflow semaphore maxConcurrentWorkflows=8
+2026/05/15 14:38:08 INFO spindle/jetstream: adding did to in-memory filter did=did:plc:a27wdjlmq3ebx4v5f2jpzvsk
+2026/05/15 14:38:08 INFO spindle: owner set did=did:plc:a27wdjlmq3ebx4v5f2jpzvsk
+2026/05/15 14:38:08 INFO spindle: embedded tap: using random admin password
+2026/05/15 14:38:08 INFO spindle/jetstream: done waiting for did
+2026/05/15 14:38:08 WARN spindle: couldn't get last time us, starting from now error="sql: no rows in result set"
+2026/05/15 14:38:08 INFO spindle: found last time_us time_us=1778855888237012
+2026/05/15 14:38:08 INFO spindle/jetstream: connecting to websocket component=jetstream-client url="wss://jetstream1.us-west.bsky.network/subscribe?cursor=1778855888237012&wantedCollections=sh.tangled.spindle.member"
+2026/05/15 14:38:08 INFO spindle: no pre-existing cursor in database system=tap component=firehose relayUrl=https://bsky.network
+2026/05/15 14:38:08 INFO spindle: connecting to firehose system=tap component=firehose url=wss://bsky.network/xrpc/com.atproto.sync.subscribeRepos cursor=0 retries=0
+2026/05/15 14:38:08 INFO spindle/embedtap: tap http server listening bind=[::1]:2480
+2026/05/15 14:38:08 INFO spindle: starting tap client url=http://[::1]:2480
+2026/05/15 14:38:08 INFO spindle: starting spindle server address=0.0.0.0:6555
+2026/05/15 14:38:08 INFO spindle: starting knot event consumer
+2026/05/15 14:38:08 INFO spindle/eventconsumer: starting consumer config="{map[] 0x159d7e0 15m0s 1h0m0s 10s 5 100 0xc000340e30 false 0xc000144630}"
+2026/05/15 14:38:08 INFO spindle: websocket connected system=tap component=server
+2026/05/15 14:38:08 INFO spindle: connected to tap service subscription_code=101
+2026/05/15 14:38:08 INFO spindle: tap declare: known owner DIDs registered count=0
+2026/05/15 14:38:08 INFO spindle: established tap connection
+2026/05/15 14:38:08 INFO spindle: connected to firehose system=tap component=firehose
+2026/05/15 14:38:08 INFO spindle/jetstream: starting websocket read loop component=jetstream-client
 ```
 
 De retour dans l'interface de Tangled, j'ajoute mon _spindle_ :
 
 ![img.webp](tangled-spindle-add.webp)
+
+Les pipelines que je déclencherai seront donc maintenant exécutés sur mon propre _spindle_ !
 
 ## Autres features
 
@@ -297,8 +459,6 @@ Les strings sont des snippets partageables, l'équivalent d'un _gist_ dans GitHu
 ![img.webp](tangled-strings-list.webp)
 
 Les strings peuvent alors être partagés avec leur lien, qui est public.
-
-> L'éditeur Markdown est hyper basique (champ de texte). C'est à la fois une bonne chose (on se concentre sur le contenu), mais un petit aperçu pour aider à la relecture manque quand même.
 
 ### Vouching
 
