@@ -1,10 +1,22 @@
-{{ if .IsTranslated }}
-<h4>{{ i18n "translations" }}</h4>
-<ul>
-    {{ range .Translations }}
-    <li>
-        <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }} : {{ .LinkTitle }}</a>
-    </li>
+{{ with .Translations }}
+<nav class="article-translations" aria-label="Article languages">
+    <span>{{ i18n "translations" }}</span>
+    {{ range . }}
+    {{ if eq .Language.Lang $.Language.Lang }}
+    <span
+            aria-current="page"
+            lang="{{ .Language.Lang }}"
+    >
+        {{ .Language.LanguageName }}
+      </span>
+    {{ else }}
+    <a
+            href="{{ .RelPermalink }}"
+            lang="{{ .Language.Lang }}"
+    >
+        {{ .Language.LanguageName }}
+    </a>
     {{ end }}
-</ul>
+    {{ end }}
+</nav>
 {{ end }}
