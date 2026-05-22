@@ -73,7 +73,6 @@ timeout = '120s'
   email_url = "mailto:julien.wittouck@gmail.com"
   github_url = "https://github.com/juwit"
   linkedin_url = "https://www.linkedin.com/in/julien-wittouck"
-  twitter_url = "https://www.twitter.com/CodeKaio"
   bluesky_url = "https://bsky.app/profile/codeka.io"
   mastodon_url = "https://mas.to/@codekaio"
   rss_icon = true
