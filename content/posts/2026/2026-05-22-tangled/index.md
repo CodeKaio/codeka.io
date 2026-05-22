@@ -6,6 +6,7 @@ tags:
   - git
   - sovereignty
 cover_anchor: top
+bluesky: https://bsky.app/profile/codeka.io/post/3mmgmty2bme2n
 ---
 
 Avec la chute progressive de GitHub, on voit de plus en plus de messages d'entreprises ou de projets qui cherchent à en sortir.
