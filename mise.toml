@@ -22,7 +22,7 @@ run = "go run plausible_fetch.go -site codeka.io -range all -out ../data/plausib
 description = 'Fetch data from bluesky'
 dir = "scripts"
 tools.go = "1.21"
-run = "go run bluesky_stats.go"
+run = "go mod tidy && go run bluesky_stats.go"
 
 [tasks.build]
 description = "Build le site avec Hugo"
