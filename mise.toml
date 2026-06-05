@@ -1,7 +1,5 @@
 [tools]
-hugo-extended = "0.155"
-node = "latest"
-"npm:clever-tools" = "latest"
+hugo-extended = "0.162"
 
 [env]
 HUGO_OPTIONS = "--printI18nWarnings --printPathWarnings --cleanDestinationDir --logLevel debug --disableFastRender"
@@ -66,11 +64,15 @@ run = "hugo new content posts/${usage_date}-mi-veille -k veille"
 
 [tasks."clever:preview"]
 description = "Déploie une preview Clever Cloud et ouvre l'URL"
+tools.node = "latest"
+tools."npm:clever-tools" = "latest"
 depends = ['fetch-views-data']
 run = "clever deploy --alias preview --force && clever open --alias preview"
 
 [tasks."clever:deploy"]
 description = "Déploie sur l'alias Clever Cloud de production"
+tools.node = "latest"
+tools."npm:clever-tools" = "latest"
 run = '''
 clever link $PROD_APP_ID --alias codeka.io || true
 clever deploy --alias codeka.io
@@ -79,14 +81,17 @@ clever deploy --alias codeka.io
 [tasks."backstop:test"]
 description = "Exécute les tests visual regression avec BackstopJS"
 tools."npm:backstopjs" = "latest"
+tools.node = "22"
 run = "backstop test"
 
 [tasks."backstop:reference"]
 description = "Prend les captures d'écran de référence"
 tools."npm:backstopjs" = "latest"
+tools.node = "22"
 run = "backstop reference"
 
 [tasks."backstop:approve"]
 description = "Valide les tests visual regression"
 tools."npm:backstopjs" = "latest"
+tools.node = "22"
 run = "backstop approve"
