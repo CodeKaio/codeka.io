@@ -15,13 +15,13 @@ run = "rm -rf public/ resources/"
 [tasks.fetch-views-data]
 description = 'Fetch data from plausible'
 dir = "scripts"
-tools.go = "1.21"
+tools.go = "1.26"
 run = "go run plausible_fetch.go -site codeka.io -range all -out ../data/plausible-stats/visits.json"
 
 [tasks.fetch-bluesky-stats]
 description = 'Fetch data from bluesky'
 dir = "scripts"
-tools.go = "1.21"
+tools.go = "1.26"
 run = "go mod tidy && go run bluesky_stats.go"
 
 [tasks.build]
@@ -44,12 +44,10 @@ find public/ -type f -regextype egrep -regex $COMPRESSREGEX | xargs gzip --keep 
 
 [tasks.serve]
 description = "Lance le serveur de développement Hugo"
-depends = ['fetch-views-data']
 run = "hugo server --openBrowser $HUGO_OPTIONS"
 
 [tasks.draft]
 description = "Serve Hugo en incluant les brouillons et futures publications"
-depends = ['fetch-views-data']
 run = "hugo server --openBrowser $HUGO_OPTIONS --buildDrafts --buildFuture"
 
 [tasks.nbsp]
