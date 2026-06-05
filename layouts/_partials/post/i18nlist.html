@@ -7,14 +7,14 @@
             aria-current="page"
             lang="{{ .Language.Lang }}"
     >
-        {{ .Language.LanguageName }}
+        {{ .Language.Label }}
       </span>
     {{ else }}
     <a
             href="{{ .RelPermalink }}"
             lang="{{ .Language.Lang }}"
     >
-        {{ .Language.LanguageName }}
+        {{ .Language.Label }}
     </a>
     {{ end }}
     {{ end }}

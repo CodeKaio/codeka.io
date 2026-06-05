@@ -1,6 +1,6 @@
 {{/* Renders a visits counter for the current page using data/plausible-stats/visits.json */}}
 {{ $visits := 0 }}
-{{ $data := index .Site.Data "plausible-stats" }}
+{{ $data := index hugo.Data "plausible-stats" }}
 {{ if $data }}
   {{ $pages := $data.visits }}
   {{ if $pages }}
