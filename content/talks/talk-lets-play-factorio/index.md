@@ -7,6 +7,10 @@ tags:
   - Basics
 hasGallery: true
 events:
+  - name: DevLille 2026
+    date: 2026-06-12
+    feedbacks_url: https://openfeedback.io/devlille-2026/2026-06-12/3d6d15c3-9628-4a23-9473-b537d447da6a
+    pictures: pictures-devlille-2026
   - name: Touraine Tech 20026
     date: 2026-02-13
     youtube: juD1RwbiRsM
@@ -72,6 +76,7 @@ Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
 * Sauvegarde de la session du DevFest Lyon 2025 : [devfest-lyon-2025.zip](devfest-lyon-2025.zip)
 * Sauvegarde de la session de Epitech Summit 2026 : [epitech-summit-2026.zip](epitech-summit-2026.zip)
 * Sauvegarde de la session de Touraine Tech 2026 : [touraine-tech-2026.zip](touraine-tech-2026.zip)
+* Sauvegarde de la session de DevLille 2026 : [devlille-2026.zip](devlille-2026.zip)
 
 ## Liens
 
