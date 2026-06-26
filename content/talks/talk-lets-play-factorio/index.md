@@ -12,6 +12,7 @@ events:
     feedbacks_url: https://openfeedback.io/SRRLTK2p7mBWUfvuRudl/2026-06-26/1149153
   - name: DevLille 2026
     date: 2026-06-12
+    youtube: 2jdUNuL_Lgk
     feedbacks_url: https://openfeedback.io/devlille-2026/2026-06-12/3d6d15c3-9628-4a23-9473-b537d447da6a
     pictures: pictures-devlille-2026
   - name: Touraine Tech 20026
