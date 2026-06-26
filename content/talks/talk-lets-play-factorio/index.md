@@ -7,6 +7,9 @@ tags:
   - Basics
 hasGallery: true
 events:
+  - name: Breizhcamp 2026
+    date: 2026-06-26
+    feedbacks_url: https://openfeedback.io/SRRLTK2p7mBWUfvuRudl/2026-06-26/1149153
   - name: DevLille 2026
     date: 2026-06-12
     feedbacks_url: https://openfeedback.io/devlille-2026/2026-06-12/3d6d15c3-9628-4a23-9473-b537d447da6a
@@ -77,6 +80,7 @@ Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
 * Sauvegarde de la session de Epitech Summit 2026 : [epitech-summit-2026.zip](epitech-summit-2026.zip)
 * Sauvegarde de la session de Touraine Tech 2026 : [touraine-tech-2026.zip](touraine-tech-2026.zip)
 * Sauvegarde de la session de DevLille 2026 : [devlille-2026.zip](devlille-2026.zip)
+* Sauvegarde de la session de Breizhcamp 2026 : [breizhcamp-2026.zip](breizhcamp-2026.zip)
 
 ## Liens
 
