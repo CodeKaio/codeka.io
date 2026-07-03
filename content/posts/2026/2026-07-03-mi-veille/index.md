@@ -9,7 +9,7 @@ tags:
   - internet
   - sovereignty
   - events
-draft: true
+writing_time: 2h30
 ---
 
 Ce mois de juin, j'étais en marathon de conférences. DevLille, Tech'Work, Breizhcamp, et je termine la saison avec Riviera Dev.
