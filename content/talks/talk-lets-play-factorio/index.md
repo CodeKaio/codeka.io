@@ -7,6 +7,9 @@ tags:
   - Basics
 hasGallery: true
 events:
+  - name: Riviera Dev 2026
+    date: 2026-07-08
+    feedbacks_url: https://openfeedback.io/fCb31a335dE2gwSK0i1f/0/1014
   - name: Breizhcamp 2026
     date: 2026-06-26
     feedbacks_url: https://openfeedback.io/SRRLTK2p7mBWUfvuRudl/2026-06-26/1149153
@@ -75,13 +78,14 @@ J'ai aussi utilisé quelques outils :
 ## Sauvegarde
 
 Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
-* Sauvegarde de la session de SunnyTech 2025 : [sunny-tech-2025.zip](sunny-tech-2025.zip)
-* Sauvegarde de la session du DevFest Nantes 2025 : [devfest-nantes-2025.zip](devfest-nantes-2025.zip)
-* Sauvegarde de la session du DevFest Lyon 2025 : [devfest-lyon-2025.zip](devfest-lyon-2025.zip)
-* Sauvegarde de la session de Epitech Summit 2026 : [epitech-summit-2026.zip](epitech-summit-2026.zip)
-* Sauvegarde de la session de Touraine Tech 2026 : [touraine-tech-2026.zip](touraine-tech-2026.zip)
-* Sauvegarde de la session de DevLille 2026 : [devlille-2026.zip](devlille-2026.zip)
+* Sauvegarde de la session de Riviera Dev 2026 : [riviera-dev-2026.zip](riviera-dev-2026.zip)
 * Sauvegarde de la session de Breizhcamp 2026 : [breizhcamp-2026.zip](breizhcamp-2026.zip)
+* Sauvegarde de la session de DevLille 2026 : [devlille-2026.zip](devlille-2026.zip)
+* Sauvegarde de la session de Touraine Tech 2026 : [touraine-tech-2026.zip](touraine-tech-2026.zip)
+* Sauvegarde de la session de Epitech Summit 2026 : [epitech-summit-2026.zip](epitech-summit-2026.zip)
+* Sauvegarde de la session du DevFest Lyon 2025 : [devfest-lyon-2025.zip](devfest-lyon-2025.zip)
+* Sauvegarde de la session du DevFest Nantes 2025 : [devfest-nantes-2025.zip](devfest-nantes-2025.zip)
+* Sauvegarde de la session de SunnyTech 2025 : [sunny-tech-2025.zip](sunny-tech-2025.zip)
 
 ## Liens
 
