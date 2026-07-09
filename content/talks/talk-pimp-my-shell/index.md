@@ -1,7 +1,7 @@
 ---
 title: Talk - Pimp My Shell
 language: fr
-date: 2025-04-16
+date: 2026-06-18
 tags:
   - DevOps
 events:
