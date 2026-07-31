@@ -2,7 +2,7 @@
 date: 2026-04-25
 language: fr
 title: Devoxx France 2026 - Bilan
-series: Devoxx
+series: Confs Tech 2026
 tags:
   - internet
   - kubernetes
