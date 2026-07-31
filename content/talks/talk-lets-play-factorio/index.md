@@ -1,7 +1,8 @@
 ---
+date: 2025-06-01
+modified: 2026-07-31
 title: Talk - Let's play Factorio
 language: fr
-date: 2025-06-01
 tags:
   - Internet
   - Basics
@@ -10,6 +11,7 @@ events:
   - name: Riviera Dev 2026
     date: 2026-07-08
     feedbacks_url: https://openfeedback.io/fCb31a335dE2gwSK0i1f/0/1014
+    pictures: pictures-riviera-dev-2026
   - name: Breizhcamp 2026
     date: 2026-06-26
     feedbacks_url: https://openfeedback.io/SRRLTK2p7mBWUfvuRudl/2026-06-26/1149153
@@ -18,7 +20,7 @@ events:
     youtube: 2jdUNuL_Lgk
     feedbacks_url: https://openfeedback.io/devlille-2026/2026-06-12/3d6d15c3-9628-4a23-9473-b537d447da6a
     pictures: pictures-devlille-2026
-  - name: Touraine Tech 20026
+  - name: Touraine Tech 2026
     date: 2026-02-13
     youtube: juD1RwbiRsM
     feedbacks_url: https://openfeedback.io/nIlFquxGUZ1IJ1cDkc1z/2026-02-13/cmfl2vyvf041pml1eg6tp42u2
