@@ -35,7 +35,7 @@ Cette saison, j'ai eu le plaisir d'assister à pas mal (beaucoup) de conférence
 
 Ça représente un total de 23 jours en conf. C'est plus de 10% de mon temps (sur une base de 200 jours / an).
 
-J'ai aussi essuyé quelques de refus aux CFP :
+J'ai aussi essuyé quelques refus aux CFP :
 
 * Cloud Toulouse
 * Sunny Tech
@@ -64,9 +64,9 @@ Pour la saison, j'avais travaillé trois sujets de talk :
 {class=images-grid-3}
 
 J'ai encore des dates de prévues pour "Let's play Factorio". Je ne m'en lasse pas, donc je le soumettrai tant qu'il est accepté.
-Avec le temps de préparation que j'ai passé sur ce talk, je suis réellement content d'avoir pu le donner autant, et qu'il aie reçu un tel accueil.
+Avec le temps de préparation que j'ai passé sur ce talk, je suis réellement content d'avoir pu le donner autant, et qu'il ait reçu un tel accueil.
 
-J'ai comptés dans les feedbacks (en cumulant les feedbacks des 8 sessions) :
+J'ai compté dans les feedbacks (en cumulant les feedbacks des 8 sessions) :
 
 * Drôle/Original: 569 feedbacks
 * J'ai beaucoup appris: 183 feedbacks
@@ -80,13 +80,16 @@ Je n'ai pas compté les gens présents dans les différentes salles, mais je pen
 
 Merci d'avoir fait confiance à ce talk 😊
 
-Et désolé pour les personnes que j'ai embarqué dans le jeu 😅
+Et désolé pour les personnes que j'ai embarquées dans le jeu 😅
 
 ### Le coût financier
 
 23 jours de conférence, pour un total d'environ 2000 euros (sponsoring DevLille, billets FIC et DevOxx France)
+
 24 nuits d'hôtel, pour un total d'environ 3000 euros.
-9 allers-retour en train, pour un total d'environ 1200 euros
+
+9 allers-retour en train, pour un total de presque 1200 euros (j'ai le statut "Grand Voyageur" maintenant).
+
 1 aller-retour en avion pour un montant de 500 euros.
 
 Cela représente au total près de 6700 euros, et ce montant est en deçà de l'investissement réel, car je ne compte pas les frais de restauration ainsi que les différents taxis/uber et tickets de transport que j'ai dû acheter pour ces déplacements, ainsi que les quelques parkings pour ma voiture.
@@ -105,7 +108,7 @@ L'année dernière, nous avons dû réduire la voilure pour notre conférence.
 Vous l'avez probablement vu ou lu ailleurs, les années ne sont pas bonnes pour les conférences en raison de la crise économique.
 Les sponsors sont frileux. Les participants sont moins nombreux (les entreprises financent moins les billets).
 
-J'en avait parlé longuement dans mon article [Je suis orga d'un événement tech](2025/11/07/je-suis-orga-dun-événement-tech/).
+J'en avais parlé longuement dans mon article ["Je suis orga d'un événement tech"](2025/11/07/je-suis-orga-dun-événement-tech/).
 
 Cette année, je m'implique de nouveau dans l'organisation de la conférence.
 Nous visons le même format que l'année dernière, pour ne pas prendre de risques.
@@ -147,7 +150,7 @@ Mes feedbacks de conférence représentent huit articles.
 
 Et j'ai écrit neuf articles "originaux", sur des sujets variés.
 
-Pour la période du 1er septembre au 1er août, 6700 1800 personnes ont visité [codeka.io](https://codeka.io) (1800 l'année dernière), pour un total de 9700 pages lues (2600 l'année dernière).
+Pour la période du 1er septembre au 1er août, 6700 personnes ont visité [codeka.io](https://codeka.io) (1800 l'année dernière), pour un total de 9700 pages lues (2600 l'année dernière).
 
 Stonks.
 
@@ -165,7 +168,7 @@ J'ai aussi des visites qui proviennent de Microsoft Teams, Slack, Discord, qui s
 
 Très peu de visites provenant d'assistants IA.
 
-Jettez un oeil à ma page [stats](stats/) si vous voulez voir les détails.
+Jettez un œil à ma page [stats](/stats) si vous voulez voir les détails.
 
 Pour la saison prochaine, je vais essayer de maintenir le rythme, aussi bien sur la veille, que sur les autres articles.
 
@@ -175,7 +178,7 @@ Comme l'année dernière, j'ai réduit ma présence sur les réseaux sociaux à 
 
 Je poste principalement le contenu de ma veille, ainsi que mes articles. Sur Bluesky, je poste aussi du contenu plus "perso", comme les jeux auxquels je joue ou les séries que je regarde. Mon LinkedIn ne contient pas ce type de contenu plus perso.
 
-J'ai extrait mes stats LinkedIn pour la rédaction de ce bilan, mes posts sur ce réseau on eu grosso-modo le même nombre d'affichages que l'année dernière.
+J'ai extrait mes stats LinkedIn pour la rédaction de ce bilan, mes posts sur ce réseau ont eu grosso-modo le même nombre d'affichages que l'année dernière.
 
 ![img.png](stats-linkedin-views.webp)
 
@@ -191,14 +194,14 @@ Pour finir ce bilan, les jeux vidéos auxquels j'ai joué cette saison, il y en 
 * Ghost of Tsushima (j'ai adoré ce jeu) ;
 * Lego Horizon Adventures
 * Exit 8
-* Clair Obscur : Expédition 33 (mon dieu quelle pépite)
+* Clair Obscur : Expédition 33 (mon Dieu quelle pépite)
 * Monster Hunter Stories
 * Far Cry 6
 * Star Wars Outlaws
 * Art of Rally
 * Hardspace ShipBreakers (mon cerveau est aussi content quand je joue à ce jeu)
 
-Le gros coup de coeur, c'est évidemment Clair Obscur : Expédition 33.
+Le gros coup de cœur, c'est évidemment Clair Obscur : Expédition 33.
 L'histoire, le gameplay, la DA, la musique. Tout est parfait.
 
 J'apprends les morceaux de la BO "Lumière" et "Alicia" au piano, c'est fou à quel point ces morceaux filent des émotions.
