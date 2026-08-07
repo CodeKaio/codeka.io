@@ -32,10 +32,11 @@
         {{ partial "post/info.html" . }}
 
         {{ $anchor := .Params.cover_anchor | default "Smart" }}
+        {{ $height := .Params.cover_height | default 240 }}
         {{ with .Resources }}
             {{ with .GetMatch "{cover.*}" }}
-                {{ $cover820 := .Fill (printf "820x240 webp q75 lanczos %s" $anchor) }}
-                {{ $cover480 := .Fill (printf "480x240 webp q75 lanczos %s" $anchor) }}
+                {{ $cover820 := .Fill (printf "820x%d webp q75 lanczos %s" $height $anchor) }}
+                {{ $cover480 := .Fill (printf "480x%d webp q75 lanczos %s" $height $anchor) }}
                 <img loading="lazy"
                      srcset="{{ $cover820.RelPermalink }} 820w,
                              {{ $cover480.RelPermalink }} 480w"
