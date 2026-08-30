@@ -1,0 +1,376 @@
+{
+  "posts": {
+    "content/posts/2026/2026-08-07-bilan/index.md": {
+      "contentHash": "66ab1be0476a20ca1cb0ecb681b01c635e24bd818a60037fc8d41b61d6e88615",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4dpjj2r",
+      "lastPublished": "2026-08-30T12:57:25.093Z",
+      "slug": "bilan-saison-2025-2026"
+    },
+    "content/posts/2026/2026-07-08-riviera-dev/index.md": {
+      "contentHash": "c39a6382ec580316135505105a3cfff136755414b55e6b4f5cfebd4b46ceb37a",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4gmmn2i",
+      "lastPublished": "2026-08-30T12:57:25.204Z",
+      "slug": "riviera-dev-2026"
+    },
+    "content/posts/2026/2026-07-03-mi-veille/index.md": {
+      "contentHash": "1ecfd7165c18c4ce0fec16bec0e53613f92bd147598c42ff2104bf89bbe9ab73",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4jv622o",
+      "lastPublished": "2026-08-30T12:57:25.296Z",
+      "slug": "la-veille-de-wittouck-juin-2026"
+    },
+    "content/posts/2026/2026-06-26-breizhcamp/index.md": {
+      "contentHash": "e25d1045ab6f8123e81352a5735a030df4bdc044b69f808f104cf73f6b2758e8",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4n3hq2j",
+      "lastPublished": "2026-08-30T12:57:25.407Z",
+      "slug": "breizhcamp-2026"
+    },
+    "content/posts/2026/2026-06-18-tech-work/index.md": {
+      "contentHash": "ce18c3aa868836b178b94f904624b2b6625a93610886ab6ed125c0f28633c013",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4plhy2o",
+      "lastPublished": "2026-08-30T12:57:25.475Z",
+      "slug": "tech-work-lyon"
+    },
+    "content/posts/2026/2026-06-12-devlille/index.md": {
+      "contentHash": "85dd83d40c2ac3848669b70063104d6a1f107648ec0bb32658b4d180d4922fef",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4rxpq2j",
+      "lastPublished": "2026-08-30T12:57:25.567Z",
+      "slug": "devlille-2026"
+    },
+    "content/posts/2026/2026-05-29-mi-veille/index.md": {
+      "contentHash": "86df0155c352932b7cbd37434c5f0616a8187b1d9698df71a6d32f362e632414",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4ulpa2j",
+      "lastPublished": "2026-08-30T12:57:25.644Z",
+      "slug": "la-veille-de-wittouck-fin-mai-2026"
+    },
+    "content/posts/2026/2026-05-22-tangled/index.md": {
+      "contentHash": "9290f7865996b850c8e1343ca67db159ec933e739184029cd41618766fca5f9a",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4yhbo2p",
+      "lastPublished": "2026-08-30T12:57:25.766Z",
+      "slug": "tangled"
+    },
+    "content/posts/2026/2026-05-10-packer-scaleway/index.md": {
+      "contentHash": "11636b3792c536f0a029d46a0cf43eb451a3962740cf6f18b48f96cc8359435b",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx52usi2o",
+      "lastPublished": "2026-08-30T12:57:25.846Z",
+      "slug": "packer-scaleway"
+    },
+    "content/posts/2026/2026-04-25-devoxx/index.md": {
+      "contentHash": "5fb62de03bab4a1d14a53653af68923e3e8f9b3019af5b5389c77b809c14785c",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx56fo42j",
+      "lastPublished": "2026-08-30T12:57:25.965Z",
+      "slug": "devoxx-france-2026-bilan"
+    },
+    "content/posts/2026/2026-04-20-mi-veille/index.md": {
+      "contentHash": "fab5064e33abf2e118ffbb7dbbad9da11690450d765a445f05972302a31cddb4",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5bgra2o",
+      "lastPublished": "2026-08-30T12:57:26.083Z",
+      "slug": "la-veille-de-wittouck-début-avril-2026"
+    },
+    "content/posts/2026/2026-03-27-mi-veille/index.md": {
+      "contentHash": "49245da7fd4982c746df5a5a6be2e7183e2cf4837532e204d41c0ee5ae941f0c",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5ezws27",
+      "lastPublished": "2026-08-30T12:57:26.181Z",
+      "slug": "la-veille-de-wittouck-fin-mars-2026"
+    },
+    "content/posts/2026/2026-03-20-timbernetes/index.md": {
+      "contentHash": "5c8fd144436d00343dccdbdb266360c0cca2ae18896c19fe017463a6c0f48a2c",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5hypy2o",
+      "lastPublished": "2026-08-30T12:57:26.294Z",
+      "slug": "timbernetes-java"
+    },
+    "content/posts/2026/2026-03-13-mi-veille/index.md": {
+      "contentHash": "a6ea4528bafd406d631715ed2e159818ea70c34e1fdb2654707209b5c4649ebc",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5la6b2r",
+      "lastPublished": "2026-08-30T12:57:26.380Z",
+      "slug": "la-veille-de-wittouck-début-mars-2026"
+    },
+    "content/posts/2026/2026-03-06-scaleway-foundations/index.md": {
+      "contentHash": "08c8636e6b9b645a940110aa5f6348eea86203534609c6db5487101b64029a54",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5nhly2j",
+      "lastPublished": "2026-08-30T12:57:26.458Z",
+      "slug": "scaleway-foundations"
+    },
+    "content/posts/2026/2026-02-27-mi-veille/index.md": {
+      "contentHash": "410354e015e0e6021e488e4c68d2047fa778004ebb22439840514c07b68cf62f",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5rh242j",
+      "lastPublished": "2026-08-30T12:57:26.586Z",
+      "slug": "la-veille-de-wittouck-fin-février-2026"
+    },
+    "content/posts/2026/2026-02-20-optimiser-site-statique/index.md": {
+      "contentHash": "d1020a34439a671d8c5f6c80709f07e808f0a13607360146d8ad95ba1535126b",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5udv62n",
+      "lastPublished": "2026-08-30T12:57:26.701Z",
+      "slug": "optimiser-les-perfs-et-la-sécurité-dun-site-hugo"
+    },
+    "content/posts/2026/2026-02-17-touraine-tech/index.md": {
+      "contentHash": "7461058d180d2c4133f332c9438548a8c88cd26131becc547f61592c59956931",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5xjui2j",
+      "lastPublished": "2026-08-30T12:57:26.797Z",
+      "slug": "touraine-tech-2026-voyage-au-pays-de-la-rillette"
+    },
+    "content/posts/2026/2026-01-30-mi-veille/index.md": {
+      "contentHash": "86cd6a7c4d7715503b25894b0b0a3a2b4b7e36e9c6b520d16cd2546c7be37bea",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx62e742j",
+      "lastPublished": "2026-08-30T12:57:26.902Z",
+      "slug": "la-veille-de-wittouck-fin-janvier-2026"
+    },
+    "content/posts/2026/2026-01-20-pop-os-24/index.fr.md": {
+      "contentHash": "fdeb1a40df4d7731d76e689a299dbd0a813173d490803bf113dd4713cd99e067",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx65dww2p",
+      "lastPublished": "2026-08-30T12:57:26.977Z",
+      "slug": "pop_os-24.04-une-expérience-cosmic"
+    },
+    "content/posts/2026/2026-01-16-mi-veille/index.md": {
+      "contentHash": "68d2362c738420cd1de6803071e0257aa876e71a8f1411fd1c78f0dfa7a5d7ef",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6ahyq2j",
+      "lastPublished": "2026-08-30T12:57:27.083Z",
+      "slug": "la-veille-de-wittouck-début-janvier-2026"
+    },
+    "content/posts/2025/2025-12-31-mi-veille/index.md": {
+      "contentHash": "abd6c65fffbd42f5b25b7bf4a3f776ae1b1560af2179b39cf49e8277622d6a44",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6dpyu2j",
+      "lastPublished": "2026-08-30T12:57:27.186Z",
+      "slug": "la-veille-de-wittouck-fin-décembre-2025"
+    },
+    "content/posts/2025/2025-12-19-mise-en-place/index.md": {
+      "contentHash": "f46ff07204554fbdecc33daf3ece66c0020875752bad933cf305a2f9af0180df",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6geds27",
+      "lastPublished": "2026-08-30T12:57:27.277Z",
+      "slug": "adieu-direnv-bonjour-mise"
+    },
+    "content/posts/2025/2025-12-12-mi-veille/index.md": {
+      "contentHash": "01d608e2296e990f7ec8cd4679197ab6520466369eab3f57ba2b97c740281e2e",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6iwym2j",
+      "lastPublished": "2026-08-30T12:57:27.371Z",
+      "slug": "la-veille-de-wittouck-début-décembre-2025"
+    },
+    "content/posts/2025/2025-12-05-openrewrite-spring-boot-4/v1/index.md": {
+      "contentHash": "07927e74474ceddac6effcdcb39295023d2b5667f6c23950570c05628467ca66",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6lstg2p",
+      "lastPublished": "2026-08-30T12:57:27.457Z",
+      "slug": "montée-de-version-spring-boot-4-avec-openrewrite"
+    },
+    "content/posts/2025/2025-12-05-openrewrite-spring-boot-4/v2/index.fr.md": {
+      "contentHash": "725b4870a8609032279e95545b9fde4abf14a3d015fa652e5c1df2d53ecffc23",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6obve2j",
+      "lastPublished": "2026-08-30T12:57:27.530Z",
+      "slug": "montée-de-version-spring-boot-4-avec-openrewrite"
+    },
+    "content/posts/2025/2025-12-02-mi-veille/index.md": {
+      "contentHash": "17404e7805375cb13a6b1a91474e9098cf77caa72c58e3995b6dd92d368b4912",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6ryfr2r",
+      "lastPublished": "2026-08-30T12:57:27.660Z",
+      "slug": "la-veille-de-wittouck-fin-novembre-2025"
+    },
+    "content/posts/2025/2025-11-29-devfest-lyon/index.md": {
+      "contentHash": "82ba8f438e6d9302459e531d4f2cfc37cac4147748b8c15b3935ec1d30565d0c",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6ujly2j",
+      "lastPublished": "2026-08-30T12:57:27.738Z",
+      "slug": "jétais-au-1er-devfest-lyon"
+    },
+    "content/posts/2025/2025-11-22-50ndk-livre-denis-germain/index.md": {
+      "contentHash": "1c9aef896eb0cf47af3031db0c24d6a7fc3388e9b95d0b1d9c7ab2a08160201b",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6y6zk2o",
+      "lastPublished": "2026-08-30T12:57:27.874Z",
+      "slug": "kubernetes-50-solutions-pour-les-postes-de-dev-et-les-clusters-de-prod"
+    },
+    "content/posts/2025/2025-11-14-mi-veille/index.md": {
+      "contentHash": "4dbf1624afcf889b372e0333da911462c3a14330a2d5c07fb9e8115bf9330817",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx733kq2j",
+      "lastPublished": "2026-08-30T12:57:27.973Z",
+      "slug": "la-veille-de-wittouck-début-novembre-2025"
+    },
+    "content/posts/2025/2025-10-25-cloud-nord/index.md": {
+      "contentHash": "5a1dee6d78a1f108e4d615177dbdefce61e165a26d42934ad135349eefcf580d",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx76b4q2j",
+      "lastPublished": "2026-08-30T12:57:28.074Z",
+      "slug": "je-suis-orga-dun-événement-tech"
+    },
+    "content/posts/2025/2025-10-31-mi-veille/index.md": {
+      "contentHash": "ac574c3a7c47d4e2f39e5f4cfe4e895d05501b87bc31c88369d70a6b1386018d",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7bcrq2j",
+      "lastPublished": "2026-08-30T12:57:28.184Z",
+      "slug": "la-veille-de-wittouck-fin-octobre-2025"
+    },
+    "content/posts/2025/2025-10-17-mi-veille-special-devfest-nantes/index.md": {
+      "contentHash": "74fef71e59d5c4b4c44f285ba9574b25e12838d3e3c0e6a70079f304059f8e67",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7f3qb2r",
+      "lastPublished": "2026-08-30T12:57:28.277Z",
+      "slug": "la-veille-de-wittouck-édition-spéciale-devfest-de-nantes-2025"
+    },
+    "content/posts/2025/2025-09-26-mi-veille/index.md": {
+      "contentHash": "64ea039c377b80bf43a55f27947609fd32a244bf451cf5d4e56c237f7ab31158",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7hf2a2o",
+      "lastPublished": "2026-08-30T12:57:28.353Z",
+      "slug": "la-veille-de-wittouck-fin-septembre-2025"
+    },
+    "content/posts/2025/2025-09-12-mi-veille/index.md": {
+      "contentHash": "e33d8c7ea4f22f130e1386dcc4f8a90e38bbc9d26bd7cf1cc53f635f111d3fc3",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7l4qm2j",
+      "lastPublished": "2026-08-30T12:57:28.477Z",
+      "slug": "la-veille-de-wittouck-début-septembre-2025"
+    },
+    "content/posts/2025/2025-08-01-bilan/index.md": {
+      "contentHash": "0ff93578321a445c117232e05583410efde61a9628e4e6549f605381d96ca6ce",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7noby2j",
+      "lastPublished": "2026-08-30T12:57:28.560Z",
+      "slug": "bilan-saison-2024-2025"
+    },
+    "content/posts/2025/2025-07-25-split-kbd/index.md": {
+      "contentHash": "b531697220819a436905cc9e1c811517d67d312ac58902dc543e6c15bb2aab25",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7rfxg2p",
+      "lastPublished": "2026-08-30T12:57:28.683Z",
+      "slug": "montage-dun-clavier-mécanique"
+    },
+    "content/posts/2025/2025-07-11-md-to-docx/index.md": {
+      "contentHash": "5ca5e1e4520a1a36ced194fdb9f1eeae10fd47b7fcdb6a4e66c19054bc4d4ec8",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7u4dq2j",
+      "lastPublished": "2026-08-30T12:57:28.775Z",
+      "slug": "markdown-et-pandoc"
+    },
+    "content/posts/2025/2025-06-19-cfp-tips-and-tricks/index.md": {
+      "contentHash": "7bf60a0aebba3e3591b13b1de00dac818956a65aa3fd6c420d716effe62a257b",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7xs3o2n",
+      "lastPublished": "2026-08-30T12:57:28.909Z",
+      "slug": "leeloo-dallas-multipass-répondre-aux-5-éléments-dun-cfp"
+    },
+    "content/posts/2025/2025-06-05-static-apps-clever/v2/index.md": {
+      "contentHash": "0eb1234658c6323be44e877f6d35479914c69891805410ca932ec580f9919314",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxa36g42j",
+      "lastPublished": "2026-08-30T12:57:29.012Z",
+      "slug": "déployer-des-applications-statiques-sur-clever-cloud"
+    },
+    "content/posts/2025/2025-06-05-static-apps-clever/v1/index.md": {
+      "contentHash": "36d2faa835ec93705d8ff75874f6d298934e81c1517e6331de137a263f35417e",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxa5vyv2i",
+      "lastPublished": "2026-08-30T12:57:29.098Z",
+      "slug": "déployer-des-applications-statiques-sur-clever-cloud"
+    },
+    "content/posts/2025/2025-05-30-best-of-devoxx/index.md": {
+      "contentHash": "fcc16074c77bce1fbf115bc222295e0631fe11b26c1e09ef600ab99a1ece0b6b",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxaaidn2j",
+      "lastPublished": "2026-08-30T12:57:29.176Z",
+      "slug": "la-veille-de-wittouck-fin-mai-2025-best-of-devoxx-2025"
+    },
+    "content/posts/2025/2025-05-16-mi-veille/index.md": {
+      "contentHash": "e262e5d8d12c3747b49e91eda41d21bbb7ae350891206350a7b18b5a821dcea6",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxae6tz2r",
+      "lastPublished": "2026-08-30T12:57:29.298Z",
+      "slug": "la-veille-de-wittouck-début-mai-2025"
+    },
+    "content/posts/2025/2025-05-02-mi-veille/index.md": {
+      "contentHash": "122ad3fe208d90e2bef3553c06f38541355115638356006a10fe423b13194764",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxagi3r2r",
+      "lastPublished": "2026-08-30T12:57:29.369Z",
+      "slug": "la-veille-de-wittouck-fin-avril-2025"
+    },
+    "content/posts/2025/2025-04-23-devoxx/index.md": {
+      "contentHash": "440690d06ac2c87f975cd9d4eb1c0a14d650353325776537d5dc778d6381d8b6",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxairxf2r",
+      "lastPublished": "2026-08-30T12:57:29.451Z",
+      "slug": "devoxx-2025-bilan"
+    },
+    "content/posts/2025/2025-04-18-mi-veille/index.md": {
+      "contentHash": "cd0ccebe9a2b26c90e43ae87cd1ce21cf5f71e276dde9821df550d4b1fe663ea",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxal5ni2j",
+      "lastPublished": "2026-08-30T12:57:29.538Z",
+      "slug": "la-veille-de-wittouck-début-avril-2025"
+    },
+    "content/posts/2025/2025-03-28-mi-veille/index.md": {
+      "contentHash": "c79379ea871e5391cb4f7f5ac46ba2907b46c6daae21cd5030a2f78943eb3e11",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxanwyv2j",
+      "lastPublished": "2026-08-30T12:57:29.621Z",
+      "slug": "la-veille-de-wittouck-fin-mars-2025"
+    },
+    "content/posts/2025/2025-03-14-mi-veille/index.md": {
+      "contentHash": "7b459a410fa8ed3f536974d651f60c8336b728859d9b930318e1299ce488563a",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxaq5oc27",
+      "lastPublished": "2026-08-30T12:57:29.709Z",
+      "slug": "la-veille-de-wittouck-début-mars-2025"
+    },
+    "content/posts/2025/2025-02-13-vault-oidc-gitlab/index.md": {
+      "contentHash": "a1fc965f37b5e23610894ed05d7263bf2c3cfc53f9ad8c026f02168f45d8f987",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxasyib2r",
+      "lastPublished": "2026-08-30T12:57:29.828Z",
+      "slug": "gitlab-oidc-vault"
+    },
+    "content/posts/2025/2025-01-03-vault-on-clever-cloud/index.md": {
+      "contentHash": "4392a27f736906eb385e173dac66ca0848f26993cc9c5a133ce145cb48101563",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxax2iy2j",
+      "lastPublished": "2026-08-30T12:57:29.921Z",
+      "slug": "vault-sur-clever-cloud"
+    },
+    "content/posts/2024/2024-12-31-terraform-clever-cloud/index.md": {
+      "contentHash": "abe6899871c928f4905153c68152ae5be6b27733761aadf8d89be065cda482aa",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxazevv2i",
+      "lastPublished": "2026-08-30T12:57:30.002Z",
+      "slug": "terraform-et-clever-cloud"
+    },
+    "content/posts/2024/2024-02-05-tomcat-11-virtual-threads/index.md": {
+      "contentHash": "be9fc2ead039ab03871fcda41f8f4356183c868cf63a9b76552d158a490344aa",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxb4b2g2p",
+      "lastPublished": "2026-08-30T12:57:30.100Z",
+      "slug": "tomcat-11-virtual-threads"
+    },
+    "content/posts/2023/2023-11-02-deploy-sonarqube-on-clever-cloud/index.md": {
+      "contentHash": "043995ad23ad3c632556f3c8761f0c0b824a31f3b9ea23edbddb9ccda1274b1f",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxb7nqz2r",
+      "lastPublished": "2026-08-30T12:57:30.203Z",
+      "slug": "deploy-sonarqube-on-clever-cloud"
+    },
+    "content/posts/2023/2023-05-25-anatomie-requete-http/index.fr.md": {
+      "contentHash": "6ec5508e6b28ca901ba180b187c704b2cd6697307fd2188b6d43d781133a8565",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbdays27",
+      "lastPublished": "2026-08-30T12:57:30.329Z",
+      "slug": "anatomie-requete-http"
+    },
+    "content/posts/2023/2023-02-23-mkdocs-material/index.md": {
+      "contentHash": "75ab6c8222653237141a0571a601088a7fc4b1471ce3c699e060fc18e3ac970d",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbg7en2j",
+      "lastPublished": "2026-08-30T12:57:30.412Z",
+      "slug": "mkdocs-material"
+    },
+    "content/posts/2022/2022-07-22-skaffold-et-minikube/index.md": {
+      "contentHash": "d9deabe8d0aa52cf7381de6ad1403df6374adc57d2396df03fc3c7afd6fdbafd",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbim7n2i",
+      "lastPublished": "2026-08-30T12:57:30.499Z",
+      "slug": "skaffold-et-minikube"
+    },
+    "content/posts/2022/2022-06-17-direnv-pour-votre-shell/index.md": {
+      "contentHash": "8526210492350dd4f2db360e1af8bab48702573d0042b95275740d355c5330f9",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxblsqv2i",
+      "lastPublished": "2026-08-30T12:57:30.603Z",
+      "slug": "direnv-pour-votre-shell"
+    },
+    "content/posts/2021/2021-04-06-implementation-cli-elgato-keylight/index.fr.md": {
+      "contentHash": "ad21b74a740b6fd72aa1cc5d037f0f491750d77c098e6c7c2a78aaed44986110",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbps3g2n",
+      "lastPublished": "2026-08-30T12:57:30.731Z",
+      "slug": "implementation-cli-elgato-keylight"
+    },
+    "content/posts/2021/2021-03-26-rewrite-git-history/index.fr.md": {
+      "contentHash": "b9d969353c4d4efc509b4e2570d32f51f57527059d6a6e3c102e8abeaedc8c7f",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbs4cg2n",
+      "lastPublished": "2026-08-30T12:57:30.802Z",
+      "slug": "rewrite-git-history"
+    },
+    "content/posts/2021/2021-02-06-xdotool-cheatsheet/index.fr.md": {
+      "contentHash": "93a3faa60c99b829eaa80a5c68efe55626cd4400545277671559a00b078702a4",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxburkc27",
+      "lastPublished": "2026-08-30T12:57:30.889Z",
+      "slug": "xdotool-cheatsheet"
+    },
+    "content/posts/2020/2020-07-15-schedule-linux-commands/index.fr.md": {
+      "contentHash": "812b5ae834a480627807907848469d3bc2495db6a9bbfb3ebda66cf90908d01c",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbwsy227",
+      "lastPublished": "2026-08-30T12:57:30.958Z",
+      "slug": "schedule-linux-commands"
+    },
+    "content/posts/2020/2020-06-01-global-gitignore-file/index.fr.md": {
+      "contentHash": "20ffd10fa010be8aec3bddbf9f4604ff413a7202c7ea0b28ba56dc16f2fb0db5",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxc2cyo2n",
+      "lastPublished": "2026-08-30T12:57:31.071Z",
+      "slug": "global-gitignore-file"
+    }
+  }
+}
