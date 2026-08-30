@@ -15,5 +15,5 @@
   "pathTemplate": "{year}/{month}/{day}/{slug}",
   "removeIndexFromSlug": true,
   "stripDatePrefix": true,
-  "ignore": ["**/index.en.md"]
+  "ignore": ["**/index.en.md", "**/sample.md"]
 }
