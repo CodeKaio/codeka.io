@@ -2,6 +2,7 @@
 date: 2025-05-30
 language: fr
 title: La veille de Wittouck - Fin mai 2025 - Best-Of Devoxx 2025
+slug: la-veille-de-wittouck-fin-mai-2025-best-of-devoxx-2025
 series: La veille de Wittouck
 tags:
   - devops

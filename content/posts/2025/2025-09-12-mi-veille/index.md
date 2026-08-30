@@ -2,6 +2,7 @@
 date: 2025-09-12
 language: fr
 title: La veille de Wittouck - Début Septembre 2025
+slug: la-veille-de-wittouck-début-septembre-2025
 series: La veille de Wittouck
 tags:
   - Docker

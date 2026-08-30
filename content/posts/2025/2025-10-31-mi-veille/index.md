@@ -2,6 +2,7 @@
 date: 2025-10-31
 language: fr
 title: La veille de Wittouck - Fin octobre 2025
+slug: la-veille-de-wittouck-fin-octobre-2025
 series: La veille de Wittouck
 tags:
   - ia

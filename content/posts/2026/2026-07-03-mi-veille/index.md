@@ -2,6 +2,7 @@
 date: 2026-07-03
 language: fr
 title: La veille de Wittouck - juin 2026
+slug: la-veille-de-wittouck-juin-2026
 series: La veille de Wittouck
 tags:
   - git

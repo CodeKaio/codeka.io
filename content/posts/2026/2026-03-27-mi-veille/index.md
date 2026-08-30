@@ -2,6 +2,7 @@
 date: 2026-03-27
 language: fr
 title: La veille de Wittouck - Fin mars 2026
+slug: la-veille-de-wittouck-fin-mars-2026
 series: La veille de Wittouck
 tags:
   - sovereignty

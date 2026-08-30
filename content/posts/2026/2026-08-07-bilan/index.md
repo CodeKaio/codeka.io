@@ -2,6 +2,7 @@
 date: 2026-08-07
 language: fr
 title: Bilan saison 2025-2026
+slug: bilan-saison-2025-2026
 cover_anchor: top
 cover_height: 500
 tags:

@@ -2,6 +2,7 @@
 date: 2025-09-26
 language: fr
 title: La veille de Wittouck - Fin Septembre 2025
+slug: la-veille-de-wittouck-fin-septembre-2025
 series: La veille de Wittouck
 tags:
   - Databases

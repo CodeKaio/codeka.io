@@ -1,6 +1,7 @@
 ---
 date: 2026-02-20
 title: Optimizing a Hugo site's performance and security
+slug: optimizing-a-hugo-sites-performance-and-security
 tags:
   - clevercloud
   - security

@@ -2,6 +2,7 @@
 date: 2025-12-12
 language: fr
 title: La veille de Wittouck - Début décembre 2025
+slug: la-veille-de-wittouck-début-décembre-2025
 series: La veille de Wittouck
 tags:
   - devops

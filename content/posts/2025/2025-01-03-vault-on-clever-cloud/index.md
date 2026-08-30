@@ -8,6 +8,7 @@ tags:
 - vault
 - clevercloud
 title: Vault sur Clever Cloud
+slug: vault-sur-clever-cloud
 series: Terraform et Clever Cloud
 ---
 

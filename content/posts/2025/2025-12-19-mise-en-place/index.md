@@ -4,6 +4,7 @@ lastmod: 2025-12-20
 language: fr
 bluesky: https://bsky.app/profile/codeka.io/post/3mae6vmuy4225
 title: Adieu `direnv`, Bonjour `mise`
+slug: adieu-direnv-bonjour-mise
 tags:
   - linux
   - tools

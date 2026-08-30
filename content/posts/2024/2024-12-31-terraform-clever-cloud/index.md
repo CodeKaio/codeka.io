@@ -9,6 +9,7 @@ tags:
 - opentofu
 - clevercloud
 title: Terraform et Clever Cloud
+slug: terraform-et-clever-cloud
 series: Terraform et Clever Cloud
 ---
 

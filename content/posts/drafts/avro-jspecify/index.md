@@ -1,6 +1,7 @@
 ---
 date: 2026-02-10
 title: Apache Avro et JSpecify
+slug: apache-avro-et-jspecify
 draft: true
 ---
 

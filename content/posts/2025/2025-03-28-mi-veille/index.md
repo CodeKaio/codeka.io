@@ -8,6 +8,7 @@ tags:
   - Internet
   - Docker
 title: La veille de Wittouck - Fin Mars 2025
+slug: la-veille-de-wittouck-fin-mars-2025
 series: La veille de Wittouck
 ---
 

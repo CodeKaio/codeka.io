@@ -3,6 +3,7 @@ date: 2025-06-05
 lastmod: 2025-07-10
 language: fr
 title: Déployer des applications statiques sur Clever Cloud
+slug: déployer-des-applications-statiques-sur-clever-cloud
 params:
   original: "v1.md"
 tags:

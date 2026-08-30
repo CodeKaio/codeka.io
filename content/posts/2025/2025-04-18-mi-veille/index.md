@@ -2,6 +2,7 @@
 date: "2025-04-18"
 language: fr
 title: La veille de Wittouck - Début Avril 2025
+slug: la-veille-de-wittouck-début-avril-2025
 series: La veille de Wittouck
 tags:
   - Internet

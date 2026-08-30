@@ -2,6 +2,7 @@
 date: 2025-07-03
 language: fr
 title: Spring Security & OAuth 2 - Client
+slug: spring-security-oauth-2-client
 tags:
   - java
   - spring-boot

@@ -2,6 +2,7 @@
 date: 2026-06-26
 language: fr
 title: Breizhcamp 2026
+slug: breizhcamp-2026
 tags:
   - events
 series: Confs Tech 2026

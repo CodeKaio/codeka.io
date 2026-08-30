@@ -2,6 +2,7 @@
 date: 2026-02-18
 language: fr
 title: Touraine Tech 2026 - Voyage au pays de la rillette
+slug: touraine-tech-2026-voyage-au-pays-de-la-rillette
 tags:
 - events
 cover_anchor: center

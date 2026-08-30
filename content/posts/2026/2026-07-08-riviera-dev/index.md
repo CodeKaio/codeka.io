@@ -2,6 +2,7 @@
 date: 2026-07-08
 language: fr
 title: Riviera Dev 2026
+slug: riviera-dev-2026
 tags:
   - events
 series: Confs Tech 2026

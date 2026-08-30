@@ -3,6 +3,7 @@ date: 2025-12-12
 lastmod: 2025-12-19
 language: fr
 title: Montée de version Spring Boot 4 avec OpenRewrite
+slug: montée-de-version-spring-boot-4-avec-openrewrite
 tags:
   - java
   - spring-boot

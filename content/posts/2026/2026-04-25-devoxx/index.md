@@ -2,6 +2,7 @@
 date: 2026-04-25
 language: fr
 title: Devoxx France 2026 - Bilan
+slug: devoxx-france-2026-bilan
 series: Confs Tech 2026
 tags:
   - internet

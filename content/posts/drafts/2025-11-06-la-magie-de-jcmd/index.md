@@ -2,6 +2,7 @@
 date: 2025-10-31
 language: fr
 title: "Abracajava : La magie de `jcmd`"
+slug: abracajava-la-magie-de-jcmd
 tags:
   - java
   - tools

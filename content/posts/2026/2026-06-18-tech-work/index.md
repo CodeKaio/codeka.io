@@ -2,6 +2,7 @@
 date: 2026-06-18
 language: fr
 title: Tech Work Lyon
+slug: tech-work-lyon
 tags:
   - events
 series: Confs Tech 2026

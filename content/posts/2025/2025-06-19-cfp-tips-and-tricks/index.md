@@ -3,6 +3,7 @@ date: 2025-07-04
 lastmod: 2025-11-14
 language: fr
 title: Leeloo Dallas Multipass - Répondre aux 5 éléments d'un CFP
+slug: leeloo-dallas-multipass-répondre-aux-5-éléments-dun-cfp
 tags:
   - internet
   - events

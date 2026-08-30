@@ -2,6 +2,7 @@
 date: 2025-12-02
 language: fr
 title: La veille de Wittouck - Fin novembre 2025
+slug: la-veille-de-wittouck-fin-novembre-2025
 series: La veille de Wittouck
 tags:
   - internet

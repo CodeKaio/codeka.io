@@ -2,6 +2,7 @@
 date: 2025-07-18
 language: fr
 title: Markdown et pandoc
+slug: markdown-et-pandoc
 tags:
   - internet
   - docs

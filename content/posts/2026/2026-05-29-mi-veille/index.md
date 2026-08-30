@@ -2,6 +2,7 @@
 date: 2026-05-29
 language: fr
 title: La veille de Wittouck - Fin mai 2026
+slug: la-veille-de-wittouck-fin-mai-2026
 series: La veille de Wittouck
 tags:
   - docker

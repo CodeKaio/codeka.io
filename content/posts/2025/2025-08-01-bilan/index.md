@@ -3,6 +3,7 @@ date: 2025-08-01
 lastmod: 2025-08-05
 language: fr
 title: Bilan saison 2024-2025
+slug: bilan-saison-2024-2025
 aliases:
   - /2025/07/25/bilan-saison-2024-2025
 tags:

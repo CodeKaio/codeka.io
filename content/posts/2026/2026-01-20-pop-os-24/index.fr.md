@@ -4,6 +4,7 @@ language: fr
 tags:
 - linux
 title: Pop!_OS 24.04, une expérience COSMIC
+slug: pop_os-24.04-une-expérience-cosmic
 ---
 
 J'utilise la distribution Linux **Pop!_OS** depuis presque cinq ans. 

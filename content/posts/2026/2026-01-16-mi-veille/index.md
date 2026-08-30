@@ -2,6 +2,7 @@
 date: 2026-01-16
 language: fr
 title: La veille de Wittouck - Début janvier 2026
+slug: la-veille-de-wittouck-début-janvier-2026
 series: La veille de Wittouck
 tags:
   - devops

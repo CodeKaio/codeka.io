@@ -2,6 +2,7 @@
 date: "2025-05-02"
 language: fr
 title: La veille de Wittouck - Fin Avril 2025
+slug: la-veille-de-wittouck-fin-avril-2025
 series: La veille de Wittouck
 tags:
   - Internet

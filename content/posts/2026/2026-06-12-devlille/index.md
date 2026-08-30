@@ -5,6 +5,7 @@ date: "2026-06-12"
 writing_time: "1h30"
 language: fr
 title: DevLille 2026
+slug: devlille-2026
 tags:
   - events
 series: Confs Tech 2026

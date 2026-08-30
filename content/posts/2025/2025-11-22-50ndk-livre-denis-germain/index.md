@@ -2,6 +2,7 @@
 date: 2025-11-22
 language: fr
 title: 'Kubernetes : 50 solutions pour les postes de dev et les clusters de prod'
+slug: kubernetes-50-solutions-pour-les-postes-de-dev-et-les-clusters-de-prod
 tags:
   - kubernetes
 ---

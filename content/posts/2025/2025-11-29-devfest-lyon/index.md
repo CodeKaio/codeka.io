@@ -2,6 +2,7 @@
 date: 2025-11-29
 language: fr
 title: "J'étais au 1er DevFest Lyon"
+slug: jétais-au-1er-devfest-lyon
 tags:
   - events
 ---

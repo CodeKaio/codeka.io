@@ -2,6 +2,7 @@
 date: 2026-02-27
 language: fr
 title: La veille de Wittouck - Fin février 2026
+slug: la-veille-de-wittouck-fin-février-2026
 series: La veille de Wittouck
 tags:
   - cloud

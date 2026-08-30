@@ -2,6 +2,7 @@
 date: 2025-05-16
 language: fr
 title: La veille de Wittouck - Début Mai 2025 
+slug: la-veille-de-wittouck-début-mai-2025
 series: La veille de Wittouck
 tags:
   - DevOps

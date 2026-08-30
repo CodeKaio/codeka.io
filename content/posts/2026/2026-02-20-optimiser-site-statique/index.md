@@ -1,6 +1,7 @@
 ---
 date: 2026-02-20
 title: Optimiser les perfs et la sécurité d'un site Hugo
+slug: optimiser-les-perfs-et-la-sécurité-dun-site-hugo
 tags:
   - clevercloud
   - security

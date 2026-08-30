@@ -2,6 +2,7 @@
 date: 2025-07-25
 language: fr
 title: Montage d'un clavier mécanique
+slug: montage-dun-clavier-mécanique
 tags:
   - internet
 ---

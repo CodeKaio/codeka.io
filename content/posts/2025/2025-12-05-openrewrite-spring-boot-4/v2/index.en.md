@@ -3,6 +3,7 @@ date: 2025-12-12
 lastmod: 2025-12-19
 language: en
 title: Spring Boot 4 Upgrade with OpenRewrite
+slug: spring-boot-4-upgrade-with-openrewrite
 tags:
   - java
   - spring-boot

@@ -2,6 +2,7 @@
 date: 2025-05-30
 language: fr
 title: Introduction au logging en Java 
+slug: introduction-au-logging-en-java
 series: Logging en Java
 tags:
   - java

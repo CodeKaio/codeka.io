@@ -3,6 +3,7 @@ date: 2025-11-14
 lastmod: 2025-11-14
 language: fr
 title: La veille de Wittouck - Début novembre 2025
+slug: la-veille-de-wittouck-début-novembre-2025
 series: La veille de Wittouck
 tags:
   - internet

@@ -2,6 +2,7 @@
 date: 2026-03-13
 language: fr
 title: La veille de Wittouck - Début mars 2026
+slug: la-veille-de-wittouck-début-mars-2026
 series: La veille de Wittouck
 tags:
   - cloud

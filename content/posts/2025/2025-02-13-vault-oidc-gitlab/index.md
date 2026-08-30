@@ -7,6 +7,7 @@ tags:
 - vault
 - gitlab
 title: GitLab OIDC & Vault
+slug: gitlab-oidc-vault
 series: Terraform et Clever Cloud
 ---
 

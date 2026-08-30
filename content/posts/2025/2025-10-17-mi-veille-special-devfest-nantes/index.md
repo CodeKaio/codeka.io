@@ -2,6 +2,7 @@
 date: 2025-10-17
 language: fr
 title: La veille de Wittouck - Édition spéciale - DevFest de Nantes 2025
+slug: la-veille-de-wittouck-édition-spéciale-devfest-de-nantes-2025
 series: La veille de Wittouck
 tags:
   - Databases

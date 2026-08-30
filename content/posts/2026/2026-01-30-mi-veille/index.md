@@ -2,6 +2,7 @@
 date: 2026-01-30
 language: fr
 title: La veille de Wittouck - Fin janvier 2026
+slug: la-veille-de-wittouck-fin-janvier-2026
 series: La veille de Wittouck
 tags:
   - ia

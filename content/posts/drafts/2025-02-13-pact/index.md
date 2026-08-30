@@ -4,6 +4,7 @@ language: fr
 tags:
 - java
 title: Contract Testing avec Pact
+slug: contract-testing-avec-pact
 draft: true
 ---
 

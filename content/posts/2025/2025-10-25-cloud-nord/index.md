@@ -2,6 +2,7 @@
 date: 2025-11-07
 language: fr
 title: Je suis orga d'un événement tech
+slug: je-suis-orga-dun-événement-tech
 tags:
   - events
 ---
