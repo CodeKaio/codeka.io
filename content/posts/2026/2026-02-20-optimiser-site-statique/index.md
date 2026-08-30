@@ -7,6 +7,7 @@ tags:
   - security
   - devops
   - tools
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5udv62n"
 ---
 
 Sur les bons conseils du pote [Antoine Caron](https://blog.slashgear.dev/), j'ai pris le temps cette semaine d'optimiser un peu mon site.

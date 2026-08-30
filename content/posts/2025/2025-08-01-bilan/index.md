@@ -10,6 +10,7 @@ tags:
   - certifications
   - events
   - internet
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7noby2j"
 ---
 
 Maintenant que l'été est bien avancé, il est intéressant pour moi de faire le bilan de mon année 2024-2025.

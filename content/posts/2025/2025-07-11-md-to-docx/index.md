@@ -6,6 +6,7 @@ slug: markdown-et-pandoc
 tags:
   - internet
   - docs
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7u4dq2j"
 ---
 
 Lors d'une discussion concernant l'écriture de mon livre, j'ai expliqué quels outils j'ai utilisé.

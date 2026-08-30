@@ -15,6 +15,7 @@ tags:
 #  - Linux
   - Security
 #  - Tools
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxae6tz2r"
 ---
 
 En ce début mai, entre 2 jours fériés, l'actu tech n'est pas très chargée. Voici les liens de quelques articles et vidéos qui m'ont quand même marqué en ce début de mois, avec quelques pépites trouvées sur Reddit.

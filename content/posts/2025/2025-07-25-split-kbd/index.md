@@ -5,6 +5,7 @@ title: Montage d'un clavier mécanique
 slug: montage-dun-clavier-mécanique
 tags:
   - internet
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7rfxg2p"
 ---
 
 Ça faisait un moment que j'avais envie de tester un clavier _split_.

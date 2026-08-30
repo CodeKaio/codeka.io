@@ -10,6 +10,7 @@ tags:
   - java
   - kubernetes
   - events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6ryfr2r"
 ---
 
 L'hiver approche et la saison des conférences se termine tranquillement.

@@ -10,6 +10,7 @@ tags:
 - tutorial
 title: Créer un site web de documentation statique avec MkDocs
 slug: mkdocs-material
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbg7en2j"
 ---
 
 Que ce soit pour un projet d'entreprise ou un projet open-source, la documentation utilisateur et technique est cruciale.

@@ -13,6 +13,7 @@ tags:
   - kubernetes
   - linux
   - security
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5bgra2o"
 ---
 
 En ce début avril, toutes les têtes étaient tournées vers la lune, et la mission Artemis II, mais aussi vers la DINUM, qui a encore une fois capté l'attention avec l'annonce de son OS à base de Nix.

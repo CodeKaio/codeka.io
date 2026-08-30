@@ -7,6 +7,7 @@ tags:
   - scaleway
   - certifications
 cover_anchor: top
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5nhly2j"
 ---
 
 Cela faisait quelque temps que je voulais investir sur les offres de Cloud souveraines.

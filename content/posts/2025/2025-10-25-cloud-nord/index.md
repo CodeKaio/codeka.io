@@ -5,6 +5,7 @@ title: Je suis orga d'un événement tech
 slug: je-suis-orga-dun-événement-tech
 tags:
   - events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx76b4q2j"
 ---
 
 Le 23 octobre dernier, c'était la 6ème édition de [Cloud Nord](https://cloudnord.fr).

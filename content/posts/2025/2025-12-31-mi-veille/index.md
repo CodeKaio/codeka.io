@@ -11,6 +11,7 @@ tags:
 - linux
 - security
 - spring-boot
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6dpyu2j"
 ---
 
 Pour la dernière édition de l'année de "la Veille de Wittouck", pas mal d'articles intéressants qui m'ont donné envie d'expérimenter.

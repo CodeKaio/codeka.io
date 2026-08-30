@@ -9,6 +9,7 @@ tags:
   - certifications
   - events
   - internet
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4dpjj2r"
 ---
 
 Comme l'année dernière, je profite de la journée avant mon départ en congés pour faire le bilan de mon année 2025-2026.

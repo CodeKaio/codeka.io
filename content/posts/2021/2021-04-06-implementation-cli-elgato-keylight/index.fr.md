@@ -7,6 +7,7 @@ tags:
 - go
 title: Implémentation d'un CLI pour la Elgato KeyLight
 slug: implementation-cli-elgato-keylight
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbps3g2n"
 ---
 
 ## Adresse IP/URL du KeyLight

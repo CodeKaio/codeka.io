@@ -9,6 +9,7 @@ tags:
 title: GitLab OIDC & Vault
 slug: gitlab-oidc-vault
 series: Terraform et Clever Cloud
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxasyib2r"
 ---
 
 Cet article décrit comment utiliser Terraform et le _provider_ Vault pour configurer l'authentification OIDC avec GitLab. À titre d'exemple, quelques secrets seront aussi stockés dans le Vault.

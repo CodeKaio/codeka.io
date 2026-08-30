@@ -15,6 +15,7 @@ tags:
   - tools
 writing_time: 2h30
 cover_anchor: center
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5ezws27"
 ---
 
 Comme depuis plusieurs semaines, je continue à m'intéresser aux sujets autour de la souveraineté numérique.

@@ -11,6 +11,7 @@ tags:
   - sovereignty
   - events
 writing_time: 2h30
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4jv622o"
 ---
 
 Ce mois de juin, j'étais en marathon de conférences. DevLille, Tech'Work, Breizhcamp, et je termine la saison avec Riviera Dev.

@@ -10,6 +10,7 @@ params:
 tags:
   - DevOps
   - CleverCloud
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxa5vyv2i"
 ---
 Il y a quelques jours, je suis tombé sur ce post de David Legrand sur Bluesky :
 

@@ -9,6 +9,7 @@ tags:
 - shell
 title: xdotool cheatsheet
 slug: xdotool-cheatsheet
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxburkc27"
 ---
 
 J'ai beaucoup joué ces jours-ci avec xdotool, pour essayer d'automatiser certaines choses pour mon Elgato Streamdeck.

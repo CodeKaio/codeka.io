@@ -8,6 +8,7 @@ tags:
 - git
 title: Réécrire une branche git
 slug: rewrite-git-history
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbs4cg2n"
 ---
 
 Je suis tombé sur un cas où un fichier a été ajouté dans git (commité), puis modifié par plusieurs commits successifs.

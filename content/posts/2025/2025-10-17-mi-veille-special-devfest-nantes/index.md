@@ -9,6 +9,7 @@ tags:
   - DevOps
   - Kubernetes
   - Events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7f3qb2r"
 ---
 
 Cette semaine, j'avais la chance d'être au DevFest de Nantes 2025, pour y présenter mon talk ["Let's play Factorio"]({{<relref "talks/talk-lets-play-factorio">}}).

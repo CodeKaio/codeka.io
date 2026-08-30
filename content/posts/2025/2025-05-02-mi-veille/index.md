@@ -10,6 +10,7 @@ tags:
   - Security
   - IA
   - DevOps
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxagi3r2r"
 ---
 
 En ce début de mois de mai, il fait beau, donc on n'a pas très envie de passer du temps sur son ordi à scroller pour faire sa veille.

@@ -8,6 +8,7 @@ tags:
   - ia
   - internet
   - java
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx62e742j"
 ---
 
 Janvier est passé à toute vitesse.

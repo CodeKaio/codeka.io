@@ -5,6 +5,7 @@ title: "J'étais au 1er DevFest Lyon"
 slug: jétais-au-1er-devfest-lyon
 tags:
   - events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6ujly2j"
 ---
 
 Cette semaine, j'étais sur Lyon pour assister à la première édition du DevFest de Lyon et y donner la 3ème session de mon talk "[Let's play Factorio]({{<relref "talks/talk-lets-play-factorio">}})" (on ne m'arrête plus 😅).

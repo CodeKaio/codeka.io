@@ -6,6 +6,7 @@ tags:
   - kubernetes
   - java
   - scaleway
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5hypy2o"
 ---
 
 La version 1.35 de Kubernetes, nommée "Timbernetes", est sortie le 17 décembre dernier (ça passe vite !) et est déjà disponible sur toutes les bonnes plateformes de Cloud.

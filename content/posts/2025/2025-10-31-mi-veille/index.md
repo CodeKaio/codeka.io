@@ -10,6 +10,7 @@ tags:
   - internet
   - java
   - linux
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7bcrq2j"
 ---
 
 Après deux semaines bien chargées, principalement autour de l'organisation de [Cloud Nord](https://cloudnord.fr), et pour ne pas finir comme une citrouille enfumée, on lit ["La veille de Wittouck"]({{< relref "/series/la-veille-de-wittouck">}}), en se gavant de bonbecs (non).

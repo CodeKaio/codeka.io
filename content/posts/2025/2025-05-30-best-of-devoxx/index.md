@@ -16,6 +16,7 @@ tags:
   - events
 params:
     watchedVideos: 26
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxaaidn2j"
 ---
 
 Cette édition spéciale de "La veille de Wittouck" liste les vidéos de *Devoxx France 2025* qui m'ont le plus intéressé.

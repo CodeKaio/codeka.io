@@ -7,6 +7,7 @@ series: La veille de Wittouck
 tags:
   - Internet
   - Kubernetes
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxal5ni2j"
 ---
 
 En ce début de mois d'avril, j'ai consacré pas mal de temps à la préparation de mon talk à DevOxx : [Rebase d'images Docker/OCI avec crane](/talks/talk-rebase-crane), donc forcément, ma veille a été un peu plus light que d'habitude.

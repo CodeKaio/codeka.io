@@ -11,6 +11,7 @@ tags:
 - docker
 - databases
 title: Déployer une instance de SonarQube sur Clever Cloud
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxb7nqz2r"
 ---
 
 Dans cet article, nous allons voir comment déployer _SonarQube_ sur _Clever Cloud_ en deux temps. Le premier consistera en un déploiement très simple, qui est équivalent à une installation locale. Dans un second temps, nous utiliserons une base de données _PostgreSQL_ externalisée pour assurer la persistance des données.

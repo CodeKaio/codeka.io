@@ -8,6 +8,7 @@ tags:
 - shell
 title: direnv pour booster votre shell
 slug: direnv-pour-votre-shell
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxblsqv2i"
 ---
 
 ## Le problème

@@ -10,6 +10,7 @@ tags:
 title: La veille de Wittouck - Fin Mars 2025
 slug: la-veille-de-wittouck-fin-mars-2025
 series: La veille de Wittouck
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxanwyv2j"
 ---
 
 Avec la sortie récente de Java 24, cette deuxième édition de _La veille de Wittouck_ rassemble tout d'abord quelques lectures indispensables autour de la toute nouvelle version de mon langage préféré.

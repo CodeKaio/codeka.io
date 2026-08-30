@@ -7,6 +7,7 @@ slug: leeloo-dallas-multipass-répondre-aux-5-éléments-dun-cfp
 tags:
   - internet
   - events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7xs3o2n"
 ---
 
 Les conférences sont un lieu important de partage et de veille, y participer en tant que speaker ou assister à des conférences permet d'enrichir votre réseau et de partager vos expériences.

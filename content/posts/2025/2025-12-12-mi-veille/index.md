@@ -11,6 +11,7 @@ tags:
   - java
   - linux
   - security
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6iwym2j"
 ---
 
 Les vacances approchent, et la veille de Wittouck continue.

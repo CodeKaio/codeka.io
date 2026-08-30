@@ -10,6 +10,7 @@ tags:
   - tools
   - shell
   - devops
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6geds27"
 ---
 
 J'ai découvert `mise` dans le [calendrier de l'avent de Siegfried Ehret](https://sieg.fr/ied/avent-2025/04-mise/), avec une approche autour de l'outillage de dev.

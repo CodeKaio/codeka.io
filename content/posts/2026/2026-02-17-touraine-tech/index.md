@@ -7,6 +7,7 @@ tags:
 - events
 cover_anchor: center
 series: Confs Tech 2026
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5xjui2j"
 ---
 
 Dans ma tournée des conférences tech de France pour jouer à Factorio, je suis passé par Touraine Tech, la semaine dernière.

@@ -11,6 +11,7 @@ tags:
   - tools
   - linux
   - docker
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5la6b2r"
 ---
 
 En ce début de mois de mars, les sujets de souveraineté ont encore fait le buzz. Au-delà des annonces (parfois décevantes), il faut prendre un peu de recul. L'excellent article de Katia donne des pistes concrètes pour aider à élaborer une souveraineté stratégique.

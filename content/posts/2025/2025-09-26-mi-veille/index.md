@@ -9,6 +9,7 @@ tags:
   - Git
   - Internet
   - Java
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7hf2a2o"
 ---
 
 Enfin ! La version 25 de Java, LTS tant attendue par les fans (moi le premier 😅), est arrivée.

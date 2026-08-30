@@ -12,6 +12,7 @@ tags:
   - Java
   - Kubernetes
   - Linux
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx7l4qm2j"
 ---
 
 C'est la rentrée de la Veille de Wittouck !

@@ -14,6 +14,7 @@ tags:
   - spring-boot
   - tools
   - events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxairxf2r"
 ---
 
 Pour la deuxième année consécutive, j'ai la chance d'être speaker à DevOxx France.

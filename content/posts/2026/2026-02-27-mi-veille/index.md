@@ -11,6 +11,7 @@ tags:
   - internet
   - java
   - linux
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx5rh242j"
 ---
 
 Février a été un mois un peu chargé, avec mon premier [Touraine Tech](/2026/02/18/touraine-tech-2026-voyage-au-pays-de-la-rillette/), et un gros travail de [refonte sur ce site au niveau des perfs](/2026/02/20/optimiser-les-perfs-et-la-sécurité-dun-site-hugo/).

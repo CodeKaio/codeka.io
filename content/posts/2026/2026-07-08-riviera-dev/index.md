@@ -6,6 +6,7 @@ slug: riviera-dev-2026
 tags:
   - events
 series: Confs Tech 2026
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4gmmn2i"
 ---
 
 Ce début d'été, j'étais en marathon de conférences. DevLille, Tech'Work à Lyon, Breizhcamp à Rennes, et Riviera Dev à Sophia Antipolis.

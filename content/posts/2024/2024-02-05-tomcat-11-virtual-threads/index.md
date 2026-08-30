@@ -8,6 +8,7 @@ tags:
   - tomcat
 title: Tomcat 11 & Virtual Threads 🧵
 slug: tomcat-11-virtual-threads
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxb4b2g2p"
 ---
 
 Apache Tomcat est le plus célèbre des conteneurs de Servlets Java.

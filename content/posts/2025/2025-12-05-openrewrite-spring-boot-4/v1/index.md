@@ -10,6 +10,7 @@ tags:
 url: '/:year/:month/:day/:slug/v1'
 params:
   updated: "v2.md"
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6lstg2p"
 ---
 
 Un des projets que je maintiens activement est [GitLab Classrooms](projects/gitlab-classrooms).

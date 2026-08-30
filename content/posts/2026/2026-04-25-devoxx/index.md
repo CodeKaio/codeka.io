@@ -10,6 +10,7 @@ tags:
   - java
   - tools
   - events
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx56fo42j"
 ---
 
 Cette année encore (comme les deux années précédentes), j'étais présent à Devoxx France.

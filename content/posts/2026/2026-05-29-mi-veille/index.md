@@ -14,6 +14,7 @@ tags:
   - tools
   - architecture
 writing_time: 2h30
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4ulpa2j"
 ---
 
 Entre deux matchs de Roland Garros, et pour prendre un peu l'air, pourquoi ne pas en profiter pour lire quelques articles intéressants (enfin, que _J'AI_ trouvés intéressants 😅).

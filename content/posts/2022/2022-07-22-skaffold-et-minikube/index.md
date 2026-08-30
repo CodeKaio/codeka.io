@@ -10,6 +10,7 @@ tags:
 - tutorial
 title: Exécuter une application localement sur minikube avec skaffold
 slug: skaffold-et-minikube
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbim7n2i"
 ---
 
 Lors du développement d'une application pour Kubernetes, le développeur est souvent lié à une boucle de feedback assez longue:

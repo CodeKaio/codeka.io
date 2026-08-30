@@ -5,6 +5,7 @@ slug: packer-scaleway
 tags:
   - scaleway
   - devops
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx52usi2o"
 ---
 
 Pour mes expérimentations sur Tangled, je souhaitais tester l'auto-hébergement des _knot_ et _spindles_ dans des machines virtuelles (les explications arrivent dans un futur article).

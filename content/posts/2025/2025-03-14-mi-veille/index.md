@@ -11,6 +11,7 @@ tags:
 title: La veille de Wittouck - Début Mars 2025
 slug: la-veille-de-wittouck-début-mars-2025
 series: La veille de Wittouck
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxaq5oc27"
 ---
 
 Je vais essayer dans les prochaines semaines de publier les liens que je découvre lors de ma veille techno courante, dans le cadre de mon boulot ou depuis mon canap' 🛋️

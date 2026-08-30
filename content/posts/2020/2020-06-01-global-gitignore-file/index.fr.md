@@ -8,6 +8,7 @@ tags:
 - git
 title: "Configurer un .gitignore global \U0001F648"
 slug: global-gitignore-file
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxc2cyo2n"
 ---
 
 Cet article explique comment configurer un fichier `.gitignore` global, pour exclure des fichiers ou des répertoires pour tous vos dépôts git.

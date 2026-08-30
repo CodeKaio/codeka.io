@@ -7,6 +7,7 @@ tags:
 - basics
 title: Anatomie d'une requête HTTP
 slug: anatomie-requete-http
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbdays27"
 ---
 
 HTTP, pour _Hypertext Transfer Protocol_, est le protocole principal pour les échanges internet. Il est utilisé aussi bien par le navigateur que vous utilisez pour lire cet article, que pour faire communiquer des applications.

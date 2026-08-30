@@ -9,6 +9,7 @@ tags:
   - spring-boot
 params:
   original: "v1.md"
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6obve2j"
 ---
 
 Un des projets que je maintiens activement est [GitLab Classrooms](projects/gitlab-classrooms).

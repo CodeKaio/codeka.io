@@ -5,6 +5,7 @@ tags:
 - linux
 title: Pop!_OS 24.04, une expérience COSMIC
 slug: pop_os-24.04-une-expérience-cosmic
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx65dww2p"
 ---
 
 J'utilise la distribution Linux **Pop!_OS** depuis presque cinq ans. 

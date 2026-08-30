@@ -5,6 +5,7 @@ title: 'Kubernetes : 50 solutions pour les postes de dev et les clusters de prod
 slug: kubernetes-50-solutions-pour-les-postes-de-dev-et-les-clusters-de-prod
 tags:
   - kubernetes
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6y6zk2o"
 ---
 
 Il y a quelques semaines, Denis Germain (aka [Zwindler](https://blog.zwindler.fr/) sur les internets), m'a fait parvenir un exemplaire de son livre fraîchement paru : [Kubernetes : 50 solutions pour les postes de développement et les clusters de production](https://www.editions-eyrolles.com/livre/kubernetes).

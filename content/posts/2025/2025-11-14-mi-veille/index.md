@@ -16,6 +16,7 @@ tags:
   - events
   - clevercloud
   - certifications
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx733kq2j"
 ---
 
 En cette mi-novembre, la sortie de Spring Boot 4 se profile et la saison des conférences continue.

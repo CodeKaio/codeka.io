@@ -11,6 +11,7 @@ tags:
 title: Terraform et Clever Cloud
 slug: terraform-et-clever-cloud
 series: Terraform et Clever Cloud
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxazevv2i"
 ---
 
 Pour les besoins des cours que je donne à l'Université de Lille, j'ai dû configurer des bases de données PostgreSQL et un serveur Vault sur Clever Cloud (l'installation et la configuration d'un Vault sur Clever Cloud feront l'objet d'un article consacré).

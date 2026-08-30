@@ -9,6 +9,7 @@ tags:
 - shell
 title: Planifier des commandes Linux avec `at`
 slug: schedule-linux-commands
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxbwsy227"
 ---
 
 Comme je prépare et exécute beaucoup de scripts, j'ai parfois besoin d'exécuter un script à une heure précise de la journée.

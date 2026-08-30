@@ -13,6 +13,7 @@ tags:
   - internet
   - java
   - linux
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx6ahyq2j"
 ---
 
 Après des vacances bien méritées, [la Veille de Wittouck](/series/la-veille-de-wittouck) est de retour avec la même formule : mon analyse rapide des articles, vidéos ou podcasts qui m'ont intéressés sur les deux dernières semaines.
