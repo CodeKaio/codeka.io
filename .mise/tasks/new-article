@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+#MISE description="Crée un nouvel article de blog"
+#MISE alias=["new-post"]
+#MISE tools.gum="latest"
+#USAGE arg "[date]" help="Date de publication (par défaut: date du jour)"
+
+DATE="${usage_date:-$(date +%Y-%m-%d)}"
+YEAR=$(echo "$DATE" | cut -d'-' -f1)
+
+TITLE=$(gum input --prompt="Titre : " --placeholder="Titre du nouvel article")
+if [ -z "$TITLE" ]; then
+  gum log --level error "Titre manquant. Création annulée." || echo "Titre manquant. Création annulée."
+  exit 1
+fi
+
+COMPUTED_SLUG=$(echo "$TITLE" | \
+  iconv -t ascii//TRANSLIT 2>/dev/null | \
+  tr '[:upper:]' '[:lower:]' | \
+  sed -E "s/['’]//g" | \
+  sed -E 's/[^a-z0-9]+/-/g' | \
+  sed -E 's/^-+|-+$//g')
+
+SLUG=$(gum input --prompt="Slug : " --value="$COMPUTED_SLUG" --placeholder="slug-de-l-article")
+if [ -z "$SLUG" ]; then
+  SLUG="$COMPUTED_SLUG"
+fi
+if [ -z "$SLUG" ]; then
+  gum log --level error "Slug invalide. Création annulée." || echo "Slug invalide. Création annulée."
+  exit 1
+fi
+
+SLUG=$(echo "$SLUG" | tr '[:upper:]' '[:lower:]' | sed -E "s/['’]//g" | sed -E 's/[^a-z0-9-]+/-/g' | sed -E 's/^-+|-+$//g')
+
+EXISTING_TAGS=$(find content/tags -mindepth 1 -maxdepth 1 -type d -exec basename {} \; 2>/dev/null | sort -u)
+SELECTED_TAGS=""
+if [ -n "$EXISTING_TAGS" ]; then
+  SELECTED_TAGS=$(gum choose --no-limit --header="Sélectionner les tags (Espace pour choisir, Entrée pour valider) :" $EXISTING_TAGS)
+fi
+
+POST_DIR="content/posts/${YEAR}/${DATE}-${SLUG}"
+POST_FILE="${POST_DIR}/index.md"
+
+if [ -d "$POST_DIR" ]; then
+  gum log --level error "Le dossier ${POST_DIR} existe déjà !" || echo "Le dossier ${POST_DIR} existe déjà !"
+  exit 1
+fi
+
+mkdir -p "$POST_DIR"
+
+TAGS_YAML=""
+if [ -n "$SELECTED_TAGS" ]; then
+  TAGS_YAML=$(echo "$SELECTED_TAGS" | sed 's/^/  - /')
+fi
+
+ESCAPED_TITLE="${TITLE//\"/\\\"}"
+
+if [ -n "$TAGS_YAML" ]; then
+cat <<EOF > "$POST_FILE"
+---
+date: ${DATE}
+title: "${ESCAPED_TITLE}"
+slug: ${SLUG}
+tags:
+${TAGS_YAML}
+draft: true
+---
+
+<!--more-->
+EOF
+else
+cat <<EOF > "$POST_FILE"
+---
+date: ${DATE}
+title: "${ESCAPED_TITLE}"
+slug: ${SLUG}
+tags: []
+draft: true
+---
+
+<!--more-->
+EOF
+fi
+
+gum style --foreground 212 --bold "✨ Article créé avec succès dans ${POST_FILE} !" || echo "Article créé avec succès dans ${POST_FILE} !"

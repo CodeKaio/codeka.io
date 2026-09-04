@@ -1,4 +1,5 @@
 [tools]
+gum = "latest"
 hugo-extended = "0.162"
 "npm:sequoia-cli" = "latest"
 
