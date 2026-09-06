@@ -10,6 +10,7 @@ tags:
   - internet
   - sovereignty
   - events
+  - at-proto
 writing_time: 2h30
 atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4jv622o"
 ---
