@@ -1,5 +1,5 @@
 ---
-date: 2026-08-30
+date: 2026-09-07
 title: "Mon site sur AT Proto avec standard.site"
 slug: mon-site-sur-at-proto-avec-standard-site
 tags:
@@ -10,7 +10,7 @@ cover_anchor: top
 
 Je continue mon exploration d'AT Protocol.
 
-Cette fois, j'ai essayé d'intégrer mon site sur AT Protocol avec [standard.site](https://standard.site).
+Après avoir joué avec [Tangled](/2026/05/22/tangled/), cette fois, j'ai essayé d'intégrer mon site sur AT Protocol avec [standard.site](https://standard.site).
 Ça s'est plutôt révélé facile de mon côté, je vous explique tout ça.
 
 <!--more-->
@@ -21,20 +21,20 @@ Pour la bonne compréhension de cet article, si vous n'êtes pas familier de AT 
 
 > Je vais rendre cette section la plus simple possible, histoire d'introduire uniquement le vocabulaire nécessaire. Je prends donc quelques raccourcis, et j'omets certains détails afin de ne pas complexifier le sujet.
 
-AT Protocol (ou AT Proto) est le protocole de données développé et utilisé par Bluesky.
+[AT Protocol](https://atproto.com/) (ou AT Proto) est le protocole de données développé et utilisé par Bluesky.
 Ce protocole se veut ouvert ; les données sont publiques ; et extensible ; des applications autres que Bluesky pouvant utiliser le protocole pour y lire et écrire des données.
 
-Le _PDS_ (pour _Personal Data Server_) est le serveur qui stocke vos données. Ce _PDS_ peut être un de ceux hébergés par Bluesky, ou Eurosky, ou vous pouvez également l'auto-héberger.
+Les données ; vos posts Bluesky, likes et autres ; sont stockées dans un _PDS_ (pour _Personal Data Server_). Le _PDS_ peut être un de ceux hébergés par Bluesky, ou Eurosky, ou vous pouvez également l'auto-héberger.
 
 Sur AT Proto, tous les éléments sont identifiés par des _URI_ (pour _Uniform Resource Identifier_).
-Votre compte AT Proto est identifié par une URI du type "did:plc:XXXXXX".
+Votre compte AT Proto est lui aussi identifié par une URI du type `did:plc:XXXXXX`.
 
 Par exemple, mon compte, que vous voyez sur Bluesky avec le handle `@CodeKaio` est identifié par l'URI `did:plc:a27wdjlmq3ebx4v5f2jpzvsk`.
 
-Tous les éléments, post, likes, reposts, follows, etc, sont stockés dans le _PDS_ associé à votre compte (Eurosky pour moi).
+Tous les éléments ; post, likes, reposts, follows, etc ; sont stockés dans le _PDS_ associé à votre compte (Eurosky pour moi).
 Chacun de ces éléments possède également une _URI_. On appelle ces éléments des _Records_. Un _Record_ est alors un simple objet JSON.
 
-Voici encore pour exemple un post récent que j'ai fait sur Bluesky, qui a pour URI `at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/app.bsky.feed.post/3mucjlaofjk22`:
+Voici encore, pour exemple, un post récent que j'ai fait sur Bluesky qui a pour URI `at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/app.bsky.feed.post/3mucjlaofjk22`:
 
 ```json
 {
@@ -81,7 +81,10 @@ Voici encore pour exemple un post récent que j'ai fait sur Bluesky, qui a pour 
 }
 ```
 
-> du JSON je vous disais
+> du JSON je vous disais.
+> 
+> et si vous observez l'URI, vous verrez `at:// <compte> / <type> / <record>`,
+> on ne peut s'empêcher de faire le paralèlle avec des URI `http:// <host> / <path>`
 
 On y voit toute la structure d'un post, son contenu, et l'image associée.
 Le dernier élément qui va nous intéresser est le `$type` d'un record, qui est `app.bsky.feed.post` dans l'exemple précédent.
@@ -99,7 +102,7 @@ Maintenant que le vocabulaire de base est posé, on peut attaquer le vif du suje
 [standard.site](https://standard.site) est une initiative visant à faciliter la publication de contenu long sur AT Protocol.
 
 Initialement, le format des posts de Bluesky est en effet plutôt orienté pour des contenus courts, au format micro-blogging, avec une limitation à 300 caractères.
-300 caractères, c'est hyper court (la phrase précédente en fait déjà 150, et ce paragraphe en fait 450, c'est pour dire), et on voit beaucoup de personnes faire des _threads_, des suites de posts, qui forment un contenu complet.
+300 caractères, c'est hyper court (la phrase précédente en fait déjà 150, et ce paragraphe en fait 470, c'est pour dire), c'est pourquoi on voit beaucoup de personnes faire des _threads_, des suites de posts, qui forment un contenu complet.
 C'est peu pratique à lire, mais c'est un moyen détourné efficace.
 
 L'idée de _standard.site_ est de proposer un _Lexicon_ (une structure de _Records_ AT Proto si vous avez bien suivi), qui permet de stocker du contenu long, comme des pages web, articles de blog, etc.
@@ -110,37 +113,78 @@ Plutôt que chaque plateforme n'utilise ses propres formats de données, le form
 La migration d'une plateforme à l'autre est alors directement possible.
 On peut aussi imaginer pouvoir lire du contenu publié depuis une plateforme, sur l'application d'une autre.
 
-Imaginez un peu, qui n'a pas déjà galéré à migrer le contenu d'un Wordpress vers un autre système ? Ou pire, avoir du contenu sur une plateforme fermée comme dev.to ou medium.com ?
-Si l'outil ne convient plus, on change l'outil, on garde les données. La promesse de standard.site est élégante.
+> Imaginez un peu, qui n'a pas déjà galéré à migrer le contenu d'un Wordpress vers un autre système ? Ou pire, avoir du contenu sur une plateforme fermée comme dev.to ou medium.com qu'on cherche à rapatrier ?
+Si l'outil ne convient plus, on change l'outil, on garde les données.
+ 
+La promesse de standard.site est élégante.
 
 ## Comment fonctionne standard.site
 
 _standard.site_ propose l'utilisation de deux _Lexicons_ principaux, permettant de déclarer du contenu :
 
 * `standard.site.publication` qui permet de déclarer un site web ou un blog, qui possède comme attributs principaux une URL et un nom ;
-* `standard.site.document` permet de déclarer une page de contenu, qui possède comme attributs principaux un titre, une date de publication, le contenu, et la référence du site qui contient le document.
+* `standard.site.document` permet de déclarer une page de contenu, qui possède comme attributs principaux un titre, une date de publication, le contenu (optionnel), et la référence du site qui contient le document, ainsi qu'une URL de publication éventuelle.
 
 > D'autres _Lexicons_ existent pour les souscriptions à des _Publications_ et des recommandations de _Documents_, mais on va ignorer ces aspects dans cet article.
 
-Donc pour publier du contenu sur AT Proto avec _standard.site_, il faut créer d'abord une _Publication_, puis des _Documents_ attachés à cette publication, sous la forme de _ Records_ dans notre _PDS_.
+Donc pour publier du contenu sur AT Proto avec _standard.site_, il faut créer d'abord une _Publication_, puis des _Documents_ attachés à cette publication, sous la forme de _Records_ dans notre _PDS_.
 
 _standard.site_ n'est que la norme, comprenez les _Lexicons_. Charge aux plateformes et outils d'implémenter cette norme.
 C'est exactement ce que font les plateformes de blogging _Leaflet_, _Offprint_ et _pckt.blog_.
 
-Concrètement, une fois le contenu publié sur AT Proto dans le format standard.site, il peut être lisible depuis n'importe quelle plateforme.
+Concrètement, une fois le contenu publié sur AT Proto dans le format standard.site, il peut être lisible depuis n'importe quelle plateforme respectant la norme.
 
-Voici par exemple comment pckt.blog affiche le contenu de mes articles lors d'une recherche sur mon handle :
+Voici un [exemple de _Publication_](https://pdsls.dev/at://did:plc:re3ebnp5v7ffagz6rb6xfei4/site.standard.publication/3me5vykp6lf2y), celle utilisée par _standard.site_ (oui, on est un peu _meta_ là) :
 
-![pckt-explore](pckt-explore.webp)
+```json
+{
+  "url": "https://standard.site",
+  "icon": {
+    "ref": {
+      "$link": "bafkreicccrcq574fdbug4ebyx6w327xo7hkqo5wqhidlfvlpnz7qronqqy"
+    },
+    "size": 1696,
+    "$type": "blob",
+    "mimeType": "image/png"
+  },
+  "name": "Standard.site",
+  "$type": "site.standard.publication",
+  "createdAt": "2026-02-06T03:00:14.923Z",
+  "description": "Standard.site provides shared lexicons for long-form publishing on AT Protocol. Making content easier to discover, index, and move across the ATmosphere.",
+  "preferences": {
+    "showInDiscover": true
+  }
+}
+```
 
-Et voici une recherche ciblée, effectuée sur [standard-reader.app](https://standard-reader.app)
+On y retrouve l'URL de la publication, sa description, ainsi qu'une icône pour représenter la publication.
 
-![standard-reader](standard-reader.webp)
+Et voici maintenant un [exemple de _Document_](https://pdsls.dev/at://did:plc:re3ebnp5v7ffagz6rb6xfei4/site.standard.document/3mek5jhkri72r), encore une fois tiré du site de _standard.site_ :
 
-Les articles deviennent consommables depuis n'importe quelle plateforme. Un peu à la manière des flux RSS.
-C'est chouette.
+```json
+{
+  "path": "/docs/quick-start",
+  "site": "at://did:plc:re3ebnp5v7ffagz6rb6xfei4/site.standard.publication/3me5vykp6lf2y",
+  "$type": "site.standard.document",
+  "title": "Quick Start",
+  "coverImage": {
+    "ref": {
+      "$link": "bafkreifecvayh6kl67bw7q3xvrdv52v4a3sfbx36qe4hulxivujh3shgbi"
+    },
+    "size": 101531,
+    "$type": "blob",
+    "mimeType": "image/png"
+  },
+  "description": "Getting started with Standard.site lexicons.",
+  "publishedAt": "2026-02-10T00:00:00.000Z",
+  "textContent": "import { StandardSite } from '@/app/components/docs'\n\nQuick Start\n\nGet started with <StandardSite /> lexicons.\n\nWhat You Need\n\n- An AT Protocol Identity\n- A website or blog (any domain works)\n\nBasic Implementation\n\n1. Reference the Lexicons\n\n<StandardSite /> lexicons are published under the site.standard namespace. The main lexicons are:\n\n- site.standard.publication - Publication metadata\n- site.standard.document - Document content and metadata\n- site.standard.graph.subscription - User-publication relationships\n\n2. Create a Publication Record\n\nA publication requires a url and name:\n\n3. Verify the Publication\n\nAdd a .well-known endpoint to the domain:\n\nThis should return the publication's AT-URI:\n\n4. Create a Document Record\n\nDocuments require site, title, and publishedAt:\n\n5. Verify the Document\n\nAdd a <link> tag to the document's HTML:\n\nExtensibility\n\nWhile the minimum required properties are straightforward, additional properties can be added as needed. The lexicons are designed to be starting points, not constraints.\n\nNext Steps\n\n- Learn about Verification in detail\n- Explore the Publication schema\n- Review Document properties and options\n- Check out Implementations for tools and examples",
+  "canonicalUrl": "https://standard.site/docs/quick-start"
+}
+```
 
-Maintenant, comment faire pour importer mes articles ?
+On y retrouve le lien vers la _Publication_ avec l'attribut `site` et sa valeur URI, ainsi qu'une description, une URL canonique de page web, une image de couverture et le contenu de la page en format texte.
+
+Maintenant, comment faire pour importer ou publier mes articles ?
 
 Étant donné que j'ai déjà mon site statique, développé avec Hugo, et que je souhaite le conserver (la question aurait pû se poser de migrer totalement vers une des plateformes), l'idéal pour moi serait de pouvoir importer mes articles avec _standard.site_, directement dans mon PDS, tout en conservant la publication de mon site comme tel, avec mon workflow Git/Hugo/Clever Cloud.
 J'aurai pu me lancer dans le développement d'un plugin Hugo, ou d'un petit CLI custom qui fait le taf, mais flemme.
@@ -172,7 +216,7 @@ Sinon, un `npm install -g sequoia-cli` fonctionnera tout aussi bien.
 
 Pour pouvoir communiquer avec mon _PDS_, `sequoia` a besoin d'un jeton d'authentification. Ce jeton peut être obtenu de deux manières : avec une authentification interactive (OAuth2, avec mon login/mdp), ou avec un jeton _App Password_, qui permet de donner des droits à une appli (comme un compte de service).
 
-J'ai choisi d'utiliser un jeton _App Password_ pour `sequoia`, et de le passer en variable d'environnement.
+J'ai choisi d'utiliser un jeton _App Password_ pour `sequoia`, et de le passer en [variable d'environnement](https://sequoia.pub/workflows#environment-variables).
 Cela me permet de le stocker de manière sécurisée avec `fnox`, et d'éviter de devoir faire des `sequoia login` sur toutes mes machines.
 Ça permettra aussi à l'avenir de pouvoir exécuter des commandes `sequoia` depuis une intégration continue facilement, pour pouvoir automatiser la publication.
 
@@ -391,9 +435,47 @@ On lui donne une URL de page web, et il s'occupe d'aller consulter tous les _Rec
 
 ![standard-site-validator](standard-site-validator.webp)
 
+Tout est au vert, ce qui signifie que la page est correctement référencée par le _Document_, et que le _Document_ référence correctement la page. Même vérification pour la _Publication_.
+
+Toutes les étapes sont ok.
+
+Mon site est maintenant sur AT Proto.
+
+## Ça apporte quoi ?
+
+Au delà du côté technique rigolo, concrètement, la publication sur AT Proto de mon contenu permet de le rendre lisible _là où le lecteur le souhaite_, exactement comme les flux _RSS_ le permettent.
+
+Les plateformes AT Proto permettront peut-être aussi de rendre un peu plus visible mon contenu, une sorte de fédération de contenu gratuite (pour moi en tout cas).
+Il est toujours possible qu'un acteur malveillant cherche à monétiser le contenu publié sur AT Proto. Auquel cas, on peut avoir l'approche de publier uniquement sur AT Proto des _Documents_ comportant l'URL Web canonique du contenu, sans intégrer le contenu lui-même dans le _Document_.
+
+Voici par exemple comment pckt.blog affiche le contenu de mes articles lors d'une recherche sur mon handle :
+
+![pckt-explore](pckt-explore.webp)
+
+Et voici une recherche ciblée, effectuée sur [standard-reader.app](https://standard-reader.app) :
+
+![standard-reader](standard-reader.webp)
+
+Plutôt cool.
+
+Bluesky a aussi annoncé supporter _standard.site_, lorsqu'un post référence une page web déclarée dans un _Document_, [Bluesky affiche une carte](https://atproto.com/blog/standard-site-bluesky-timeline) avec un format spécifique, affichant la _Publication_ et l'auteur.
+C'est ce genre d'intégration qui est vraiment intéressant je trouve.
+
+[//]: # (TODO screen bluesky)
+
 ## Conclusion
 
+Hormis quelques itérations jusqu'à trouver la bonne config, je n'ai pas eu de difficultés particulières pour cette première étape d'intégration, sans grand changement sur ma façon habituelle de publier.
 
+Et oui, je dis première étape, parce que j'ai envie de tester le reste : l'intégration des commentaires avec Bluesky, les souscriptions et recommandations.
+
+Quelques parties ne fonctionnent pas encore correctement : mes images de couverture ne sont pas référencées ni publiées sur le _PDS_, et je ne parle même pas des images à l'intérieur du contenu lui-même.
+
+Une fois toutes ces étapes franchies, une question pourrait se poser : garder `hugo` comme une simple coque de génération et de publication, et avoir mon contenu hébergé sur mon compte AT Proto en first-party (plutôt que les Markdown sur Git).
+
+Je n'en suis pas encore là dans mon exploration, mais c'est une idée qui me plaît. Cependant, il faudra l'outillage associé, là où aujourd'hui j'ai simplement besoin d'un éditeur de texte et de Git, il me faudra un éditeur de contenu pour AT Proto (ce que sont les plateformes de blogging Leaflet, Offprint et pckt.blog finalement) ou un genre de driver FUSE.
+
+La suite dans les mois qui viennent.
 
 ## Liens et références
 
@@ -407,15 +489,19 @@ Sequoia :
   * Site web : https://sequoia.pub
   * Package sur NPMX : https://www.npmx.dev/package//sequoia-cli
   * Clés de configuration : https://sequoia.pub/config
+  * Configuration avec variables d'environnement : https://sequoia.pub/workflows#environment-variables
 
 AT Protocol
+  * Site web : https://atproto.com/
   * Glossaire (en anglais) : https://atproto.com/guides/glossary
 
 Plateformes de Blogging sur AT Proto:
   * Leaflet : https://leaflet.pub/
   * Offprint : https://offprint.app/
   * pckt.blog : https://pckt.blog/
+  * standard-reader.app (uniquement en lecture donc) : https://standard-reader.app/
 
 Bluesky
   * Lexicons : https://pdsls.dev/at://did:plc:4v4y5r3lwsbtmsxhile2ljac/com.atproto.lexicon.schema?reverse=true
   * App Passwords : https://bsky.app/settings/app-passwords
+  * Support de _standard.site_ : https://atproto.com/blog/standard-site-bluesky-timeline
