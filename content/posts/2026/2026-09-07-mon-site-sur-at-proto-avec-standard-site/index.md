@@ -379,51 +379,7 @@ J'ai choisi la deuxième option, en modifiant mon `layout/meta.html` pour y ajou
 
 Une fois tous les éléments publiés sur le PDS, et le site web à jour avec les URLs de la _Publication_ et des _Documents_. On peut vérifier que tout est bien connecté.
 
-```mermaid
-flowchart TB
-    subgraph WEB["🌐 Site Web (codeka.io)"]
-        direction LR
-        subgraph SITE["Site Web : https://codeka.io"]
-            WK[".well-known/site.standard.publication<br/><code>at://did:plc:.../site.standard.publication/3mmo...</code>"]
-        end
-
-        subgraph POST["Article : /2026/08/30/mon-site-sur-at-proto..."]
-            FM["Frontmatter (index.md)<br/><code>atUri: at://did:plc:.../site.standard.document/3muc...</code>"]
-        end
-
-        SITE -->|"héberge"| POST
-    end
-
-    subgraph PDS["☁️ PDS AT Proto (did:plc:a27wdjlmq3ebx4v5f2jpzvsk)"]
-        direction LR
-        subgraph PUB["Publication (site.standard.publication)"]
-            PUB_DATA["<b>URI :</b> <code>at://.../site.standard.publication/3mmo...</code><br/><b>url :</b> <code>https://codeka.io</code>"]
-        end
-
-        subgraph DOC["Document (site.standard.document)"]
-            DOC_DATA["<b>URI :</b> <code>at://.../site.standard.document/3muc...</code><br/><b>site :</b> <code>at://.../site.standard.publication/3mmo...</code><br/><b>url :</b> <code>https://codeka.io/.../mon-site-sur-at-proto...</code>"]
-        end
-
-        DOC -->|"site (référence)"| PUB
-    end
-
-    WK ==>|"pointe vers l'URI"| PUB_DATA
-    PUB_DATA -.->|"champ url"| SITE
-
-    FM ==>|"champ atUri"| DOC_DATA
-    DOC_DATA -.->|"champ url"| POST
-
-    style WEB fill:#f0f9ff,stroke:#0284c7,stroke-width:2px,color:#0369a1
-    style PDS fill:#f5f3ff,stroke:#6366f1,stroke-width:2px,color:#4338ca
-    style SITE fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#334155
-    style POST fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#334155
-    style PUB fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#334155
-    style DOC fill:#ffffff,stroke:#94a3b8,stroke-width:1px,color:#334155
-    style WK fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#14532d
-    style FM fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#14532d
-    style PUB_DATA fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#1e3a8a
-    style DOC_DATA fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#1e3a8a
-```
+![schema-site-publication-links.png](schema-site-publication-links.webp)
 
 Un outil en ligne permet de contrôler la bonne publication des différents éléments https://site-validator.fly.dev/.
 On lui donne une URL de page web, et il s'occupe d'aller consulter tous les _Records_ associés.
