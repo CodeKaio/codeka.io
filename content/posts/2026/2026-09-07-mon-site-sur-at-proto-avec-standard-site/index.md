@@ -351,17 +351,13 @@ J'exécute ensuite `sequoia publish` pour générer les _Documents_ et les publi
 Lors de la publication, `sequoia` va également injecter l'URI du _Document_ publié dans le Frontmatter de mon post, dans un attribut `atUri`.
 
 ```yaml
----
-date: 2026-08-07
-language: fr
-title: Bilan saison 2025-2026
-slug: bilan-saison-2025-2026
+date: 2026-09-07
+title: "Mon site sur AT Proto avec standard.site"
+slug: mon-site-sur-at-proto-avec-standard-site
 tags:
-  - certifications
-  - events
-  - internet
-atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgx4dpjj2r"
----
+  - tools
+  - at-proto
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3muxb4rzyx72j"
 ```
 
 Cet attribut peut ensuite être utilisé pour générer une balise `link` à déposer
@@ -378,8 +374,6 @@ J'ai choisi la deuxième option, en modifiant mon `layout/meta.html` pour y ajou
 ```
 
 > Cette injection implique que la publication se fait en 2 étapes. On publie le _Document_ sur le PDS en premier, puis l'article sur le site web avec l'URI AT Proto pour créer le lien inverse.
-
-[//]: # (TODO options sur le post, contenu, etc)
 
 ### Vérification
 
@@ -462,7 +456,7 @@ Plutôt cool.
 Bluesky a aussi annoncé supporter _standard.site_, lorsqu'un post référence une page web déclarée dans un _Document_, [Bluesky affiche une carte](https://atproto.com/blog/standard-site-bluesky-timeline) avec un format spécifique, affichant la _Publication_ et l'auteur.
 C'est ce genre d'intégration qui est vraiment intéressant je trouve.
 
-[//]: # (TODO screen bluesky)
+![bluesky-standard-site](bluesky-standard-site.webp)
 
 ## Conclusion
 
