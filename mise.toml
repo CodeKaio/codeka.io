@@ -6,6 +6,7 @@ hugo-extended = "0.162"
 [env]
 HUGO_OPTIONS = "--printI18nWarnings --printPathWarnings --cleanDestinationDir --logLevel debug --disableFastRender"
 ATP_IDENTIFIER = "codeka.io"
+PDS_URL = "https://eurosky.social"
 
 [tasks]
 
