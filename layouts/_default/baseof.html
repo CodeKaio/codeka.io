@@ -9,10 +9,8 @@
         </div>
 
         {{ if .Store.Get "hasMermaid" }}
-        <script type="module">
-            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-            mermaid.initialize({ startOnLoad: true });
-        </script>
+        <script defer src="/js/mermaid/mermaid.min.js"></script>
+        <script defer src="/js/mermaid/mermaid-init.js"></script>
         {{ end }}
     </body>
 </html>
