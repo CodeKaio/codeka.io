@@ -371,6 +371,16 @@
       "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mucgxc2cyo2n",
       "lastPublished": "2020-06-01T00:00:00.000Z",
       "slug": "global-gitignore-file"
+    },
+    "content/posts/2026/2026-09-07-mon-site-sur-at-proto-avec-standard-site/index.md": {
+      "contentHash": "28eb332235696d837d2d2d641eea17d270ef190bf200a4aee0fc2d11cd95b7d8",
+      "atUri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3muxb4rzyx72j",
+      "lastPublished": "2026-09-07T00:00:00.000Z",
+      "slug": "mon-site-sur-at-proto-avec-standard-site"
     }
+  },
+  "publication": {
+    "cid": "bafyreienwepjbv2pb4i2l4wlozuepeaiapolj4ozxapd7akleos3qa5syq",
+    "uri": "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.publication/3mmoqjqh4ix2f"
   }
 }

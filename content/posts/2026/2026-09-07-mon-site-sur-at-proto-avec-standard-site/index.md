@@ -6,6 +6,7 @@ tags:
   - tools
   - at-proto
 cover_anchor: top
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3muxb4rzyx72j"
 ---
 
 Je continue mon exploration d'AT Protocol.
