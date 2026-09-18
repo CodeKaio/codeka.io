@@ -2,6 +2,7 @@
 date: 2026-09-18
 language: fr
 title: La veille de Wittouck - Début septembre 2026
+slug: la-veille-de-wittouck-debut-septembre-2026
 series: La veille de Wittouck
 tags:
   - at-proto
