@@ -11,6 +11,7 @@ tags:
   - internet
   - linux
 writing_time: 2h
+atUri: "at://did:plc:a27wdjlmq3ebx4v5f2jpzvsk/site.standard.document/3mvsfyp24kr2a"
 ---
 
 C'est la rentrée, et donc la reprise de mes articles de veille.
