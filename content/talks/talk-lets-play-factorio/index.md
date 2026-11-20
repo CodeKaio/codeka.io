@@ -13,6 +13,7 @@ events:
     feedbacks_url: https://openfeedback.io/codeursenseine2026/2026-11-19/d9rbttj1gW8ZatvlLFyk
   - name: Riviera Dev 2026
     date: 2026-07-08
+    youtube: jK-K0lidmbI
     feedbacks_url: https://openfeedback.io/fCb31a335dE2gwSK0i1f/0/1014
     pictures: pictures-riviera-dev-2026
   - name: Breizhcamp 2026
