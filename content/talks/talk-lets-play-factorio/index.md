@@ -17,6 +17,7 @@ events:
     pictures: pictures-riviera-dev-2026
   - name: Breizhcamp 2026
     date: 2026-06-26
+    youtube: gqkaejSSnb4
     feedbacks_url: https://openfeedback.io/SRRLTK2p7mBWUfvuRudl/2026-06-26/1149153
   - name: DevLille 2026
     date: 2026-06-12
