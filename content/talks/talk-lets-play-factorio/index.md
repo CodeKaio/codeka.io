@@ -1,6 +1,6 @@
 ---
 date: 2025-06-01
-modified: 2026-07-31
+modified: 2026-11-20
 title: Talk - Let's play Factorio
 language: fr
 tags:
@@ -8,6 +8,9 @@ tags:
   - Basics
 hasGallery: true
 events:
+  - name: Codeurs en Seine 2026
+    date: 2026-11-19
+    feedbacks_url: https://openfeedback.io/codeursenseine2026/2026-11-19/d9rbttj1gW8ZatvlLFyk
   - name: Riviera Dev 2026
     date: 2026-07-08
     feedbacks_url: https://openfeedback.io/fCb31a335dE2gwSK0i1f/0/1014
@@ -80,6 +83,7 @@ J'ai aussi utilisé quelques outils :
 ## Sauvegarde
 
 Je mets à disposition mes fichiers de sauvegarde à télécharger ici :
+* Sauvegarde de la session de Codeurs en Seine 2026 : [codeurs-en-seine-2026.zip](codeurs-en-seine-2026.zip)
 * Sauvegarde de la session de Riviera Dev 2026 : [riviera-dev-2026.zip](riviera-dev-2026.zip)
 * Sauvegarde de la session de Breizhcamp 2026 : [breizhcamp-2026.zip](breizhcamp-2026.zip)
 * Sauvegarde de la session de DevLille 2026 : [devlille-2026.zip](devlille-2026.zip)
